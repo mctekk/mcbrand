@@ -1,11 +1,9 @@
-
-import NavBar from "@/components/organism/navBar";
-
+import Header from "@/components/organism/header";
 
 export default function Home() {
   return (
     <main >
-      <NavBar/>
+      <Header/>
     </main>
   )
 }

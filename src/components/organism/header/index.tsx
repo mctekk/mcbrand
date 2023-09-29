@@ -8,7 +8,7 @@ import Image from "next/image";
 import { Logo } from "../../../../public/images";
 import { Transition, Dialog } from "@headlessui/react";
 
-function NavBar() {
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
   function closeModal() {
     setIsOpen(false);
@@ -86,4 +86,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Header;
