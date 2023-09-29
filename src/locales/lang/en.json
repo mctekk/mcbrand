@@ -1,5 +1,15 @@
 {
   "base": {
     "hello": "Hello"
+  },
+  "navbar":{
+    "section":{
+      "whySalesAssist":"Why SalesAssist",
+      "pricing":"Pricing",
+      "aboutUs": "About Us",
+      "login": "Login",
+    "bookDemo": "Book Demo"
+    }
+
   }
 }
