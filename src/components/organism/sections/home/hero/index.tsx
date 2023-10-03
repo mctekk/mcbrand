@@ -4,13 +4,12 @@ import { Button } from "@/components/atoms/button/base";
 import { Section } from "@/components/atoms/section";
 import { translate } from "@/locales";
 
-
 import { Typewriter } from "react-simple-typewriter";
 
 export const Hero = () => {
   return (
-    <section className="section ">
-      <header className="xl:pl-96 pl-0 md:pl-0  ">
+    <div className="section ">
+      <div className="xl:pl-96 pl-0 md:pl-0">
         <Section className="lg:mt-6 pl-0  ">
           <div className="flex justify-center flex-col gap-6  lg:w-[70rem] xl:w-[90rem] ">
             <div className="flex flex-col pb-12 ">
@@ -57,7 +56,7 @@ export const Hero = () => {
             </a>
           </div>
         </Section>
-      </header>
-    </section>
+      </div>
+    </div>
   );
 };
