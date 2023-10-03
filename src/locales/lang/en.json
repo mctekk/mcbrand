@@ -1,15 +1,35 @@
 {
-  "base": {
-    "hello": "Hello"
-  },
-  "navbar":{
-    "section":{
-      "whySalesAssist":"Why SalesAssist",
-      "pricing":"Pricing",
+  "navbar": {
+    "section": {
+      "whySalesAssist": "Why SalesAssist",
+      "pricing": "Pricing",
       "aboutUs": "About Us",
       "login": "Login",
-    "bookDemo": "Book Demo"
+      "bookDemo": "Book Demo"
     }
-
+  },
+  "home": {
+    "hero": {
+      "upper_message": "Supercharge Your CRM",
+      "lower_message": "No More Wasted"
+    },
+    "desc": {
+      "message": "Gather information from customers securely and easily with SalesAssist, the",
+      "highLight": "Ultimate CRM Booster",
+      "message_end": "that streamlines your information collection process with data encryption and automation, from within your CRM."
+    },
+    "button": "Your Ultimate CRM Booster - Book Demo!",
+    "trusted": "Trusted by",
+    "modules": [
+      "Time",
+      "Back-and-forth",
+      "Data Entry",
+      "Follow-ups",
+      "Efforts",
+      "Opportunities",
+      "Resources",
+      "Energy"
+    ],
+    "meta": "Gather information from customers securely and easily with SalesAssist, the Ultimate CRM Booster that streamlines your information collection process with data encryption and automation."
   }
 }
