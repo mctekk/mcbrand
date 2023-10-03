@@ -18,11 +18,11 @@ export function MenuItem({ link, title, isExternal, className }:MenuItemProps) {
     <li>
       <Link href={link} className="lg:font-semibold  ">
         {isExternal ? (
-          <Solid className={`${className} text-black mb-9 lg:mt-1 lg:mb-0 text-xl text-[1.25rem] lg:text-[1rem]`}>
+          <Solid className={`${className} text-black mb-9 lg:mt-1 lg:mb-0 text-xl text-[1.25rem] lg:text-[1rem] whitespace-nowrap`}>
             {title}
           </Solid>
         ) : (
-          <ButtonLink className="text-black hover:text-orange-500 mb-9 lg:mt-1 lg:mb-0 text-[1.25rem] lg:text-[1rem]">{title}</ButtonLink>
+          <ButtonLink className="text-black hover:text-orange-500 mb-9 lg:mt-1 lg:mb-0 text-[1.25rem] lg:text-[1rem] whitespace-nowrap">{title}</ButtonLink>
         )}
       </Link>
     </li>
