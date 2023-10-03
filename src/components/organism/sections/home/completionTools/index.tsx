@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Section } from "@/components/atoms/section";
-import { CompletionToolsScreenshot } from "../../../../../../public/images";
+
 
 export const CompletionTools: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ export const CompletionTools: React.FC = () => {
           gathered enter your CRM in real time, with audit trail.
         </h4>
 
-        <Image alt="Completion Tools" src={CompletionToolsScreenshot} />
+        <Image alt="Completion Tools" src="/images/completion-tools-screenshot.png" width={2000} height={24}/>
       </Section>
     </div>
   );
