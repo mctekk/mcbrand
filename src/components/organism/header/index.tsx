@@ -7,7 +7,7 @@ import { Button } from "@/components/atoms/button/base";
 import Image from "next/image";
 import { Transition, Dialog } from "@headlessui/react";
 
-function Header() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   function closeModal() {
     setIsOpen(false);
@@ -72,4 +72,4 @@ function Header() {
   );
 }
 
-export default Header;
+

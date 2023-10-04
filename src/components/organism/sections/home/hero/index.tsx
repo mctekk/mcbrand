@@ -6,8 +6,7 @@ import { translate } from "@/locales";
 
 import { Typewriter } from "react-simple-typewriter";
 
-
-export const Hero = () => {
+export default function Hero() {
   return (
     <div className="section ">
       <div className="xl:pl-96 pl-0 md:pl-0">
@@ -60,4 +59,4 @@ export const Hero = () => {
       </div>
     </div>
   );
-};
+}

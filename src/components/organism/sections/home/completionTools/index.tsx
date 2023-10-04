@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Section } from "@/components/atoms/section";
 
 
-export const CompletionTools: React.FC = () => {
+export default function CompletionTools() {
   return (
     <div className="section bg-white !pb-0 xl:pl-36 pl-0 md:pl-0">
       <Section className="flex flex-col gap-6 w-full lg:px-16 xl:w-[80rem]   ">
@@ -21,3 +21,4 @@ export const CompletionTools: React.FC = () => {
     </div>
   );
 };
+
