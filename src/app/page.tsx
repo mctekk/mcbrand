@@ -4,7 +4,7 @@ import CompletionTools from "@/components/organism/sections/home/completionTools
 import ImageChanger from "@/components/organism/sections/home/iteraction";
 import { data } from "@/data/iteraction-data/data";
 import { Automated } from "@/components/organism/sections/home/automated";
-import { CompletionProcess } from "@/components/organism/sections/home/completionProcess";
+import CompletionProcess from "@/components/organism/sections/home/completionProcess";
 
 
 export default function Home() {
