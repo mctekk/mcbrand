@@ -23,14 +23,14 @@ export default function ImageChanger({ data }: { data: ImageData[] }) {
   };
   return (
     <div className="section bg-zinc-800 text-white">
-      <Section className="">
+      <Section>
         <div className="xl:ml-64 mb-10">
           <h1 className="mb-4">{translate("home.iteraction.title")}</h1>
           <h4 className="text-white-normal">
             {translate("home.iteraction.desc")}
           </h4>
         </div>
-        <div className="lg:hidden   ">
+        <div className="lg:hidden relative">
           <motion.button
             onClick={() => setIsOpen(!isOpen)}
             className=" text-[1.20rem] outline outline-1 w-full rounded-lg px-4 py-2  flex items-center justify-between  text-left gap-2 transition-all duration-500 select-none"
@@ -40,9 +40,9 @@ export default function ImageChanger({ data }: { data: ImageData[] }) {
             <MdKeyboardArrowDown className="md:text-[1rem]" />
           </motion.button>
           {isOpen && (
-            <ul className="bg-zinc-900 p-2 rounded-lg">
+            <ul className="bg-zinc-900 p-2 rounded-lg absolute  w-full">
               {data.map((item, index) => (
-                <motion.li
+                <li
                   key={index}
                   onClick={() => {
                     handleClick(index);
@@ -52,7 +52,7 @@ export default function ImageChanger({ data }: { data: ImageData[] }) {
                 >
                   <MdInsights className="md:text-[1rem] flex mr-2 mt-1" />
                   {item.name}
-                </motion.li>
+                </li>
               ))}
             </ul>
           )}
@@ -78,16 +78,16 @@ export default function ImageChanger({ data }: { data: ImageData[] }) {
               </motion.button>
             ))}
           </div>
-          <div className="flex flex-col items-center justify-center mt-9 text-center">
+          <div className="flex flex-col items-center justify-center mt-9 text-center  ">
             <Image
               src={data[imageIndex].url}
               alt={data[imageIndex].desc}
               width={200}
               height={24}
-              className="mb-20"
+              className="mb-20 "
             />
             <h4 className="font-semibold">{data[imageIndex].title}</h4>
-            <p className="ml-10">{data[imageIndex].desc}</p>
+            <p className="">{data[imageIndex].desc}</p>
           </div>
         </div>
       </Section>
