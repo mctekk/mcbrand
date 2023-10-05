@@ -3,6 +3,7 @@ import Hero from "@/components/organism/sections/home/hero";
 import CompletionTools from "@/components/organism/sections/home/completionTools";
 import ImageChanger from "@/components/organism/sections/home/iteraction";
 import { data } from "@/data/iteraction-data/data";
+import { Automated } from "@/components/organism/sections/home/automated";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero/>
       <CompletionTools/>
       <ImageChanger data={data}/>
+      <Automated></Automated>
     </main>
   )
 }

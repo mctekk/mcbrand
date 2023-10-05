@@ -95,9 +95,9 @@
       }
     ],
 
-    "completiontools":{
-      "title":"Embedded In and Fully Integrated With Your CRM",
-      "desc":"Have a complete arsenal of every possible info-gathering widget in a single panel, right from your CRM. All information and documents gathered enter your CRM in real time, with audit trail"
+    "automated":{
+      "title":"Complete Sales Faster with Automated Workflows",
+      "desc":"Info-gathering tools are scattered and don’t play nice together, we’re here to fix that. Connect all your info-gathering tools and create perfect custom-made workflows. Automate your sales team's work so they can crush sales goals."
     },
     "meta": "Gather information from customers securely and easily with SalesAssist, the Ultimate CRM Booster that streamlines your information collection process with data encryption and automation."
   }
