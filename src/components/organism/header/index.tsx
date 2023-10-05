@@ -5,10 +5,9 @@ import {  MdMenu } from 'react-icons/md';
 import Menu from "../../molecules/menu";
 import { Button } from "@/components/atoms/button/base";
 import Image from "next/image";
-import { Logo } from "../../../../public/images";
 import { Transition, Dialog } from "@headlessui/react";
 
-function Header() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   function closeModal() {
     setIsOpen(false);
@@ -23,7 +22,7 @@ function Header() {
       <div className="flex justify-between px-4 py-2">
         <div className="w-full">
           <a className=" lg:ml-0   w-[11.25rem] h-[2.875rem] flex">
-            <Image src={Logo} alt="logo" />
+            <Image src="/images/logo.png" alt="logo" width={200} height={24} />
           </a>
         </div>
         <Button
@@ -58,7 +57,7 @@ function Header() {
             }`}
           >
             {isOpen ? (
-              <Image className="pt-6 p-5 " src={Logo} alt="Logo"></Image>
+              <Image className="pt-6 p-5 " src="/images/logo.png" alt="Logo" width={800} height={24}></Image>
             ) : (
               ""
             )}
@@ -73,4 +72,4 @@ function Header() {
   );
 }
 
-export default Header;
+

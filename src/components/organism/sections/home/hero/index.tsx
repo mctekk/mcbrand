@@ -6,7 +6,7 @@ import { translate } from "@/locales";
 
 import { Typewriter } from "react-simple-typewriter";
 
-export const Hero = () => {
+export default function Hero() {
   return (
     <div className="section ">
       <div className="xl:pl-96 pl-0 md:pl-0">
@@ -23,7 +23,7 @@ export const Hero = () => {
                 <div className="overflow-hidden gap-6 flex flex-col h-[50px] md:h-[90px] lg:h-[99px] slices  ">
                   <h1 className="text-orange-500 md:text-[3rem] lg:text-[4.5rem] slice ml-5 md:ml-0 lg:ml-0 ">
                     <Typewriter
-                      words={translate("home.modules")}
+                      words={Array.from(translate("home.modules"))}
                       loop={0}
                       cursor
                       cursorStyle="_"
@@ -59,4 +59,4 @@ export const Hero = () => {
       </div>
     </div>
   );
-};
+}
