@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Section } from "@/components/atoms/section";
 import { translate } from "@/locales";
+
 export default function CompletionTools() {
   return (
     <div className="section bg-white !pb-0 xl:pl-36 pl-0 md:pl-0">
@@ -19,6 +20,7 @@ export default function CompletionTools() {
           height={24}
         />{" "}
       </Section>{" "}
+
     </div>
   );
 }
