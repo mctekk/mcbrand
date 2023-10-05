@@ -30,6 +30,10 @@
       "Resources",
       "Energy"
     ],
+    "completiontools":{
+      "title":"Embedded In and Fully Integrated With Your CRM",
+      "desc":"Have a complete arsenal of every possible info-gathering widget in a single panel, right from your CRM. All information and documents gathered enter your CRM in real time, with audit trail"
+    },
     "meta": "Gather information from customers securely and easily with SalesAssist, the Ultimate CRM Booster that streamlines your information collection process with data encryption and automation."
   }
 }
