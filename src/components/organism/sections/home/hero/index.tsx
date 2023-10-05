@@ -9,14 +9,14 @@ import { Typewriter } from "react-simple-typewriter";
 export default function Hero() {
   return (
     <div className="section ">
-      <div className="xl:pl-96 pl-0 md:pl-0">
+      <div className="flex justify-center items-center 2xl:ml-[25rem] xl:ml-[15rem]  ">
         <Section className="lg:mt-6 pl-0  ">
           <div className="flex justify-center flex-col gap-6  lg:w-[70rem] xl:w-[90rem] ">
             <div className="flex flex-col pb-12 ">
               <h1 className=" md:text-[3rem] lg:text-[4.5rem] lg:tracking-wide lg:mb-1.5 ml-5 md:ml-0 lg:ml-0">
                 {translate("home.hero.upper_message")}
               </h1>
-              <div className="flex flex-col lg:flex-row lg:w-fit  md:gap-4 lg:tracking-wide   ">
+              <div className="flex flex-col lg:flex-row lg:w-fit  md:gap-4 lg:tracking-wide  ">
                 <h1 className="md:text-[3rem] lg:text-[4.5rem] text-orange-500 font-normal ml-5 md:ml-0 lg:ml-0 whitespace-nowrap ">
                   {translate("home.hero.lower_message")}
                 </h1>
@@ -36,7 +36,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="xl:w-3/4">
+            <div className="xl:w-3/4  md:mr-28">
               <h4 className="text-gray-500 md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0">
                 {translate("home.desc.message")}{" "}
                 <span className="font-bold underline underline-offset-2 decoration-orange-500">
