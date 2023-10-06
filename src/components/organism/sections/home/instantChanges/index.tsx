@@ -1,17 +1,15 @@
 import classNames from 'classnames';
 
 import { Section } from '@/components/atoms/section';
-import { InstantChangesMobile } from '@/components/atoms/instantInfo';
-import { InstantChangesDesktop } from '@/components/atoms/instantInfo';
+import { InstantChangesMobile } from '@/components/molecules/instantInfo';
+import { InstantChangesDesktop } from '@/components/molecules/instantInfo';
 import { translate } from '@/locales';
 
 interface Props {
   className?: string;
 }
 
-export const InstantChanges: React.FC<Props> = ({ className }) => {
- 
-
+export function InstantChanges({ className }: Props) {
   return (
     <section className={classNames('flex flex-col h-full lg:px-12 pb-6 lg:pb-20', className)}>
       <Section className='container mx-auto'>
