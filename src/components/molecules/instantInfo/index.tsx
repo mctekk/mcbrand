@@ -8,9 +8,9 @@ export function InstantChangesDesktop() {
   return (
     <div className='text-center'>
       <div className='grid grid-cols-3 gap-10 w-full mb-4 justify-items-center'>
-        <Image src="/images/Business_icon.svg" alt='' width={150} height={24}/>
-        <Image src="/images/SA_Sales_icon.svg"  alt='' width={150} height={24}/>
-        <Image src="/images/SA_Customer_icon.svg"  alt='' width={105} height={24}/>
+        <Image src="/images/Business_icon.png" alt='' width={150} height={24}/>
+        <Image src="/images/SA_Sales_icon.png"  alt='' width={150} height={24}/>
+        <Image src="/images/SA_Customer_icon.png"  alt='' width={105} height={24}/>
       </div>
       <div className='grid grid-cols-3 gap-10 w-full mb-4'>
         <Leading title={translate("home.changes[0].title")} content={translate("home.changes[0].cont")} />
