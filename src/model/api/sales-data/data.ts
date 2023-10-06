@@ -1,6 +1,6 @@
 import { translate } from "@/locales";
 
-const data2 ={
+const industriesData ={
     "title": `${translate("home.salesData.title")}`,
       "industries": [
           {
@@ -37,4 +37,4 @@ const data2 ={
           }
       ]
   }
-  export { data2 };
+  export { industriesData };

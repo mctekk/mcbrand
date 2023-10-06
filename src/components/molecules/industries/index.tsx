@@ -1,4 +1,4 @@
-import { buildIcon } from "./icon";
+import { buildIcon } from "../../atoms/salesIcon";
 import { industries } from "@/components/atoms/icons/saless";
 import classNames from 'classnames';
 
