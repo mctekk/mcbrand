@@ -36,3 +36,58 @@ body {
 .slices > .slice {
   scroll-snap-align: start;
 }
+
+@-webkit-keyframes dash {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+.path {
+  -webkit-animation: dash 15s linear infinite;
+  stroke-dashoffset: 1000;
+
+}
+
+.r-path {
+  -webkit-animation: dash 15s linear infinite;
+  stroke-dashoffset: -1000;
+
+}
+
+@keyframes translateInfinite {
+  100% { transform: translateX(calc(-120px * 12));}
+}
+
+.infinity-x {
+  width: 180px;
+  animation: translateInfinite 30s linear infinite;
+}
+
+.infinity-x-container {
+  width: calc(120px * 20);
+  position: relative;
+  @apply flex justify-center items-start space-x-20;
+}
+
+.slider-container {
+  @apply w-2/3 ;
+}
+
+.slider-inside {
+  @apply overflow-hidden relative ;
+}
+.slider-inside::after, .slider-inside::before {
+  content: " ";
+  @apply absolute z-10 w-[100px] h-full;
+}
+.slider-inside::after{
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+.slider-inside::before{
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
