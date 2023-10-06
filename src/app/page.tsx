@@ -1,3 +1,4 @@
+"use client"
 import Header from "@/components/organism/header";
 import Hero from "@/components/organism/sections/home/hero";
 import CompletionTools from "@/components/organism/sections/home/completionTools";
@@ -8,6 +9,7 @@ import { InstantChanges } from "@/components/organism/sections/home/instantChang
 import { WhySalesAssistSalesProcess } from "@/components/organism/sections/home/whySalesAssistSales";
 import { actionsData } from "@/model/api/image-data/data";
 import { industriesData } from "@/model/api/sales-data/data";
+import Sales from "@/components/organism/sections/home/sales";
 
 
 export default function Home() {
@@ -21,6 +23,7 @@ export default function Home() {
       <CompletionProcess/>
       <InstantChanges/>
       <WhySalesAssistSalesProcess data={industriesData} />
+      <Sales></Sales>
     </main>
   )
 }
