@@ -1,3 +1,4 @@
+import { translate } from '@/locales';
 import Image from 'next/image';
 
 interface ColumnProps {
@@ -23,9 +24,9 @@ interface ColumnProps {
   export const InstantChangesMobile = () => {
     return (
       <div className='grid grid-cols-1 gap-6'>
-        <Column amount='+23%' title='Closing Rate' content='by completing sales faster' />
-        <Column amount='15hrs+' title='Saved Per Person/Mo' content='to do more value-added work' />
-        <Column amount='+15%' title='Positive Reviews' content='by streamlining the sales completion process' />
+        <Column amount='+23%' title={translate("home.changes[0].title")} content={translate("home.changes[0].cont")} />
+        <Column amount='15hrs+' title={translate("home.changes[1].title")} content={translate("home.changes[1].cont")} />
+        <Column amount='+15%' title={translate("home.changes[2].title")} content={translate("home.changes[2].cont")} />
       </div>
     )
   }
@@ -71,9 +72,9 @@ export const InstantChangesDesktop = () => {
         <Image src="/images/SA_Customer_icon.svg"  alt='' width={105} height={24}/>
       </div>
       <div className='grid grid-cols-3 gap-10 w-full mb-4'>
-        <Leading title='Increase Closing Rate' content='by completing sales faster' />
-        <Leading title='Free-up Salespeople' content='to do more value-added work' />
-        <Leading title='Improve Customer Experience' content='by streamlining the sales completion process' />
+        <Leading title={translate("home.changes[0].title")} content={translate("home.changes[0].cont")} />
+        <Leading title={translate("home.changes[1].title")} content={translate("home.changes[1].cont")} />
+        <Leading title={translate("home.changes[2].title")} content={translate("home.changes[2].cont")} />
       </div>
       <div className='grid grid-cols-3 gap-10 w-full text-orange-normal font-semibold'>
         <Rates rate='+23%' title='Closing Rate' />

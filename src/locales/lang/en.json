@@ -101,7 +101,23 @@
     },
     "completionprocess":{
       "title":"Let Us Assist and Guide Your Info-Gathering Process",
-      "desc":"Gathering information and documents from customers is often the most time consuming part of the business. We’ll assist your team with smart suggestions based on real time signals, so they know who, when, how and what to focus on to complete more sales."},
-    "meta": "Gather information from customers securely and easily with SalesAssist, the Ultimate CRM Booster that streamlines your information collection process with data encryption and automation."
+      "desc":"Gathering information and documents from customers is often the most time consuming part of the business. We’ll assist your team with smart suggestions based on real time signals, so they know who, when, how and what to focus on to complete more sales."
+    },
+      "changesPage":{
+        "title":"Companies That Turn to SalesAssist See 3 Instant Changes"
+      },
+      "changes" : [
+        {
+        "title":"Closing Rate",
+        "cont":"by completing sales faster"},
+      {
+        "title":"Saved Per Person/Mo",
+        "cont":"to do more value-added work"
+      }, {
+        "title":"Positive Reviews",
+        "cont":"by streamlining the sales completion process"
+      }],
+      
+      "meta": "Gather information from customers securely and easily with SalesAssist, the Ultimate CRM Booster that streamlines your information collection process with data encryption and automation."
   }
 }
