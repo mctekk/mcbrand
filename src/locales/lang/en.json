@@ -8,6 +8,26 @@
       "bookDemo": "Book Demo"
     }
   },
+  "rights":{
+    "info": "© Shiplove Inc. All Rights Reserved."
+  },
+  "routesTitles":{
+    "title":"SalesAssist",
+    "title1":"Company",
+    "title2":"Contact Us"
+  },
+  "routes":{
+    "whySalesAssist" : "Why SalesAssist",
+    "pricing" : "Pricing",
+    "about" : "About Us",
+    "qAndA" : "Q&A",
+    "howItWorks" : "How it Works",
+    "Benefits" : "Benefits",
+    "actions" : "Actions",
+    "bookADemo" : "Book Demo",
+    "legal" : "Legal",
+    "policy" : "Privacy Policy"
+  },
   "home": {
     "hero": {
       "upper_message": "Supercharge Your CRM",

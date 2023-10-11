@@ -10,6 +10,7 @@ import { WhySalesAssistSalesProcess } from "@/components/organism/sections/home/
 import { actionsData } from "@/model/api/image-data/data";
 import { industriesData } from "@/model/api/sales-data/data";
 import Sales from "@/components/organism/sections/home/sales";
+import { Footer } from "@/components/organism/sections/footer";
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <InstantChanges/>
       <WhySalesAssistSalesProcess data={industriesData} />
       <Sales></Sales>
+      <Footer></Footer>
     </main>
   )
 }
