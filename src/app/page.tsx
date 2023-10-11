@@ -25,7 +25,7 @@ export default function Home() {
       <InstantChanges/>
       <WhySalesAssistSalesProcess data={industriesData} />
       <Sales></Sales>
-      <Footer ></Footer>
+      <Footer></Footer>
     </main>
   )
 }

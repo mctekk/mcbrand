@@ -7,7 +7,7 @@ type Props = {
 export default function FooterLogo({ kind }: Props) {
   if (kind == "dark") {
     return <Image src="/images/WLogo.svg" alt="" width={500} height={224} />;
-  } else {
+  } 
     return <Image src="/images/logo.png" alt={""} width={500} height={224} />;
   }
-}
+
