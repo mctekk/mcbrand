@@ -5,19 +5,18 @@ export enum Paths {
     pricing = '/pricing',
     about = '/about-us',
 }
-
-export enum RouteNames {
-    whySalesAssist = 'Why SalesAssist',
-    pricing = 'Pricing',
-    about = 'About Us',
-    qAndA = 'Q&A',
-    howItWorks = 'How it Works',
-    Benefits = 'Benefits',
-    actions = 'Actions',
-    bookADemo = 'Book Demo',
-    legal = 'Legal',
-    policy = 'Privacy Policy',
-}
+export const RouteNames = {
+  whySalesAssist: `${translate("routes.whySalesAssist")}`,
+  pricing: `${translate("routes.pricing")}`,
+  about: `${translate("routes.about")}`,
+  qAndA: `${translate("routes.qAndA")}`,
+  howItWorks: `${translate("routes.howItWorks")}`,
+  benefits: `${translate("routes.Benefits")}`,
+  actions: `${translate("routes.actions")}`,
+  bookADemo: `${translate("routes.bookADemo")}`,
+  legal: `${translate("routes.legal")}`,
+  policy: `${translate("routes.policy")}`,
+};
 
 export type Route = { path: string, name: string };
 export type Routes = Array<Route>;
@@ -30,7 +29,7 @@ const salesAssist = {
     title: 'SalesAssist',
     links: [
         { path: '/#how-it-works', name: RouteNames.howItWorks },
-        { path: `${Paths.whySalesAssist}/#benefits`, name: RouteNames.Benefits },
+        { path: `${Paths.whySalesAssist}/#benefits`, name: RouteNames.benefits },
         { path: '/#actions', name: RouteNames.actions },
         { path: Paths.pricing, name: RouteNames.pricing },
         { path: `${Paths.pricing}/#Q&A`, name: RouteNames.qAndA },
