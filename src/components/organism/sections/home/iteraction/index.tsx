@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { Section } from "@/components/atoms/section";
 import { translate } from "@/locales";
 import Dropdown from "@/components/atoms/dropdown";

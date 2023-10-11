@@ -117,7 +117,42 @@
         "title":"Positive Reviews",
         "cont":"by streamlining the sales completion process"
       }],
-      
+      "salesData":{
+      "title": "Built for Every Sales Process",
+      "industries": [
+          {
+              "code": "ATMTV",
+              "name": "Automotive"
+          },
+          {
+              "code": "MDQ",
+              "name": "Medical Equipment"
+          },
+          {
+              "code": "SAAS",
+              "name": "SaaS"
+          },
+          {
+              "code": "INSRC",
+              "name": "Insurance"
+          },
+          {
+              "code": "RLST",
+              "name": "Real Estate"
+          },
+          {
+              "code": "MCHRY",
+              "name": "Machinery"
+          },
+          {
+              "code": "ADVRTNG",
+              "name": "Advertising"
+          },
+          {
+              "code": "FNALSVC",
+              "name": "Financial Services"
+          }]
+        },
       "meta": "Gather information from customers securely and easily with SalesAssist, the Ultimate CRM Booster that streamlines your information collection process with data encryption and automation."
   }
 }
