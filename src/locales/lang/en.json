@@ -8,6 +8,14 @@
       "bookDemo": "Book Demo"
     }
   },
+  "rights":{
+    "info": "© Shiplove Inc. All Rights Reserved."
+  },
+  "routesTitles":{
+    "title":"SalesAssist",
+    "title1":"Company",
+    "title2":"Contact Us"
+  },
   "routes":{
     "whySalesAssist" : "Why SalesAssist",
     "pricing" : "Pricing",
