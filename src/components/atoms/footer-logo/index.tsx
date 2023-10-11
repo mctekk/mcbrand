@@ -1,25 +1,13 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 type Props = {
-    kind?: "dark" | "light";
-}
+  kind?: "dark" | "light";
+};
 
-export default function FooterLogo({kind}: Props) {
-  return (
-    <div>{kind == "dark" ? (
-        <Image
-          src="/images/WLogo.svg"
-          alt=""
-          width={500}
-          height={224}
-        />
-      ) : (
-        <Image
-          src="/images/logo.png"
-          alt={""}
-          width={500}
-          height={224}
-        />
-      )}</div>
-  )
+export default function FooterLogo({ kind }: Props) {
+  if (kind == "dark") {
+    return <Image src="/images/WLogo.svg" alt="" width={500} height={224} />;
+  } else {
+    return <Image src="/images/logo.png" alt={""} width={500} height={224} />;
+  }
 }

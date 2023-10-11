@@ -1,19 +1,20 @@
 import classNames from "classnames";
-import { BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsLinkedin, BsTwitter } from 'react-icons/bs';
 import { FooterList } from "../../../atoms/footer-list";
 import { footerLinks } from "@/model/api/routes-data/data";
 import NextLink from "next/link";
 import Image from "next/image";
 import FooterLinks from "@/components/molecules/footer-links";
-import FooterLogo from "@/components/atoms/footer-logo";
-import { translate } from "@/locales";
-import FooterSocials from "@/components/atoms/footer-socials";
-import FooterRights from "@/components/atoms/footer-rights";
 
 interface FooterProps {
   className?: string;
   kind?: "dark" | "light";
 }
+
+const social = [
+    { url: 'https://www.linkedin.com/company/getsalesassist', icon: <BsLinkedin />},
+    { url: 'https://twitter.com/SalesAssistSaaS', icon: <BsTwitter />}
+]
 
 export function Footer({ className, kind = "light" }: FooterProps) {
   const baseClasses = classNames(
@@ -23,6 +24,12 @@ export function Footer({ className, kind = "light" }: FooterProps) {
     className
   );
 
+  const socialClasses = classNames(
+    "text-[1.875rem] text-white rounded",
+    { "bg-white": kind === "dark" },
+    { "bg-zinc-800": kind === "light" }
+  );
+
   return (
     <footer className={baseClasses}>
       <div className="h-full container mx-auto flex-grow flex gap-6 flex-col">
@@ -30,10 +37,24 @@ export function Footer({ className, kind = "light" }: FooterProps) {
         <div className="h-1/2 w-full flex justify-between md:gap-4 md:items-center">
           <div className="w-full md:w-fit lg:w-1/2 h-full px-2 md:py-2 relative mb-auto">
             <div className="max-w-[164px]">
-              <FooterLogo kind={kind}></FooterLogo>
+              {kind == "dark" ? (
+                <Image
+                  src="/images/WLogo.svg"
+                  alt=""
+                  width={500}
+                  height={224}
+                />
+              ) : (
+                <Image
+                  src="/images/logo.png"
+                  alt={""}
+                  width={500}
+                  height={224}
+                />
+              )}
             </div>
             <h4 className="hidden md:block text-[0.75rem]">
-              <FooterRights />
+              © Shiplove Inc. {new Date().getFullYear()} All Rights Reserved
             </h4>
             <FooterList
               kind={kind}
@@ -44,7 +65,7 @@ export function Footer({ className, kind = "light" }: FooterProps) {
             />
           </div>
           {/* links */}
-          <FooterLinks />
+         <FooterLinks/>
         </div>
         {/* more about */}
         <div className="flex-col md:flex-row flex-grow md:border-t w-full flex md:items-start md:justify-between gap-6 px-2 md:px-0 md:py-2">
@@ -64,9 +85,21 @@ export function Footer({ className, kind = "light" }: FooterProps) {
           {/* social media */}
           <div className="md:w-1/2 h-full flex justify-end gap-2 md:gap-6 flex-col md:flex-row w-full md:pb-12">
             <h4 className="block md:hidden text-[0.75rem] text-gray-400">
-              <FooterRights />
+              © Shiplove Inc. {new Date().getFullYear()} All Rights Reserved
             </h4>
-            <FooterSocials kind={kind} />
+            <div className="flex gap-6 w-full flex-wrap md:justify-end">
+              {social.map((s, i) => (
+                <a
+                  key={i}
+                  href={s.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={socialClasses}
+                >
+                  {s.icon}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
