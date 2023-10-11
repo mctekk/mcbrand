@@ -4,6 +4,7 @@ import { FooterList } from "../../../atoms/footer-list";
 import { footerLinks } from "@/model/api/routes-data/data";
 import NextLink from "next/link";
 import Image from "next/image";
+import FooterLinks from "@/components/molecules/footer-links";
 
 interface FooterProps {
   className?: string;
@@ -64,24 +65,7 @@ export function Footer({ className, kind = "light" }: FooterProps) {
             />
           </div>
           {/* links */}
-          <div className="flex-grow lg:w-1/2 h-full flex justify-between gap-4 px-2 md:py-2 flex-wrap md:flex-nowrap">
-            <FooterList
-              kind={kind}
-              className="hidden md:block"
-              title={footerLinks.salesAssist.title}
-              links={footerLinks.salesAssist.links}
-            />
-            <FooterList
-              kind={kind}
-              title={footerLinks.company.title}
-              links={footerLinks.company.links}
-            />
-            <FooterList
-              kind={kind}
-              title={footerLinks.contact.title}
-              links={footerLinks.contact.links}
-            />
-          </div>
+         <FooterLinks></FooterLinks>
         </div>
         {/* more about */}
         <div className="flex-col md:flex-row flex-grow md:border-t w-full flex md:items-start md:justify-between gap-6 px-2 md:px-0 md:py-2">

@@ -8,6 +8,18 @@
       "bookDemo": "Book Demo"
     }
   },
+  "routes":{
+    "whySalesAssist" : "Why SalesAssist",
+    "pricing" : "Pricing",
+    "about" : "About Us",
+    "qAndA" : "Q&A",
+    "howItWorks" : "How it Works",
+    "Benefits" : "Benefits",
+    "actions" : "Actions",
+    "bookADemo" : "Book Demo",
+    "legal" : "Legal",
+    "policy" : "Privacy Policy"
+  },
   "home": {
     "hero": {
       "upper_message": "Supercharge Your CRM",
