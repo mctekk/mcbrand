@@ -251,6 +251,35 @@
             }
           
       ]
+      
+
+},
+"howItWorks":{
+  "title": "Simple To Use By Sales Team",
+  "desc": "3 easy steps to transform your sales completion process without changing it – no retraining necessary.",
+  "actions": [
+    {
+      "code": "HIW-ASA",
+      "title": "Share Completion Tasks",
+      "desc": "Salespeople simply share the relevant Completion Tasks with their customers to review, fill out, sign, and submit, right from their mobile devices.",
+      "kind": "orange",
+      "delay": 0
+    },
+    {
+      "code": "HIW-IWC",
+      "title": "Monitor Completion Status",
+      "desc": "Salespeople have full visibility of the customers’ completion status - whether and when they have opened and completed the Tasks.",
+      "kind": "purple",
+      "delay": 0.5
+    },
+    {
+      "code": "HIW-CTS",
+      "title": "Receive Data",
+      "desc": "All the data and files collected from the customers automatically import into your CRM and other SOR based on the workflows established.",
+      "kind": "normal",
+      "delay": 0.8
+    }
+  ]
     }
   }
 }

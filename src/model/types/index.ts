@@ -20,5 +20,19 @@ type WhySalesAssistHeroSection = {
     title: string;
     desc: string;
   };
+  type HowItWorksSection = {
+    title: string;
+    desc: string;
+    actions: Action[];
+}
 
-export type {WhySalesAssistHeroSection,BenefitsSection};
+type Kind = 'orange' | 'purple' | 'normal' | string
+type Action = {
+    code: string;
+    title: string;
+    desc: string;
+    kind: Kind;
+    delay: number;
+}
+
+export type {WhySalesAssistHeroSection,BenefitsSection,HowItWorksSection};
