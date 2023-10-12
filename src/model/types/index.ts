@@ -8,6 +8,18 @@ type WhySalesAssistHeroSection = {
     desc: string;
     reasons: Reason[];
   };
+  type BenefitsSection = {
+    title: string;
+    benefits: Benefit[];
+  };
+  type Benefit = {
+    kind: string;
+    bullet_points: BulletPoint[];
+  };
   
+  type BulletPoint = {
+    title: string;
+    desc: string;
+  };
 
-export type {WhySalesAssistHeroSection};
+export type {WhySalesAssistHeroSection,BenefitsSection};
