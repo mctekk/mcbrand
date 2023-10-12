@@ -13,7 +13,6 @@ type WhySalesAssistHeroSection = {
     benefits: Benefit[];
   };
   type Benefit = {
-    kind: string;
     bullet_points: BulletPoint[];
   };
   
