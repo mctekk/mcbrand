@@ -21,7 +21,7 @@ export default function Header() {
     <div className="lg:flex lg:justify-center lg:items-center  gap-6 text-[1.0625rem] text-black mt-7 w-full lg:ml-0  sm:ml-0  ">
       <div className="flex justify-between px-4 py-2">
         <div className="w-full">
-          <a className=" lg:ml-0   w-[11.25rem] h-[2.875rem] flex">
+          <a className=" lg:ml-0   w-[11.25rem] h-[2.875rem] flex" href="/">
             <Image src="/images/logo.png" alt="logo" width={200} height={24} />
           </a>
         </div>

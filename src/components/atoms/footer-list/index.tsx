@@ -22,9 +22,8 @@ export function FooterList({
 }: FooterLinkProps) {
   const baseClass = classNames("md:w-1/2 text-left", className);
   const titleClass = classNames(
-    "font-bold text-black mb-2 text-[1rem] md:text-[1.125]",
-    { "text-white": kind == "dark" }
-  );
+    "font-bold  mb-2 text-[1rem] md:text-[1.125]",
+    { "text-white": kind == "dark" })
 
   function renderBookDemo(name: string, path: string) {
     return (

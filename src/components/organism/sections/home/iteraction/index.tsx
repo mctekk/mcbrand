@@ -13,7 +13,7 @@ interface ImageData {
 }
 export default function ImageChanger({ data }: { data: ImageData[] }) {
   return (
-    <div className="section bg-zinc-800 text-white">
+    <div className="section bg-zinc-800 text-white" id="actions">
       <Section>
         <div className="xl:ml-64 mb-10">
           <h1 className="mb-4">{translate("home.iteraction.title")}</h1>

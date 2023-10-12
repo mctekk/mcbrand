@@ -26,7 +26,7 @@ export type Routes = Array<Route>;
 export const calendlyLink = 'https://calendly.com/salesasssit/30min';
 
 const salesAssist = {
-    title: 'SalesAssist',
+    title: `${translate("routesTitles.title")}`,
     links: [
         { path: '/#how-it-works', name: RouteNames.howItWorks },
         { path: `${Paths.whySalesAssist}/#benefits`, name: RouteNames.benefits },
@@ -37,7 +37,7 @@ const salesAssist = {
 }
 
 const company = {
-    title: 'Company',
+    title: `${translate("routesTitles.title1")}`,
     links: [
         { path: '/about-us', name: RouteNames.about },
         { path: calendlyLink, name: RouteNames.bookADemo },
@@ -45,7 +45,7 @@ const company = {
 }
 
 const contact = {
-    title: 'Contact Us',
+    title: `${translate("routesTitles.title2")}`,
     links: [
         { path: 'mailto:help@salesassist.io', name: 'help@salesassist.io' },
         { path: '#', name: '251 Little Falls Drive, Wilmington, Delaware 19808' },

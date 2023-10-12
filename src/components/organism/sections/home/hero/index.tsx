@@ -8,10 +8,9 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
   return (
-    <div className="section ">
-      <div className="flex justify-center items-center 2xl:ml-[25rem] xl:ml-[15rem]  ">
-        <Section className="lg:mt-6 pl-0  ">
-          <div className="flex justify-center flex-col gap-6  lg:w-[70rem] xl:w-[90rem] ">
+    <div className="section" id="how-it-works">
+        <Section className="lg:mt-6 pl-0  flex items-center justify-end">
+          <div className="flex justify-center  flex-col gap-6  lg:w-[70rem] xl:w-[81rem] xl:ml-32  ">
             <div className="flex flex-col pb-12 ">
               <h1 className=" md:text-[3rem] lg:text-[4.5rem] lg:tracking-wide lg:mb-1.5 ml-5 md:ml-0 lg:ml-0">
                 {translate("home.hero.upper_message")}
@@ -21,7 +20,7 @@ export default function Hero() {
                   {translate("home.hero.lower_message")}
                 </h1>
                 <div className="overflow-hidden gap-6 flex flex-col h-[50px] md:h-[90px] lg:h-[99px] slices  ">
-                  <h1 className="text-orange-500 md:text-[3rem] lg:text-[4.5rem] slice ml-5 md:ml-0 lg:ml-0 ">
+                  <h1 className="text-orange-500 md:text-[3rem] lg:text-[4rem] xl:text-[4.5rem]  slice ml-5 md:ml-0 lg:ml-0 lg:mt-5">
                     <Typewriter
                       words={Array.from(translate("home.modules"))}
                       loop={0}
@@ -57,6 +56,6 @@ export default function Hero() {
           </div>
         </Section>
       </div>
-    </div>
+
   );
 }
