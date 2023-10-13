@@ -202,9 +202,6 @@
     "benefitsData":{
       "title": "Here's How Everyone Involved Benefits",
       "benefits": [
-        
-          
-          
             {
               "title": "More sales",
               "desc": "Simplify the sales process so your sales team has more time to do what matters most — sell more."
@@ -217,11 +214,6 @@
               "title": "Save money",
               "desc": "Replace the many one-off applications and systems you currently use to complete the sale with off-the-shelf or custom Sales Actions."
             },
-          
-        
-        
-          
-          
             {
               "title": "Complete sales faster",
               "desc": "Make your salespeople super efficient by simplifying the collection and sharing of information. Handling customer interactions has never been easier!"
@@ -234,9 +226,6 @@
               "title": "Reduce errors",
               "desc": "Reduce unnecessary errors with e-Forms and e-Signatures that are smart, fully integrated with all of your existing systems."
             },
-          
-        
-      
             {
               "title": "Reduce friction",
               "desc": "Eliminate the emails, scans, multiple portals and all the back and forth by completing the sale straight from customers’ mobile device"
@@ -249,9 +238,7 @@
               "title": "Delight customers",
               "desc": "Create happy and returning customers by providing a frictionless and personalized sales experience."
             }
-          
       ]
-      
 
 },
 "howItWorks":{
@@ -280,6 +267,61 @@
       "delay": 0.8
     }
   ]
-    }
+    },
+    "Customers":{
+      "title":" Simple to Use by Customers",
+      "desc": " Provide customers with instant, real-time, mobile-first completion experiences. Interactions with their salesperson are done in the fastest and most personalized way, Amazon style. By receiving personalized texts customers can simply click on the provided links to enter, sign, upload, verify, pay, choose, etc., whatever is needed to complete the sale."
+    },
+    "painless":{
+      "title": "Completing Sales Should Be Painless",
+      "banner": {
+        "cta": "Book Demo",
+        "text": "Let’s Simplify How You Gather Info from Customers"
+      },
+      "bullet_points": [
+        {
+          "code": "FI",
+          "title": "Frictionless Interactions",
+          "desc": "Give customers what they expect, a seamless end-to-end journey."
+        },
+        {
+          "code": "CI",
+          "title": "End-to-End Integration",
+          "desc": "Let SalesAssist do all the heavy lifting and give back valuable time to your salespeople."
+        },
+        {
+          "code": "RLTN",
+          "title": "Real-time Completion",
+          "desc": "Have your salespeople take timely actions, based on real-time suggestions."
+        }
+      ]
+    },
+    "swiperData":{
+      "title": "Simple to Manage by Leadership",
+      "desc": "We make it extremely easy for management to assemble the ideal Completion Panel for their sales team. On our web portal managers can easily select customizable off-the-shelf Completion Tools, integrate their existing ones, or mix and match.",
+      "options": {
+        "select": "Select a Completion Tool template",
+        "customize": "Customize your own",
+        "add": "Add to your Completion Panel"
+      },
+      "show_case": [
+        {
+          "option": "Select a Completion Tool template",
+          "url": "/images/ActionBuilder/Step1.png",
+          "title": "Select off-the-shelf Completion Tools",
+          "desc": "Choose off-the-shelf Completion Tool templates from our ever-growing Template Library."
+        },{
+          "option": "Customize your own",
+          "url": "/images/ActionBuilder/Step2.png",
+          "title": "Customize your own",
+          "desc": "Modify texts, images, logos, documents, and page layout on the Completion Tools based on your needs."
+        },{
+          "option":  "Add to your Completion Panel",
+          "url": "/images/ActionBuilder/Step3.png",
+          "title": "Add to your Completion Panel",
+      "desc": "Turn on and off Completion Tools on the Completion Panel and list them in the sequence you prefer."
+        }
+      ]
+  }
   }
 }

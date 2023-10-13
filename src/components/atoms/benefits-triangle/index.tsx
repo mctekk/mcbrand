@@ -1,7 +1,7 @@
 import React from 'react'
 import { DashedAnimation } from '../animations/animatedTriangle'
 import { IconBox } from '../icon-box'
-import { useProgressWithInView } from '@/model/interactions/use-progress';
+import { useProgressWithInView } from '@/model/interactions/use-progress-in-view'
 
 type Props = {}
 

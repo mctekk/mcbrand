@@ -51,8 +51,11 @@ export function useProgressWithInView() {
       startProgress();
     };
   }
-
+  function clickOnCard(card: number) {
+    return () => {
+        currentCard.current = card
+    }}
   const isActive = (at: number) => currentCard.current === at;
 
-  return { ref, isActive, clickOnIcon, currentStatus, progressLeft,currentCard };
+  return { ref,inView, isActive, clickOnIcon, currentStatus, progressLeft,currentCard,startProgress,clickOnCard };
 }

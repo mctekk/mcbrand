@@ -34,5 +34,31 @@ type Action = {
     kind: Kind;
     delay: number;
 }
+interface Point {
+  code: string;
+  title: string;
+  desc: string;
+}
+interface WhySalesAssistCompleteSalesPainlessSection {
+  bullet_points: Point[];
+  title: string;
+  banner: {
+      cta: string;
+      text: string;
+  }
+}
 
-export type {WhySalesAssistHeroSection,BenefitsSection,HowItWorksSection};
+
+interface Options {
+  select: string;
+  customize: string;
+  add: string;
+}
+
+interface ShowCase {
+  url: string;
+  title: string;
+  desc: string;
+  option: string;
+}
+export type {WhySalesAssistHeroSection,BenefitsSection,HowItWorksSection,WhySalesAssistCompleteSalesPainlessSection,Options,ShowCase};
