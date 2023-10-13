@@ -1,4 +1,4 @@
-import { useResponsive } from '@/model/interactions/use-responsive/useResponsive';
+import { useResponsive } from '@/model/interactions/use-responsive';
 import classNames from 'classnames';
 
 
