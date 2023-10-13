@@ -1,13 +1,16 @@
+import React, { ReactNode } from 'react';
+
 import { MdInsights } from "react-icons/md"
 import classNames from 'classnames';
 
 interface InsightProp {
     text: string,
+    children?: ReactNode;
     className?: string,
     isActive?: boolean,
 }
 
-export const Insight: React.FC<React.PropsWithChildren<InsightProp>> = ({ text, children, className, isActive }) => {
+export function Insight({ text, children, className, isActive }: InsightProp) {
     const baseClass = classNames('duration-400', {'opacity-40': !isActive}, className);
     return (
         <div className={baseClass}>
