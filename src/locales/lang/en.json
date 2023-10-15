@@ -199,80 +199,79 @@
         }
       ]
     },
-    "benefitsData":{
+    "benefitsData": {
       "title": "Here's How Everyone Involved Benefits",
       "benefits": [
-            {
-              "title": "More sales",
-              "desc": "Simplify the sales process so your sales team has more time to do what matters most — sell more."
-            },
-            {
-              "title": "Improve NPS",
-              "desc": "Provide a frictionless and convenient experience to your customers by completing the sale straight from their phones."
-            },
-            {
-              "title": "Save money",
-              "desc": "Replace the many one-off applications and systems you currently use to complete the sale with off-the-shelf or custom Sales Actions."
-            },
-            {
-              "title": "Complete sales faster",
-              "desc": "Make your salespeople super efficient by simplifying the collection and sharing of information. Handling customer interactions has never been easier!"
-            },
-            {
-              "title": "Less mundane work",
-              "desc": "No more chasing customers for emails, scans, and papers, or switching between multiple systems to manually enter information to complete the sale."
-            },
-            {
-              "title": "Reduce errors",
-              "desc": "Reduce unnecessary errors with e-Forms and e-Signatures that are smart, fully integrated with all of your existing systems."
-            },
-            {
-              "title": "Reduce friction",
-              "desc": "Eliminate the emails, scans, multiple portals and all the back and forth by completing the sale straight from customers’ mobile device"
-            },
-            {
-              "title": "Save time",
-              "desc": "Slash time by allowing customers to complete everything on their mobile device, from e-Signatures to uploading documents to e-Forms."
-            },
-            {
-              "title": "Delight customers",
-              "desc": "Create happy and returning customers by providing a frictionless and personalized sales experience."
-            }
+        {
+          "title": "More sales",
+          "desc": "Simplify the sales process so your sales team has more time to do what matters most — sell more."
+        },
+        {
+          "title": "Improve NPS",
+          "desc": "Provide a frictionless and convenient experience to your customers by completing the sale straight from their phones."
+        },
+        {
+          "title": "Save money",
+          "desc": "Replace the many one-off applications and systems you currently use to complete the sale with off-the-shelf or custom Sales Actions."
+        },
+        {
+          "title": "Complete sales faster",
+          "desc": "Make your salespeople super efficient by simplifying the collection and sharing of information. Handling customer interactions has never been easier!"
+        },
+        {
+          "title": "Less mundane work",
+          "desc": "No more chasing customers for emails, scans, and papers, or switching between multiple systems to manually enter information to complete the sale."
+        },
+        {
+          "title": "Reduce errors",
+          "desc": "Reduce unnecessary errors with e-Forms and e-Signatures that are smart, fully integrated with all of your existing systems."
+        },
+        {
+          "title": "Reduce friction",
+          "desc": "Eliminate the emails, scans, multiple portals and all the back and forth by completing the sale straight from customers’ mobile device"
+        },
+        {
+          "title": "Save time",
+          "desc": "Slash time by allowing customers to complete everything on their mobile device, from e-Signatures to uploading documents to e-Forms."
+        },
+        {
+          "title": "Delight customers",
+          "desc": "Create happy and returning customers by providing a frictionless and personalized sales experience."
+        }
       ]
-
-},
-"howItWorks":{
-  "title": "Simple To Use By Sales Team",
-  "desc": "3 easy steps to transform your sales completion process without changing it – no retraining necessary.",
-  "actions": [
-    {
-      "code": "HIW-ASA",
-      "title": "Share Completion Tasks",
-      "desc": "Salespeople simply share the relevant Completion Tasks with their customers to review, fill out, sign, and submit, right from their mobile devices.",
-      "kind": "orange",
-      "delay": 0
     },
-    {
-      "code": "HIW-IWC",
-      "title": "Monitor Completion Status",
-      "desc": "Salespeople have full visibility of the customers’ completion status - whether and when they have opened and completed the Tasks.",
-      "kind": "purple",
-      "delay": 0.5
+    "howItWorks": {
+      "title": "Simple To Use By Sales Team",
+      "desc": "3 easy steps to transform your sales completion process without changing it – no retraining necessary.",
+      "actions": [
+        {
+          "code": "HIW-ASA",
+          "title": "Share Completion Tasks",
+          "desc": "Salespeople simply share the relevant Completion Tasks with their customers to review, fill out, sign, and submit, right from their mobile devices.",
+          "kind": "orange",
+          "delay": 0
+        },
+        {
+          "code": "HIW-IWC",
+          "title": "Monitor Completion Status",
+          "desc": "Salespeople have full visibility of the customers’ completion status - whether and when they have opened and completed the Tasks.",
+          "kind": "purple",
+          "delay": 0.5
+        },
+        {
+          "code": "HIW-CTS",
+          "title": "Receive Data",
+          "desc": "All the data and files collected from the customers automatically import into your CRM and other SOR based on the workflows established.",
+          "kind": "normal",
+          "delay": 0.8
+        }
+      ]
     },
-    {
-      "code": "HIW-CTS",
-      "title": "Receive Data",
-      "desc": "All the data and files collected from the customers automatically import into your CRM and other SOR based on the workflows established.",
-      "kind": "normal",
-      "delay": 0.8
-    }
-  ]
-    },
-    "Customers":{
-      "title":" Simple to Use by Customers",
+    "Customers": {
+      "title": " Simple to Use by Customers",
       "desc": " Provide customers with instant, real-time, mobile-first completion experiences. Interactions with their salesperson are done in the fastest and most personalized way, Amazon style. By receiving personalized texts customers can simply click on the provided links to enter, sign, upload, verify, pay, choose, etc., whatever is needed to complete the sale."
     },
-    "painless":{
+    "painless": {
       "title": "Completing Sales Should Be Painless",
       "banner": {
         "cta": "Book Demo",
@@ -296,7 +295,7 @@
         }
       ]
     },
-    "swiperData":{
+    "swiperData": {
       "title": "Simple to Manage by Leadership",
       "desc": "We make it extremely easy for management to assemble the ideal Completion Panel for their sales team. On our web portal managers can easily select customizable off-the-shelf Completion Tools, integrate their existing ones, or mix and match.",
       "options": {
@@ -310,18 +309,130 @@
           "url": "/images/ActionBuilder/Step1.png",
           "title": "Select off-the-shelf Completion Tools",
           "desc": "Choose off-the-shelf Completion Tool templates from our ever-growing Template Library."
-        },{
+        },
+        {
           "option": "Customize your own",
           "url": "/images/ActionBuilder/Step2.png",
           "title": "Customize your own",
           "desc": "Modify texts, images, logos, documents, and page layout on the Completion Tools based on your needs."
-        },{
-          "option":  "Add to your Completion Panel",
+        },
+        {
+          "option": "Add to your Completion Panel",
           "url": "/images/ActionBuilder/Step3.png",
           "title": "Add to your Completion Panel",
-      "desc": "Turn on and off Completion Tools on the Completion Panel and list them in the sequence you prefer."
+          "desc": "Turn on and off Completion Tools on the Completion Panel and list them in the sequence you prefer."
         }
       ]
-  }
+    }
+  },
+  "pricing": {
+    "pricingHero": {
+      "title": "Find a Plan That Fits",
+      "desc": "Simple pricing structure with no upfront commitment or implementation costs. Flexibility built for organizations of any industry, use case, and size."
+    },
+    "questions": [
+      {
+        "question": "Who is SalesAssist for?",
+        "answer": "Businesses who need to optimize their sales process to reach growing revenue targets. Those who value being efficient and providing an exceptional experience to their customers."
+      },
+      {
+        "question": "Does SalesAssist integrate with my systems?",
+        "answer": "YES. We integrate with major CRMs and DMSs."
+      },
+      {
+        "question": "Can I see SalesAssist before buying? How much is it?",
+        "answer": "Yes! Simply click “Book Demo”. For pricing, see our Pricing Page or talk to us today."
+      },
+      {
+        "question": "What’s the difference between annual and monthly billing?",
+        "answer": "The difference is how often you pay your subscription fee. With monthly billing, you will be charged on the same day each month. With annual billing, you are charged once for the whole year."
+      },
+      {
+        "question": "Which payment methods do you accept?",
+        "answer": "There are different ways to pay for SalesAssist including major credit cards, debit cards and PayPal."
+      }
+    ],
+    "title": "Frequently Asked Questions",
+    "banner": {
+      "text": "Let’s Simplify How You Gather Info from Customers",
+      "button": "Book Demo"
+    },
+    
+    "pricingData": {
+      "plans": [
+        {
+          "name": "Essential",
+          "desc": "Perfect solution for small teams with simple sales process",
+          "code": "ESS",
+          "users": 0,
+          "limit": 0,
+          "perks": { "name": "Sales Widgets" },
+          "features": {
+            "name": "Features",
+            "perks": [
+              "Native Mobile Android and iOS apps",
+              "Web Portal",
+              "Sales Actions tracking",
+              "Digital Jacket",
+              "Template Gallery",
+              "Onboarding & Email Support"
+            ]
+          }
+        },
+        {
+          "name": "Advanced",
+          "desc": "Everything you need to simplify and streamline any sales process",
+          "code": "ADVC",
+          "users": 0,
+          "limit": 0,
+          "price_per_user": {
+            "year": 0,
+            "month": 0
+          },
+          "starting_at": {
+            "name": "",
+            "year": 799,
+            "month": 899
+          },
+          "perks": [{ "name": "Sales Widgets", "perk": 10 }],
+          "features": {
+            "name": "All features from Essential, plus:",
+            "perks": [
+              "CRM Embedded Extension",
+              "Two-way CRM Sync",
+              "Autofilled Forms and PDFs",
+              "e-Sign Sales Widget",
+              "OCR Machine Learning",
+              "1:1 Team Trainings & Customer Success Manager"
+            ]
+          }
+        },
+        {
+          "name": "Enterprise",
+          "desc": "Fully tailored solution for your sales needs and access to unrivaled support",
+          "code": "ENTPRS",
+          "users": 0,
+          "limit": 0,
+          "price_per_user": {
+            "year": 0,
+            "month": 0
+          },
+          "starting_at": {
+            "year": 0,
+            "month": 0
+          },
+          "custom": {
+            "contact_us": "Contact us",
+            "pricing": "Custom pricing",
+            "users": "Unlimited users"
+          },
+          "perks": [{ "name": "Sales Widgets", "perk": "Unlimited" }],
+          "features": {
+            "name": "All features from Advanced, plus:",
+            "perks": ["Dedicated Account Management", "Custom-made Widgets"]
+          }
+        }
+      ]
+    }
   }
 }

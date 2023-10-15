@@ -61,4 +61,40 @@ interface ShowCase {
   desc: string;
   option: string;
 }
-export type {WhySalesAssistHeroSection,BenefitsSection,HowItWorksSection,WhySalesAssistCompleteSalesPainlessSection,Options,ShowCase};
+
+interface Plan {
+  name: string ;
+  desc: string;
+  code: string;
+  price_per_user: PricePer;
+  starting_at: PricePer;
+  perks: Perk[];
+  features: Features;
+  custom?: Custom;
+  users: number
+  limit?: number
+}
+
+interface Features {
+  name: string;
+  perks: string[];
+}
+
+interface Perk {
+  name: string;
+  perk: number | string;
+}
+
+interface PricePer {
+  name?: string,
+  year: number;
+  month: number;
+}
+interface Custom {
+  contact_us: string;
+  pricing: string;
+  users: string;
+}
+
+
+export type {WhySalesAssistHeroSection,BenefitsSection,HowItWorksSection,WhySalesAssistCompleteSalesPainlessSection,Options,ShowCase,Plan};
