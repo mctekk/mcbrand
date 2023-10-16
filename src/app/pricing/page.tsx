@@ -11,7 +11,7 @@ export default function page() {
   const handleIsFull = () => setIsFull(!isFull);
   return (
     <div>
-      <PricingHero></PricingHero>
+      <PricingHero/>
       <PricingPlans isClicked={isFull} onClick={handleIsFull}></PricingPlans>
       {isFull && <PricingComparison />}
       <PricingQuestions id="Q&A"></PricingQuestions>
