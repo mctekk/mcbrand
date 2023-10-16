@@ -1,4 +1,5 @@
 "use client";
+import { GA } from "@/components/atoms/analitiycs";
 import { Footer } from "@/components/organism/sections/footer";
 import { PricingComparison } from "@/components/organism/sections/princing/comparison";
 import { PricingHero } from "@/components/organism/sections/princing/princing-hero";
@@ -12,6 +13,7 @@ export default function page() {
   return (
     <div>
       <PricingHero></PricingHero>
+      <GA/>
       <PricingPlans isClicked={isFull} onClick={handleIsFull}></PricingPlans>
       {isFull && <PricingComparison />}
       <PricingQuestions id="Q&A"></PricingQuestions>
