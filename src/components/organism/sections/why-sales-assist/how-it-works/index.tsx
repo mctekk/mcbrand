@@ -10,7 +10,7 @@ import { Section } from "@/components/atoms/section";
 import { HowItWorksSection } from "@/model/types";
 import { useProgressWithInView } from "@/model/interactions/use-progress-in-view";
 
-let timer: NodeJS.Timer | any;
+
 
 interface HowProps {
   data: HowItWorksSection;
@@ -31,26 +31,26 @@ export function HowItWorks({ data }: HowProps) {
 
         <div className="lg:flex flex-col lg:flex-row py-6 gap-12 xl:ml-60 hidden">
           <div className="flex flex-col gap-6 w-fit">
-            {data.actions.map((k, i) => {
+            {data.actions.map((data, index) => {
               return (
                 <motion.div
                   initial={{ x: -500, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{
                     duration: 1,
-                    delay: k.delay,
+                    delay: data.delay,
                   }}
                   viewport={{ once: true }}
-                  key={i}
+                  key={index}
                 >
                   <AnimatedCard
-                    isActive={currentCard.current === i}
-                    key={i}
+                    isActive={currentCard.current === index}
+                    key={index}
                     progress={progressLeft}
-                    title={k.title}
-                    sub={k.desc}
-                    code={k.code}
-                    onClick={clickOnCard(i)}
+                    title={data.title}
+                    sub={data.desc}
+                    code={data.code}
+                    onClick={clickOnCard(index)}
                   />
                 </motion.div>
               );
@@ -67,13 +67,13 @@ export function HowItWorks({ data }: HowProps) {
         </div>
 
         <div className="relative overflow-y-hidden overflow-x-auto flex px-4 lg:hidden">
-          {data.actions.map((k, i) => {
+          {data.actions.map((data, index) => {
             return (
               <Card
-                kind={k.kind}
-                key={i}
-                title={k.title}
-                sub={k.desc}
+                kind={data.kind}
+                key={index}
+                title={data.title}
+                sub={data.desc}
                 className="shadow"
               >
                 {
@@ -81,7 +81,7 @@ export function HowItWorks({ data }: HowProps) {
                     <InteractAnimation key="InteractAnimation" />,
                     <CustomerAnimation key="CustomerAnimation" />,
                     <SalesAnimation key="SalesAnimation" />,
-                  ][i]
+                  ][index]
                 }
               </Card>
             );
