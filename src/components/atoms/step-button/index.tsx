@@ -1,6 +1,6 @@
 
 import classNames from "classnames";
-import React from "react";
+import React, { useMemo } from "react";
 type StepButtonProps = {
   options: string[];
   currentStep: any;
@@ -14,16 +14,17 @@ function StepButton({
   clickOnCard,
   progressLeft,
 }: StepButtonProps) {
-  const getClasses = (step: number) => {
-    return classNames(
-      "w-fit h-fit flex py-2 px-4 rounded-full justify-center items-center duration-500 transition-all",
-      { "bg-orange-500": currentStep.current === step },
-      { "bg-zinc-700": currentStep.current !== step }
-    );
-  };
+  const getClasses = useMemo(() => {
+    return (step: number) =>
+      classNames(
+        "w-fit h-fit flex py-2 px-4 rounded-full justify-center items-center duration-500 transition-all",
+        { "bg-orange-500": currentStep.current == step },
+        { "bg-zinc-700": currentStep.current !== step }
+      );
+  }, [currentStep.current]);
 console.log(currentStep)
   return (
-    <div className="p-2 flex w-full justify-between items-center gap-4">
+    <div className="p-2 flex w-full justify-between items-center gap-4" >
       {options.map((step, index) => (
         <React.Fragment key={index}>
           <button className={getClasses(index)} onClick={clickOnCard(index)}>
