@@ -1,4 +1,4 @@
-import { fadeIn } from "..";
+import { fadeIn } from "@/model/types";
 import { motion } from 'framer-motion';
 
 export const SalesAnimation = () => {

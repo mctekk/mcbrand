@@ -1,4 +1,4 @@
-import { fadeIn,fadeDownLeft,fadeDownRight, fadeInLeft } from "..";
+import { fadeIn,fadeDownLeft,fadeInLeft,fadeDownRight } from "@/model/types";
 import { motion } from 'framer-motion';
 
 export const CustomerAnimation = () => {
