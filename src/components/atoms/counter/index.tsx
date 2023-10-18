@@ -1,4 +1,5 @@
 
+import { translate } from "@/locales";
 import { MdAdd, MdRemove } from "react-icons/md";
 
 interface CounterProps {
@@ -13,7 +14,7 @@ interface CounterProps {
 export function Counter  ({ enable = { remove: true, add: false }, add, remove }: CounterProps) {
     return (
         <div className="flex mt-3 gap-4 items-center h-[2rem]">
-        Unlimited users
+       {translate('pricing.pricingData.users')}
 
 
            

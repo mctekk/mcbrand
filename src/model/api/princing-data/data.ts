@@ -139,9 +139,9 @@ export const PlansInfo = {
     {
       name: `${translate('pricing.pricingData.features[21].name')}`,
       perks: [
-        "Onboarding & Email Support",
-        "1:1 Team Trainings & CSM",
-        "Dedicated Account Management",
+        `${translate('pricing.pricingData.features[21].perks[0]')}`,
+        `${translate('pricing.pricingData.features[21].perks[1]')}`,
+        `${translate('pricing.pricingData.features[21].perks[2]')}`,
       ],
     },
   ],

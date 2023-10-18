@@ -359,6 +359,11 @@
     },
 
     "pricingData": {
+      "planButtons": {
+        "monthly": "Billed Monthly ",
+        "annually": "Billed Annually"
+      },
+      "users":"Unlimited users",
       "pricingButton": "See Full Feature Comparison",
       "plans": [
         {
