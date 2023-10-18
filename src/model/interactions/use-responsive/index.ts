@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
-import { useWindowSize } from '../use-window-size/useWindowSize';
+import { useWindowSize } from '../use-window-size';
 
 export class UseResponsive {
     isMobile: boolean = false;
