@@ -29,7 +29,7 @@ export function RenderList({
         {option}
       </p>
     ));
-  } else if (paragraph.type === "list") {
+  }
     return (
       <React.Fragment>
         <p className="text-base">
@@ -46,4 +46,4 @@ export function RenderList({
       </React.Fragment>
     );
   }
-}
+

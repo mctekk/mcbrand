@@ -13,7 +13,6 @@ const social = [
 export default function FooterSocials({kind}: Props) {
     const socialClasses = classNames(
         "text-[1.875rem] text-white rounded",
-        { "": kind === "dark" },
         { "bg-zinc-800": kind === "light" }
       );
   return (
