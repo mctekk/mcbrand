@@ -218,4 +218,4 @@ export const fade = {
       }
   }
 }
-export type {WhySalesAssistHeroSection,BenefitsSection,HowItWorksSection,WhySalesAssistCompleteSalesPainlessSection,Options,ShowCase,Plan};
+export type { WhySalesAssistHeroSection, BenefitsSection, HowItWorksSection, WhySalesAssistCompleteSalesPainlessSection, Options, ShowCase, Plan, AboutUsHeroInter };
