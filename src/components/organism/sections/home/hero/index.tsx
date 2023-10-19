@@ -49,7 +49,7 @@ export default function Hero() {
               target="_blank"
               rel="noreferrer"
             >
-              <Button className="text-[1.063rem] font-semibold bg-orange-500 ml-5 md:ml-0 lg:ml-0">
+              <Button className="text-[1.063rem] font-semibold bg-orange-500 ml-5 md:ml-0 lg:ml-0 w-fit h-full">
                 {translate("home.button")}
               </Button>
             </a>
