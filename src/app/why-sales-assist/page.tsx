@@ -13,12 +13,14 @@ import { WhySalesAssistCompletingSalesIsPainless } from "@/components/organism/s
 import { Footer } from "@/components/organism/sections/footer";
 import { dataPainless } from "@/model/api/sales-painless/data";
 import { dataSlide } from "@/model/api/simplify-sales";
+import { GA } from "@/components/atoms/analitiycs";
 
 
 export default function page() {
   return (
     <main>
       <Header></Header>
+      <GA/>
       <WhySalesAssistHero data={dataHero}/>
       <Benefits data={dataBenefits}/>
       <HowItWorks data={howData}/>

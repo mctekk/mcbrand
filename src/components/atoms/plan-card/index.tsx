@@ -7,6 +7,7 @@ import { Counter } from "../counter";
 import usePricing from "@/model/interactions/use-pricing";
 import { Plan } from "@/model/types";
 
+
 interface PlanCardProps {
   plan: Plan;
   add?: () => {};

@@ -8,7 +8,7 @@ type Props = {
 
 export default function FooterLinks({kind}: Props) {
   return (
-    <div className="flex-grow lg:w-1/2 h-full flex justify-between gap-4 px-2 md:py-2 flex-wrap md:flex-nowrap">
+    <div className="lg:w-1/2 h-full flex justify-between  px-2 md:py-2 flex-wrap md:flex-nowrap">
     <FooterList
       kind={kind}
       className="hidden md:block"

@@ -1,15 +1,13 @@
-import { useRef, useState, useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { useRef, useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 export function useProgressWithInView() {
   const currentCard = useRef(0);
-  const currentStatus = useRef<'one' | 'two' | 'tree' | 'idle'>('idle');
+  const currentStatus = useRef<"one" | "two" | "tree" | "idle">("idle");
   const [progressLeft, setProgress] = useState(1);
   const [ref, inView] = useInView({ initialInView: true });
 
   function startProgress() {
-  
-
     let interval = 100;
 
     const timer = setInterval(() => {
@@ -45,17 +43,22 @@ export function useProgressWithInView() {
     }
   }, [currentCard, progressLeft]);
 
-  function clickOnIcon(card: number, startAt: number) {
-    return () => {
-      currentCard.current = card;
-      startProgress();
-    };
-  }
+  
   function clickOnCard(card: number) {
     return () => {
-        currentCard.current = card
-    }}
+      currentCard.current = card;
+    };
+  }
   const isActive = (at: number) => currentCard.current === at;
 
-  return { ref,inView, isActive, clickOnIcon, currentStatus, progressLeft,currentCard,startProgress,clickOnCard };
+  return {
+    ref,
+    inView,
+    isActive,
+    currentStatus,
+    progressLeft,
+    currentCard,
+    startProgress,
+    clickOnCard,
+  };
 }

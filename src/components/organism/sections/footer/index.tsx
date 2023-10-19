@@ -25,10 +25,10 @@ export function Footer({ className, kind = "light" }: FooterProps) {
 
   return (
     <footer className={baseClasses}>
-      <div className="h-full container mx-auto flex-grow flex gap-6 flex-col">
+      <div className="h-full container xl:w-3/5 lg:w-full  mx-auto flex-grow flex gap-6 flex-col justify-center items-center ">
         {/* footer left panel */}
-        <div className="h-1/2 w-full flex justify-between md:gap-4 md:items-center">
-          <div className="w-full md:w-fit lg:w-1/2 h-full px-2 md:py-2 relative mb-auto">
+        <div className="h-1/2 w-full flex justify-between md:gap-4 md:items-center ">
+          <div className="w-full md:w-fit lg:w-1/3 h-full px-2 md:py-2 relative mb-auto">
             <div className="max-w-[164px]">
               <FooterLogo kind={kind}/>
             </div>

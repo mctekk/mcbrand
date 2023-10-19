@@ -95,7 +95,40 @@ interface Custom {
   pricing: string;
   users: string;
 }
+interface Point {
+  code: string;
+  title: string;
+  desc: string;
+}
+interface AboutUsHeroInter {
+  title: string;
+  desc: string;
+  our_values: OurValues;
+}
 
+interface OurValues {
+  name: string;
+  values: Point[];
+}
+interface AboutUsOurTeam {
+  title: string;
+  desc: string;
+  team: Team;
+  founded: Founded;
+  countries: Countries;
+}
+interface Countries {
+  title: string;
+  countries: number;
+}
+interface Founded {
+  title: string;
+  year: number;
+}
+interface Team {
+  title: string;
+  members: number;
+}
 
 export const fadeInRight= {
   hidden: {
@@ -185,4 +218,4 @@ export const fade = {
       }
   }
 }
-export type {WhySalesAssistHeroSection,BenefitsSection,HowItWorksSection,WhySalesAssistCompleteSalesPainlessSection,Options,ShowCase,Plan};
+export type { WhySalesAssistHeroSection, BenefitsSection, HowItWorksSection, WhySalesAssistCompleteSalesPainlessSection, Options, ShowCase, Plan, AboutUsHeroInter, AboutUsOurTeam, };

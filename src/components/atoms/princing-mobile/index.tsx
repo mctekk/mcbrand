@@ -19,13 +19,13 @@ export default function PricingMobile() {
         </div>
       <div className="py-2 w-full">
         <div className="w-full flex items-end h-full">
-          {PricingData.plans.map((plan, i) => {
+          {PricingData.plans.map((plan, index) => {
             return (
-              <div key={plan.name} className="w-full flex flex-col items-end">
+              <div key={index} className="w-full flex flex-col items-end">
                 <button
-                  onClick={handleIsActive(i)}
+                  onClick={handleIsActive(index)}
                   className={`px-1 py-4 text-left duration-300 h-full w-full border-b-2 ${
-                    current === i ? "border-orange-500" : ""
+                    current === index ? "border-orange-500" : ""
                   }`}
                 >
                   <h4 className="text-gray-900">{plan.name}</h4>
