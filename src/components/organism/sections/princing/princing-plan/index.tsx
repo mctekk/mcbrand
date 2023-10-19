@@ -9,6 +9,7 @@ import usePricing from "@/model/interactions/use-pricing";
 
 import PricingMobile from "@/components/atoms/princing-mobile";
 import ButtonPlans from "@/components/atoms/plan-buttons";
+import { translate } from "@/locales";
 
 interface PricingHeroProps {
   isClicked: boolean,
@@ -34,7 +35,7 @@ export function PricingPlans({ isClicked, onClick }:PricingHeroProps) {
        
 
         {!isClicked && <motion.button initial={{ translateY: 100, opacity: 0 }} transition={{ duration: .5, ease: 'linear', delay: 1 }} viewport={{ once: true }} animate={{ translateY: 0, opacity: 1 }} onClick={onClick} className="p-4 py-6 md:w-3/4 bg-white rounded-lg flex items-center justify-center gap-1 border md:border-none mt-6">
-          See Full Feature Comparison <MdArrowDropDown />
+         {translate("pricing.pricingData.pricingButton")} <MdArrowDropDown />
         </motion.button>}
       </Section>
     </div>

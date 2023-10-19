@@ -359,6 +359,12 @@
     },
 
     "pricingData": {
+      "planButtons": {
+        "monthly": "Billed Monthly ",
+        "annually": "Billed Annually"
+      },
+      "users":"Unlimited users",
+      "pricingButton": "See Full Feature Comparison",
       "plans": [
         {
           "name": "Essential",
@@ -431,6 +437,44 @@
             "name": "All features from Advanced, plus:",
             "perks": ["Dedicated Account Management", "Custom-made Widgets"]
           }
+        }
+      ],
+      "plans_names": [
+        { "name": "Essential" },
+        { "name": "Advanced" },
+        { "name": "Enterprise" }
+      ],
+      "features": [
+        { "name": "Action Dashboard" },
+        { "name": "Template Gallery" },
+        { "name": "Action Builder" },
+        { "name": "Workflow Automation" },
+        { "name": "Updates & Alerts" },
+        { "name": "Action Open Tracking" },
+        { "name": "Action Submit Tracking" },
+        { "name": "Activity Timeline" },
+        { "name": "Sales Actions" },
+        { "name": "eSignatures" },
+        { "name": "OCR Machine Learning" },
+        { "name": "Autofilled Forms and PDFs" },
+        { "name": "Custom Widgets" },
+        { "name": "Two-way CRM Sync" },
+        { "name": "Multiple Branches" },
+        {
+          "name": "Native Mobile Android and iOS apps"
+        },
+        { "name": "CRM Chrome Extension"},
+        { "name": "API Access" },
+        { "name": "Webhooks" },
+        { "name": "Live Chat Support" },
+        { "name": "Phone Support" },
+        {
+          "name": "Onboarding Support",
+          "perks": [
+            "Onboarding & Email Support",
+            "1:1 Team Trainings & CSM",
+            "Dedicated Account Management"
+          ]
         }
       ]
     }

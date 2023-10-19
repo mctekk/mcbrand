@@ -1,60 +1,66 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 let local: NodeJS.Timer | any;
 let timer: NodeJS.Timer | any;
 export function useProgress() {
-    const [progressLeft, setProgress] = useState(1);
-    const [count, setCount] = useState(1);
+  const [progressLeft, setProgress] = useState(1);
+  const [count, setCount] = useState(1);
 
+  function startProgress() {
+    clearInterval(timer);
 
-    function startProgress() {
-        clearInterval(timer);
+    let interval = 100;
 
-        let interval = 100;
+    timer = setInterval(() => {
+      interval--;
 
-        timer = setInterval(() => {
+      if (interval >= 0) {
+        setProgress(interval);
+        return;
+      }
 
-            interval--
+      clearInterval(timer);
+      interval = 100;
+    }, 100);
+  }
 
-            if (interval >= 0) {
-                setProgress(interval)
-                return
-            }
+  function startCount({
+    count,
+    startAt = 0,
+  }: {
+    count: number;
+    startAt: number;
+  }) {
+    let local: NodeJS.Timer;
 
-            clearInterval(timer)
-            interval = 100;
+    let interval = startAt;
 
-        }, 100)
-    }
+    local = setInterval(() => {
+      interval++;
 
-    function startCount({ count, startAt = 0 }: { count: number, startAt: number }) {
-        let local: NodeJS.Timer;
+      if (interval <= count) {
+        setCount(interval);
+        return;
+      }
 
-        let interval = startAt;
+      local = timer;
+      interval = 0;
+    }, 40);
+  }
 
-        local = setInterval(() => {
+  function stopCount() {
+    clearInterval(local);
+  }
+  function stopProgress() {
+    clearInterval(timer);
+  }
 
-            interval++
-
-            if (interval <= count) {
-                setCount(interval)
-                return
-            }
-
-            local = timer
-            interval = 0;
-
-        }, 40)
-    }
-
-    function stopCount() {
-        clearInterval(local)
-    }
-    function stopProgress() {
-        clearInterval(timer)
-    }
-
-
-    return { progressLeft, startProgress, count, startCount, stopCount, stopProgress }
-
+  return {
+    progressLeft,
+    startProgress,
+    count,
+    startCount,
+    stopCount,
+    stopProgress,
+  };
 }

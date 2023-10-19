@@ -1,3 +1,4 @@
+import { translate } from '@/locales';
 import classNames from 'classnames';
 import React from 'react'
 
@@ -14,9 +15,9 @@ export default function ButtonPlans({handleIsAnnually,currentActive}: Props) {
     <div className="flex items-center justify-center gap-6 py-6 md:py-0 h-[4rem]">
      <button onClick={handleIsAnnually('year')} className={buttonClass(currentActive === 'year')}>
        <span className="absolute -left-6 -top-4 bg-[#F2994A] px-3 rounded-lg text-white text-[0.805rem] font-normal">20% off</span>
-       Billed Annually
+      {translate('pricing.pricingData.planButtons.annually')}
      </button>
-     <button onClick={handleIsAnnually('month')} className={buttonClass(currentActive === 'month')}>Billed Monthly</button>
+     <button onClick={handleIsAnnually('month')} className={buttonClass(currentActive === 'month')}> {translate('pricing.pricingData.planButtons.monthly')}</button>
    </div>
   )
 }

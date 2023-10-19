@@ -19,14 +19,14 @@ export function WhySalesAssistCompletingSalesIsPainless({ data}: Props) {
         </div>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-12  md:mb-12'>
           {
-            data.bullet_points.map((k) => {
-              return <div key={k.code} className='flex flex-col gap-4 bg-zinc-700 rounded-xl px-5 pt-4 pb-6 w-full'>
+            data.bullet_points.map((data) => {
+              return <div key={data.code} className='flex flex-col gap-4 bg-zinc-700 rounded-xl px-5 pt-4 pb-6 w-full'>
                 <div className='leading-[0] w-12 h-12 ' >
-                  {buildIcon({ data: simplifySales, code: k.code, fallback: <BsBarChartFill />, })}
+                  {buildIcon({ data: simplifySales, code: data.code, fallback: <BsBarChartFill />, })}
                 </div>
                 <div>
-                  <h3 className='mb-1'>{k.title}</h3>
-                  <p className='text-[1.25rem]'>{k.desc}</p>
+                  <h3 className='mb-1'>{data.title}</h3>
+                  <p className='text-[1.25rem]'>{data.desc}</p>
                 </div>
               </div>
             })

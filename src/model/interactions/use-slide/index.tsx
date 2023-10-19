@@ -1,8 +1,8 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 
-import { useProgress } from '@/model/interactions/use-progress';
-import { useInView } from 'react-intersection-observer';
-import { Swiper as TSwiper } from 'swiper';
+import { useProgress } from "@/model/interactions/use-progress";
+import { useInView } from "react-intersection-observer";
+import { Swiper as TSwiper } from "swiper";
 
 export function useSlide() {
   const [ref, inView] = useInView({ initialInView: true });
@@ -39,5 +39,5 @@ export function useSlide() {
     };
   }
 
-  return { ref, currentStep, clickOnCard,progressLeft,currentSwiper };
+  return { ref, currentStep, clickOnCard, progressLeft, currentSwiper };
 }

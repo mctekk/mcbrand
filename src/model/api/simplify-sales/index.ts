@@ -3,11 +3,11 @@ import { translate } from "@/locales";
 export const dataSlide = {
     "title": `${translate("whySalesAssist.swiperData.title")}`,
     "desc":  `${translate("whySalesAssist.swiperData.desc")}`,
-    "options": {
-      "select":  `${translate("whySalesAssist.swiperData.options.select")}`,
-      "customize":  `${translate("whySalesAssist.swiperData.options.customize")}`,
-      "add":  `${translate("whySalesAssist.swiperData.options.add")}`
-    },
+    "options": [
+      `${translate("whySalesAssist.swiperData.options.select")}`,
+        `${translate("whySalesAssist.swiperData.options.customize")}`,
+        `${translate("whySalesAssist.swiperData.options.add")}`,
+    ],
     "show_case": [
       {
         "option":  `${translate("whySalesAssist.swiperData.show_case[0].option")}`,
