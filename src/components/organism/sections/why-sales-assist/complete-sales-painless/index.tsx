@@ -13,7 +13,7 @@ interface Props{
 export function WhySalesAssistCompletingSalesIsPainless({ data}: Props) {
   return (
     <section className='section flex flex-col relative bg-zinc-800 text-white'>
-      <Section className='container gap-6 md:gap-12 py-6 mx-auto flex-col h-full flex w-4/6'>
+      <Section className='container gap-6 md:gap-12 py-6 mx-auto flex-col h-full flex xl:w-3/5 md:w-full'>
         <div className='w-full'>
           <h1>{data.title}</h1>
         </div>

@@ -16,7 +16,7 @@ interface PricingHeroProps {
 }
 
 export function PricingPlans({ isClicked, onClick }:PricingHeroProps) {
-    const {handleIsAnnually,currentActive, getDelay,price} = usePricing();
+    const {handleIsAnnually,currentActive, getDelay,} = usePricing();
 
  
   return (
@@ -27,7 +27,7 @@ export function PricingPlans({ isClicked, onClick }:PricingHeroProps) {
        </div>
         <div className='hidden relative overflow-x-auto overflow-y-hidden lg:w-[50rem] xl:w-3/4 md:flex gap-5 md:items-start md:justify-center h-[46rem] lg:flex  '>
           {PricingData.plans.map((plan, i) => <motion.div className="w-1/2 h-full" initial={{ translateY: 100, opacity: 0 }} transition={{ duration: .5, ease: 'linear', delay: getDelay(i) }} viewport={{ once: true }} animate={{ translateY: 0, opacity: 1 }} key={plan.name}>
-            <PlanCard plan={plan} annually={currentActive === 'year'} price={price} />
+            <PlanCard plan={plan} annually={currentActive === 'year'} price={plan.starting_at[currentActive]} />
           </motion.div>)}
         </div>
         <div className="md:hidden flex justify-center" ><PricingMobile></PricingMobile></div>

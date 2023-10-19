@@ -5,7 +5,7 @@ export const PricingData = {
     {
       name: `${translate("pricing.pricingData.plans[0].name")}`,
       desc: `${translate("pricing.pricingData.plans[0].desc")}`,
-      code: `${translate("pricing.pricingData.plans[0].code")}`,
+      code:  "ESS",
       users: 0,
       limit: 0,
       price_per_user: {
@@ -38,7 +38,7 @@ export const PricingData = {
     {
       name: `${translate("pricing.pricingData.plans[1].name")}`,
       desc: `${translate("pricing.pricingData.plans[1].desc")}`,
-      code: `${translate("pricing.pricingData.plans[1].code")}`,
+      code: "ADVC",
       users: 0,
       limit: 0,
       price_per_user: {
@@ -52,7 +52,7 @@ export const PricingData = {
       },
       perks: [
         {
-          name: `${translate("pricing.pricingData.plans[0].perks.name")}`,
+          name: `${translate("pricing.pricingData.plans[1].perks[0].name")}`,
           perk: 10,
         },
       ],
@@ -69,9 +69,9 @@ export const PricingData = {
       },
     },
     {
-      name: `${translate("pricing.pricingData.plans[1].name")}`,
-      desc: `${translate("pricing.pricingData.plans[1].desc")}`,
-      code: `${translate("pricing.pricingData.plans[1].code")}`,
+      name: `${translate("pricing.pricingData.plans[2].name")}`,
+      desc: `${translate("pricing.pricingData.plans[2].desc")}`,
+      code: "ENTPRS",
       users: 0,
       limit: 0,
       price_per_user: {
@@ -89,7 +89,7 @@ export const PricingData = {
       },
       perks: [
         {
-          name: `${translate("pricing.pricingData.plans[0].perks.name")}`,
+          name: `${translate("pricing.pricingData.plans[2].perks[0].name")}`,
           perk: "Unlimited",
         },
       ],

@@ -1,198 +1,186 @@
-export const tos={
-    "title": "SalesAssist Subscription Terms of Service",
-    "effectiveDate": "Effective day 01 August 2021",
-    "introduction": [
-      "This SalesAssist Terms of Service (the “Agreement”) is between you and SalesAssist, Inc. (“SalesAssist”). If you are agreeing to this Agreement both as an individual and/or on behalf of a specified business that sells products or services (“Business”), then “Customer” or “you” means your Business, and you are binding your Business to this Agreement.",
-      "By selecting the checkbox stating that you agree (or similar) that is presented to you at the time of requesting an account and when signing in, or by using or accessing SalesAssist products, you are agreeing to be bound by all terms, conditions, and notices contained or referenced in this agreement. If you do not agree to this agreement, please do not use any services. FOR CLARITY, EACH PARTY EXPRESSLY AGREES THAT THIS AGREEMENT IS LEGALLY BINDING UPON IT. THIS AGREEMENT CONTAINS MANDATORY ARBITRATION PROVISIONS THAT REQUIRE THE USE OF ARBITRATION TO RESOLVE DISPUTES, RATHER THAN JURY TRIALS. PLEASE READ IT CAREFULLY."
-    ],
-    "data": [
-      {
-        "title": "Scope of the Agreement",
-        "text": [
-          "This Agreement permits Customer to purchase subscriptions to online software-as-a-service products and other services from SalesAssist pursuant to executing any manual or digital SalesAssist ordering documents, online registration, order descriptions, or order confirmations referencing this Agreement (“Order Form(s)”) and sets forth the basic terms and conditions under which those products and services will be delivered. For purposes of this Agreement, an “Order Form” means a SalesAssist-approved ordering document that specifies Customer’s purchase of a subscription to a SalesAssist Solution, paid directly by the Customer or by a sponsoring party. Subject to Customer’s compliance with the terms of this Agreement, including payment by the Customer or the sponsoring party of the applicable Setup Fee and Monthly Subscription Fees (each as defined herein), SalesAssist will provide and make available to the Business and its Authorized Users the SalesAssist Solution(s) to which Customer is subscribed, as set forth on the applicable Order Form(s). Each subscription to a SalesAssist Solution is provided on an individual or “per-branch” basis, meaning that such subscription is specific to, and may only be used for and by, the individual that placed the order or a single Business location identified on the applicable Order Form (the “Business Location”). Any use of or access to the SalesAssist Solution(s) by or for any business location other than the Business Location shall be in violation of this Agreement (irrespective of whether such business location may be owned or otherwise affiliated with Business)."
-        ],
-        "key": "scope"
-      },
-      {
-        "title": "SalesAssist Solutions",
-        "text": [
-          {
-            "type": "paragraph",
-            "list": [
-              "Solutions Overview. The SalesAssist or SalesAssist solutions (collectively, the “SalesAssist Solutions”), which are provided by SalesAssist, Inc., a Delaware corporation (“SalesAssist”), are a suite of software-as-a-service solutions for Businesses offered through a single platform. The solutions are designed to enable Businesses (as defined herein) to streamline the sales completion process between their salespeople and customers by providing sales completion tools that interface directly with the customer (“Sales Actions”). The SalesAssist Solutions include SalesAssist Essential, for basic sales processes; SalesAssist Advanced, for complex sales processes; SalesAssist Enterprise, which customizes a plan to the needs of the business.",
-              "The SalesAssist Solutions are intended to assist businesses in the completion of their sales by integrating our platform into their existing CRM and their other Systems of Record (“SOR”), so they can complete sales with all our completion tools (eSignatures, eForms, payments, KYC, etc) right from their CRM. The SalesAssist Solutions are not an advisory service and do not recommend or endorse any particular transaction, sales strategy or other approach to managing the sales process or Business’s process generally.",
-              "The SalesAssist Solutions are intended only to facilitate the process by which Businesses complete sales. The SalesAssist Solutions do NOT offer any advice regarding the value, costs, profit targets, quality or suitability of any particular transaction, process or sales strategy. Customer is solely and exclusively responsible for ensuring the accuracy and integrity of any data or information that may be input or otherwise loaded into any SalesAssist Solution. Customer also assumes sole and complete responsibility for any documents, forms, payments and other content and materials that may be generated by or through any SalesAssist Solution (“Generated Content”), and Customer shall ensure the accuracy and completeness of all Generated Content (including any information entered by Customer or their clients in any form, document, contract or any Generated Content) prior to submitting or otherwise making aggregating such Generated Content to any SOR or any third party. SalesAssist and Customer agree to comply with all applicable legal obligations related to privacy, security, integrity, and confidentiality of data and will implement and maintain appropriate administrative, technical, and physical safeguards reasonably designed to protect against security threats and unauthorized access or use of the SalesAssist Solutions (including Integrated Information). Notwithstanding anything to the contrary herein, Customer alone is responsible for ensuring that Business and its Authorized Users and all Business Representatives (as defined herein) (a) comply with all federal, state (or, if applicable, provincial) and local laws, regulations, rules, ordinances and other decrees of any governmental authority, including any laws and regulations relating to privacy, security, integrity and confidentiality of Business’s customers’ information (“Laws”); (b) do not infringe or violate the Intellectual Property Rights (as defined herein) or any other rights of any third party; and (c) comply with all terms and conditions, terms of use and other agreements to which Customer or any Authorized User or Business Representative is or may be subject, in each case in connection with their use of the SalesAssist Solution(s) (including Integrated Information) and any Generated Content. SalesAssist shall NOT have any responsibility or obligation under this Agreement or otherwise for any of the obligations described in clauses (a), (b) and (c) above."
-            ]
-          },
-          "Provision of Solutions. Each Solution is provided on a subscription basis for a set term designated on the Order Form (each, a “Subscription Term”). SalesAssist may also offer Professional Services (as defined in Section 11) related to certain Services.",
-          "Access to Solutions. Customer and its Authorized Users may access and use the Solutions solely for its own benefit and in accordance with the terms and conditions of this Agreement. Customer and its Authorized Users may access the SalesAssist Solution(s) to which Customer is subscribed through the SalesAssist website located at www.SalesAssist.io, or such successor or replacement website or URL as SalesAssist may designate for such purpose (the “SalesAssist Site”). SalesAssist will issue to Customer a username and password to access the applicable SalesAssist Solution(s) as the admin user of such SalesAssist Solution(s) (the “Business Admin User”). The Business Admin User shall have the ability to issue usernames, passwords and other login credentials for the applicable SalesAssist Solution(s) to designated Authorized Users in accordance with this Agreement and such other limitations as SalesAssist may establish from time to time. SalesAssist may also issue additional usernames, passwords and other login credentials to designated Authorized Users from time to time. Any username, password or other login credential issued by Customer (or any Business Admin User) or SalesAssist to any Authorized User for use in accessing any SalesAssist Solution (including Integrated Information) or the SalesAssist Site is confidential and may not be shared with any third party. Any unauthorized use or disclosure of any Customer or Authorized User account information shall be immediately reported to SalesAssist in writing. If any Authorized User who has access to a username is no longer an employee (or Contractor, as set forth below) of Customer, then Customer will immediately delete such username and otherwise terminate such Authorized User's access to the SalesAssist Solution.",
-          "License to Solutions. To the extent SalesAssist provides SalesAssist Apps for use with the Solutions, subject to all of the terms and conditions of this Agreement, SalesAssist grants to Customer and its Authorized Users a limited, non-exclusive and non-transferable right and license to use and access the SalesAssist Solution(s) to which Business is subscribed and any Generated Content (as defined in Section 2.1), in each case solely for the purpose of gathering and sharing information while completing the Business’s sales for the Business Location. The license granted in this Section 2.4 includes access to basic email and chat technical support from SalesAssist with respect to the SalesAssist Solution(s). The license does not include any customization, programming or software or application development of any kind. Any such additional services must be agreed to by the parties in a separate written agreement. For purposes of this Agreement, an “Authorized User” means any officer or employee of Business that has been issued a username and password to access the SalesAssist Solution(s) for and on behalf of Customer, including any Business Admin User (as defined herein). Customer acknowledges that certain third parties have granted SalesAssist certain rights in connection with operation of, or integration of or with, an SalesAssist Solution (a “Third Party Licensor”). Customer further acknowledges that the SalesAssist Solution(s) may incorporate program code, data, files or other information as a direct result of SalesAssist’s (or its Affiliate’s) integration with a source of sales completion-related data, including Business’s management system, via an interface governed by an agreement between SalesAssist and a Third Party Licensor (“Integrated Information”). Business shall be responsible and liable for all actions that may be taken by its Authorized Users in connection with their use of any SalesAssist Solution (including Integrated Information), the SalesAssist Site or any Generated Content, including any unauthorized use of any SalesAssist Solution or Generated Content, or any other violation of this Agreement.",
-          "Contractors and Affiliates. Customer may permit its Contractors and its Affiliates' employees and Contractors to serve as Authorized Users, provided Customer remains responsible for compliance by such individuals with all of the terms and conditions of this Agreement, and any use of the Services by such individuals is for the sole benefit of Customer.",
-          "General Restrictions. Neither Customer nor any Authorized User shall (and will not permit any third party to): (a) sell, rent, lease, transfer, lend, pledge, distribute, provide access to or sublicense the SalesAssist Solutions to a third party; (b) use or access any SalesAssist Solution (including any Integrated Information) or the SalesAssist Site or use or publish any Generated Content in a manner or for any purpose not expressly authorized under Section 2.3 or 2.4; (c) use the SalesAssist Solutions to provide, or incorporate the SalesAssist Solutions into, any product or service provided to a third party; (d) reverse engineer, decompile, disassemble, or otherwise seek to obtain the source code or non-public APIs to the SalesAssist Solutions; (e) copy, duplicate, reproduce or modify the SalesAssist Solutions or any Documentation, or create any derivative work from any of the foregoing; (f) remove or obscure any proprietary or other notices contained in the SalesAssist Solutions (including without limitation (i) notices on any reports or data printed from the SalesAssist Solutions); (g) publicly disseminate information regarding the performance of the SalesAssist Solutions; (h) scrape or data-mine any SalesAssist Solution, the SalesAssist Site or the website of any Affiliate of SalesAssist (including through the use of any robot, spider or other automated device); (i) frame or utilize framing techniques to enclose any portion of any SalesAssist Solution or the SalesAssist Site; (j) publish, transfer or export any Generated Content or other data (including any Integrated Information) from any SalesAssist Solution or the SalesAssist Site, other than by using the content export function provided as part of the applicable SalesAssist Solution; (k) use or permit the use of any SalesAssist Solutions (including any Integrated Information) for or in connection with any service bureau or outsourcing context; (l) violate any Law or any Intellectual Property Rights or other rights of any third party in connection with any use of or access to any SalesAssist Solution (including any Integrated Information) or the SalesAssist Site, or any use, display or publication of any Generated Content; (m) challenge, cooperate with any third party in challenging, or assist any third party in challenging any right or interest that SalesAssist, its Affiliates, or its Third Party Licensors may have in any SalesAssist Solution or in the SalesAssist Site, or in any underlying technology, processes or intellectual property (including any Integrated Information) comprising any SalesAssist Solution or the SalesAssist Site, or in any SalesAssist Mark; or (n) take any action, the intent or likely effect of which would be to cause harm to the business or reputation of SalesAssist or its Affiliates.",
-          "SalesAssist APIs. If SalesAssist makes access to any APIs available as part of the SalesAssist Solutions, SalesAssist reserves the right to place limits on access to such APIs (e.g., limits on numbers of calls or requests). Further, SalesAssist may monitor Customer's usage of such APIs and limit the number of calls or requests Customer may make if SalesAssist believes that Customer's usage is in breach of this Agreement or may negatively affect the Services (or otherwise impose liability on SalesAssist).",
-          "Trial Subscriptions. If Customer receives free access or a trial or evaluation subscription to the Service (a “Trial Subscription”), then Customer may use the Services in accordance with the terms and conditions of this Agreement for a period of thirty (30) days or such other period granted by SalesAssist (the “Trial Period”). Trial Subscriptions are permitted solely for Customer's use to determine whether to purchase a paid subscription to the SalesAssist Solutions. Trial Subscriptions may not include all functionality and features accessible as part of a paid Subscription Term. If Customer does not enter into a paid Subscription Term, this Agreement and Customer's right to access and use the SalesAssist Solutions will terminate at the end of the Trial Period. SalesAssist has the right to terminate a Trial Subscription at any time for any reason. NOTWITHSTANDING ANYTHING TO THE CONTRARY IN THIS AGREEMENT, SalesAssist WILL HAVE NO WARRANTY, INDEMNITY, SUPPORT, OR OTHER OBLIGATIONS WITH RESPECT TO TRIAL SUBSCRIPTIONS."
-        ],
-        "key": "solutions"
-      },
-      {
-        "title": "Customer Data",
-        "text": [
-          "Rights in Customer Data. As between the parties, Customer will retain all right, title and interest (including any and all intellectual property rights) in and to the Customer Data as provided to SalesAssist. Subject to the terms of this Agreement, Customer hereby grants to SalesAssist a non-exclusive, worldwide, royalty-free right to use, copy, store, transmit, modify, create derivative works of and display the Customer Data solely to the extent necessary to provide the Solutions to Customer.",
-          "Storage of Customer Data. SalesAssist does not provide an archiving service. SalesAssist agrees only that it will not intentionally delete any Customer Data from any SalesAssist Solution prior to termination of Customer's applicable Subscription Term. SalesAssist expressly disclaims all other obligations with respect to storage.",
-          "Aggregated Anonymous Data. Certain data and information may be generated and collected by SalesAssist in connection with Business’s use of the SalesAssist Solution(s), which may include interactions and completion rates of shared Sales Actions with Business’s clients, information relating to sales or other transactions, usage statistics or analytics and other data and information gathered, generated or received by SalesAssist in connection with Customer’s use of the SalesAssist Solution(s) (“Aggregated Anonymous Data”). Notwithstanding the foregoing, the Aggregated Anonymous Data will not include any personally identifying information of any customer of Business. Customer acknowledges and agrees that SalesAssist and its Affiliates shall have the right to make use of such Aggregated Anonymous Data for its internal business purposes, provided that SalesAssist shall not disclose to any third party (other than its Affiliates and its and their respective employees and representatives) any Aggregated Anonymous Data, except as provided for in this Agreement or in any Order Form, unless such Aggregated Anonymous Data has been aggregated with the Aggregated Anonymous Data of other Business subscribers so as not to identify Business as the source or subject of such Aggregated Anonymous Data. For clarity, this Section 3.3 does not give SalesAssist the right to identify Business as the source of any Aggregated Anonymous Data.",
-          {
-            "type": "paragraph",
-            "list": [
-              "Business Inventory Data.",
-              "(a) Customer agrees that SalesAssist and its Affiliates may receive product inventory and related data from Integrated Information sources, including, but not limited to, Business’s inventory management system or similar platform used in connection with Business sales operation, which may include product specifications, Stock Keeping Unit (SKU) data, serial numbers data, product pricing information, photographs, videos, product accolades and awards from consumer resources, and other data and information relating to Business’s product inventory (collectively, “Business Inventory Data”). SalesAssist and its Affiliates may use the Business Inventory Data for or in connection with (a) serial number decoding (as required for the applicable SalesAssist Solutions); (b) the aggregation of data and information (including Business Inventory Data) for the purpose of assembling and developing Generated Content; and (c) pushing Generated Content to Business’s integrated SORs or third party partners. Business shall promptly notify SalesAssist in writing in the event that Business identified any errors or omissions with respect to any Business Inventory Data.",
-              "(b) Each party may disclose individual retail customer information, when required, pursuant to any federal or state law or regulation or rules or regulations of any governmental agency."
-            ]
-          }
-        ],
-        "key": "customer-data"
-      },
-      {
-        "title": "Security",
-        "text": [
-          "SalesAssist agrees to use commercially reasonable technical and organizational measures designed to prevent unauthorized access, use, alteration or disclosure of any Service or Customer Data. However, SalesAssist will have no responsibility for errors in transmission, unauthorized third-party access or other causes beyond SalesAssist’s control."
-        ],
-        "key": "security"
-      },
-      {
-        "title": "Third-Party Platforms",
-        "text": [
-          "The SalesAssist Solutions may support integrations with certain Third-Party Platforms. In order for the SalesAssist Solutions to communicate with such Third-Party Platforms, Customer may be required to input credentials in order for the Services to access and receive relevant information from such Third-Party Platforms. By enabling use of the Services with any Third-Party Platform, Customer authorizes SalesAssist to access Customer's accounts with such Third-Party Platform for the purposes described in this Agreement. Customer is solely responsible for complying with any relevant terms and conditions of the Third-Party Platforms and maintaining appropriate accounts in good standing with the providers of the Third-Party Platforms. Customer acknowledges and agrees that SalesAssist has no responsibility or liability for any Third-Party Platform or any Generated Content exported to a Third-Party Platform. SalesAssist does not guarantee that the SalesAssist Solutions will maintain integrations with any Third-Party Platform and SalesAssist may disable integrations of the SalesAssist Solutions with any Third-Party Platform at any time with or without notice to Customer. For clarity, this Agreement governs Customer's use of and access to the SalesAssist Solutions, even if accessed through an integration with a Third-Party Platform."
-        ],
-        "key": "third-party"
-      },
-      {
-        "title": "Ownership",
-        "text": [
-          {
-            "type": "paragraph",
-            "list": [
-              "SalesAssist Technology. This is a subscription agreement for access to and use of the SalesAssist Solutions. Customer acknowledges that it is obtaining only a limited right to the SalesAssist Solutions and that irrespective of any use of the words “purchase”, “sale” or like terms in this Agreement, except for the rights expressly granted to Customer and its Authorized Users under Section 2.4, neither Customer nor any Authorized User shall have any right, title or interest in or to any SalesAssist Solution or any underlying technology or intellectual property comprising any SalesAssist Solution (including Integrated Information), and nothing in this Agreement or in any Order Form shall effect a transfer of any patent, trademark, copyright or other intellectual property or proprietary right (collectively, “Intellectual Property Rights”), or any ownership right, from SalesAssist or its Affiliates, on the one hand, to Customer or any Authorized User or any other third party, on the other hand.",
-              "Customer agrees that SalesAssist, its suppliers, or any of its Affiliates retain all right, title and interest (including all patent, copyright, trademark, trade secret and other intellectual property rights) in and to the SalesAssist Solutions and all Documentation, professional services deliverables and any and all related and underlying technology and documentation and any derivative works, modifications or improvements of any of the foregoing, including as may incorporate Feedback (collectively, “SalesAssist Technology”). Except as expressly set forth in this Agreement, no rights in any SalesAssist Technology are granted to Customer. Further, Customer acknowledges that the SalesAssist Solutions are offered as an on-line, hosted solution, and that Customer has no right to obtain a copy of any of the SalesAssist Solutions. For purposes of this Agreement, “Affiliate” means, with respect to either party, a business entity that, directly or indirectly, controls, is controlled by, or is under common control with, such party. For purposes of this definition only, the term “control” means legal, beneficial, or equitable ownership, directly or indirectly, of a business entity."
-            ]
-          },
-          "Feedback. Customer or any it’s Authorized Users, from time to time, may submit Feedback to SalesAssist. SalesAssist may freely use or exploit Feedback in connection with any of its products or solutions. Any information, suggestions, feedback, ideas, comments and other materials that Business or any Authorized User may disclose or offer to SalesAssist on or through the SalesAssist Site in connection with or otherwise relating to any SalesAssist Solution or any Generated Content, or in any underlying technology or intellectual property comprising any of the foregoing (collectively, “Feedback”), are submitted without any restrictions or expectation of confidentiality. Customer (on behalf of Business and its Authorized Users) hereby (a) assigns to SalesAssist without compensation or further obligation of any kind, all rights and interests now known or hereafter existing to use, allow others to use, or assign the right to use, any Feedback, and (b) agrees that Feedback may be used by SalesAssist or its Affiliates (or any successor or transferee of any of the foregoing) without restriction and for any purpose whatsoever, commercial or otherwise, including, without limitation, any reproduction, modification, adaptation, publication, transmission, public performance or display of any Feedback, or the creation of any derivative works of or relating to the Feedback. To the extent any use or implementation of any Feedback would require a license to any intellectual property of Customer or any Authorized User, Customer hereby grants to SalesAssist (on behalf of Business and its Authorized Users) a perpetual, worldwide, non-exclusive, irrevocable, royalty free and fully paid-up and transferable right and license to use and display such intellectual property for the purpose of using or implementing any Feedback."
-        ],
-        "key": "ownership"
-      },
-      {
-        "title": "Subscription Term, Fees & Payment",
-        "text": [
-          "Subscription Term and Renewals. This Agreement shall commence on the date on which Customer or any Authorized User first uses or accesses any SalesAssist Solution or signs an Order Form (whichever occurs first), and unless Customer’s subscription(s) to the SalesAssist Solution(s) are earlier terminated in accordance with Section 8.2, shall continue thereafter for the duration of the Initial Subscription Term, after which this Agreement and Customer’s subscription to the applicable SalesAssist Solution(s) shall automatically renew on a month-to-month basis until terminated or cancelled by a party pursuant to Section 8.2. For purposes of this Agreement, the “Initial Subscription Term” means, with respect to any subscription to a SalesAssist Solution, the initial subscription term specified in the Order Form with respect to such subscription, or, if no initial subscription term is specified in the Order Form, a term of one (1) year, commencing on the date on which Customer or any Authorized User first uses or accesses the applicable SalesAssist Solution or signs the Order Form (whichever occurs first).",
-          "Fees and Payment. Customer shall pay to SalesAssist the fees set forth in the applicable Order Form for the SalesAssist Solution(s) to which the Customer subscribed, in exchange for the rights and licenses granted to Customer in this Agreement, provided that SalesAssist shall have the right to adjust the Monthly Subscription Fee for any SalesAssist Solution at any time after the Initial Subscription Term (or, in the event that the Initial Subscription Term is longer than one (1) year, at any time after the one (1) year anniversary of the date on which the Initial Subscription Term commenced). All fees are as set forth in the applicable Order Form and will be paid by Customer via Credit Card (as defined below). Except as expressly set forth in Section 9 (Limited Warranty) and Section 13 (Indemnification), all fees are non-refundable. The rates in the Order Form are valid for the initial first (1) month period of each Subscription Term (or, in the event that the Initial Subscription Term is one (1) year or longer, for initial first (1) year after the date on which the Initial Subscription Term commenced) and thereafter may be subject to an automatic adjustment increase of up to ten percent (10%) per year. Customer is responsible for paying all Taxes, and all Taxes are excluded from any fees set forth in the applicable Order Form. If Customer is required by Law to withhold any Taxes from Customer's payment, the fees payable by Customer will be increased as necessary so that after making any required withholdings, SalesAssist receives and retains (free from any liability for payment of Taxes) an amount equal to the amount it would have received had no such withholdings been made. Any late payments will be subject to a service charge equal to 1.5% per month of the amount due or the maximum amount allowed by law, whichever is less. In the event Customer is part of a larger group or consortium of commonly-owned businesss (“Business Group”) through a parent entity or management company (“Business Group Parent Company”), Customer may instruct SalesAssist to: (i) receive payment of the Setup Fee and/or the Monthly Subscription Fee by the Business Group Parent Company, and (ii) direct the applicable invoices to the Business Group Parent Company. Notwithstanding the foregoing, Customer shall remain liable for any Setup Fee, Monthly Subscription Fee or any other amount that the Business Group Parent Company may fail or refuse to pay on Business’s behalf. Customer shall be solely responsible for any sales, use or other taxes or assessments made by any governmental or taxing authority in connection with Customer’s use of or access to any SalesAssist Solution or the SalesAssist Site, or any use, display or publication of the Generated Content.",
-          {
-            "type": "list",
-            "firstLine": "Payment Via Credit Card. The following terms apply:",
-            "list": [
-              "Recurring Billing Authorization. By providing Credit Card information and agreeing to purchase any SalesAssist Solutions, Customer hereby authorizes SalesAssist (or its designee) to automatically charge Customer's Credit Card on the same date of each calendar month (or the closest prior date, if there are fewer days in a particular month) during the Subscription Term for all fees accrued as of that date (if any) in accordance with the applicable Order Form. Customer acknowledges and agrees that the amount billed and charged each month may vary depending on Customer's use of the Services and may include subscription fees for the remainder of Customer's applicable billing period and overage fees for the prior month.",
-              "Foreign Transaction Fees. Customer acknowledges that for certain Credit Cards, the issuer of Customer's Credit Card may charge a foreign transaction fee or other charges.",
-              "Invalid Payment. If a payment is not successfully settled due to expiration of a Credit Card, insufficient funds, or otherwise, Customer remains responsible for any amounts not remitted to DC and SalesAssist may, in its sole discretion, either (i) invoice Customer directly for the deficient amount, (ii) continue billing the Credit Card once it has been updated by Customer (if applicable) or (iii) terminate this Agreement.",
-              "Changing Credit Card Information. At any time, Customer may change its Credit Card information by entering updated Credit Card information via the “Organization Settings” page on the account dropdown located in the main navigation bar.",
-              "Termination of Recurring Billing. In addition to any termination rights set forth in this Agreement, Customer may terminate the Subscription Term by sending SalesAssist notice of non-renewal to help@salesassist.io in accordance with Section 7.1 (Subscription Term and Renewals) or, if Customer's Subscription Term is on a monthly basis (or if otherwise permitted by SalesAssist), by terminating via the “Oragnization Settings” page on the navigation bar, with termination effective at the end of the current Subscription Term. As set forth in Section 2.8 (Trial Subscriptions), if Customer does not enter into a paid Subscription Term following a Trial Period, this Agreement and Customer's right to access and use the Services will terminate at the end of the Trial Period and Customer's Credit Card will not be charged.",
-              "Payment of Outstanding Fees. Upon any termination or expiration of the Subscription Term, SalesAssist will charge Customer's Credit Card (or invoice Customer directly) for any outstanding fees for Customer's use of the Services during the Subscription Term, after which SalesAssist will not charge Customer's Credit Card for any additional fees."
-            ]
-          },
-          "Suspension of Service. If Customer's account is thirty (30) days or more overdue, in addition to any of its other rights or remedies (including but not limited to any termination rights set forth herein), SalesAssist reserves the right to suspend Customer's access to the applicable SalesAssist Solutions (and any related services) without liability to Customer until such amounts are paid in full. SalesAssist also reserves the right to suspend Customer's access to the SalesAssist Solutions without liability to Customer if Customer's use of the Services is in violation of the AUP."
-        ],
-        "key": "fees"
-      },
-      {
-        "title": "Term and Termination",
-        "text": [
-          "Term. This Agreement is effective as of the Effective Date and expires on the date of expiration or termination of all Subscription Terms.",
-          "Termination for Cause. This Agreement may be terminated as follows: (a) by either party, immediately, upon any material breach by the other party of this Agreement which has not been cured within ten (10) days after providing written notice of such breach to the breaching party; (b) by SalesAssist, immediately, upon the filing of any bankruptcy, insolvency or other similar petition or filing by, on behalf of, or against Customer or its parent company; or (c) by SalesAssist, immediately, in the event that it believes that Customer or any Authorized User has or is violating any of the restrictions or other agreements set forth in Section 2.3, 2.4, 2.6, 3.4, 9 or 14. Additionally, Business acknowledges that SalesAssist shall have the right at any time to cease offering any SalesAssist Solution to Business or to modify or change any SalesAssist Solution or any feature or functionality thereof (including, without limitation, in any case where SalesAssist is no longer able to provide Integrated Information, or where SalesAssist believes that a SalesAssist Solution or any feature or functionality thereof may infringe or otherwise violate the Intellectual Property Rights of any third party, or any Law), in each case without notice to Customer, and SalesAssist may also elect to cease doing business with Customer at any time, with or without cause, and may cancel or terminate any subscription or license to the SalesAssist Solutions in connection therewith by providing notice to Customer of such cancellation or termination. Customer may terminate or cancel its subscription to the SalesAssist Solution(s) at any time during the Initial Subscription Term or thereafter by providing at least thirty (30) days’ prior written notice to SalesAssist in accordance with this Section 8.2. Any notice of termination or cancellation by Customer must be sent to help@salesassist.io. SalesAssist will confirm its receipt of any proper notice of termination or cancellation within five (5) business days of the date on which such notice is received by SalesAssist at the email address listed above. Any proper termination or cancellation by Customer of its subscription to the SalesAssist Solution(s) will be processed by SalesAssist by no later than the end of the applicable monthly billing cycle during which the effective date of Business’s termination or cancellation falls, unless the effective date of such termination or cancellation is on or after the 24th day of the month, in which case such termination or cancellation will be processed by SalesAssist by the end of Business’s next billing cycle. No termination or cancellation of any SalesAssist Solution shall be effective unless SalesAssist has confirmed such termination or cancellation as provided for above. There will be no prorations or refunds of any Setup Fee or Monthly Subscription Fees.",
-          "Effect of Termination. Upon any termination or expiration of this Agreement, all rights, obligations and licenses granted to Customer and its Authorized Users hereunder shall immediately and automatically terminate, and any unpaid Setup Fee, Monthly Subscription Fees or other amounts due hereunder shall be immediately due and payable. In addition to the foregoing, Customer shall (i) immediately discontinue any access or use of any SalesAssist Solution (including any Integrated Information); (ii) promptly pay all accrued and outstanding amounts due under this Agreement; (iii) delete Confidential Information of SalesAssist or its Affiliates from computer storage or any other media including, but not limited to, online and off-line libraries; and (iv) return to SalesAssist or, at the SalesAssist option, destroy, all physical copies of any Confidential Information of SalesAssist or its Affiliates.",
-          "Survival. The following Sections will survive any expiration or termination of this Agreement: 2.6 (General Restrictions), 2.8 (Trial Subscriptions), 3.2 (Storage of Customer Data), 3.4 (Indemnification by Customer), 3.5 (Aggregated Anonymous Data), 6 (Ownership), 7.2 (Fees and Payment), 7.3 (Payment Via Credit Card), 8 (Term and Termination), 9.2 (Warranty Disclaimer), 12 (Limitation of Remedies and Damages), 13 (Indemnification), 14 (Confidential Information) and 15 (General Terms)."
-        ],
-        "key": "termination"
-      },
-      {
-        "title": "Limited Warranty",
-        "text": [
-          "Limited Warranty. SalesAssist warrants, for Customer's benefit only, that each SalesAssist Solution will operate in substantial conformity with the applicable Documentation. SalesAssist’s sole liability (and Customer's sole and exclusive remedy) for any breach of this warranty will be, at no charge to Customer, for SalesAssist to use commercially reasonable efforts to correct the reported non-conformity, or if SalesAssist determines such remedy to be impracticable, either party may terminate the applicable Subscription Term and Customer will receive as its sole remedy a refund of any fees Customer has pre-paid for use of such SalesAssist Solution for the terminated portion of the applicable Subscription Term. The limited warranty set forth in this Section 9.1 will not apply: (i) unless Customer makes a claim within thirty (30) days of the date on which Customer first noticed the non-conformity, (ii) if the error was caused by misuse, unauthorized modifications or third-party hardware, software or services, or (iii) to use provided on a no-charge, trial or evaluation basis.",
-          "Warranty Disclaimer. EXCEPT FOR THE LIMITED WARRANTY IN SECTION 9.1, ALL Services and PROFESSIONAL SERVICES ARE PROVIDED “AS IS”. SalesAssist does not warrant that Customer's use of the SalesAssist Solutions will be uninterrupted or error-free, nor does SalesAssist warrant that it will review the Generated Content for accuracy or that it will preserve or maintain the Generated Content without loss OR CORRUPTION. SalesAssist SHALL NOT BE LIABLE FOR THE RESULTS OF ANY PUSHED DATA SENT VIA ESTABLISHED INTEGRATIONS OR ANY INTEGRATION THAT RECEIVE DATA SENT USING THE SALESASSIST SOLUTIONS. SALESASSIST SHALL NOT BE LIABLE FOR DELAYS, INTERRUPTIONS, SERVICE FAILURES OR OTHER PROBLEMS INHERENT IN USE OF THE INTERNET AND ELECTRONIC COMMUNICATIONS, THIRD-PARTY PLATFORMS OR OTHER SYSTEMS OUTSIDE THE REASONABLE CONTROL OF SALESASSIST. CUSTOMER MAY HAVE OTHER STATUTORY RIGHTS, BUT THE DURATION OF STATUTORILY REQUIRED WARRANTIES, IF ANY, SHALL BE LIMITED TO THE SHORTEST PERIOD PERMITTED BY LAW."
-        ],
-        "key": "warranty"
-      },
-      {
-        "title": "Support",
-        "text": [
-          "During the Subscription Term of each SalesAssist Solution, SalesAssist will provide Authorised Users support in accordance with SalesAssist’s Support Policy (“Support Policy”)."
-        ],
-        "key": "support"
-      },
-      {
-        "title": "Professional Services",
-        "text": [
-          "SalesAssist will provide the professional consulting services (“Professional Services”) purchased in the applicable Order Form. The scope of Professional Services will be as set forth in a Statement of Work referencing this Agreement and executed by both parties describing the work to be performed, fees and any applicable milestones, dependencies and other technical specifications or related information (“SOW”). Unless Professional Services are provided on a fixed-fee basis, Customer will pay SalesAssist at the per-hour rates set forth in the Order Form (or, if not specified, at SalesAssist’s then-standard rates) for any excess services. Customer will reimburse SalesAssist for reasonable travel and lodging expenses as incurred. Customer may use anything delivered as part of the Professional Services in support of authorized use of the SalesAssist Solutions and subject to the terms regarding Customer's rights to use the SalesAssist Solutions set forth in Section 2.4 (SalesAssist Solutions) and the applicable SOW, but SalesAssist will retain all right, title and interest in and to any such work product, code or deliverables and any derivative, enhancement or modification thereof created by SalesAssist (or its agents)."
-        ],
-        "key": "services"
-      },
-      {
-        "title": "Limitation of Remedies and Damages",
-        "text": [
-          "Consequential Damages Waiver. SALESASSIST AND THE SALESASSIST RELATED PARTIES SHALL IN NO EVENT BE LIABLE TO CUSTOMER OR ANY OTHER PERSON FOR ANY INDIRECT, SPECIAL, EXEMPLARY, INCIDENTAL, MULTIPLE, CONSEQUENTIAL OR PUNITIVE DAMAGES (INCLUDING ANY DAMAGES RESULTING FROM ANY LOSS OF USE, LOSS OF DATA, LOSS OF PROFITS, LOSS OF BUSINESS OR OTHER ECONOMIC LOSS) ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR ANY ORDER FORM OR ANY USE OF THE SALESASSIST SOLUTION(S) (INCLUDING ANY INTEGRATED INFORMATION), THE SALESASSIST SITE OR ANY GENERATED CONTENT, EVEN IF SALESASSIST OR THE APPLICABLE SALESASSIST RELATED PARTIES HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
-          "Liability Cap. ADDITIONALLY, THE AGGREGATE LIABILITY OF SALESASSIST AND THE SALESASSIST RELATED PARTIES UNDER THIS AGREEMENT SHALL BE EXPRESSLY LIMITED TO AN AMOUNT EQUAL TO THREE (3) TIMES THE MONTHLY SUBSCRIPTION FEE FOR THE SALESASSIST SOLUTION(S) TO WHICH CUSTOMER IS SUBSCRIBED.",
-          "Excluded Claims. “Excluded Claims” means any claim arising (a) from Customer's breach of Section 2.6 (General Restrictions); or (b) from a party's breach of its obligations in Section 14 (Confidential Information) (but excluding claims arising from operation or non-operation of any Service).",
-          "Nature of Claims and Failure of Essential Purpose. The parties agree that the waivers and limitations specified in this Section 12 apply regardless of the form of action, whether in contact, tort (including negligence), strict liability or otherwise and will survive and apply even if any limited remedy specified in this Agreement is found to have failed of its essential purpose."
-        ],
-        "key": "damages"
-      },
-      {
-        "title": "Indemnification",
-        "text": [
-          "Customer shall, at its expense, defend, indemnify and hold harmless SalesAssist and its Affiliates, and its and their respective Third Party Licensors and data and service providers, and the officers, employees, representatives and agents of each of the foregoing (collectively, the “SalesAssist Related Parties”), from and against any and all claims, judgments, losses, damages, demands, payments, fines, costs, expenses (including reasonable attorneys’ fees and court costs), liabilities and recoveries of any nature or description incurred by any SalesAssist Related Party, in each case to the extent arising from or in any way relating to (a) any breach by Business or any of its officers, employees, representatives or agents (collectively, the “Business Representatives”), or any breach by any Authorized User, of any representation, warranty, covenant or other provision of this Agreement; (b) any use of or access to any SalesAssist Solution or the SalesAssist Site; (c) the use or publication of any Generated Content; or (d) any claim by a retail customer of Business or any other purchaser of a Business product or service."
-        ],
-        "key": "indemnification"
-      },
-      {
-        "title": "Confidential Information",
-        "text": [
-          "Customer Confidentiality. Customer agrees not to disclose (or allow to be disclosed by any Authorized User or Business Representative), and not to otherwise use or allow to be used other than as set forth in this Agreement, any Confidential Information of SalesAssist, its Affiliates, or Third Party Licensors. Customer shall use a commercially reasonable degree of care in maintaining the confidentiality of any Confidential Information. Customer may disclose Confidential Information only to those of its employees that have a reasonable need to access the Confidential Information in connection with Business’s performance under this Agreement; provided, however, that each employee of Business to whom any Confidential Information is being disclosed shall, prior to any such disclosure, be subject to written confidentiality restrictions with respect to the Confidential Information that are at least as restrictive as those obligations and restrictions set forth in this Section 14. Customer shall be fully responsible and liable for any violation of this Section 14 by any Authorized User or Business Representative and any other person to whom Business has provided or otherwise made available any Confidential Information.",
-          "Confidential Information. For purposes of this Agreement, “Confidential Information” means all information and materials that are provided or otherwise disclosed by or on behalf of SalesAssist or its Affiliates that are either (i) designated as “Confidential” or Proprietary” by SalesAssist or its Affiliates, or (ii) in any way related to any SalesAssist Solution or any aspect of the business or operations of SalesAssist or its Affiliates, including, without limitation, any Integrated Information and any information or materials relating to the operations, customers, contractors, distributors, software, technology, products, services or marketing plans of SalesAssist or its Affiliates. Notwithstanding the foregoing, “Confidential Information” shall not include any information or materials that (x) are or become publicly known or available other than as a result of any wrongful act by Customer or any of its Affiliates or any Authorized User or Business Representative, including any violation of this Agreement, (y) are known to or in the possession of Customer prior to their disclosure by SalesAssist or its Affiliates, as evidenced by written documents in existence prior to any such disclosure, or (z) are or become available to Customer from a third party not bound by any confidentiality or other obligations that would prohibit such disclosure.",
-          "Remedies. Customer acknowledges and agrees that the wrongful disclosure of any Confidential Information or any unauthorized use of any SalesAssist Solution or Generated Content would cause irreparable injury to SalesAssist and its applicable Affiliates and Third Party Licensors, and that remedies other than injunctive relief would be inadequate. Accordingly, SalesAssist shall have the right to obtain equitable and other injunctive relief to prevent any wrongful disclosure of any Confidential Information or any unauthorized use of any SalesAssist Solution (including any Integrated Information) or Generated Content (in each case without the posting of any bond or similar security), as well as such damages and other relief to which SalesAssist, its Affiliates, or its Third Party Licensors may be entitled under this Agreement or pursuant to any Law. Third Party Licensors shall be considered third party beneficiaries of this Agreement having the right to enforce its rights hereunder directly against Customer."
-        ],
-        "key": "confidential"
-      },
-      {
-        "title": "General Terms",
-        "text": [
-          "Assignment. This Agreement will bind and inure to the benefit of each party's permitted successors and assigns. Neither party may assign this Agreement without the advance written consent of the other party, except that either party may assign this Agreement in connection with a merger, reorganization, acquisition or other transfer of all or substantially all of such party's assets or voting securities. Any attempt to transfer or assign this Agreement except as expressly authorized under this Section 15.1 will be null and void.",
-          "Severability. If any provision of this Agreement will be adjudged by any court of competent jurisdiction to be unenforceable or invalid, that provision will be limited to the minimum extent necessary so that this Agreement will otherwise remain in effect.",
-          {
-            "type": "paragraph",
-            "list": [
-              "Governing Law; Dispute Resolution.",
-              "a) Direct Dispute Resolution. In the event of any dispute, claim, question, or disagreement arising from or relating to this Agreement, whether arising in contract, tort or otherwise, (“Dispute”), the parties shall first use their best efforts to resolve the Dispute. If a Dispute arises, the complaining party shall provide written notice to the other party in a document specifically entitled “Initial Notice of Dispute”, specifically setting forth the precise nature of the dispute (”Initial Notice of Dispute”). If an Initial Notice of Dispute is being sent to SalesAssist it must be emailed to legal@salesassist.io and sent via mail to:",
-              "Attn: Legal Department",
-              "SalesAssist",
-              "16 Cavalier",
-              "Laguna Niguel, CA, 92677",
-              "Following receipt of the Initial Notice of Dispute, the parties shall consult and negotiate with each other in good faith and, recognizing their mutual interest, attempt to reach a just and equitable solution of the Dispute that is satisfactory to both parties (“Direct Dispute Resolution”). If the parties are unable to reach a resolution of the Dispute through Direct Dispute Resolution within thirty (30) days of the receipt of the Initial Notice of Dispute, then the Dispute shall subsequently be resolved by arbitration as set forth below.",
-              "b) Arbitration. IN THE EVENT THAT A DISPUTE BETWEEN THE PARTIES CANNOT BE SETTLED THROUGH DIRECT DISPUTE RESOLUTION, AS DESCRIBED ABOVE, THE PARTIES AGREE TO SUBMIT THE DISPUTE TO BINDING ARBITRATION. BY AGREEING TO ARBITRATE, THE PARTIES AGREE TO WAIVE THEIR RIGHT TO A JURY TRIAL. The arbitration shall be conducted before a single neutral arbitrator, before JAMS in Miami, Florida. The arbitration shall be administered by JAMS in accordance with this document and the JAMS Streamlined Rules and Procedures for the Arbitration, with one addition: The limitation of one discovery deposition per side shall be applied by the arbitrator, unless it is determined, based on all relevant circumstances, that more depositions are warranted. The arbitrator shall consider the amount in controversy, the complexity of the factual issues, the number of parties and the diversity of their interests and whether any or all of the claims appear, on the basis of the pleadings, to have sufficient merit to justify the time and expense associated with the requested discovery.",
-              "The arbitration will occur in Miami, Florida, but the parties may choose to appear by person, by phone, by another virtual means, or through the submission of documents.",
-              "The arbitrator will issue a ruling in writing. Any issue concerning the extent to which any dispute is subject to arbitration, the applicability, interpretation, or enforceability of this agreement shall be resolved by the arbitrator. To the extent state law is applicable, the arbitrator shall apply the substantive law of Delaware.",
-              "All aspects of the arbitration shall be treated as confidential and neither the parties nor the arbitrators may disclose the content or results of the arbitration, except as necessary to comply with legal or regulatory requirements. The result of the arbitration shall be binding on the parties and judgment on the arbitrator's award may be entered in any court having jurisdiction. The arbitrator shall award to the prevailing party, if any, the costs and attorneys' fees reasonably incurred by the prevailing party in connection with the arbitration.",
-              "c) Choice of Law and Jurisdiction. FOR ANY CLAIM WHICH IS NOT SUBJECT TO THIS DISPUTE RESOLUTION PROVISION, CUSTOMER AGREES TO SUBMIT AND CONSENT TO THE PERSONAL AND EXCLUSIVE JURISDICTION IN, AND THE EXCLUSIVE VENUE OF, THE STATE AND FEDERAL COURTS LOCATED WITHIN DELAWARE, USA. IN ANY DISPUTE, DELAWARE LAW SHALL APPLY.",
-              "d) Construction and Joinder. THIS AGREEMENT MUST BE CONSTRUED AS IF IT WAS JOINTLY WRITTEN BY BOTH PARTIES. BOTH CUSTOMER AND SALESASSIST AGREE THAT EACH MAY BRING OR PARTICIPATE IN CLAIMS AGAINST THE OTHER ONLY IN THEIR RESPECTIVE INDIVIDUAL CAPACITIES, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS. NO ARBITRATION OR CLAIM UNDER THIS AGREEMENT SHALL BE JOINED TO ANY OTHER ARBITRATION OR CLAIM, INCLUDING ANY ARBITRATION OR CLAIM INVOLVING ANY OTHER CURRENT OR FORMER USER OF THE SERVICES, AND NO CLASS ARBITRATION PROCEEDINGS SHALL BE PERMITTED. IN THE EVENT OF ANY DISPUTE CONCERNING THE VALIDITY OR ENFORCEABILITY OF THIS PROVISION, SUCH CLAIM MUST BE ADJUDICATED BY A COURT AND NOT BY AN ARBITRATOR.",
-              "e) Injunctive Relief. Notwithstanding the above provisions, SalesAssist may apply for injunctive remedies (or an equivalent type of urgent legal relief) in any jurisdiction."
-            ]
-          },
-          "Notice. Any notice or communication required or permitted under this Agreement will be in writing to the parties at the addresses set forth on the Order Form or at such other address as may be given in writing by either party to the other in accordance with this Section and will be deemed to have been received by the addressee (i) if given by hand, immediately upon receipt; (ii) if given by overnight courier service, the first business day following dispatch or (iii) if given by registered or certified mail, postage prepaid and return receipt requested, the second business day after such notice is deposited in the mail.",
-          "Amendments; Waivers. Except as otherwise provided herein, no supplement, modification, or amendment of this Agreement will be binding, unless executed in writing by a duly authorized representative of each party to this Agreement. No waiver will be implied from conduct or failure to enforce or exercise rights under this Agreement, nor will any waiver be effective unless in a writing signed by a duly authorized representative on behalf of the party claimed to have waived. No provision of any purchase order or other business form employed by Customer will supersede the terms and conditions of this Agreement, and any such document relating to this Agreement will be for administrative purposes only and will have no legal effect.",
-          "Entire Agreement. This Agreement is the complete and exclusive statement of the mutual understanding of the parties and supersedes and cancels all previous written and oral agreements and communications relating to the subject matter of this Agreement. Customer acknowledges that the SalesAssist Solutions are on-line, subscription-based products, and that in order to provide improved customer experience SalesAssist may make changes to the SalesAssist Solutions, and SalesAssist will update the applicable Documentation accordingly. The support and service level availability terms described in the Support Policy and the SLA may be updated from time to time upon reasonable notice to Customer to reflect process improvements or changing practices (but the modifications will not materially decrease SalesAssist’s obligations as compared to those reflected in such terms as of the Effective Date).",
-          "Modifications and Updates. SalesAssist may modify or update this Agreement from time to time. By continuing to use or access any SalesAssist Solution following the posting of such modifications or updates, Customer agrees to be bound by this Agreement, as it may be modified and updated from time to time.",
-          "Force Majeure. Neither party will be liable to the other for any delay or failure to perform any obligation under this Agreement (except for a failure to pay fees) if the delay or failure is due to unforeseen events that occur after the signing of this Agreement and that are beyond the reasonable control of such party, such as a strike, blockade, war, act of terrorism, riot, natural disaster, failure or diminishment of power or telecommunications or data networks or services, or refusal of a license by a government agency.",
-          "Subcontractors. SalesAssist may use the services of subcontractors and permit them to exercise the rights granted to SalesAssist in order to provide the SalesAssist Solutions under this Agreement, provided that SalesAssist remains responsible for (i) compliance of any such subcontractor with the terms of this Agreement and (ii) for the overall performance of the SalesAssist Solutions as required under this Agreement.",
-          "Subpoenas. Nothing in this Agreement prevents SalesAssist from disclosing Generated Content to the extent required by law, subpoenas, or court orders, but SalesAssist will use commercially reasonable efforts to notify Customer where permitted to do so.",
-          "Independent Contractors. The parties to this Agreement are independent contractors. There is no relationship of partnership, joint venture, employment, franchise or agency created hereby between the parties. Neither party will have the power to bind the other or incur obligations on the other party's behalf without the other party's prior written consent.",
-          "Counterparts. This Agreement may be executed in counterparts, each of which will be deemed an original and all of which together will be considered one and the same agreement."
-        ],
-        "key": "general"
-      }
-    ]
-  }
+import { translate } from "@/locales";
+
+export const tos = {
+  title: `${translate("tos.title")}`,
+  effectiveDate: `${translate("tos.effectiveDate")}`,
+  introduction: [
+    `${translate("tos.introduction[0]")}`,
+    `${translate("tos.introduction[1]")}`,
+  ],
+  data: [
+    {
+      title: `${translate("tos.data[0].title")}`,
+      text: [`${translate("tos.data[0].text")}`],
+      key: "scope",
+    },
+    {
+      title: `${translate("tos.data[1].title")}`,
+      text: [
+        {
+          type: `${translate("tos.data[1].text[0].type")}`,
+          list: [
+            `${translate("tos.data[1].text[0].list[0]")}`,
+            `${translate("tos.data[1].text[0].list[1]")}`,
+            `${translate("tos.data[1].text[0].list[2]")}`,
+          ],
+        },
+        `${translate("tos.data[1].text[1]")}`,
+        `${translate("tos.data[1].text[2]")}`,
+        `${translate("tos.data[1].text[3]")}`,
+        `${translate("tos.data[1].text[4]")}`,
+        `${translate("tos.data[1].text[5]")}`,
+        `${translate("tos.data[1].text[6]")}`,
+        `${translate("tos.data[1].text[7]")}`,
+      ],
+      key: "solutions",
+    },
+    {
+      title: `${translate("tos.data[2].title")}`,
+      text: [
+        `${translate("tos.data[2].text[0]")}`,
+        `${translate("tos.data[2].text[1]")}`,
+        `${translate("tos.data[2].text[2]")}`,
+        {
+          type: "paragraph",
+          list: [
+            `${translate("tos.data[2].list[0]")}`,
+            `${translate("tos.data[2].list[1]")}`,
+            `${translate("tos.data[2].list[2]")}`,
+          ],
+        },
+      ],
+      key: "customer-data",
+    },
+    {
+      title: `${translate("tos.data[3].title")}`,
+      text: [`${translate("tos.data[3].text[0]")}`],
+      key: "security",
+    },
+    {
+      title: `${translate("tos.data[4].title")}`,
+      text: [`${translate("tos.data[4].text[0]")}`],
+      key: "third-party",
+    },
+    {
+      title: `${translate("tos.data[5].title")}`,
+      text: [
+        {
+          type: "paragraph",
+          list: [
+            `${translate("tos.data[5]text[0].list[0]")}`,
+            `${translate("tos.data[5]text[0].list[1]")}`,
+          ],
+        },
+        `${translate("tos.data[5]text[0].list[2]")}`,
+      ],
+      key: "ownership",
+    },
+    {
+      title: `${translate("tos.data[6].title")}`,
+      text: [
+        `${translate("tos.data[6].text[0]")}`,
+        `${translate("tos.data[6].text[1]")}`,
+        {
+          type: "list",
+          firstLine: `${translate("tos.data[6].firstLine")}`,
+          list: [
+            `${translate("tos.data[6].list[0]")}`,
+            `${translate("tos.data[6].list[1]")}`,
+            `${translate("tos.data[6].list[2]")}`,
+            `${translate("tos.data[6].list[3]")}`,
+            `${translate("tos.data[6].list[4]")}`,
+            `${translate("tos.data[6].list[5]")}`,
+          ],
+        },
+        `${translate("tos.data[6].text[2]")}`,
+      ],
+      key: "fees",
+    },
+    {
+      title: `${translate("tos.data[7].title")}`,
+      text: [
+        `${translate("tos.data[7].text[0]")}`,
+        `${translate("tos.data[7].text[1]")}`,
+        `${translate("tos.data[7].text[2]")}`,
+        `${translate("tos.data[7].text[3]")}`,
+      ],
+      key: "termination",
+    },
+    {
+      title: `${translate("tos.data[8].title")}`,
+      text: [
+        `${translate("tos.data[8].text[0]")}`,
+        `${translate("tos.data[8].text[1]")}`,
+      ],
+      key: "warranty",
+    },
+    {
+      title: `${translate("tos.data[9].title")}`,
+      text: [`${translate("tos.data[9].text[0]")}`],
+      key: "support",
+    },
+    {
+      title: `${translate("tos.data[10].title")}`,
+      text: [`${translate("tos.data[10].text[0]")}`],
+      key: "services",
+    },
+    {
+      title: `${translate("tos.data[11].title")}`,
+      text: [
+        `${translate("tos.data[11].text[0]")}`,
+        `${translate("tos.data[11].text[1]")}`,
+        `${translate("tos.data[11].text[2]")}`,
+        `${translate("tos.data[11].text[3]")}`,
+      ],
+      key: "damages",
+    },
+    {
+      title: `${translate("tos.data[12].title")}`,
+      text: [`${translate("tos.data[12].text[0]")}`],
+      key: "indemnification",
+    },
+    {
+      title: `${translate("tos.data[13].title")}`,
+      text: [
+        `${translate("tos.data[13].text[0]")}`,
+        `${translate("tos.data[13].text[1]")}`,
+        `${translate("tos.data[13].text[2]")}`,
+      ],
+      key: "confidential",
+    },
+    {
+      title: `${translate("tos.data[14].title")}`,
+      text: [
+        `${translate("tos.data[14].text[0]")}`,
+        `${translate("tos.data[14].text[1]")}`,
+        {
+          type: "paragraph",
+          list: [
+            `${translate("tos.data[14].list[2]")}`,
+            `${translate("tos.data[14].list[3]")}`,
+            `${translate("tos.data[14].list[4]")}`,
+            `${translate("tos.data[14].list[5]")}`,
+            `${translate("tos.data[14].list[6]")}`,
+            `${translate("tos.data[14].list[7]")}`,
+            `${translate("tos.data[14].list[8]")}`,
+            `${translate("tos.data[14].list[9]")}`,
+            `${translate("tos.data[14].list[10]")}`,
+            `${translate("tos.data[14].list[11]")}`,
+            `${translate("tos.data[14].list[12]")}`,
+            `${translate("tos.data[14].list[13]")}`,
+          ],
+        },
+        `${translate("tos.data[14].text[2]")}`,
+        `${translate("tos.data[14].text[3]")}`,
+        `${translate("tos.data[14].text[4]")}`,
+        `${translate("tos.data[14].text[5]")}`,
+        `${translate("tos.data[14].text[6]")}`,
+        `${translate("tos.data[14].text[7]")}`,
+        `${translate("tos.data[14].text[8]")}`,
+        `${translate("tos.data[14].text[9]")}`,
+        `${translate("tos.data[14].text[10]")}`,
+               ],
+      key: "general",
+    },
+  ],
+};

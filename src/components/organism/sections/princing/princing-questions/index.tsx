@@ -12,7 +12,7 @@ export function PricingQuestions({ id }: Props) {
       <Section className="container mx-auto flex flex-col gap-6 py-6 xl:w-3/4 xl:items-center">
         <h1>{Questions.title}</h1>
 
-        <div className="flex flex-col gap-6 mb-6 w-4/6  ">
+        <div className="flex flex-col gap-6 mb-6 w-4/5  ">
           {Questions.questions.map((question) => {
             return (
               <div key={question.question}>
@@ -25,7 +25,7 @@ export function PricingQuestions({ id }: Props) {
           })}
         </div>
 
-        <div className="xl:w-4/6 px-6 flex-wrap md:px-12 py-8 flex items-center justify-between rounded-lg bg-gradient-to-br from-[#F87129] via-[#F87129] to-[#FFA742] text-white">
+        <div className="xl:w-4/5 px-6 flex-wrap md:px-12 py-8 flex items-center justify-between rounded-lg bg-gradient-to-br from-[#F87129] via-[#F87129] to-[#FFA742] text-white">
           <h1 className="text-[1.25rem] font-semibold">
             {Questions.banner.text}
           </h1>
