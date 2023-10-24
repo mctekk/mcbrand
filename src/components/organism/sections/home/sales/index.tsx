@@ -14,7 +14,7 @@ export default function Sales({ }){
           <div className='xl:w-1/3 md:w-1/2 xl:ml-64 '>
             <h1>Let’s Simplify How You Gather Info from Customers</h1>
 
-            <a href={'sss'} target="_blank" rel="noreferrer">
+            <a href='https://calendly.com/salesasssit/30min' target="_blank" rel="noreferrer">
               <Solid className='px-2 mt-4 lg:px-3 bg-orange-500'>
                 Book Demo
               </Solid>
