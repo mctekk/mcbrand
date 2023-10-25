@@ -10,19 +10,20 @@ interface MenuItemProps {
   link: string;
   isExternal?: boolean;
   className?: string;
+  optionsColor?:string
 }
 
 
-export function MenuItem({ link, title, isExternal, className }:MenuItemProps) {
+export function MenuItem({ link, title, isExternal, className ,optionsColor}:MenuItemProps) {
   return (
     <li>
       <Link href={link} className="lg:font-semibold  ">
         {isExternal ? (
-          <Solid className={`${className} text-black mb-9 lg:mt-1 lg:mb-0 text-xl text-[1.25rem] lg:text-[1rem] whitespace-nowrap`}>
+          <Solid className={`${className}  mb-9 lg:mt-1 lg:mb-0 text-xl text-[1.25rem] lg:text-[1rem] whitespace-nowrap`}>
             {title}
           </Solid>
         ) : (
-          <ButtonLink className="text-black hover:text-orange-500 mb-9 lg:mt-1 lg:mb-0 text-[1.25rem] lg:text-[1rem] whitespace-nowrap">{title}</ButtonLink>
+          <ButtonLink className={`${optionsColor} mb-9 lg:mt-1 lg:mb-0 text-[1.25rem] lg:text-[1rem] whitespace-nowrap`}>{title}</ButtonLink>
         )}
       </Link>
     </li>
