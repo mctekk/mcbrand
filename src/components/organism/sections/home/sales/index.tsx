@@ -1,4 +1,5 @@
-import { Button } from '@/components/atoms/button/base';
+'use client';
+
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
