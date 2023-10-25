@@ -5,33 +5,28 @@ import { translate } from "@/locales";
 
 const menuItems = [
   {
-    text: translate("navbar.section.whySalesAssist"),
-    link: "/why-sales-assist",
+    text:"Blog",
+    link: "https://mctekk.substack.com/",
   },
-  { text: translate("navbar.section.pricing"), link: "/pricing" },
   { text: translate("navbar.section.aboutUs"), link: "/about-us" },
+  { text:"Jobs" , link: "https://mctekk.grovehr.com/careers/job?id=65117eed2487c21055883347" },
+  { text:"Contact" , link: "Contact" },
 ];
 const externalLinks = [
   {
-    text: translate("navbar.section.login"),
-    link: "https://app.salesassist.io/",
-    isExternal: true,
-    className: "hidden lg:flex text-black"
-  },
-  {
-    text: translate("navbar.section.bookDemo"),
+    text: "Get Started",
     link: "https://calendly.com/salesasssit/30min",
     isExternal: true,
-    className: "lg:bg-orange-500 lg:text-white bg-white "
+    className: "lg:bg-orange-400 hover:bg-black lg:text-white bg-white hover:border border-orange-400 hover:text-orange-400"
   },
   
 ];
 
-function Menu({ }) {
+function McMenu({ }) {
   return (
     <ul className="lg:flex ">
       {menuItems.map((item, index) => (
-        <MenuItem key={index} title={item.text} link={item.link} optionsColor=" hover:text-orange-500"  />
+        <MenuItem key={index} title={item.text} link={item.link} optionsColor="text-gray-400 hover:text-white" />
       ))}
       <div className="lg:ml-80 flex lg:space-x-2">
         {externalLinks.map((item, index) => (
@@ -42,4 +37,4 @@ function Menu({ }) {
   );
 }
 
-export default Menu;
+export default McMenu;

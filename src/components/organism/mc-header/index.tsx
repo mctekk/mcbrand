@@ -6,8 +6,9 @@ import Menu from "../../molecules/menu";
 import { Button } from "@/components/atoms/button/base";
 import Image from "next/image";
 import { Transition, Dialog } from "@headlessui/react";
+import McMenu from "@/components/molecules/mc-menu";
 
-export default function Header() {
+export default function McHeader() {
   const [isOpen, setIsOpen] = useState(false);
   function closeModal() {
     setIsOpen(false);
@@ -15,25 +16,25 @@ export default function Header() {
 
   function openModal() {
     setIsOpen(true);
-  }
+  } 
 
   return (
-    <div className="lg:flex lg:justify-center lg:items-center  gap-6 text-[1.0625rem] text-black mt-7 w-full lg:ml-0  sm:ml-0  ">
+    <div className="lg:flex lg:justify-center lg:items-center  gap-6 text-[1.0625rem] text-black pt-3 pb-2 w-full lg:ml-0  sm:ml-0 bg-black ">
       <div className="flex justify-between px-4 py-2">
         <div className="w-full">
           <a className=" lg:ml-0   w-[11.25rem] h-[2.875rem] flex" href="/">
-            <Image src="/images/logo.png" alt="logo" width={200} height={24} />
+            <Image src="/images/McLogo.svg" alt="logo" width={200} height={24} />
           </a>
         </div>
         <Button
           className="md:flex lg:hidden flex rounded-lg mt-2 py-2 pl-3 pr-3.5  "
           onClick={openModal}
         >
-          <MdMenu className=" text-[2rem] text-black "  />
+          <MdMenu className=" text-[2rem] text-black " />
         </Button>
       </div>
       <div className="hidden lg:flex ">
-        <Menu  />
+        <McMenu  />
       </div>
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" onClose={closeModal}>
@@ -62,7 +63,7 @@ export default function Header() {
               ""
             )}
 
-            <Menu  />
+            <McMenu  />
           </nav>
           </Dialog.Panel>
           
