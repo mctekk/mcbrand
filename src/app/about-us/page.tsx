@@ -1,3 +1,4 @@
+
 import React from "react";
 import Header from "@/components/organism/header";
 import { Footer } from "@/components/organism/sections/footer";
@@ -8,16 +9,17 @@ import { GA } from "@/components/atoms/analitiycs";
 import { aboutUsData } from "@/model/api/about-us/data";
 import { ourTeamData } from "@/model/api/our-team/data";
 import { aboutTeamData } from "@/model/api/about-us-team/data";
-import { Menu } from "@headlessui/react";
+import Menu from "@/components/molecules/menu";
+
 export default function page() {
   return (
     <>
       <Header
-        menu={<Menu></Menu>}
+        menu={<Menu ></Menu>}
         logo="/images/logo.png"
         iconColor="text-black"
       />
-      ,
+      
       <GA />
       <AboutUsHero data={aboutUsData}></AboutUsHero>
       <AboutUsOurTeam data={ourTeamData}></AboutUsOurTeam>

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "@/components/organism/header";
 import { Footer } from "@/components/organism/sections/footer";
 import Terms from "@/components/organism/sections/terms-of-service/terms";
-import { Menu } from "@headlessui/react";
+import Menu from "@/components/molecules/menu";
 
 function TermsAndService() {
   return (

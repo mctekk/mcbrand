@@ -47,13 +47,13 @@ export default function Hero({
             </h1>
             <div className="flex flex-col lg:flex-row lg:w-fit  md:gap-4 lg:tracking-wide  ">
               <h1
-                className={`${colorFonts} md:text-[3rem] lg:text-[4.5rem]  font-normal ml-5 md:ml-0 lg:ml-0 whitespace-nowrap `}
+                className={`${colorWords} md:text-[3rem] lg:text-[4.5rem]  font-normal ml-5 md:ml-0 lg:ml-0 whitespace-nowrap `}
               >
                 {lowerMessage}
               </h1>
               <div className="overflow-hidden gap-6 flex flex-col h-[50px] md:h-[90px] lg:h-[99px] slices  ">
                 <h1
-                  className={`${colorWords} md:text-[3rem] lg:text-[4rem] xl:text-[4.5rem]  slice ml-5 md:ml-0 lg:ml-0 lg:mt-5`}
+                  className={`${colorWords}  md:text-[3rem] lg:text-[4rem] xl:text-[4.5rem]  slice ml-5 md:ml-0 lg:ml-0 lg:mt-5`}
                 >
                   <Typewriter
                     words={words}

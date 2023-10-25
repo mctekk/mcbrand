@@ -1,7 +1,7 @@
 import Header from "@/components/organism/header";
 import { Section } from "@/components/atoms/section";
 import { translate } from "@/locales";
-import { Menu } from "@headlessui/react";
+import Menu from "@/components/molecules/menu";
 
 export function PricingHero() {
   return (

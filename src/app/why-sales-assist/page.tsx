@@ -14,7 +14,8 @@ import { Footer } from "@/components/organism/sections/footer";
 import { dataPainless } from "@/model/api/sales-painless/data";
 import { dataSlide } from "@/model/api/simplify-sales";
 import { GA } from "@/components/atoms/analitiycs";
-import { Menu } from "@headlessui/react";
+import Menu from "@/components/molecules/menu";
+
 
 export default function page() {
   return (
