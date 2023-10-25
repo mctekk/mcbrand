@@ -2,7 +2,6 @@
 import React, { Fragment, useState } from "react";
 
 import {  MdMenu } from 'react-icons/md';
-import Menu from "../../molecules/menu";
 import { Button } from "@/components/atoms/button/base";
 import Image from "next/image";
 import { Transition, Dialog } from "@headlessui/react";
@@ -30,7 +29,7 @@ export default function McHeader() {
           className="md:flex lg:hidden flex rounded-lg mt-2 py-2 pl-3 pr-3.5  "
           onClick={openModal}
         >
-          <MdMenu className=" text-[2rem] text-black " />
+          <MdMenu className=" text-[2rem] text-white -mt-2 " />
         </Button>
       </div>
       <div className="hidden lg:flex ">
@@ -53,12 +52,12 @@ export default function McHeader() {
           <nav
             className={`${
               isOpen
-                ? " md:flex md:flex-col right-0 w-3/4 h-screen absolute top-0 bg-white shadow-xl  transition-transform transform-gpu duration-300 md:w-3/4   "
+                ? " md:flex md:flex-col right-0 w-3/4 h-screen absolute top-0 bg-black shadow-xl  transition-transform transform-gpu duration-300 md:w-3/4   "
                 : "hidden"
             }`}
           >
             {isOpen ? (
-              <Image className="pt-6 p-5 " src="/images/logo.png" alt="Logo" width={800} height={24}></Image>
+                <Image src="/images/McLogo.svg" alt="logo" width={800} height={24} />
             ) : (
               ""
             )}

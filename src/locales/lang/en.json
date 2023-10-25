@@ -823,5 +823,16 @@
         "links": ["help@salesassist.io"]
       }
     }
+  },
+  "mcnavbar": {
+    "section": {
+      "Product": "Product",
+      "Blog": "Blog",
+      "aboutUs": "About Us",
+      "jobs": "Jobs",
+      "Contact": "Contact",
+      "GetStarted": "Get Started"
+    }
   }
+  
 }

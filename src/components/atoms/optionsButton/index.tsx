@@ -1,7 +1,13 @@
+import { translate } from "@/locales";
 import React, { useState } from "react";
+import {  MdKeyboardArrowDown } from "react-icons/md";
 
+interface options {
+  name: string;
+  link: string;
+}
 interface ButtonWithOptionsProps {
-  options: string[];
+  options: options[];
 }
 
 function ButtonOptions({ options }: ButtonWithOptionsProps) {
@@ -11,28 +17,26 @@ function ButtonOptions({ options }: ButtonWithOptionsProps) {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleOptionClick = (option: string) => {
-    console.log("Option clicked:", option);
-  };
-
   return (
-    <div className="relative">
+    <div className="relative hidden lg:flex -mt-1">
       <button
         onClick={toggleMenu}
-        className="bg-blue-500 text-white py-2 px-4 rounded"
+        className=" text-gray-400 pt-4 px-4 hover:text-white font-semibold flex"
       >
-        Show Options
+        {translate("mcnavbar.section.Product")}<div className="mt-1"><MdKeyboardArrowDown /></div> 
       </button>
       {isMenuOpen && (
-        <div className="absolute right-0 mt-2 bg-white border border-gray-300 rounded shadow-lg">
-          <ul>
+        <div className="absolute right-0 mt-12 bg-white border border-gray-300 rounded shadow-lg">
+          <ul >
             {options.map((option, index) => (
-              <li
+              <li className="p-2">
+              <a
                 key={index}
-                onClick={() => handleOptionClick(option)}
-                className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                className="px-4 py-2 cursor-pointer hover:bg-gray-100 "
+                href={option.link}
               >
-                {option}
+                {option.name}
+              </a>
               </li>
             ))}
           </ul>
