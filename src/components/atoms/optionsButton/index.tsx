@@ -1,3 +1,4 @@
+'use client'
 import { translate } from "@/locales";
 import React, { useState } from "react";
 import {  MdKeyboardArrowDown } from "react-icons/md";
