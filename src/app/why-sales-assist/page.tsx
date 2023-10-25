@@ -14,21 +14,26 @@ import { Footer } from "@/components/organism/sections/footer";
 import { dataPainless } from "@/model/api/sales-painless/data";
 import { dataSlide } from "@/model/api/simplify-sales";
 import { GA } from "@/components/atoms/analitiycs";
-
+import { Menu } from "@headlessui/react";
 
 export default function page() {
   return (
     <main>
-      <Header></Header>
-      <GA/>
-      <WhySalesAssistHero data={dataHero}/>
-      <Benefits data={dataBenefits}/>
-      <HowItWorks data={howData}/>
-      <WhySalesAssistSimplifySales data={dataSlide}/>
+      <Header
+        menu={<Menu></Menu>}
+        logo="/images/logo.png"
+        iconColor="text-black"
+      />
+      ,
+      <GA />
+      <WhySalesAssistHero data={dataHero} />
+      <Benefits data={dataBenefits} />
+      <HowItWorks data={howData} />
+      <WhySalesAssistSimplifySales data={dataSlide} />
       <Customers></Customers>
-      <InstantChanges/>
+      <InstantChanges />
       <WhySalesAssistCompletingSalesIsPainless data={dataPainless} />
-      <Footer kind="dark"/>
+      <Footer kind="dark" />
     </main>
   );
 }
