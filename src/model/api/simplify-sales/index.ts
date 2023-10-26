@@ -27,3 +27,30 @@ export const dataSlide = {
       }
     ],
 }
+export const dataMcSlide = {
+  "title": `Our Products`,
+  "desc":  ``,
+  "options": [
+    `Kanvas`,
+      `Gewaer`,
+      `DealerAppCenter`,
+  ],
+  "show_case": [
+    {
+      "option":  `Kanvas`,
+      "url": `${translate("whySalesAssist.swiperData.show_case[0].url")}`,
+      "title": `Unlock Seamless App Development`,
+      "desc": `Kanvas Niche’s modules simplify complexities, letting you concentrate on building exceptional experiences. See the difference!`
+    },{
+      "option":  `${translate("whySalesAssist.swiperData.show_case[1].option")}`,
+      "url": `${translate("whySalesAssist.swiperData.show_case[1].url")}`,
+      "title": `${translate("whySalesAssist.swiperData.show_case[1].title")}`,
+      "desc": `${translate("whySalesAssist.swiperData.show_case[1].desc")}`
+    },{
+      "option":  `${translate("whySalesAssist.swiperData.show_case[2].option")}`,
+      "url": `${translate("whySalesAssist.swiperData.show_case[2].url")}`,
+      "title": `${translate("whySalesAssist.swiperData.show_case[2].title")}`,
+      "desc": `${translate("whySalesAssist.swiperData.show_case[2].desc")}`
+    }
+  ],
+}

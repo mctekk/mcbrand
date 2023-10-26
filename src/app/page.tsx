@@ -5,7 +5,8 @@ import { ReactNode } from "react";
 import Header from "@/components/organism/header";
 import { Footer } from "@/components/organism/sections/footer";
 import { Automated } from "@/components/organism/sections/home/automated";
-import CompletionProcess from "@/components/organism/sections/home/completionProcess";
+
+import InfoSection from "@/components/organism/sections/home/InfoSection";
 import CompletionTools from "@/components/organism/sections/home/completionTools";
 import Hero from "@/components/organism/sections/home/hero";
 import { InstantChanges } from "@/components/organism/sections/home/instantChanges";
@@ -18,7 +19,20 @@ import { industriesData } from "@/model/api/sales-data/data";
 import Menu from "@/components/molecules/menu";
 import McMenu from "@/components/molecules/mc-menu";
 import { translate } from "@/locales";
-
+import { Slider } from "@/components/organism/sections/why-sales-assist/simplify-sales";
+import { dataMcSlide, dataSlide } from "@/model/api/simplify-sales";
+import Brands from "@/components/atoms/brands";
+import SimpleForm from "@/components/organism/sections/home/formContact";
+const images = [
+  "/images/brands/Dealer.png",
+  "/images/brands/Memod.png",
+  "/images/brands/nectar.png",
+  "/images/brands/nzxt.png",
+  "/images/brands/crunchy.png",
+  "/images/brands/copic.png",
+  
+  // Agrega más URLs de imágenes según tus necesidades
+];
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
     <Header
@@ -39,7 +53,13 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <CompletionTools />,
     <ImageChanger data={actionsData} />,
     <Automated />,
-    <CompletionProcess />,
+    <InfoSection
+      desc={translate("home.completionprocess.desc")}
+      img="/images/completion-process-example.png"
+      title={translate("home.completionprocess.title")}
+      button={false}
+      direction="flex-row"
+    />,
     <InstantChanges />,
     <WhySalesAssistSalesProcess data={industriesData} />,
     <Sales />,
@@ -68,6 +88,34 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorWords="text-white"
       buttonColor="bg-orange-400"
     ></Hero>,
+    <InfoSection
+    direction="flex-row"
+      desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      title="Lorem Ipsum"
+      img="/images/Frame.jpg"
+      button={false}
+      backColor="bg-white"
+    ></InfoSection>,
+    <Slider data={dataMcSlide} background="bg-kanvas-bg bg-cover" color="bg-cyan-600"></Slider>,
+    <Brands imageUrls={images} title="Brands that trust us"/>,
+    <InfoSection
+    direction="flex-row"
+    desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    title="Lorem Ipsum"
+    img="/images/Frame.jpg"
+    button={false}
+    backColor="bg-white"
+  ></InfoSection>,
+  <InfoSection
+  desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+  title="Lorem Ipsum"
+  img="/images/Frame.jpg"
+  button={false}
+  direction="flex-row"
+  backColor="bg-white"
+></InfoSection>,
+<SimpleForm></SimpleForm>,
+<Footer></Footer>
   ],
 };
 export default function Page() {
