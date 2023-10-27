@@ -20,7 +20,7 @@ const useSimpleForm = (): UseSimpleFormHook => {
     name: '',
     companyName: '',
     email: '',
-    budget: '',
+    budget: '$10,000',
     message: '',
   };
 
