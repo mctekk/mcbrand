@@ -115,7 +115,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Lorem Ipsum"
       img="/images/Frame.jpg"
       button={false}
-      direction="flex-row-reverse"
+      direction="flex-row"
       backColor="bg-white"
     ></InfoSection>,
     <SimpleForm></SimpleForm>,
