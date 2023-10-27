@@ -30,7 +30,7 @@ const images = [
   "/images/brands/nzxt.png",
   "/images/brands/crunchy.png",
   "/images/brands/copic.png",
-  
+
   // Agrega más URLs de imágenes según tus necesidades
 ];
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
@@ -89,33 +89,37 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonColor="bg-orange-400"
     ></Hero>,
     <InfoSection
-    direction="flex-row"
+      direction="flex-row"
       desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
       title="Lorem Ipsum"
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
     ></InfoSection>,
-    <Slider data={dataMcSlide} background="bg-kanvas-bg bg-cover" color="bg-cyan-600"></Slider>,
-    <Brands imageUrls={images} title="Brands that trust us"/>,
+    <Slider
+      data={dataMcSlide}
+      background="bg-kanvas-bg bg-cover"
+      color="bg-cyan-600"
+    ></Slider>,
+    <Brands imageUrls={images} title="Brands that trust us" />,
     <InfoSection
-    direction="flex-row"
-    desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-    title="Lorem Ipsum"
-    img="/images/Frame.jpg"
-    button={false}
-    backColor="bg-white"
-  ></InfoSection>,
-  <InfoSection
-  desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-  title="Lorem Ipsum"
-  img="/images/Frame.jpg"
-  button={false}
-  direction="flex-row"
-  backColor="bg-white"
-></InfoSection>,
-<SimpleForm></SimpleForm>,
-<Footer></Footer>
+      direction="flex-row"
+      desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      title="Lorem Ipsum"
+      img="/images/Frame.jpg"
+      button={false}
+      backColor="bg-white"
+    ></InfoSection>,
+    <InfoSection
+      desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      title="Lorem Ipsum"
+      img="/images/Frame.jpg"
+      button={false}
+      direction="flex-row"
+      backColor="bg-white"
+    ></InfoSection>,
+    <SimpleForm></SimpleForm>,
+    <Footer></Footer>,
   ],
 };
 export default function Page() {
