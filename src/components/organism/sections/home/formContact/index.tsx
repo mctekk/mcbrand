@@ -5,7 +5,6 @@ import { Button } from "@/components/atoms/button/base";
 import FormFields from "@/components/molecules/form-fields";
 import useSimpleForm from "@/model/interactions/use-form";
 
-
 function SimpleForm() {
   const { formData, handleChange, handleSubmit } = useSimpleForm();
 
@@ -34,7 +33,6 @@ function SimpleForm() {
               className="bg-black hover:bg-orange-300 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline w-full items-center justify-center"
               type="submit"
             >
-              
               Send Message
             </Button>
           </div>

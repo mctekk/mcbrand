@@ -35,6 +35,15 @@ const salesAssist = {
         { path: `${Paths.pricing}/#Q&A`, name: RouteNames.qAndA },
     ]
 }
+const mctekk = {
+    title: `Connect with us `,
+    links: [
+        { path: '/#how-it-works', name: "Instagram" },
+        { path: `${Paths.whySalesAssist}/#benefits`, name: "Linkedln" },
+        { path: '/#actions', name: "Twitter"},
+        { path: Paths.pricing, name:"Github" },
+    ]
+}
 
 const company = {
     title: `${translate("routesTitles.title1")}`,
@@ -56,6 +65,7 @@ const contact = {
 
 export const footerLinks = {
     salesAssist,
+    mctekk,
     company,
     contact,
 }

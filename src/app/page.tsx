@@ -63,7 +63,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <InstantChanges />,
     <WhySalesAssistSalesProcess data={industriesData} />,
     <Sales />,
-    <Footer />,
+    <Footer sales={true} />,
   ],
 
   mctekk: [
@@ -115,11 +115,11 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Lorem Ipsum"
       img="/images/Frame.jpg"
       button={false}
-      direction="flex-row"
+      direction="flex-row-reverse"
       backColor="bg-white"
     ></InfoSection>,
     <SimpleForm></SimpleForm>,
-    <Footer></Footer>,
+    <Footer mctekk></Footer>,
   ],
 };
 export default function Page() {

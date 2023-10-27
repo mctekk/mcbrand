@@ -2,6 +2,7 @@ import classNames from "classnames";
 
 import NextLink from "next/link";
 import { RouteNames } from "@/model/api/routes-data/data";
+import { ReactNode } from "react";
 
 export interface FooterLinkProps {
   title: string;
@@ -9,7 +10,8 @@ export interface FooterLinkProps {
   className?: string;
   hideTitle?: boolean;
   kind?: "dark" | "light";
-  isContact?: boolean;
+  mctekk?: boolean;
+  icon?:ReactNode
 }
 
 export function FooterList({
@@ -18,9 +20,9 @@ export function FooterList({
   className,
   hideTitle,
   kind,
-  isContact,
+  mctekk,
 }: FooterLinkProps) {
-  const baseClass = classNames("md:w-1/2 text-left", className);
+  const baseClass = classNames("md:w-1/2 text-left", className,{"md:w-fit": mctekk});
   const titleClass = classNames(
     "font-bold  mb-2 text-[1rem] md:text-[1.125]",
     { "text-white": kind == "dark" })
@@ -41,7 +43,7 @@ export function FooterList({
 
   function renderLink(name: string, path: string) {
     return (
-      <NextLink passHref href={path} className="hover:text-orange-500 ">
+      <NextLink passHref href={path} className="hover:text-orange-500  ">
         {name}
       </NextLink>
     );
@@ -54,10 +56,10 @@ export function FooterList({
           {title}
         </h3>
       )}
-      <ul className="text-[.9rem] md:text-[1rem] ">
+      <ul className="text-[.9rem] md:text-[1rem] w-fit ">
         {links.map((link, i) => (
           <li
-            className="text-left"
+            className="text-left w-fit"
             key={link.name + i}
             style={{ wordBreak: "break-all" }}
           >
