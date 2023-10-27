@@ -32,13 +32,25 @@ export default function FooterLinks({ kind, mctekk, sales }: Props) {
     );
   } else {
     return (
-      <FooterList
-        kind={kind}
-        className="hidden md:block"
-        title={footerLinks.mctekk.title}
-        links={footerLinks.mctekk.links}
-        mctekk
-      />
+      <div className="lg:w-1/2 h-full flex justify-between  px-2 md:py-2 flex-wrap md:flex-nowrap">
+        <FooterList
+          kind={kind}
+          className="hidden md:block"
+          title={footerLinks.mctekk.title}
+          links={footerLinks.mctekk.links}
+         
+        />
+        <FooterList
+          kind={kind}
+          title={footerLinks.mcCompany.title}
+          links={footerLinks.mcCompany.links}
+        />
+        <FooterList
+          kind={kind}
+          title={footerLinks.contact.title}
+          links={footerLinks.contact.links}
+        />
+      </div>
     );
   }
 }

@@ -10,7 +10,7 @@ export interface FooterLinkProps {
   className?: string;
   hideTitle?: boolean;
   kind?: "dark" | "light";
-  mctekk?: boolean;
+ 
   icon?:ReactNode
 }
 
@@ -20,9 +20,8 @@ export function FooterList({
   className,
   hideTitle,
   kind,
-  mctekk,
 }: FooterLinkProps) {
-  const baseClass = classNames("md:w-1/2 text-left", className,{"md:w-fit": mctekk});
+  const baseClass = classNames("md:w-1/2 text-left", className,);
   const titleClass = classNames(
     "font-bold  mb-2 text-[1rem] md:text-[1.125]",
     { "text-white": kind == "dark" })
@@ -56,10 +55,10 @@ export function FooterList({
           {title}
         </h3>
       )}
-      <ul className="text-[.9rem] md:text-[1rem] w-fit ">
+      <ul className="text-[.9rem] md:text-[1rem] w-full ">
         {links.map((link, i) => (
           <li
-            className="text-left w-fit"
+            className="text-left w-full"
             key={link.name + i}
             style={{ wordBreak: "break-all" }}
           >

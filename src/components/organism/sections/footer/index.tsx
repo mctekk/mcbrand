@@ -6,7 +6,7 @@ import FooterLinks from "@/components/molecules/footer-links";
 import FooterLogo from "@/components/atoms/footer-logo";
 import FooterSocials from "@/components/atoms/footer-socials";
 import FooterRights from "@/components/atoms/footer-rights";
-import { Button } from "@/components/atoms/button/base";
+
 
 interface FooterProps {
   className?: string;
@@ -66,22 +66,15 @@ export function Footer({
           {mctekk && (
             <>
               <FooterLinks mctekk />
-              <div className="flex flex-col mb-14  ">
-                <h2 className="">Would you like to work with us?</h2>
-                <Button
-                  className={` bg-orange-400 text-[1.063rem] font-semibold  ml-5 md:ml-0 lg:ml-0 w-fit h-fit`}
-                >
-                  Get Started
-                </Button>
-              </div>
+              
             </>
           )}
         </div>
         {/* more about */}
-        <div className="flex-col md:flex-row flex-grow md:border-t w-full flex md:items-start md:justify-between gap-6 px-2 md:px-0 md:py-2">
+        <div className={`flex-col md:flex-row flex-grow md:border-t ${mctekk && "border-gray-800"}  w-full flex md:items-start md:justify-between gap-6 px-2 md:px-0 md:py-2`}>
           {/* useful links */}
-          <div className="w-1/6 border block md:hidden"></div>
-          {sales && (
+          <div className=" w-1/6 border block md:hidden"></div>
+          
             <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
               {[
                 { name: "Privacy Policy", path: "/privacy-policy" },
@@ -92,14 +85,15 @@ export function Footer({
                 </NextLink>
               ))}
             </div>
-          )}
+          
 
           {/* social media */}
           <div className="md:w-1/2 h-full flex justify-end gap-2 md:gap-6 flex-col md:flex-row w-full md:pb-12">
             <h4 className="block md:hidden text-[0.75rem] text-gray-400">
               <FooterRights />
             </h4>
-            {sales && <FooterSocials kind={kind} />}
+            {sales && <FooterSocials kind={kind} sales />}
+            {mctekk && <FooterSocials kind={kind}  />}
           </div>
         </div>
       </div>
