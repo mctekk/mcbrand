@@ -23,16 +23,8 @@ import { Slider } from "@/components/organism/sections/why-sales-assist/simplify
 import { dataMcSlide, dataSlide } from "@/model/api/simplify-sales";
 import Brands from "@/components/atoms/brands";
 import SimpleForm from "@/components/organism/sections/home/formContact";
-const images = [
-  "/images/brands/Dealer.png",
-  "/images/brands/Memod.png",
-  "/images/brands/nectar.png",
-  "/images/brands/nzxt.png",
-  "/images/brands/crunchy.png",
-  "/images/brands/copic.png",
+import { imagesBrand } from "@/model/api";
 
-  // Agrega más URLs de imágenes según tus necesidades
-];
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
     <Header
@@ -58,7 +50,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/completion-process-example.png"
       title={translate("home.completionprocess.title")}
       button={false}
-      direction="flex-row"
+      
     />,
     <InstantChanges />,
     <WhySalesAssistSalesProcess data={industriesData} />,
@@ -89,7 +81,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonColor="bg-orange-400"
     ></Hero>,
     <InfoSection
-      direction="flex-row"
+      
       desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
       title="Lorem Ipsum"
       img="/images/Frame.jpg"
@@ -101,9 +93,9 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       background="bg-kanvas-bg bg-cover"
       color="bg-cyan-600"
     ></Slider>,
-    <Brands imageUrls={images} title="Brands that trust us" />,
+    <Brands imageUrls={imagesBrand} title="Brands that trust us" />,
     <InfoSection
-      direction="flex-row"
+      
       desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
       title="Lorem Ipsum"
       img="/images/Frame.jpg"
@@ -115,7 +107,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Lorem Ipsum"
       img="/images/Frame.jpg"
       button={false}
-      direction="flex-row"
+      reverse
       backColor="bg-white"
     ></InfoSection>,
     <SimpleForm></SimpleForm>,

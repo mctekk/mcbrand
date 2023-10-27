@@ -6,11 +6,11 @@ import { Section } from "@/components/atoms/section";
 import { Typewriter } from "react-simple-typewriter";
 
 interface Props {
-  upperMessage: string;
-  lowerMessage: string;
+  upperMessage?: string;
+  lowerMessage?: string;
   words: string[];
   messageDesc: string;
-  highligh: string;
+  highligh?: string;
   messageEnd: string;
   buttonInfo: string;
   buttonLink: string;
@@ -59,7 +59,7 @@ export default function Hero({
                     words={words}
                     loop={0}
                     cursor
-                    cursorStyle="_"
+                    cursorStyle=""
                     typeSpeed={70}
                     deleteSpeed={50}
                     delaySpeed={1000}

@@ -12,15 +12,17 @@ interface TeamMembers {
   code?: string;
 }
 type Props = {
+  mctekk?:boolean
+  bgColor:string
   data: AboutUsTeamMembers;
 };
-export function AboutUsTeam({ data }: Props) {
+export function AboutUsTeam({ data,bgColor,mctekk }: Props) {
   return (
-    <section className="section bg-zinc-800">
+    <section className={` ${bgColor}`}>
       <Section className="flex-grow container mx-auto">
-        <div className="w-full flex items-center justify-center flex-col  text-white">
+        <div className="w-full flex items-center justify-center flex-col  ">
           {/* first row */}
-          <div className="w-full flex flex-wrap items-start justify-center gap-2">
+          <div className="w-full flex flex-wrap items-start justify-center gap-2 mb-9">
             {data.team.slice(0, 4).map((team) => (
               <TeamIcon
                 code={team.code}
@@ -28,6 +30,7 @@ export function AboutUsTeam({ data }: Props) {
                 link={team.social}
                 name={team.name}
                 title={team.title}
+                mctekk={mctekk}
               />
             ))}
           </div>

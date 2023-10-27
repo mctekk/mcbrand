@@ -11,3 +11,11 @@ export const aboutTeamData={
         { "name": "YY", "title": "Product Designer", "social": "https://www.linkedin.com/in/yifei-yin-18691ba9/", "code": "YY" }
     ]
 }
+export const mcAboutTeamData={
+    "team": [
+        { "name": "Max Castro", "title": "Founder", "social": "https://www.linkedin.com/in/maximo-castro-pou", "code": "Max" },
+        { "name": "Jennifer Herasme", "title": "Founder & CEO", "social": "https://www.linkedin.com/in/snowcanfly/", "code": "Jenn" },
+        { "name": "Rogelio Morey", "title": "Founder", "social": "https://www.linkedin.com/in/rogelio-morey/", "code": "Rogelio" },
+        
+    ]
+}
