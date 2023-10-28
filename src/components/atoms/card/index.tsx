@@ -7,7 +7,7 @@ type Kind = 'orange' | 'purple' | 'normal' | string
 
 interface CardProps {
   title: string;
-  sub: string;
+  sub?: string;
   className?: string;
   kind?: Kind;
   children?: ReactNode;

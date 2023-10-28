@@ -79,6 +79,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorFonts="text-white"
       colorWords="text-white"
       buttonColor="bg-orange-400"
+      button
     ></Hero>,
     <InfoSection
       

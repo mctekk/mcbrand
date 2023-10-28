@@ -45,7 +45,7 @@ export default function InfoSection({
             )}
           </h4>
         </div>
-        <div className="shrink-0 w-96 h-96 md:w-[35.5rem] md:h-[27.5rem] rounded-lg drop-shadow-sa overflow-hidden ">
+        <div className="shrink-0 md:w-[35.5rem] md:h-[27.5rem] rounded-lg drop-shadow-sa overflow-hidden ">
           <Image
             alt="Completion Process Example"
             src={img}

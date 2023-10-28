@@ -13,7 +13,7 @@ const menuItems = [
     text: translate("mcnavbar.section.jobs"),
     link: "https://mctekk.grovehr.com/careers/job?id=65117eed2487c21055883347",
   },
-  { text: translate("mcnavbar.section.Contact"), link: "Contact" },
+  { text: translate("mcnavbar.section.Contact"), link: "/contact" },
 ];
 const externalLinks = [
   {
