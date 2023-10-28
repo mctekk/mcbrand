@@ -25,10 +25,10 @@ export default function Header({menu,className,logo,iconColor}:Props) {
   }
 
   return (
-    <div className={`lg:flex lg:justify-center lg:items-center  gap-6 text-[1.0625rem] text-black pt-7 w-full lg:ml-0  sm:ml-0  ${className}`}>
+    <div className={`lg:flex lg:justify-center lg:items-center  gap-6 text-[1.0625rem] text-black p-3 w-full lg:ml-0  sm:ml-0  ${className}`}>
       <div className="flex justify-between px-4 py-2">
-        <div className="w-full">
-          <a className=" lg:ml-0   w-[11.25rem] h-[2.875rem] flex" href="/">
+        <div className="w-full ">
+          <a className=" lg:ml-0    flex" href="/">
             <Image src={logo} alt="logo" width={200} height={24} />
           </a>
         </div>
@@ -39,7 +39,7 @@ export default function Header({menu,className,logo,iconColor}:Props) {
           <MdMenu className={`text-[2rem] ${iconColor} -mt-4`}  />
         </Button>
       </div>
-      <div className="hidden lg:flex ">
+      <div className="hidden lg:flex  ">
         {menu}
       </div>
       <Transition appear show={isOpen} as={Fragment}>

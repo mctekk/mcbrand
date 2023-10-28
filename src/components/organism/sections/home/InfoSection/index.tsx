@@ -37,8 +37,8 @@ export default function InfoSection({
           <h4>
             {desc}
             {button && (
-              <a href={buttonLink} target="_blank" rel="noreferrer">
-                <Solid className={`px-2 mt-4 lg:px-3 ${buttonColor}`}>
+              <a href={buttonLink} target="_blank" rel="noreferrer" >
+                <Solid className={`px-5 mt-4 lg:px-3 ${buttonColor}`}>
                   {buttonTitle}
                 </Solid>
               </a>

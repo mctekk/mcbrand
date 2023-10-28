@@ -13,7 +13,7 @@ import { InstantChanges } from "@/components/organism/sections/home/instantChang
 import ImageChanger from "@/components/organism/sections/home/iteraction";
 import Sales from "@/components/organism/sections/home/sales";
 import { WhySalesAssistSalesProcess } from "@/components/organism/sections/home/whySalesAssistSales";
-import { actionsData } from "@/model/api/image-data/data";
+import { actionsData, kanvasActionsData } from "@/model/api/image-data/data";
 import { industriesData } from "@/model/api/sales-data/data";
 
 import Menu from "@/components/molecules/menu";
@@ -24,6 +24,7 @@ import { dataMcSlide, dataSlide } from "@/model/api/simplify-sales";
 import Brands from "@/components/atoms/brands";
 import SimpleForm from "@/components/organism/sections/home/formContact";
 import { imagesBrand } from "@/model/api";
+import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -42,15 +43,29 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonLink="https://calendly.com/salesasssit/30min"
       buttonInfo={translate("home.button")}
     />,
-    <CompletionTools />,
-    <ImageChanger data={actionsData} />,
-    <Automated />,
+    <CompletionTools
+      desc={translate("home.completiontools.desc")}
+      img="/images/completion-tools-screenshot.png"
+      title={translate("home.completiontools.title")}
+    />,
+    <ImageChanger
+      data={actionsData}
+      buttonColor="bg-stone-600 "
+      selected="text-orange-500"
+      className=" bg-zinc-800 text-white"
+      title={translate("home.iteraction.title")}
+      desc={translate("home.iteraction.desc")}
+    />,
+    <Automated
+      desc={translate("home.automated.desc")}
+      img={"/images/automated.svg"}
+      title={translate("home.automated.title")}
+    />,
     <InfoSection
       desc={translate("home.completionprocess.desc")}
       img="/images/completion-process-example.png"
       title={translate("home.completionprocess.title")}
       button={false}
-      
     />,
     <InstantChanges />,
     <WhySalesAssistSalesProcess data={industriesData} />,
@@ -82,7 +97,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button
     ></Hero>,
     <InfoSection
-      
       desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
       title="Lorem Ipsum"
       img="/images/Frame.jpg"
@@ -96,7 +110,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     ></Slider>,
     <Brands imageUrls={imagesBrand} title="Brands that trust us" />,
     <InfoSection
-      
       desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
       title="Lorem Ipsum"
       img="/images/Frame.jpg"
@@ -113,6 +126,80 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     ></InfoSection>,
     <SimpleForm></SimpleForm>,
     <Footer mctekk></Footer>,
+  ],
+  kanvas: [
+    <Header
+      menu={<McMenu></McMenu>}
+      className="bg-black"
+      logo="/images/McLogo.svg"
+      iconColor="text-white"
+    />,
+    <Header
+      menu={<KanvasMenu />}
+      className="bg-sky-600"
+      logo="/images/klogof.png"
+      iconColor="text-white"
+    />,
+    <Hero
+      className="bg-sky-50 "
+      buttonInfo="Get Started"
+      buttonLink="https://meetings.hubspot.com/jennifer-herasme"
+      messageDesc="Kanvas Niche’s modules simplify complexities, letting you concentrate on building"
+      messageEnd="exceptional experiences. See the difference"
+      upperMessage="Unlock Seamless App "
+      lowerMessage="Development"
+      words={[]}
+      colorDesc="text-sky-700"
+      colorFonts="text-sky-700"
+      colorWords="text-sky-700"
+      buttonColor="bg-sky-700"
+      button
+    ></Hero>,
+    <CompletionTools
+      title="Our solution"
+      desc="Our solution provides graph APIs for common problems encountered during development, allowing you to focus on building your product instead of worrying about the backend infrastructure."
+      img="/images/kanvastool.png"
+      subtitle="Your Backend Complement"
+      subdesc="Kanvas Niche is not a replacement for your existing backend-as-a-service or development framework. Instead, it complements them by providing specific modules for common problems that you would otherwise need to develop yourself."
+      colorFonts="text-sky-700"
+    />,
+    <ImageChanger
+      data={kanvasActionsData}
+      buttonColor="bg-white text-sky-600"
+      selected="text-white"
+      className="bg-sky-700 text-white"
+      title="Manage your leads, agents, and commissions with ease."
+      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+    />,
+    <Automated
+      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      img={"/images/automated.svg"}
+      title="Manage your leads, agents, and commissions with ease."
+      descColor="text-cyan-600"
+      titleColor="text-cyan-600"
+      bg="bg-sky-50"
+    />,
+    <InfoSection
+      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      title="Manage your leads, agents, and commissions with ease."
+      img="/images/Frame.jpg"
+      button={false}
+      backColor="bg-sky-50"
+      textColor="text-cyan-600"
+    ></InfoSection>,
+    <InfoSection
+      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      title="Manage your leads, agents, and commissions with ease."
+      img="/images/Frame.jpg"
+      reverse
+      button={true}
+      buttonColor="bg-cyan-600 "
+      buttonTitle="Get Started"
+      backColor="bg-sky-50"
+      textColor="text-cyan-600"
+      buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
+    ></InfoSection>,
+    <Footer kanvas></Footer>,
   ],
 };
 export default function Page() {

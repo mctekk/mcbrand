@@ -43,6 +43,17 @@ const mctekk = {
         
     ]
 }
+const kanvas = {
+    title: `${translate("routesTitles.title")}`,
+    links: [
+        { path: '/#how-it-works', name: RouteNames.howItWorks },
+        { path: `${Paths.whySalesAssist}/#benefits`, name: RouteNames.benefits },
+        { path: '/#actions', name: RouteNames.actions },
+        { path: Paths.pricing, name: RouteNames.pricing },
+        { path: `${Paths.pricing}/#Q&A`, name: RouteNames.qAndA },
+        
+    ]
+}
 
 const mcCompany = {
     title: `${translate("routesTitles.title1")}`,
@@ -58,6 +69,15 @@ const company = {
         { path: calendlyLink, name: RouteNames.bookADemo },
     ]
 }
+const KanvasCompany = {
+    title: `${translate("routesTitles.title1")}`,
+    links: [
+        { path: '/about-us', name: RouteNames.about },
+        { path: calendlyLink, name: RouteNames.bookADemo },
+    ]
+}
+
+
 const contact = {
     title: `${translate("routesTitles.title2")}`,
     links: [
@@ -65,6 +85,14 @@ const contact = {
         { path: '#', name: '251 Little Falls Drive, Wilmington, Delaware 19808' },
     ]
 }
+const kanvasContact = {
+    title: `${translate("routesTitles.title2")}`,
+    links: [
+        { path: 'mailto:help@salesassist.io', name: 'help@salesassist.io' },
+        { path: '#', name: '251 Little Falls Drive, Wilmington, Delaware 19808' },
+    ]
+}
+
 const mcContact = {
     title: `${translate("routesTitles.title2")}`,
     links: [
@@ -80,6 +108,9 @@ export const footerLinks = {
     mcContact,
     mctekk,
     company,
+    KanvasCompany,
     contact,
+    kanvas,
+    kanvasContact
 }
 

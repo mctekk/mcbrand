@@ -10,7 +10,13 @@ interface ImageData {
   name: string;
   title: string;
 }
-export default function ListButtons({ data }: { data: ImageData[] }) {
+
+interface ListProps {
+  data: ImageData[];
+  buttonColor?: string;
+  selected?:string
+}
+export default function ListButtons({ data,buttonColor,selected }:ListProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const handleClick = (index: number) => {
     setImageIndex(index);
@@ -28,8 +34,8 @@ export default function ListButtons({ data }: { data: ImageData[] }) {
             transition={{ duration: 1, ease: "linear", delay: index / 2 }}
             className={
               index === imageIndex
-                ? " text-orange-500  whitespace-nowrap outline outline-1  rounded-lg px-4 w-64 py-2  flex items-center justify-start text-left gap-2 transition-all duration-500 select-none  text-[1.20rem]"
-                : " bg-stone-600 text-[1.20rem] rounded-lg px-4 py-2 w-64 flex items-center justify-start  text-left gap-2 transition-all duration-500 select-none"
+                ? `${selected}   whitespace-nowrap outline outline-1  rounded-lg px-4 w-64 py-2  flex items-center justify-start text-left gap-2 transition-all duration-500 select-none  text-[1.20rem]`
+                : ` ${buttonColor} text-[1.20rem] rounded-lg px-4 py-2 w-64 flex items-center justify-start  text-left gap-2 transition-all duration-500 select-none`
             }
           >
             <MdInsights className="md:text-[1.75rem]" />

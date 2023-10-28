@@ -6,6 +6,7 @@ type Props = {
   kind?: "dark" | "light";
   mctekk?: boolean;
   sales?: boolean;
+  kanvas?: boolean;
 };
 
 const social = [
@@ -14,6 +15,13 @@ const social = [
     icon: <BsLinkedin />,
   },
   { url: "https://twitter.com/SalesAssistSaaS", icon: <BsTwitter /> },
+];
+const kanvasSocial = [
+  {
+    url: "https://www.linkedin.com/company/getsalesassist",
+    icon: <BsLinkedin />,
+  },
+  { url: "https://twitter.com/SalesAssistSaaS", icon: <BsInstagram /> },
 ];
 const MCsocial = [
   {
@@ -25,10 +33,28 @@ const MCsocial = [
   { url: "https://www.instagram.com/mctekk", icon: <BsInstagram /> },
 ];
 
-export default function FooterSocials({ kind, sales }: Props) {
+export default function FooterSocials({ kind, sales, kanvas }: Props) {
   const socialClasses = classNames("text-[1.875rem] text-white rounded", {
     "bg-zinc-800": kind === "light",
   });
+  if (kanvas) {
+    return (
+      <div className="flex gap-6 w-full flex-wrap md:justify-end">
+        {kanvasSocial.map((s, i) => (
+          <a
+            key={i}
+            href={s.url}
+            target="_blank"
+            rel="noreferrer"
+            className={socialClasses}
+          >
+            {s.icon}
+          </a>
+        ))}
+      </div>
+    );
+  }
+
   if (sales) {
     return (
       <div className="flex gap-6 w-full flex-wrap md:justify-end">
