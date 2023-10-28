@@ -19,11 +19,12 @@ interface ImageChangerProps {
   className:string
   title:string
   desc:string
+  id:string
 }
 
-export default function ImageChanger({ data, buttonColor,selected,className,desc,title }: ImageChangerProps) {
+export default function ImageChanger({ data, buttonColor,selected,className,desc,title,id }: ImageChangerProps) {
   return (
-    <div className={`section  ${className}`} id="actions">
+    <div className={`section  ${className}`} id={id}>
       <Section>
         <div className="xl:ml-64 mb-10">
           <h1 className="mb-4">{title}</h1>

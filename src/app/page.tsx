@@ -55,6 +55,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className=" bg-zinc-800 text-white"
       title={translate("home.iteraction.title")}
       desc={translate("home.iteraction.desc")}
+      id="actions"
     />,
     <Automated
       desc={translate("home.automated.desc")}
@@ -170,6 +171,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-sky-700 text-white"
       title="Manage your leads, agents, and commissions with ease."
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      id="features"
     />,
     <Automated
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
