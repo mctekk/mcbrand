@@ -7,12 +7,12 @@ import FooterLogo from "@/components/atoms/footer-logo";
 import FooterSocials from "@/components/atoms/footer-socials";
 import FooterRights from "@/components/atoms/footer-rights";
 
-
 interface FooterProps {
   className?: string;
   sales?: boolean;
   mctekk?: boolean;
   kanvas?: boolean;
+  gewaer?: boolean;
   kind?: "dark" | "light";
 }
 
@@ -21,7 +21,8 @@ export function Footer({
   kind = "light",
   mctekk,
   sales,
-  kanvas
+  kanvas,
+  gewaer,
 }: FooterProps) {
   const baseClasses = classNames(
     "md:py-12 duration-300 py-6 ",
@@ -29,7 +30,8 @@ export function Footer({
     { "text-white": kind === "dark" },
     { "text-white bg-black": mctekk },
     { "text-white bg-sky-700": kanvas },
-    
+    { "text-white bg-violet-500": gewaer },
+
     className
   );
 
@@ -43,6 +45,7 @@ export function Footer({
               {sales && <FooterLogo kind={kind} />}
               {mctekk && <img src="/images/McLogo.svg" />}
               {kanvas && <img src="/images/klogof.png" />}
+              {gewaer && <img src="/images/Gewaer.svg" />}
             </div>
             <h4 className="hidden md:block text-[0.75rem]">
               <FooterRights />
@@ -74,38 +77,53 @@ export function Footer({
                 links={footerLinks.kanvas.links}
               />
             )}
+             {gewaer && (
+              <FooterList
+                kind={kind}
+                hideTitle
+                className="block md:hidden"
+                title={footerLinks.kanvas.title}
+                links={footerLinks.kanvas.links}
+              />
+            )}
           </div>
           {/* links */}
           {sales && <FooterLinks sales />}
           {mctekk && (
             <>
               <FooterLinks mctekk />
-              
             </>
-          )} {kanvas&& (
+          )}{" "}
+          {kanvas && (
             <>
-              <FooterLinks mctekk />
-              
+              <FooterLinks kanvas />
             </>
           )}
-          
+           {gewaer && (
+            <>
+              <FooterLinks gewaer/>
+            </>
+          )}
         </div>
         {/* more about */}
-        <div className={`flex-col md:flex-row flex-grow md:border-t ${mctekk && "border-gray-800"}  w-full flex md:items-start md:justify-between gap-6 px-2 md:px-0 md:py-2`}>
+        <div
+          className={`flex-col md:flex-row flex-grow md:border-t ${
+            mctekk && "border-gray-800"
+          }  w-full flex md:items-start md:justify-between gap-6 px-2 md:px-0 md:py-2`}
+        >
           {/* useful links */}
           <div className=" w-1/6 border block md:hidden"></div>
-          
-            <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
-              {[
-                { name: "Privacy Policy", path: "/privacy-policy" },
-                { name: "Terms of Service", path: "/terms-of-service" },
-              ].map((link) => (
-                <NextLink key={link.path} passHref href={link.path}>
-                  <p className="px-0 hover:text-orange-500">{link.name}</p>
-                </NextLink>
-              ))}
-            </div>
-          
+
+          <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
+            {[
+              { name: "Privacy Policy", path: "/privacy-policy" },
+              { name: "Terms of Service", path: "/terms-of-service" },
+            ].map((link) => (
+              <NextLink key={link.path} passHref href={link.path}>
+                <p className="px-0 hover:text-orange-500">{link.name}</p>
+              </NextLink>
+            ))}
+          </div>
 
           {/* social media */}
           <div className="md:w-1/2 h-full flex justify-end gap-2 md:gap-6 flex-col md:flex-row w-full md:pb-12">
@@ -113,8 +131,8 @@ export function Footer({
               <FooterRights />
             </h4>
             {sales && <FooterSocials kind={kind} sales />}
-            {mctekk && <FooterSocials kind={kind}  />}
-            {kanvas&& <FooterSocials kind={kind} kanvas />}
+            {mctekk && <FooterSocials kind={kind} />}
+            {kanvas && <FooterSocials kind={kind} kanvas />}
           </div>
         </div>
       </div>

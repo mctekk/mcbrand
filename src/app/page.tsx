@@ -25,6 +25,7 @@ import Brands from "@/components/atoms/brands";
 import SimpleForm from "@/components/organism/sections/home/formContact";
 import { imagesBrand } from "@/model/api";
 import { KanvasMenu } from "@/components/molecules/kanvas-menu";
+import { GMenu } from "@/components/molecules/gewaer-menu";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -129,7 +130,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <Footer mctekk></Footer>,
   ],
   kanvas: [
-    
     <Header
       menu={<KanvasMenu />}
       className="bg-sky-600"
@@ -144,7 +144,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       messageEnd="exceptional experiences. See the difference"
       upperMessage="Unlock Seamless App "
       lowerMessage="Development"
-      words={["baka" , "lorem"]}
+      words={["baka", "lorem"]}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
@@ -200,6 +200,76 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <WhySalesAssistSalesProcess data={industriesData} />,
     <Sales className="bg-white" />,
     <Footer kanvas></Footer>,
+  ],
+  gewaer: [
+    <Header
+      menu={<GMenu />}
+      className="bg-violet-500"
+      logo="/images/Gewaer.svg"
+      iconColor="text-white"
+    />,
+    <Hero
+      className="bg-violet-500 "
+      buttonInfo="Request Demo"
+      buttonLink="https://meetings.hubspot.com/jennherasme/gewaer-leads"
+      messageDesc="Our SaaS solution connects to your CRM and allows for managing leads, agents, "
+      messageEnd="commissions, individual agent websites, referral programs, and more"
+      upperMessage="Manage your leads, agents,  "
+      lowerMessage="and commissions with "
+      words={["ease","baka", "lorem"]}
+      colorDesc="text-white"
+      colorFonts="text-white"
+      colorWords="text-white"
+      buttonColor="bg-white text-violet-500"
+      button
+    ></Hero>,
+    <CompletionTools
+      title="Manage your leads, agents, and commissions with ease."
+      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      img="/images/gview.png"
+      colorFonts="text-blue-950"
+    />,
+    <ImageChanger
+      data={kanvasActionsData}
+      buttonColor="bg-white text-violet-500"
+      selected="text-white"
+      className="bg-violet-500 text-white"
+      title="Manage your leads, agents, and commissions with ease."
+      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      id="learnMore"
+    />,
+    <Automated
+      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      img={"/images/automated.svg"}
+      title="Manage your leads, agents, and commissions with ease."
+      descColor="text-cyan-600"
+      titleColor="text-cyan-600"
+      bg="bg-violet-50"
+    />,
+    <InfoSection
+      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      title="Manage your leads, agents, and commissions with ease."
+      img="/images/Frame.jpg"
+      button={false}
+      backColor="bg-violet-50"
+      textColor="text-blue-950"
+    ></InfoSection>,
+    <InfoSection
+      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      title="Manage your leads, agents, and commissions with ease."
+      img="/images/Frame.jpg"
+      reverse
+      button={true}
+      buttonColor="bg-violet-500 "
+      buttonTitle="Request Demo"
+      backColor="bg-violet-50"
+      textColor="text-blue-950"
+      buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
+    ></InfoSection>,
+    <InstantChanges className="bg-violet-50" />,
+    <WhySalesAssistSalesProcess data={industriesData} />,
+    <Sales className="bg-violet-50" />,
+    <Footer gewaer></Footer>,
   ],
 };
 export default function Page() {

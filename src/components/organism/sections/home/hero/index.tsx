@@ -44,7 +44,7 @@ export default function Hero({
         <div className="flex justify-center  flex-col gap-6  lg:w-fit xl:w-fit xl:ml-64  ">
           <div className="flex flex-col pb-12 w-fit">
             <h1
-              className={`${colorFonts} md:text-[3rem] lg:text-[4.5rem] lg:tracking-wide lg:mb-1.5  md:ml-0 lg:ml-0 w-fit `}
+              className={`${colorFonts} md:text-[3rem] lg:text-[4.5rem] lg:tracking-wide lg:mb-1.5  md:ml-0 lg:ml-0 w-fit ml-3 `}
             >
               {upperMessage}
             </h1>
@@ -56,7 +56,7 @@ export default function Hero({
               </h1>
               <div className="overflow-hidden gap-6 flex flex-col h-[50px] md:h-[90px] lg:h-[99px] slices  ">
                 <h1
-                  className={`${colorWords}  md:text-[3rem] lg:text-[4rem] xl:text-[4.5rem]  slice ml-5 md:ml-0 lg:ml-0 lg:mt-5`}
+                  className={`${colorWords}  md:text-[3rem] lg:text-[4rem] xl:text-[4.5rem]  slice ml-3 md:ml-0 lg:ml-0 lg:mt-5`}
                 >
                   <Typewriter
                     words={words}

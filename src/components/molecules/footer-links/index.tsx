@@ -7,9 +7,10 @@ type Props = {
   sales?: boolean;
   mctekk?: boolean;
   kanvas?: boolean;
+  gewaer?: boolean;
 };
 
-export default function FooterLinks({ kind, mctekk, sales, kanvas }: Props) {
+export default function FooterLinks({ kind, mctekk, sales, kanvas,gewaer }: Props) {
   if (kanvas) {
     return (
       <div className="lg:w-1/2 h-full flex justify-between  px-2 md:py-2 flex-wrap md:flex-nowrap">
@@ -28,6 +29,27 @@ export default function FooterLinks({ kind, mctekk, sales, kanvas }: Props) {
           kind={kind}
           title={footerLinks.kanvasContact.title}
           links={footerLinks.kanvasContact.links}
+        />
+      </div>
+    );
+  }if (gewaer) {
+    return (
+      <div className="lg:w-1/2 h-full flex justify-between  px-2 md:py-2 flex-wrap md:flex-nowrap">
+        <FooterList
+          kind={kind}
+          className="hidden md:block"
+          title={footerLinks.gewaer.title}
+          links={footerLinks.gewaer.links}
+        />
+        <FooterList
+          kind={kind}
+          title={footerLinks.GewaerCompany.title}
+          links={footerLinks.GewaerCompany.links}
+        />
+        <FooterList
+          kind={kind}
+          title={footerLinks.GewaerContact.title}
+          links={footerLinks.GewaerContact.links}
         />
       </div>
     );
