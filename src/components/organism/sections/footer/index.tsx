@@ -12,6 +12,7 @@ interface FooterProps {
   className?: string;
   sales?: boolean;
   mctekk?: boolean;
+  kanvas?: boolean;
   kind?: "dark" | "light";
 }
 
@@ -20,12 +21,15 @@ export function Footer({
   kind = "light",
   mctekk,
   sales,
+  kanvas
 }: FooterProps) {
   const baseClasses = classNames(
     "md:py-12 duration-300 py-6 ",
     { "bg-zinc-800": kind === "dark" },
     { "text-white": kind === "dark" },
     { "text-white bg-black": mctekk },
+    { "text-white bg-sky-700": kanvas },
+    
     className
   );
 
@@ -35,9 +39,10 @@ export function Footer({
         {/* footer left panel */}
         <div className="h-1/2 w-full flex justify-between md:gap-4 md:items-center ">
           <div className="w-full md:w-fit lg:w-1/3 h-full px-2 md:py-2 relative mb-auto">
-            <div className="max-w-[164px]">
+            <div className="max-w-[164px] mb-3">
               {sales && <FooterLogo kind={kind} />}
               {mctekk && <img src="/images/McLogo.svg" />}
+              {kanvas && <img src="/images/klogof.png" />}
             </div>
             <h4 className="hidden md:block text-[0.75rem]">
               <FooterRights />
@@ -60,6 +65,15 @@ export function Footer({
                 links={footerLinks.mctekk.links}
               />
             )}
+            {kanvas && (
+              <FooterList
+                kind={kind}
+                hideTitle
+                className="block md:hidden"
+                title={footerLinks.kanvas.title}
+                links={footerLinks.kanvas.links}
+              />
+            )}
           </div>
           {/* links */}
           {sales && <FooterLinks sales />}
@@ -68,7 +82,13 @@ export function Footer({
               <FooterLinks mctekk />
               
             </>
+          )} {kanvas&& (
+            <>
+              <FooterLinks mctekk />
+              
+            </>
           )}
+          
         </div>
         {/* more about */}
         <div className={`flex-col md:flex-row flex-grow md:border-t ${mctekk && "border-gray-800"}  w-full flex md:items-start md:justify-between gap-6 px-2 md:px-0 md:py-2`}>
@@ -94,6 +114,7 @@ export function Footer({
             </h4>
             {sales && <FooterSocials kind={kind} sales />}
             {mctekk && <FooterSocials kind={kind}  />}
+            {kanvas&& <FooterSocials kind={kind} kanvas />}
           </div>
         </div>
       </div>
