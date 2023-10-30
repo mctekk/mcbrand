@@ -70,7 +70,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     />,
     <InstantChanges />,
     <WhySalesAssistSalesProcess data={industriesData} />,
-    <Sales />,
+    <Sales className="bg-white" />,
     <Footer sales={true} />,
   ],
 
@@ -129,12 +129,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <Footer mctekk></Footer>,
   ],
   kanvas: [
-    <Header
-      menu={<McMenu></McMenu>}
-      className="bg-black"
-      logo="/images/McLogo.svg"
-      iconColor="text-white"
-    />,
+    
     <Header
       menu={<KanvasMenu />}
       className="bg-sky-600"
@@ -149,7 +144,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       messageEnd="exceptional experiences. See the difference"
       upperMessage="Unlock Seamless App "
       lowerMessage="Development"
-      words={[]}
+      words={["baka" , "lorem"]}
       colorDesc="text-sky-700"
       colorFonts="text-sky-700"
       colorWords="text-sky-700"
@@ -201,6 +196,9 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-cyan-600"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
     ></InfoSection>,
+    <InstantChanges className="bg-white" />,
+    <WhySalesAssistSalesProcess data={industriesData} />,
+    <Sales className="bg-white" />,
     <Footer kanvas></Footer>,
   ],
 };

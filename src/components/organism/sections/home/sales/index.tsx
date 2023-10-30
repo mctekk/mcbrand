@@ -7,9 +7,12 @@ import Image from 'next/image';
 import { Section } from '@/components/atoms/section';
 import { Solid } from '@/components/atoms/button/solid';
 
-export default function Sales({ }){
+interface Props{
+  className:string
+}
+export default function Sales({className }:Props){
   return (
-    <section className='section relative bg-white h-auto '>
+    <section className={`section relative  h-auto ${className}`}>
       <Section>
         <div className='container md:gap-24 mx-auto md:flex-row justify-start items-center md:items-start h-full flex '>
           <div className='xl:w-1/3 md:w-1/2 xl:ml-64 '>

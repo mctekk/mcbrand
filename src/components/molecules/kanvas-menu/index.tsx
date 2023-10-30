@@ -9,6 +9,7 @@ const menuItems = [
     link: "/",
   },
   { text:"Features", link: "#features" },
+  { text:"GitHub", link: "https://github.com/bakaphp" },
 
 ];
 const externalLinks = [
