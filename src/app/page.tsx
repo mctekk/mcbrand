@@ -137,7 +137,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       iconColor="text-white"
     />,
     <Hero
-      className="bg-sky-50 "
+      className="bg-sky-600 "
       buttonInfo="Get Started"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       messageDesc="Kanvas Niche’s modules simplify complexities, letting you concentrate on building"
@@ -145,10 +145,10 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       upperMessage="Unlock Seamless App "
       lowerMessage="Development"
       words={["baka" , "lorem"]}
-      colorDesc="text-sky-700"
-      colorFonts="text-sky-700"
-      colorWords="text-sky-700"
-      buttonColor="bg-sky-700"
+      colorDesc="text-white"
+      colorFonts="text-white"
+      colorWords="text-white"
+      buttonColor="bg-white text-sky-600"
       button
     ></Hero>,
     <CompletionTools
