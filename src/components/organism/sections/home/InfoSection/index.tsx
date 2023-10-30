@@ -12,7 +12,7 @@ interface Props {
   backColor?: string;
   textColor?: string;
   buttonColor?: string;
-  direction: "flex-row-reverse" | "flex-row";
+  reverse?:boolean
 }
 
 export default function InfoSection({
@@ -25,12 +25,12 @@ export default function InfoSection({
   backColor,
   textColor,
   buttonColor,
-  direction,
+  reverse
 }: Props) {
   return (
     <section className={`${backColor} section  `}>
       <Section
-        className={`flex flex-col  lg:${direction} gap-4 md:gap-20 items-center`}
+        className={`flex flex-col  lg:flex-row ${reverse? "lg:flex-row-reverse":"lg:flex-row"} gap-4 md:gap-20 items-center`}
       >
         <div className={`flex flex-col gap-6 xl:w-fit xl:ml-72 ${textColor} `}>
           <h1>{title}</h1>
