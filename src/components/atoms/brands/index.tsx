@@ -8,7 +8,7 @@ interface ImageListProps {
 function ImageList({ title, imageUrls }: ImageListProps) {
   return (
     <div className="lg:flex lg:flex-col justify-center mx-auto items-center bg-black text-white">
-      <p className="text-[32px] font-semibold mt-20 mb-10 mx-auto items-center w-fit">{title}</p>
+      <p className="text-[32px] font-semibold pt-20 mb-10 mx-auto items-center w-fit">{title}</p>
       <div className=" lg:flex lg:flex-row flex flex-col w-fit  lg:space-x-20 mx-auto">
         {imageUrls.map((imageUrl, index) => (
           <Image

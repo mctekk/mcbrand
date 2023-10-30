@@ -12,13 +12,14 @@ interface Props {
   messageDesc: string;
   highligh?: string;
   messageEnd: string;
-  buttonInfo: string;
-  buttonLink: string;
+  buttonInfo?: string;
+  buttonLink?: string;
   className?: string;
   colorFonts?: string;
   colorWords?: string;
   colorDesc?: string;
   buttonColor?:string
+  button?:boolean
 }
 export default function Hero({
   highligh,
@@ -33,21 +34,23 @@ export default function Hero({
   colorFonts,
   colorWords = "text-orange-500",
   colorDesc = "text-gray-500",
-  buttonColor='bg-orange-500'
+  buttonColor='bg-orange-500',
+  button
+
 }: Props) {
   return (
     <div className={`section ${className} `} id="how-it-works">
-      <Section className="lg:mt-6 pl-0  flex items-center justify-end">
-        <div className="flex justify-center  flex-col gap-6  lg:w-[70rem] xl:w-[81rem] xl:ml-32  ">
-          <div className="flex flex-col pb-12 ">
+      <Section className="lg:mt-6 pl-0  flex items-center justify-start ">
+        <div className="flex justify-center  flex-col gap-6  lg:w-fit xl:w-fit xl:ml-64  ">
+          <div className="flex flex-col pb-12 w-fit">
             <h1
-              className={`${colorFonts} md:text-[3rem] lg:text-[4.5rem] lg:tracking-wide lg:mb-1.5 ml-5 md:ml-0 lg:ml-0`}
+              className={`${colorFonts} md:text-[3rem] lg:text-[4.5rem] lg:tracking-wide lg:mb-1.5  md:ml-0 lg:ml-0 w-fit `}
             >
               {upperMessage}
             </h1>
             <div className="flex flex-col lg:flex-row lg:w-fit  md:gap-4 lg:tracking-wide  ">
               <h1
-                className={`${colorWords} md:text-[3rem] lg:text-[4.5rem]  font-normal ml-5 md:ml-0 lg:ml-0 whitespace-nowrap `}
+                className={`${colorWords} md:text-[3rem] lg:text-[4.5rem]  font-normal  md:ml-0 lg:ml-0 whitespace-nowrap text-[1.80rem] ml-3`}
               >
                 {lowerMessage}
               </h1>
@@ -80,11 +83,12 @@ export default function Hero({
               {messageEnd}
             </h4>
           </div>
-          <a href={buttonLink} target="_blank" rel="noreferrer">
+          {button && <a href={buttonLink} target="_blank" rel="noreferrer" className="w-fit">
             <Button className={`${buttonColor} text-[1.063rem] font-semibold  ml-5 md:ml-0 lg:ml-0 w-fit h-full`}>
               {buttonInfo}
             </Button>
-          </a>
+          </a>}
+          
         </div>
       </Section>
     </div>
