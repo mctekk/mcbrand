@@ -6,7 +6,7 @@ import { Benefits } from "@/components/organism/sections/why-sales-assist/benefi
 import { dataBenefits } from "@/model/api/benefits-data/data";
 import { HowItWorks } from "@/components/organism/sections/why-sales-assist/how-it-works";
 import { howData } from "@/model/api/how-it-works-data/data";
-import { WhySalesAssistSimplifySales } from "@/components/organism/sections/why-sales-assist/simplify-sales";
+import { Slider } from "@/components/organism/sections/why-sales-assist/simplify-sales";
 import { Customers } from "@/components/organism/sections/why-sales-assist/customers";
 import { InstantChanges } from "@/components/organism/sections/home/instantChanges";
 import { WhySalesAssistCompletingSalesIsPainless } from "@/components/organism/sections/why-sales-assist/complete-sales-painless";
@@ -30,7 +30,7 @@ export default function page() {
       <WhySalesAssistHero data={dataHero} />
       <Benefits data={dataBenefits} />
       <HowItWorks data={howData} />
-      <WhySalesAssistSimplifySales data={dataSlide} />
+      <Slider data={dataSlide} background="bg-zinc-800" color="bg-orange-500"/>
       <Customers></Customers>
       <InstantChanges />
       <WhySalesAssistCompletingSalesIsPainless data={dataPainless} />

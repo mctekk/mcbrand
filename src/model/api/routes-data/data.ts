@@ -35,7 +35,22 @@ const salesAssist = {
         { path: `${Paths.pricing}/#Q&A`, name: RouteNames.qAndA },
     ]
 }
+const mctekk = {
+    title: `Products `,
+    links: [
+        { path: 'kanvas', name: "Kanvas" },
+        { path: `Gewaer`, name: "Gewaer" },
+        
+    ]
+}
 
+const mcCompany = {
+    title: `${translate("routesTitles.title1")}`,
+    links: [
+        { path: '/about-us', name: RouteNames.about },
+        { path: 'https://meetings.hubspot.com/jennifer-herasme', name:"Get Started" },
+    ]
+}
 const company = {
     title: `${translate("routesTitles.title1")}`,
     links: [
@@ -43,8 +58,14 @@ const company = {
         { path: calendlyLink, name: RouteNames.bookADemo },
     ]
 }
-
 const contact = {
+    title: `${translate("routesTitles.title2")}`,
+    links: [
+        { path: 'mailto:help@salesassist.io', name: 'help@salesassist.io' },
+        { path: '#', name: '251 Little Falls Drive, Wilmington, Delaware 19808' },
+    ]
+}
+const mcContact = {
     title: `${translate("routesTitles.title2")}`,
     links: [
         { path: 'mailto:help@salesassist.io', name: 'help@salesassist.io' },
@@ -53,9 +74,11 @@ const contact = {
 }
 
 
-
 export const footerLinks = {
     salesAssist,
+    mcCompany,
+    mcContact,
+    mctekk,
     company,
     contact,
 }

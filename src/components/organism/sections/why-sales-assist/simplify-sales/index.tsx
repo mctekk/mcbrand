@@ -8,6 +8,8 @@ import { useSlide } from "@/model/interactions/use-slide";
 import StepButton from "@/components/atoms/step-button";
 
 interface WhySalesAssistSimplifySalesSection {
+  color: string
+  background: string
   data: {
     title: string;
     desc: string;
@@ -16,8 +18,10 @@ interface WhySalesAssistSimplifySalesSection {
   };
 }
 
-export function WhySalesAssistSimplifySales({
+export function Slider({
   data,
+  background,
+  color
 }: WhySalesAssistSimplifySalesSection) {
   const { ref, clickOnCard, currentSwiper, progressLeft, currentStep } =
     useSlide();
@@ -31,14 +35,15 @@ export function WhySalesAssistSimplifySales({
   };
 
   return (
-    <section className="overflow-hidden section bg-zinc-800">
-      <Section className="container mx-auto text-white flex flex-col gap-6 md:gap-12 2xl:ml-80 ">
+  <section className={`overflow-hidden section ${background}  `}>
+      <Section className="container mx-auto text-white flex flex-col gap-6 md:gap-12 2xl:ml-80  ">
         <div className="2xl:w-3/4">
           <h1 className="mb-4">{data.title}</h1>
           <h4>{data.desc}</h4>
         </div>
         <div className="flex-grow gap-6 md:gap-12 flex flex-col 2xl:w-3/4">
           <StepButton
+          color={color}
             options={data.options}
             clickOnCard={clickOnCard}
             currentStep={currentStep}

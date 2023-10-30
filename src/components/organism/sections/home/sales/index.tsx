@@ -9,9 +9,9 @@ import { Solid } from '@/components/atoms/button/solid';
 
 export default function Sales({ }){
   return (
-    <section className='section flex flex-col relative bg-white h-auto '>
+    <section className='section relative bg-white h-auto '>
       <Section>
-        <div className='container md:gap-24 mx-auto flex-col md:flex-row justify-start items-center md:items-start h-full flex '>
+        <div className='container md:gap-24 mx-auto md:flex-row justify-start items-center md:items-start h-full flex '>
           <div className='xl:w-1/3 md:w-1/2 xl:ml-64 '>
             <h1>Let’s Simplify How You Gather Info from Customers</h1>
 
