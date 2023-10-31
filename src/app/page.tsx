@@ -27,6 +27,7 @@ import { imagesBrand } from "@/model/api";
 import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import { GMenu } from "@/components/molecules/gewaer-menu";
 import { columnsData, columnsDataKanvas, leadingData, leadingDataKanvas, ratesData, ratesDataKanvas } from "@/model/api/instant-changes/data";
+import { GA } from "@/components/atoms/analitiycs";
 
 
 
@@ -39,6 +40,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/logo.png"
       iconColor="text-black"
     />,
+    <GA />,
     <Hero
       upperMessage={translate("home.hero.upper_message")}
       lowerMessage={translate("home.hero.lower_message")}
@@ -87,6 +89,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/McLogo.svg"
       iconColor="text-white"
     />,
+    <GA />,
     <Hero
       className="bg-black "
       buttonInfo="Get Started"
@@ -141,6 +144,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/klogof.png"
       iconColor="text-white"
     />,
+    <GA />,
     <Hero
       className="bg-sky-600 "
       buttonInfo="Get Started"
@@ -213,6 +217,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/Gewaer.svg"
       iconColor="text-white"
     />,
+    <GA />,
     <Hero
       className="bg-violet-500 "
       buttonInfo="Request Demo"
