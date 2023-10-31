@@ -15,6 +15,7 @@ import { dataPainless } from "@/model/api/sales-painless/data";
 import { dataSlide } from "@/model/api/simplify-sales";
 import { GA } from "@/components/atoms/analitiycs";
 import Menu from "@/components/molecules/menu";
+import { columnsData, leadingData, ratesData } from "@/model/api/instant-changes/data";
 
 
 export default function page() {
@@ -32,7 +33,7 @@ export default function page() {
       <HowItWorks data={howData} />
       <Slider data={dataSlide} background="bg-zinc-800" color="bg-orange-500"/>
       <Customers></Customers>
-      <InstantChanges />
+      <InstantChanges columnsData={columnsData} leadingData={leadingData} ratesData={ratesData} title="Companies That Turn to SalesAssist See 3 Instant Changes" />
       <WhySalesAssistCompletingSalesIsPainless data={dataPainless} />
       <Footer kind="dark" />
     </main>
