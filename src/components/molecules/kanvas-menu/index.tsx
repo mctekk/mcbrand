@@ -8,7 +8,7 @@ const menuItems = [
     text: "Home",
     link: "/",
   },
-  { text:"Features", link: "#features" },
+  { text:"Core Functionalities", link: "#features" },
   { text:"GitHub", link: "https://github.com/bakaphp" },
 
 ];

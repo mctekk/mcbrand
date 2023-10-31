@@ -26,6 +26,11 @@ import SimpleForm from "@/components/organism/sections/home/formContact";
 import { imagesBrand } from "@/model/api";
 import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import { GMenu } from "@/components/molecules/gewaer-menu";
+import { columnsData, columnsDataKanvas, leadingData, leadingDataKanvas, ratesData, ratesDataKanvas } from "@/model/api/instant-changes/data";
+
+
+
+
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -69,7 +74,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title={translate("home.completionprocess.title")}
       button={false}
     />,
-    <InstantChanges />,
+    <InstantChanges title={translate("home.changesPage.title")} columnsData={columnsData}  leadingData={leadingData} ratesData={ratesData} />,
     <WhySalesAssistSalesProcess data={industriesData} />,
     <Sales className="bg-white" />,
     <Footer sales={true} />,
@@ -142,9 +147,9 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       messageDesc="Kanvas Niche’s modules simplify complexities, letting you concentrate on building"
       messageEnd="exceptional experiences. See the difference"
-      upperMessage="Unlock Seamless App "
-      lowerMessage="Development"
-      words={["baka", "lorem"]}
+      upperMessage="Discover headless "
+      lowerMessage=" components for"
+      words={["Agencies", "Developers","Startups"]}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
@@ -196,7 +201,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-cyan-600"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
     ></InfoSection>,
-    <InstantChanges className="bg-white" />,
+    <InstantChanges className="bg-white" title="Companies That Turn to Kanvas See these Benefits"  columnsData={columnsDataKanvas} leadingData={leadingDataKanvas} ratesData={ratesDataKanvas}/>,
     <WhySalesAssistSalesProcess data={industriesData} />,
     <Sales className="bg-white" />,
     <Footer kanvas></Footer>,
@@ -266,7 +271,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-blue-950"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
     ></InfoSection>,
-    <InstantChanges className="bg-violet-50" />,
+    
+    <InstantChanges className="bg-violet-50" title="Companies That Turn to Gewaer See these Benefits" columnsData={columnsData} leadingData={leadingData} ratesData={ratesData} />,
     <WhySalesAssistSalesProcess data={industriesData} />,
     <Sales className="bg-violet-50" />,
     <Footer gewaer></Footer>,
