@@ -91,8 +91,8 @@ export default function FooterLinks({ kind, mctekk, sales, kanvas,gewaer }: Prop
         />
         <FooterList
           kind={kind}
-          title={footerLinks.contact.title}
-          links={footerLinks.contact.links}
+          title={footerLinks.mcContact.title}
+          links={footerLinks.mcContact.links}
         />
       </div>
     );

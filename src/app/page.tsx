@@ -86,8 +86,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-black "
       buttonInfo="Get Started"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
-      highligh="Dedicated to solving problems,"
-      messageDesc="MCTEKK was born in 2004, and since then, we’ve been offering services and products to help companies grow."
+      highligh=""
+      messageDesc="MCTEKK was born in 2004, and since then, we’ve been offering services and products to help companies grow. Dedicated to solving problems,"
       messageEnd=" creating solutions, and growing businesses across all platforms."
       upperMessage="Taking your business to the"
       lowerMessage="next level with"
@@ -99,8 +99,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button
     ></Hero>,
     <InfoSection
-      desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-      title="Lorem Ipsum"
+      desc="Avoid redundancy and excessive coding. With Kanvas modules you can solve some of your client's recurrent problems like inventory, CRM, social apps, and more. Talk to us to find out how we can help you. "
+      title="Let us help you move 2x faster"
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
@@ -112,8 +112,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     ></Slider>,
     <Brands imageUrls={imagesBrand} title="Brands that trust us" />,
     <InfoSection
-      desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-      title="Lorem Ipsum"
+      desc="Utilize our components to accelerate development and concentrate on solving your business challenges. "
+      title="Are you tired of repeatedly refactoring the same code?"
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
@@ -216,7 +216,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       messageEnd="commissions, individual agent websites, referral programs, and more"
       upperMessage="Manage your leads, agents,  "
       lowerMessage="and commissions with "
-      words={["ease","baka", "lorem"]}
+      words={["ease", "baka", "lorem"]}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"

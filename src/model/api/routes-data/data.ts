@@ -120,8 +120,7 @@ const GewaerContact = {
 const mcContact = {
   title: `${translate("routesTitles.title2")}`,
   links: [
-    { path: "mailto:help@salesassist.io", name: "help@salesassist.io" },
-    { path: "#", name: "251 Little Falls Drive, Wilmington, Delaware 19808" },
+    { path: "mailto: contacto@mctekk.com", name: " contacto@mctekk.com    " },
   ],
 };
 

@@ -18,7 +18,7 @@ const menuItems = [
 const externalLinks = [
   {
     text: translate("mcnavbar.section.GetStarted"),
-    link: "https://calendly.com/salesasssit/30min",
+    link: "https://meetings.hubspot.com/jennifer-herasme",
     isExternal: true,
     className:
       "lg:bg-orange-400 hover:bg-black lg:text-white  lg:hover:border border-orange-400 lg:hover:text-orange-400 text-gray-400 hover:text-white ",
@@ -27,7 +27,7 @@ const externalLinks = [
 const options = [
   {
     name: "Kanvas",
-    link: "/Kanvas",
+    link: "https://dev.kanvas.dev/",
   },
   { name: "Gewaer", link: "/Gewaer" },
 ];
