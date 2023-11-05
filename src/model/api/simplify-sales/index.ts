@@ -39,7 +39,7 @@ export const dataMcSlide = {
     {
       "option":  `Kanvas`,
       "url": `${translate("whySalesAssist.swiperData.show_case[0].url")}`,
-      "title": `Unlock Seamless App Development`,
+      "title": `Building blocks for headless app development for your`,
       "desc": `Kanvas Niche’s modules simplify complexities, letting you concentrate on building exceptional experiences. See the difference!`
     },{
       "option":  `${translate("whySalesAssist.swiperData.show_case[1].option")}`,

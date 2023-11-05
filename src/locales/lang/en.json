@@ -60,31 +60,31 @@
     },
     "actions": [
       {
-        "name": "Get Docs",
+        "name": "Ecosystem",
         "title": "Collect documents in real-time",
         "desc": "Allow customers to upload documents on the spot with their mobile device. Stop chasing customers to scan and upload documents and increase the speed and completion rate.",
         "url": "/images/actions/Get-Docs.webp"
       },
       {
-        "name": "e-Form",
+        "name": "Customers (CRM)",
         "title": "Make all your forms smart",
         "desc": "Reduce unnecessary errors, increase the completion rate and shorten the form fill time, with forms that are made for mobile completion and are fully integrated with all of your existing systems.",
         "url": "/images/actions/e-Forms.webp"
       },
       {
-        "name": "e-Signature",
+        "name": "Inventory",
         "title": "Make e-Signatures fast, easy, mobile",
         "desc": "Send customers agreements for e-Signatures that are designed for mobile completion. Complete sales agreements in real time, with much higher completion rates than legacy eSign.",
         "url": "/images/actions/e-Signature.webp"
       },
       {
-        "name": "Product Sharing",
+        "name": "Social",
         "title": "Better remote sales",
         "desc": "Share product visuals and details while speaking with customers to ensure they are fully informed and excited about what they're purchasing.",
         "url": "/images/actions/Product-Sharing.webp"
       },
       {
-        "name": "Request Referrals",
+        "name": "Workflow",
         "title": "Maximize each relationship",
         "desc": "Make it easy for customers to refer friends and family. As soon as customers share a referral a new opportunity is created and assigned in your CRM.",
         "url": "/images/actions/Request-Referrals.webp"

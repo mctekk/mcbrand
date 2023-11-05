@@ -140,11 +140,11 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-sky-600 "
       buttonInfo="Get Started"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
-      messageDesc="Kanvas Niche’s modules simplify complexities, letting you concentrate on building"
-      messageEnd="exceptional experiences. See the difference"
-      upperMessage="Unlock Seamless App "
-      lowerMessage="Development"
-      words={["baka", "lorem"]}
+      messageDesc="Skip the development grind. Our packages streamline CRM, Inventory, Social interactions, and User Management features,"
+      messageEnd=" letting you focus on your unique challenges."
+      upperMessage="Supercharge headless app"
+      lowerMessage="development for"
+      words={["agencies", "startup's", "freelancers"]}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
@@ -152,20 +152,18 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button
     ></Hero>,
     <CompletionTools
-      title="Our solution"
-      desc="Our solution provides graph APIs for common problems encountered during development, allowing you to focus on building your product instead of worrying about the backend infrastructure."
+      title="Your Backend Complement"
+      desc="Kanvas Niche is not a replacement for your existing development framework or backend-as-a-service. Instead, it complements them by providing specific modules for common problems that you would otherwise need to develop yourself."
       img="/images/kanvastool.png"
-      subtitle="Your Backend Complement"
-      subdesc="Kanvas Niche is not a replacement for your existing backend-as-a-service or development framework. Instead, it complements them by providing specific modules for common problems that you would otherwise need to develop yourself."
-      colorFonts="text-sky-700"
+
     />,
     <ImageChanger
       data={kanvasActionsData}
       buttonColor="bg-white text-sky-600"
       selected="text-white"
       className="bg-sky-700 text-white"
-      title="Manage your leads, agents, and commissions with ease."
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      title="Empowering your app's foundation."
+      desc="Our modules eliminate the need to start from scratch, enabling you to focus on impactful customizations"
       id="features"
     />,
     <Automated
