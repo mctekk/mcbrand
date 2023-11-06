@@ -9,7 +9,7 @@ const menuItems = [
     link: "/",
   },
   { text:"Features", link: "#features" },
-  { text:"GitHub", link: "https://github.com/bakaphp" },
+  { text:"GitHub", link: "https://github.com/bakaphp/kanvas-ecosystem-api" },
 
 ];
 const externalLinks = [

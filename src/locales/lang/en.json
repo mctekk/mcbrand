@@ -61,32 +61,32 @@
     "actions": [
       {
         "name": "Ecosystem",
-        "title": "Collect documents in real-time",
-        "desc": "Allow customers to upload documents on the spot with their mobile device. Stop chasing customers to scan and upload documents and increase the speed and completion rate.",
+        "title": "The foundation for any user facing app.",
+        "desc": "Dive into authentication and teams (or multi-tenant) management, permission, notification and more. All the building blocks you need to build a user facing app.",
         "url": "/images/actions/Get-Docs.webp"
       },
       {
         "name": "Customers (CRM)",
-        "title": "Make all your forms smart",
-        "desc": "Reduce unnecessary errors, increase the completion rate and shorten the form fill time, with forms that are made for mobile completion and are fully integrated with all of your existing systems.",
+        "title": "Customers are the most important part of any business.",
+        "desc": "Handle customer information, communication, and relationships in a single place. Manage your sales process and customer journey from lead to customer.",
         "url": "/images/actions/e-Forms.webp"
       },
       {
         "name": "Inventory",
-        "title": "Make e-Signatures fast, easy, mobile",
-        "desc": "Send customers agreements for e-Signatures that are designed for mobile completion. Complete sales agreements in real time, with much higher completion rates than legacy eSign.",
+        "title": "Handle your inventory in a single place.",
+        "desc": "Extend your e-commerce solution with headless bundles, create marketplaces, or build your own inventory management system.",
         "url": "/images/actions/e-Signature.webp"
       },
       {
         "name": "Social",
-        "title": "Better remote sales",
-        "desc": "Share product visuals and details while speaking with customers to ensure they are fully informed and excited about what they're purchasing.",
+        "title": "Add social media features to any app.",
+        "desc": "Share product, follow users , add groups , messaging, comments, likes, and more. All the building blocks you need to build a social app.",
         "url": "/images/actions/Product-Sharing.webp"
       },
       {
         "name": "Workflow",
-        "title": "Maximize each relationship",
-        "desc": "Make it easy for customers to refer friends and family. As soon as customers share a referral a new opportunity is created and assigned in your CRM.",
+        "title": "Connect kanvas modules with other systems.",
+        "desc": "Allow you to set the rules to trigger actions based on events you define withing the kanvas ecosystem. After create lead creating send it to your CRM, or send a notification to your team, you just define it",
         "url": "/images/actions/Request-Referrals.webp"
       },
       {
@@ -181,59 +181,23 @@
       "desc": "Gathering information and documents from customers is often the most time consuming part of the business. We’ll assist your team with smart suggestions based on real time signals, so they know who, when, how and what to focus on to complete more sales."
     },
     "changesPage": {
-      "title": "Companies That Turn to SalesAssist See 3 Instant Changes"
+      "title": "Case studies from some of our customers"
     },
     "changes": [
       {
-        "title": "Closing Rate",
-        "cont": "by completing sales faster"
+        "title": "NZXT",
+        "cont": "Custom pc Configuratior"
       },
       {
-        "title": "Saved Per Person/Mo",
-        "cont": "to do more value-added work"
+        "title": "Popular Auto",
+        "cont": "Dealers car marketplace"
       },
       {
-        "title": "Positive Reviews",
-        "cont": "by streamlining the sales completion process"
+        "title": "SalesAssist",
+        "cont": "Sales completion platform"
       }
     ],
-    "salesData": {
-      "title": "Built for Every Sales Process",
-      "industries": [
-        {
-          "code": "ATMTV",
-          "name": "Automotive"
-        },
-        {
-          "code": "MDQ",
-          "name": "Medical Equipment"
-        },
-        {
-          "code": "SAAS",
-          "name": "SaaS"
-        },
-        {
-          "code": "INSRC",
-          "name": "Insurance"
-        },
-        {
-          "code": "RLST",
-          "name": "Real Estate"
-        },
-        {
-          "code": "MCHRY",
-          "name": "Machinery"
-        },
-        {
-          "code": "ADVRTNG",
-          "name": "Advertising"
-        },
-        {
-          "code": "FNALSVC",
-          "name": "Financial Services"
-        }
-      ]
-    },
+
 
     "meta": "Gather information from customers securely and easily with SalesAssist, the Ultimate CRM Booster that streamlines your information collection process with data encryption and automation."
   },

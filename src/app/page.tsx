@@ -167,16 +167,16 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       id="features"
     />,
     <Automated
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      desc="When undertaking custom development, backend data management can be a significant challenge. To address this, we offer a versatile admin interface that provides comprehensive control over all modules."
       img={"/images/automated.svg"}
-      title="Manage your leads, agents, and commissions with ease."
+      title="Control over every aspect of the application ecosystem."
       descColor="text-cyan-600"
       titleColor="text-cyan-600"
       bg="bg-sky-50"
     />,
     <InfoSection
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      title="Manage your leads, agents, and commissions with ease."
+      desc="Kanvas modules are MIT licensed to ensure that you are in full control of your headless stack"
+      title="Open Source"
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-sky-50"
