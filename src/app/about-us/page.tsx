@@ -41,6 +41,7 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       logo="/images/McLogo.svg"
       iconColor="text-white"
     />,
+    <GA />,
     <Hero
       buttonInfo="Get Started"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
