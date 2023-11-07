@@ -13,7 +13,7 @@ function ImageList({ title, imageUrls, slider ,titleColor}: ImageListProps) {
       <section className="bg-sky-700 section">
         <div className="slider-container container mx-auto lg:flex bg-sky-700 flex-col">
           <p className={`text-[32px] font-semibold pt-10 mb-10 mx-auto items-center w-fit ${titleColor}`}>{title}</p>
-          <div className="slider-inside">
+          <div className="kanvas-slider-inside">
             <ul className="infinity-x-container ">
               {imageUrls.map((imageUrl, index) => (
                 <li className=" infinity-x">

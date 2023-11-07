@@ -30,7 +30,7 @@ export default function page() {
         colorWords="text-black font-semibold"
       ></Hero>
       
-      <Brands imageUrls={imagesBrand} title="Brands that trust us" />
+      <Brands imageUrls={imagesBrand} title="Brands that trust us"  titleColor="text-white"/>
       <SimpleForm></SimpleForm>
       <ContactCards></ContactCards>
       <Footer mctekk></Footer>
