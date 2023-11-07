@@ -84,12 +84,12 @@ body {
 .slider-inside::after{
   top: 0;
   right: 0;
-  background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to left,  0%, rgba(255,255,255,0) 100%);
 }
 .slider-inside::before{
   top: 0;
   left: 0;
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right,  0%, rgba(255,255,255,0) 100%);
 }
 
 .d {

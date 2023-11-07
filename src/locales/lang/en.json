@@ -60,63 +60,6 @@
     },
     "actions": [
       {
-        "name": "Ecosystem",
-        "title": "The foundation for any user facing app.",
-        "desc": "Dive into authentication and teams (or multi-tenant) management, permission, notification and more. All the building blocks you need to build a user facing app.",
-        "url": "/images/actions/Get-Docs.webp"
-      },
-      {
-        "name": "Customers (CRM)",
-        "title": "Customers are the most important part of any business.",
-        "desc": "Handle customer information, communication, and relationships in a single place. Manage your sales process and customer journey from lead to customer.",
-        "url": "/images/actions/e-Forms.webp"
-      },
-      {
-        "name": "Inventory",
-        "title": "Handle your inventory in a single place.",
-        "desc": "Extend your e-commerce solution with headless bundles, create marketplaces, or build your own inventory management system.",
-        "url": "/images/actions/e-Signature.webp"
-      },
-      {
-        "name": "Social",
-        "title": "Add social media features to any app.",
-        "desc": "Share product, follow users , add groups , messaging, comments, likes, and more. All the building blocks you need to build a social app.",
-        "url": "/images/actions/Product-Sharing.webp"
-      },
-      {
-        "name": "Workflow",
-        "title": "Connect kanvas modules with other systems.",
-        "desc": "Allow you to set the rules to trigger actions based on events you define withing the kanvas ecosystem. After create lead creating send it to your CRM, or send a notification to your team, you just define it",
-        "url": "/images/actions/Request-Referrals.webp"
-      },
-      {
-        "name": "Get Reviews",
-        "title": "Easily collect reviews",
-        "desc": "Make it extremely easy for your customers to leave a review. Send personalized text/email links that customers can tap and instantly leave reviews on their platform of choice.",
-        "url": "/images/actions/Get-Reviews.webp"
-      },
-      {
-        "name": "Secure Payments",
-        "title": "Collect payments seamlessly",
-        "desc": "Collect payments in real-time without web redirects or inefficient IVR systems. Using personalized payment links, quickly and securely collect payments wherever your customers and salespeople are.",
-        "url": "/images/actions/Secure-Payments.webp"
-      },
-      {
-        "name": "ID Verification",
-        "title": "Add convenient security",
-        "desc": "Stay secure without adding friction to your sales process. Use real-time ID verification straight from your customer's smartphones, eliminating the need for in-person visits or emailing of documents.",
-        "url": "/images/actions/ID-Verification.webp"
-      },
-      {
-        "name": "Digital Consent",
-        "title": "Gain fast, easy and compliant consent",
-        "desc": "Eliminate the time consuming and error-prone script reading. Send customers a T&C they can accept immediately (e.g., through checkboxes) right from their mobile device.",
-        "url": "/images/actions/Digital Consent.webp"
-      }
-    ],
-
-    "kanvasActions": [
-      {
         "name": "Get Docs",
         "title": "Collect documents in real-time",
         "desc": "Allow customers to upload documents on the spot with their mobile device. Stop chasing customers to scan and upload documents and increase the speed and completion rate.",
@@ -172,6 +115,39 @@
       }
     ],
 
+    "kanvasActions": [
+      {
+        "name": "Ecosystem",
+        "title": "The foundation for any user facing app.",
+        "desc": "Dive into authentication and teams (or multi-tenant) management, permission, notification and more. All the building blocks you need to build a user facing app.",
+        "url": "/images/actions/Get-Docs.webp"
+      },
+      {
+        "name": "Customers (CRM)",
+        "title": "Customers are the most important part of any business.",
+        "desc": "Handle customer information, communication, and relationships in a single place. Manage your sales process and customer journey from lead to customer.",
+        "url": "/images/actions/e-Forms.webp"
+      },
+      {
+        "name": "Inventory",
+        "title": "Handle your inventory in a single place.",
+        "desc": "Extend your e-commerce solution with headless bundles, create marketplaces, or build your own inventory management system.",
+        "url": "/images/actions/e-Signature.webp"
+      },
+      {
+        "name": "Social",
+        "title": "Add social media features to any app.",
+        "desc": "Share product, follow users , add groups , messaging, comments, likes, and more. All the building blocks you need to build a social app.",
+        "url": "/images/actions/Product-Sharing.webp"
+      },
+      {
+        "name": "Workflow",
+        "title": "Connect kanvas modules with other systems.",
+        "desc": "Allow you to set the rules to trigger actions based on events you define withing the kanvas ecosystem. After create lead creating send it to your CRM, or send a notification to your team, you just define it",
+        "url": "/images/actions/Request-Referrals.webp"
+      }
+    ],
+
     "automated": {
       "title": "Complete Sales Faster with Automated Workflows",
       "desc": "Info-gathering tools are scattered and don’t play nice together, we’re here to fix that. Connect all your info-gathering tools and create perfect custom-made workflows. Automate your sales team's work so they can crush sales goals."
@@ -185,19 +161,55 @@
     },
     "changes": [
       {
-        "title": "NZXT",
-        "cont": "Custom pc Configuratior"
+        "title": "Closing Rate",
+        "cont": "by completing sales faster"
       },
       {
-        "title": "Popular Auto",
-        "cont": "Dealers car marketplace"
+        "title": "Saved Per Person/Mo",
+        "cont": "to do more value-added work"
       },
       {
-        "title": "SalesAssist",
-        "cont": "Sales completion platform"
+        "title": "Positive Reviews",
+        "cont": "by streamlining the sales completion process"
       }
     ],
-
+    "salesData": {
+      "title": "Built for Every Sales Process",
+      "industries": [
+        {
+          "code": "ATMTV",
+          "name": "Automotive"
+        },
+        {
+          "code": "MDQ",
+          "name": "Medical Equipment"
+        },
+        {
+          "code": "SAAS",
+          "name": "SaaS"
+        },
+        {
+          "code": "INSRC",
+          "name": "Insurance"
+        },
+        {
+          "code": "RLST",
+          "name": "Real Estate"
+        },
+        {
+          "code": "MCHRY",
+          "name": "Machinery"
+        },
+        {
+          "code": "ADVRTNG",
+          "name": "Advertising"
+        },
+        {
+          "code": "FNALSVC",
+          "name": "Financial Services"
+        }
+      ]
+    },
 
     "meta": "Gather information from customers securely and easily with SalesAssist, the Ultimate CRM Booster that streamlines your information collection process with data encryption and automation."
   },
@@ -384,7 +396,7 @@
         "monthly": "Billed Monthly ",
         "annually": "Billed Annually"
       },
-      "users":"Unlimited users",
+      "users": "Unlimited users",
       "pricingButton": "See Full Feature Comparison",
       "plans": [
         {
@@ -484,7 +496,7 @@
         {
           "name": "Native Mobile Android and iOS apps"
         },
-        { "name": "CRM Chrome Extension"},
+        { "name": "CRM Chrome Extension" },
         { "name": "API Access" },
         { "name": "Webhooks" },
         { "name": "Live Chat Support" },
@@ -587,8 +599,8 @@
           "Rights in Customer Data. As between the parties, Customer will retain all right, title and interest (including any and all intellectual property rights) in and to the Customer Data as provided to SalesAssist. Subject to the terms of this Agreement, Customer hereby grants to SalesAssist a non-exclusive, worldwide, royalty-free right to use, copy, store, transmit, modify, create derivative works of and display the Customer Data solely to the extent necessary to provide the Solutions to Customer.",
           "Storage of Customer Data. SalesAssist does not provide an archiving service. SalesAssist agrees only that it will not intentionally delete any Customer Data from any SalesAssist Solution prior to termination of Customer's applicable Subscription Term. SalesAssist expressly disclaims all other obligations with respect to storage.",
           "Aggregated Anonymous Data. Certain data and information may be generated and collected by SalesAssist in connection with Business’s use of the SalesAssist Solution(s), which may include interactions and completion rates of shared Sales Actions with Business’s clients, information relating to sales or other transactions, usage statistics or analytics and other data and information gathered, generated or received by SalesAssist in connection with Customer’s use of the SalesAssist Solution(s) (“Aggregated Anonymous Data”). Notwithstanding the foregoing, the Aggregated Anonymous Data will not include any personally identifying information of any customer of Business. Customer acknowledges and agrees that SalesAssist and its Affiliates shall have the right to make use of such Aggregated Anonymous Data for its internal business purposes, provided that SalesAssist shall not disclose to any third party (other than its Affiliates and its and their respective employees and representatives) any Aggregated Anonymous Data, except as provided for in this Agreement or in any Order Form, unless such Aggregated Anonymous Data has been aggregated with the Aggregated Anonymous Data of other Business subscribers so as not to identify Business as the source or subject of such Aggregated Anonymous Data. For clarity, this Section 3.3 does not give SalesAssist the right to identify Business as the source of any Aggregated Anonymous Data."
-
-        ],"list": [
+        ],
+        "list": [
           "Business Inventory Data.",
           "(a) Customer agrees that SalesAssist and its Affiliates may receive product inventory and related data from Integrated Information sources, including, but not limited to, Business’s inventory management system or similar platform used in connection with Business sales operation, which may include product specifications, Stock Keeping Unit (SKU) data, serial numbers data, product pricing information, photographs, videos, product accolades and awards from consumer resources, and other data and information relating to Business’s product inventory (collectively, “Business Inventory Data”). SalesAssist and its Affiliates may use the Business Inventory Data for or in connection with (a) serial number decoding (as required for the applicable SalesAssist Solutions); (b) the aggregation of data and information (including Business Inventory Data) for the purpose of assembling and developing Generated Content; and (c) pushing Generated Content to Business’s integrated SORs or third party partners. Business shall promptly notify SalesAssist in writing in the event that Business identified any errors or omissions with respect to any Business Inventory Data.",
           "(b) Each party may disclose individual retail customer information, when required, pursuant to any federal or state law or regulation or rules or regulations of any governmental agency."
@@ -618,7 +630,6 @@
               "SalesAssist Technology. This is a subscription agreement for access to and use of the SalesAssist Solutions. Customer acknowledges that it is obtaining only a limited right to the SalesAssist Solutions and that irrespective of any use of the words “purchase”, “sale” or like terms in this Agreement, except for the rights expressly granted to Customer and its Authorized Users under Section 2.4, neither Customer nor any Authorized User shall have any right, title or interest in or to any SalesAssist Solution or any underlying technology or intellectual property comprising any SalesAssist Solution (including Integrated Information), and nothing in this Agreement or in any Order Form shall effect a transfer of any patent, trademark, copyright or other intellectual property or proprietary right (collectively, “Intellectual Property Rights”), or any ownership right, from SalesAssist or its Affiliates, on the one hand, to Customer or any Authorized User or any other third party, on the other hand.",
               "Customer agrees that SalesAssist, its suppliers, or any of its Affiliates retain all right, title and interest (including all patent, copyright, trademark, trade secret and other intellectual property rights) in and to the SalesAssist Solutions and all Documentation, professional services deliverables and any and all related and underlying technology and documentation and any derivative works, modifications or improvements of any of the foregoing, including as may incorporate Feedback (collectively, “SalesAssist Technology”). Except as expressly set forth in this Agreement, no rights in any SalesAssist Technology are granted to Customer. Further, Customer acknowledges that the SalesAssist Solutions are offered as an on-line, hosted solution, and that Customer has no right to obtain a copy of any of the SalesAssist Solutions. For purposes of this Agreement, “Affiliate” means, with respect to either party, a business entity that, directly or indirectly, controls, is controlled by, or is under common control with, such party. For purposes of this definition only, the term “control” means legal, beneficial, or equitable ownership, directly or indirectly, of a business entity.",
               "Feedback. Customer or any it’s Authorized Users, from time to time, may submit Feedback to SalesAssist. SalesAssist may freely use or exploit Feedback in connection with any of its products or solutions. Any information, suggestions, feedback, ideas, comments and other materials that Business or any Authorized User may disclose or offer to SalesAssist on or through the SalesAssist Site in connection with or otherwise relating to any SalesAssist Solution or any Generated Content, or in any underlying technology or intellectual property comprising any of the foregoing (collectively, “Feedback”), are submitted without any restrictions or expectation of confidentiality. Customer (on behalf of Business and its Authorized Users) hereby (a) assigns to SalesAssist without compensation or further obligation of any kind, all rights and interests now known or hereafter existing to use, allow others to use, or assign the right to use, any Feedback, and (b) agrees that Feedback may be used by SalesAssist or its Affiliates (or any successor or transferee of any of the foregoing) without restriction and for any purpose whatsoever, commercial or otherwise, including, without limitation, any reproduction, modification, adaptation, publication, transmission, public performance or display of any Feedback, or the creation of any derivative works of or relating to the Feedback. To the extent any use or implementation of any Feedback would require a license to any intellectual property of Customer or any Authorized User, Customer hereby grants to SalesAssist (on behalf of Business and its Authorized Users) a perpetual, worldwide, non-exclusive, irrevocable, royalty free and fully paid-up and transferable right and license to use and display such intellectual property for the purpose of using or implementing any Feedback."
-
             ]
           }
         ],
@@ -855,5 +866,4 @@
       "GetStarted": "Get Started"
     }
   }
-  
 }

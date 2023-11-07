@@ -21,7 +21,7 @@ export default function CompletionTools({
     <div className="section bg-white !pb-0 xl:pl-36 pl-0 md:pl-0">
       {" "}
       <Section
-        className={`flex flex-col gap-6 w-full lg:px-16 xl:w-[80rem] ${colorFonts}  `}
+        className={`flex flex-col gap-6 w-full lg:px-16 ${colorFonts}  `}
       >
         {" "}
         <h1 className="text-[2.125rem]"> {title}</h1>{" "}

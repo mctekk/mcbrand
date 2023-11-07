@@ -23,9 +23,15 @@ import { Slider } from "@/components/organism/sections/why-sales-assist/simplify
 import { dataMcSlide, dataSlide } from "@/model/api/simplify-sales";
 import Brands from "@/components/atoms/brands";
 import SimpleForm from "@/components/organism/sections/home/formContact";
-import { imagesBrand } from "@/model/api";
+import { imagesBrand, kanvasImagesBrand } from "@/model/api";
 import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import { GMenu } from "@/components/molecules/gewaer-menu";
+import { columnsData, columnsDataKanvas, leadingData, leadingDataKanvas, ratesData, ratesDataKanvas } from "@/model/api/instant-changes/data";
+import { GA } from "@/components/atoms/analitiycs";
+
+
+
+
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -34,6 +40,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/logo.png"
       iconColor="text-black"
     />,
+    <GA />,
     <Hero
       upperMessage={translate("home.hero.upper_message")}
       lowerMessage={translate("home.hero.lower_message")}
@@ -69,7 +76,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title={translate("home.completionprocess.title")}
       button={false}
     />,
-    <InstantChanges />,
+    <InstantChanges title={translate("home.changesPage.title")} columnsData={columnsData}  leadingData={leadingData} ratesData={ratesData} />,
     <WhySalesAssistSalesProcess data={industriesData} />,
     <Sales className="bg-white" />,
     <Footer sales={true} />,
@@ -82,6 +89,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/McLogo.svg"
       iconColor="text-white"
     />,
+    <GA />,
     <Hero
       className="bg-black "
       buttonInfo="Get Started"
@@ -110,7 +118,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       background="bg-kanvas-bg bg-cover"
       color="bg-cyan-600"
     ></Slider>,
-    <Brands imageUrls={imagesBrand} title="Brands that trust us" />,
+    <Brands imageUrls={imagesBrand} title="Brands that trust us" titleColor="text-black" />,
     <InfoSection
       desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
       title="Lorem Ipsum"
@@ -136,6 +144,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/klogof.png"
       iconColor="text-white"
     />,
+    <GA />,
     <Hero
       className="bg-sky-600 "
       buttonInfo="Get Started"
@@ -145,6 +154,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       upperMessage="Supercharge headless app"
       lowerMessage="development for"
       words={["agencies", "startup's", "freelancers"]}
+
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
@@ -155,6 +165,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Your Backend Complement"
       desc="Kanvas Niche is not a replacement for your existing development framework or backend-as-a-service. Instead, it complements them by providing specific modules for common problems that you would otherwise need to develop yourself."
       img="/images/kanvastool.png"
+      colorFonts="text-sky-600"
 
     />,
     <ImageChanger
@@ -162,8 +173,9 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonColor="bg-white text-sky-600"
       selected="text-white"
       className="bg-sky-700 text-white"
-      title="Empowering your app's foundation."
-      desc="Our modules eliminate the need to start from scratch, enabling you to focus on impactful customizations"
+      title="Ecosystem"
+      desc="The foundation for any user facing app.
+      User Authentication, Groups, permissions, notifications, and more."
       id="features"
     />,
     <Automated
@@ -194,9 +206,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-cyan-600"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
     ></InfoSection>,
-    <InstantChanges className="bg-white" />,
-    <WhySalesAssistSalesProcess data={industriesData} />,
-    <Sales className="bg-white" />,
+    <InstantChanges className="bg-white" title="Case studies from some of our customers"  columnsData={columnsDataKanvas} leadingData={leadingDataKanvas} ratesData={ratesDataKanvas}/>,
+    <Brands imageUrls={kanvasImagesBrand}  title="Brands that trust us" slider  titleColor="text-white"></Brands>,
     <Footer kanvas></Footer>,
   ],
   gewaer: [
@@ -206,6 +217,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/Gewaer.svg"
       iconColor="text-white"
     />,
+    <GA />,
     <Hero
       className="bg-violet-500 "
       buttonInfo="Request Demo"
@@ -264,7 +276,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-blue-950"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
     ></InfoSection>,
-    <InstantChanges className="bg-violet-50" />,
+    
+    <InstantChanges className="bg-violet-50" title="Companies That Turn to Gewaer See these Benefits" columnsData={columnsData} leadingData={leadingData} ratesData={ratesData} />,
     <WhySalesAssistSalesProcess data={industriesData} />,
     <Sales className="bg-violet-50" />,
     <Footer gewaer></Footer>,

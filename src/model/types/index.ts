@@ -130,6 +130,15 @@ interface Team {
   members: number;
 }
 
+export interface ColumnData {
+  amount: string;
+  title: string;
+  content: string;
+}
+export interface ColumnDataDesk {
+  title: string;
+  content: string;
+}
 export const fadeInRight= {
   hidden: {
       x: 1000

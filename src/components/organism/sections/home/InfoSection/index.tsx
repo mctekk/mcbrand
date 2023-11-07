@@ -36,14 +36,14 @@ export default function InfoSection({
           <h1>{title}</h1>
           <h4>
             {desc}
-            {button && (
+          </h4>
+          {button && (
               <a href={buttonLink} target="_blank" rel="noreferrer" >
                 <Solid className={`px-5 mt-4 lg:px-3 ${buttonColor}`}>
                   {buttonTitle}
                 </Solid>
               </a>
             )}
-          </h4>
         </div>
         <div className="shrink-0 md:w-[35.5rem] md:h-[27.5rem] rounded-lg drop-shadow-sa overflow-hidden ">
           <Image
