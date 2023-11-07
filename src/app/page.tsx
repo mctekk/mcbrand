@@ -173,9 +173,9 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button
     ></Hero>,
     <CompletionTools
-      title="Our set of components"
+      title="Your Backend Complement"
       desc="
-      A versatile set of components addressing common challenges in app development, including authentication, product management (inventory), customer relations (CRM), social interactions, and seamless integration with third-party apps."
+      Kanvas Niche is not a replacement for your existing development framework or backend-as-a-service. Instead, it complements them by providing specific modules for common problems that you would otherwise need to develop yourself."
       img="/images/kanvastool.png"
       colorFonts="text-sky-600"
     />,
@@ -188,6 +188,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       desc="The foundation for any user facing app.
       User Authentication, Groups, permissions, notifications, and more."
       id="features"
+      code
     />,
     <Automated
       desc="When undertaking custom development, backend data management can be a significant challenge. To address this, we offer a versatile admin interface that provides comprehensive control over all modules."

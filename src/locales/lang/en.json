@@ -120,7 +120,7 @@
         "name": "Ecosystem",
         "title": "The foundation for any user facing app.",
         "desc": "Dive into authentication and teams (or multi-tenant) management, permission, notification and more. All the building blocks you need to build a user facing app.",
-        "url": "/images/actions/Get-Docs.webp"
+        "url": "function greet(name) {return 'Hello, ' + name + '!';} "
       },
       {
         "name": "Customers (CRM)",

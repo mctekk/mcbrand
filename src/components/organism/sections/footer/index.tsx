@@ -48,7 +48,7 @@ export function Footer({
               {gewaer && <img src="/images/Gewaer.svg" />}
             </div>
             <h4 className="hidden md:block text-[0.75rem]">
-              <FooterRights />
+            <FooterRights kanvas={kanvas} />
             </h4>
             {sales && (
               <FooterList
@@ -77,7 +77,7 @@ export function Footer({
                 links={footerLinks.kanvas.links}
               />
             )}
-             {gewaer && (
+            {gewaer && (
               <FooterList
                 kind={kind}
                 hideTitle
@@ -99,9 +99,9 @@ export function Footer({
               <FooterLinks kanvas />
             </>
           )}
-           {gewaer && (
+          {gewaer && (
             <>
-              <FooterLinks gewaer/>
+              <FooterLinks gewaer />
             </>
           )}
         </div>
@@ -120,7 +120,7 @@ export function Footer({
               { name: "Terms of Service", path: "/terms-of-service" },
             ].map((link) => (
               <NextLink key={link.path} passHref href={link.path}>
-                <p className="px-0 hover:text-orange-500">{link.name}</p>
+                <p className="px-0 ">{link.name}</p>
               </NextLink>
             ))}
           </div>
@@ -128,7 +128,7 @@ export function Footer({
           {/* social media */}
           <div className="md:w-1/2 h-full flex justify-end gap-2 md:gap-6 flex-col md:flex-row w-full md:pb-12">
             <h4 className="block md:hidden text-[0.75rem] text-gray-400">
-              <FooterRights />
+              <FooterRights kanvas={kanvas} />
             </h4>
             {sales && <FooterSocials kind={kind} sales />}
             {mctekk && <FooterSocials kind={kind} />}
