@@ -35,7 +35,7 @@ export default function ImageChanger({ data, buttonColor,selected,className,desc
         </div>
         {/* <Dropdown data={data}></Dropdown> */}
         <div>
-          <ListButtons data={data} buttonColor={buttonColor} selected={selected} code />
+          <ListButtons data={data} buttonColor={buttonColor} selected={selected} code={code}/>
         </div>
       </Section>
     </div>
