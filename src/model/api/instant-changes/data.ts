@@ -21,18 +21,18 @@ export const columnsData = [
   export const columnsDataKanvas = [
     {
       amount: "+23%",
-      title: "Enables them to expedite project completion",
-      content: "",
+      title: "NZXT",
+      content: "Custom pc Configuratior",
     },
     {
       amount: "15hrs+",
-      title: "Improve in development process",
-      content: "",
+      title: "Popular Auto",
+      content: "Dealers car marketplace",
     },
     {
       amount: "+15%",
-      title: "Efficient handling of unique client needs",
-      content: "",
+      title: "SalesAssist",
+      content: "Sales completion platform",
     },
 
   ];
@@ -69,16 +69,19 @@ export const columnsData = [
 
   export const leadingDataKanvas = [
     {
-        title: "Enables them to expedite project completion",
-        content:"",
+      
+      title: "NZXT",
+      content: "Custom pc Configuratior",
     },
     {
-        title: "Improve in development process",
-        content:"",
+      
+      title: "Popular Auto",
+      content: "Dealers car marketplace",
     },
     {
-      title: "Efficient handling of unique client needs",
-      content:"",
+     
+      title: "SalesAssist",
+      content: "Sales completion platform",
     },
   ];
 

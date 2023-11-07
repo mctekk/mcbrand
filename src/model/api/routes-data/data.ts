@@ -81,8 +81,8 @@ const KanvasCompany = {
   title: `${translate("routesTitles.title1")}`,
   links: [
     {
-      path: calendlyLink,
-      name: "https://meetings.hubspot.com/jennherasme/kanvas",
+      path: "https://meetings.hubspot.com/jennherasme/kanvas",
+      name: "Get Notified",
     },
   ],
 };

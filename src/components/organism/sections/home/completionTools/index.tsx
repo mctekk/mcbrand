@@ -18,10 +18,10 @@ export default function CompletionTools({
   colorFonts,
 }: Props) {
   return (
-    <div className="section bg-white !pb-0 xl:pl-36 pl-0 md:pl-0">
+    <div className="section bg-white mx-auto  ">
       {" "}
       <Section
-        className={`flex flex-col gap-6 w-full lg:px-16 xl:w-[80rem] ${colorFonts}  `}
+        className={`flex flex-col gap-6 xl:w-2/3 lg:w-full lg:px-16 mx-auto   ${colorFonts}  `}
       >
         {" "}
         <h1 className="text-[2.125rem]"> {title}</h1>{" "}

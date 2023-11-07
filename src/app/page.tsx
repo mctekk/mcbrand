@@ -23,15 +23,18 @@ import { Slider } from "@/components/organism/sections/why-sales-assist/simplify
 import { dataMcSlide, dataSlide } from "@/model/api/simplify-sales";
 import Brands from "@/components/atoms/brands";
 import SimpleForm from "@/components/organism/sections/home/formContact";
-import { imagesBrand } from "@/model/api";
+import { imagesBrand, kanvasImagesBrand } from "@/model/api";
 import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import { GMenu } from "@/components/molecules/gewaer-menu";
-import { columnsData, columnsDataKanvas, leadingData, leadingDataKanvas, ratesData, ratesDataKanvas } from "@/model/api/instant-changes/data";
+import {
+  columnsData,
+  columnsDataKanvas,
+  leadingData,
+  leadingDataKanvas,
+  ratesData,
+  ratesDataKanvas,
+} from "@/model/api/instant-changes/data";
 import { GA } from "@/components/atoms/analitiycs";
-
-
-
-
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -76,7 +79,12 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title={translate("home.completionprocess.title")}
       button={false}
     />,
-    <InstantChanges title={translate("home.changesPage.title")} columnsData={columnsData}  leadingData={leadingData} ratesData={ratesData} />,
+    <InstantChanges
+      title={translate("home.changesPage.title")}
+      columnsData={columnsData}
+      leadingData={leadingData}
+      ratesData={ratesData}
+    />,
     <WhySalesAssistSalesProcess data={industriesData} />,
     <Sales className="bg-white" />,
     <Footer sales={true} />,
@@ -118,7 +126,11 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       background="bg-kanvas-bg bg-cover"
       color="bg-cyan-600"
     ></Slider>,
-    <Brands imageUrls={imagesBrand} title="Brands that trust us" />,
+    <Brands
+      imageUrls={imagesBrand}
+      title="Brands that trust us"
+      titleColor="text-white"
+    />,
     <InfoSection
       desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
       title="Lorem Ipsum"
@@ -147,13 +159,13 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <GA />,
     <Hero
       className="bg-sky-600 "
-      buttonInfo="Get Started"
+      buttonInfo="Get Notified"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
-      messageDesc="Kanvas Niche’s modules simplify complexities, letting you concentrate on building"
-      messageEnd="exceptional experiences. See the difference"
-      upperMessage="Discover headless "
-      lowerMessage=" components for"
-      words={["Agencies", "Developers","Startups"]}
+      messageDesc="Skip the development grind. Our packages streamline CRM, Inventory, Social interactions, and User Management features,"
+      messageEnd=" letting you focus on your unique challenges."
+      upperMessage="Supercharge headless app"
+      lowerMessage="development for"
+      words={["agencies", "startup's", "freelancers"]}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
@@ -161,33 +173,33 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button
     ></Hero>,
     <CompletionTools
-      title="Our solution"
-      desc="Our solution provides graph APIs for common problems encountered during development, allowing you to focus on building your product instead of worrying about the backend infrastructure."
+      title="Our set of components"
+      desc="
+      A versatile set of components addressing common challenges in app development, including authentication, product management (inventory), customer relations (CRM), social interactions, and seamless integration with third-party apps."
       img="/images/kanvastool.png"
-      subtitle="Your Backend Complement"
-      subdesc="Kanvas Niche is not a replacement for your existing backend-as-a-service or development framework. Instead, it complements them by providing specific modules for common problems that you would otherwise need to develop yourself."
-      colorFonts="text-sky-700"
+      colorFonts="text-sky-600"
     />,
     <ImageChanger
       data={kanvasActionsData}
       buttonColor="bg-white text-sky-600"
       selected="text-white"
       className="bg-sky-700 text-white"
-      title="Manage your leads, agents, and commissions with ease."
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      title="Ecosystem"
+      desc="The foundation for any user facing app.
+      User Authentication, Groups, permissions, notifications, and more."
       id="features"
     />,
     <Automated
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      desc="When undertaking custom development, backend data management can be a significant challenge. To address this, we offer a versatile admin interface that provides comprehensive control over all modules."
       img={"/images/automated.svg"}
-      title="Manage your leads, agents, and commissions with ease."
+      title="Control over every aspect of the application ecosystem."
       descColor="text-cyan-600"
       titleColor="text-cyan-600"
       bg="bg-sky-50"
     />,
     <InfoSection
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      title="Manage your leads, agents, and commissions with ease."
+      desc="Kanvas modules are MIT licensed to ensure that you are in full control of your headless stack"
+      title="Open Source"
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-sky-50"
@@ -200,14 +212,24 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       reverse
       button={true}
       buttonColor="bg-cyan-600 "
-      buttonTitle="Get Started"
+      buttonTitle="Get Notified"
       backColor="bg-sky-50"
       textColor="text-cyan-600"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
     ></InfoSection>,
-    <InstantChanges className="bg-white" title="Companies That Turn to Kanvas See these Benefits"  columnsData={columnsDataKanvas} leadingData={leadingDataKanvas} ratesData={ratesDataKanvas}/>,
-    <WhySalesAssistSalesProcess data={industriesData} />,
-    <Sales className="bg-white" />,
+    <InstantChanges
+      className="bg-white"
+      title="Case studies from some of our customers"
+      columnsData={columnsDataKanvas}
+      leadingData={leadingDataKanvas}
+      ratesData={ratesDataKanvas}
+    />,
+    <Brands
+      imageUrls={kanvasImagesBrand}
+      title="Brands that trust us"
+      slider
+      titleColor="text-white"
+    ></Brands>,
     <Footer kanvas></Footer>,
   ],
   gewaer: [
@@ -226,7 +248,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       messageEnd="commissions, individual agent websites, referral programs, and more"
       upperMessage="Manage your leads, agents,  "
       lowerMessage="and commissions with "
-      words={["ease","baka", "lorem"]}
+      words={["ease", "baka", "lorem"]}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
@@ -276,8 +298,14 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-blue-950"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
     ></InfoSection>,
-    
-    <InstantChanges className="bg-violet-50" title="Companies That Turn to Gewaer See these Benefits" columnsData={columnsData} leadingData={leadingData} ratesData={ratesData} />,
+
+    <InstantChanges
+      className="bg-violet-50"
+      title="Companies That Turn to Gewaer See these Benefits"
+      columnsData={columnsData}
+      leadingData={leadingData}
+      ratesData={ratesData}
+    />,
     <WhySalesAssistSalesProcess data={industriesData} />,
     <Sales className="bg-violet-50" />,
     <Footer gewaer></Footer>,

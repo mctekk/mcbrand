@@ -9,12 +9,13 @@ const menuItems = [
     link: "/",
   },
   { text:"Core Functionalities", link: "#features" },
-  { text:"GitHub", link: "https://github.com/bakaphp" },
+  { text:"GitHub", link: "https://github.com/bakaphp/kanvas-ecosystem-api" },
+
 
 ];
 const externalLinks = [
   {
-    text: translate("mcnavbar.section.GetStarted"),
+    text: "Get Notified",
     link: "https://meetings.hubspot.com/jennherasme/kanvas",
     isExternal: true,
     className:

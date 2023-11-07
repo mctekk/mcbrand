@@ -77,21 +77,37 @@ body {
 .slider-inside {
   @apply overflow-hidden relative ;
 }
+.kanvas-slider-inside {
+  @apply overflow-hidden relative ;
+}
 .slider-inside::after, .slider-inside::before {
+  content: " ";
+  @apply absolute z-10 w-[100px] h-full;
+}
+.kanvas-slider-inside::after, .kanvas-slider-inside::before {
   content: " ";
   @apply absolute z-10 w-[100px] h-full;
 }
 .slider-inside::after{
   top: 0;
   right: 0;
-  background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to left,  rgb(255, 255, 255)0%, rgba(255,255,255,0) 100%);
 }
 .slider-inside::before{
   top: 0;
   left: 0;
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right,  rgb(255, 255, 255)0%, rgba(255,255,255,0) 100%);
 }
-
+.kanvas-slider-inside::after{
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left, rgba(3,105,161,255)0%, rgba(255,255,255,0) 100%);
+}
+.kanvas-slider-inside::before{
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(3,105,161,255)0%, rgba(255,255,255,0) 100%);
+}
 .d {
   @apply fill-[#ffffff]
 }
