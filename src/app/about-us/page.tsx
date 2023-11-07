@@ -69,7 +69,7 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       reverse={true}
       backColor="bg-white"
     ></InfoSection>,
-    <Brands imageUrls={imagesBrand} title="Brands that trust us" />,
+    <Brands imageUrls={imagesBrand} title="Brands that trust us" titleColor="text-black" />,
    <Behind></Behind>,
     <SimpleForm></SimpleForm>,
     <Footer mctekk></Footer>,
