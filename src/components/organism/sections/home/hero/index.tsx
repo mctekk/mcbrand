@@ -2,6 +2,9 @@
 import { Button } from "@/components/atoms/button/base";
 
 import { Section } from "@/components/atoms/section";
+import HubSpotForm from "@/components/atoms/wait-form";
+import HubSpotFormScript from "@/components/atoms/wait-form";
+import { useEffect } from "react";
 
 import { Typewriter } from "react-simple-typewriter";
 
@@ -18,9 +21,12 @@ interface Props {
   colorFonts?: string;
   colorWords?: string;
   colorDesc?: string;
-  buttonColor?:string
-  button?:boolean
+  buttonColor?: string;
+  button?: boolean;
+  kanvas?: boolean;
 }
+
+
 export default function Hero({
   highligh,
   lowerMessage,
@@ -34,9 +40,9 @@ export default function Hero({
   colorFonts,
   colorWords = "text-orange-500",
   colorDesc = "text-gray-500",
-  buttonColor='bg-orange-500',
-  button
-
+  buttonColor = "bg-orange-500",
+  button,
+  kanvas,
 }: Props) {
   return (
     <div className={`section ${className} `} id="how-it-works">
@@ -83,12 +89,21 @@ export default function Hero({
               {messageEnd}
             </h4>
           </div>
-          {button && <a href={buttonLink} target="_blank" rel="noreferrer" className="w-fit">
-            <Button className={`${buttonColor} text-[1.063rem] font-semibold  ml-5 md:ml-0 lg:ml-0 w-fit h-full`}>
-              {buttonInfo}
-            </Button>
-          </a>}
-          
+          {kanvas && <div className="w-1/4 "> <HubSpotForm/> </div>}
+          {button && (
+            <a
+              href={buttonLink}
+              target="_blank"
+              rel="noreferrer"
+              className="w-fit"
+            >
+              <Button
+                className={`${buttonColor} text-[1.063rem] font-semibold  ml-5 md:ml-0 lg:ml-0 w-fit h-full`}
+              >
+                {buttonInfo}
+              </Button>
+            </a>
+          )}
         </div>
       </Section>
     </div>

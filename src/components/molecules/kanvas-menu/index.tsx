@@ -19,7 +19,7 @@ const externalLinks = [
     link: "https://meetings.hubspot.com/jennherasme/kanvas",
     isExternal: true,
     className:
-      "lg:bg-white  lg:text-sky-600  lg:hover:border  text-white lg:ml-64 ",
+      "lg:bg-white  lg:text-sky-600  lg:hover:border  text-white xl:ml-64 w-fit",
   },
 ];
 

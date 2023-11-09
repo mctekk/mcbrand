@@ -169,7 +169,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorFonts="text-white"
       colorWords="text-white"
       buttonColor="bg-white text-sky-600"
-      button
+    kanvas
     ></Hero>,
     <CompletionTools
       title="Your Backend Complement"
