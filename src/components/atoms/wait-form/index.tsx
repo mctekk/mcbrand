@@ -5,7 +5,7 @@ declare global {
     hbspt: any;
   }
 }
-const HubSpotForm: React.FC = () => {
+function HubSpotForm (){
   useEffect(() => {
     const script = document.createElement("script");
     script.type = "text/javascript";

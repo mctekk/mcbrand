@@ -82,7 +82,7 @@ const KanvasCompany = {
   links: [
     {
       path: "https://meetings.hubspot.com/jennherasme/kanvas",
-      name: "Get Notified",
+      name: "Contact",
     },
   ],
 };

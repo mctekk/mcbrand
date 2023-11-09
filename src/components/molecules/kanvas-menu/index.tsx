@@ -15,7 +15,7 @@ const menuItems = [
 ];
 const externalLinks = [
   {
-    text: "Get Notified",
+    text: "Contact",
     link: "https://meetings.hubspot.com/jennherasme/kanvas",
     isExternal: true,
     className:

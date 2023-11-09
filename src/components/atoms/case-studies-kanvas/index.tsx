@@ -23,7 +23,7 @@ const VerticalImageStack: React.FC<VerticalImageStackProps> = ({ images }) => {
   };
 
   return (
-    <section className="section">
+    <section className="section bg-sky-50">
       <div
         style={{
           display: "flex",

@@ -3,8 +3,7 @@ import { Button } from "@/components/atoms/button/base";
 
 import { Section } from "@/components/atoms/section";
 import HubSpotForm from "@/components/atoms/wait-form";
-import HubSpotFormScript from "@/components/atoms/wait-form";
-import { useEffect } from "react";
+
 
 import { Typewriter } from "react-simple-typewriter";
 
@@ -89,7 +88,7 @@ export default function Hero({
               {messageEnd}
             </h4>
           </div>
-          {kanvas && <div className="w-1/4 "> <HubSpotForm/> </div>}
+          {kanvas && <div className=" ml-5 md:ml-0 md:w-2/4 xl:w-1/3"> <HubSpotForm/> </div>}
           {button && (
             <a
               href={buttonLink}
