@@ -52,13 +52,6 @@ export default function ListButtons({
           ))}
         </div>
         <div className="flex-col items-center justify-center mt-9 text-center hidden lg:flex ">
-          {/* <Image
-            src={data[imageIndex].url}
-            alt={data[imageIndex].desc}
-            width={200}
-            height={24}
-            className="mb-20 "
-          /> */}
           <SyntaxHighlighter language="javascript" style={shadesOfPurple}>
             {data[imageIndex].url}
           </SyntaxHighlighter>

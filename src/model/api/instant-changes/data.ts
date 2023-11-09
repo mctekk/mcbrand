@@ -22,7 +22,7 @@ export const columnsData = [
     {
       amount: "+23%",
       title: "NZXT",
-      content: "Custom pc Configuratior",
+      content: "Custom PC configuratior",
     },
     {
       amount: "15hrs+",
@@ -71,7 +71,7 @@ export const columnsData = [
     {
       
       title: "NZXT",
-      content: "Custom pc Configuratior",
+      content: "Custom PC configuratior",
     },
     {
       
@@ -98,4 +98,10 @@ export const columnsData = [
       title: "+15%",
       content: "Positive Reviews",
     },
+  ];
+  export const imagesDataKanvas = [
+    { imageUrl:'/images/case/NZXT.png', title: 'NZXT', text: 'Custom PC configuratior' },
+    { imageUrl: '/images/case/Popular.png', title: 'Popular Auto', text: 'Dealers car marketplace' },
+    { imageUrl:'/images/case/SA.png', title: 'SalesAssist', text: 'Sales completion platform' },
+    
   ];

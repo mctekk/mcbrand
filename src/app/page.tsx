@@ -20,7 +20,7 @@ import Menu from "@/components/molecules/menu";
 import McMenu from "@/components/molecules/mc-menu";
 import { translate } from "@/locales";
 import { Slider } from "@/components/organism/sections/why-sales-assist/simplify-sales";
-import { dataMcSlide, dataSlide } from "@/model/api/simplify-sales";
+import { dataMcSlide } from "@/model/api/simplify-sales";
 import Brands from "@/components/atoms/brands";
 import SimpleForm from "@/components/organism/sections/home/formContact";
 import { imagesBrand, kanvasImagesBrand } from "@/model/api";
@@ -28,13 +28,12 @@ import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import { GMenu } from "@/components/molecules/gewaer-menu";
 import {
   columnsData,
-  columnsDataKanvas,
+  imagesDataKanvas,
   leadingData,
-  leadingDataKanvas,
   ratesData,
-  ratesDataKanvas,
 } from "@/model/api/instant-changes/data";
 import { GA } from "@/components/atoms/analitiycs";
+import VerticalImageStack from "@/components/atoms/case-studies-kanvas";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -161,11 +160,11 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-sky-600 "
       buttonInfo="Get Notified"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
-      messageDesc="Skip the development grind. Our packages streamline CRM, Inventory, Social interactions, and User Management features,"
+      messageDesc="Downscale the development grind. Our packages streamline CRM, Inventory, Social interactions, and User Management features,"
       messageEnd=" letting you focus on your unique challenges."
-      upperMessage="Supercharge headless app"
+      upperMessage="Supercharged headless app"
       lowerMessage="development for"
-      words={["agencies", "startup's", "freelancers"]}
+      words={["agencies", "startups", "freelancers"]}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
@@ -199,8 +198,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       bg="bg-sky-50"
     />,
     <InfoSection
-      desc="Kanvas modules are MIT licensed to ensure that you are in full control of your headless stack"
-      title="Open Source"
+      desc="Kanvas Modules are MIT licensed to ensure that you are in full control of your headless stack"
+      title="Open Source."
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-sky-50"
@@ -218,13 +217,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-cyan-600"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
     ></InfoSection>,
-    <InstantChanges
-      className="bg-white"
-      title="Case studies from some of our customers"
-      columnsData={columnsDataKanvas}
-      leadingData={leadingDataKanvas}
-      ratesData={ratesDataKanvas}
-    />,
+    <VerticalImageStack images={imagesDataKanvas}></VerticalImageStack>,
     <Brands
       imageUrls={kanvasImagesBrand}
       title="Brands that trust us"
