@@ -88,7 +88,10 @@ export default function Hero({
               {messageEnd}
             </h4>
           </div>
-          {kanvas && <div className=" ml-5 md:ml-0 md:w-2/4 xl:w-1/3"> <HubSpotForm/> </div>}
+          {kanvas && <div className=" ml-5 md:ml-0 md:w-2/4 xl:w-1/3">  <h4
+              className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0`}
+            >
+              Subscribe to the waitlist</h4><HubSpotForm/> </div>}
           {button && (
             <a
               href={buttonLink}

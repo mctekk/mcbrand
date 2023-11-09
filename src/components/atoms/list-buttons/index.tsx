@@ -51,7 +51,7 @@ export default function ListButtons({
             </motion.button>
           ))}
         </div>
-        <div className="flex-col items-center justify-center mt-9 text-center hidden lg:flex ">
+        <div className="flex-col items-center justify-center mt-9  hidden lg:flex ">
           <SyntaxHighlighter language="javascript" style={shadesOfPurple} wrapLongLines={true}>
             {data[imageIndex].url}
           </SyntaxHighlighter>

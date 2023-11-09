@@ -186,7 +186,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Ecosystem"
       desc="The foundation for any user facing app.
       User Authentication, Groups, permissions, notifications, and more."
-      code
+      
     />,
     <Automated
       desc="When undertaking custom development, backend data management can be a significant challenge. To address this, we offer a versatile admin interface that provides comprehensive control over all modules."
