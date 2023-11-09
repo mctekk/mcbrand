@@ -30,7 +30,7 @@ export default function ListButtons({
   };
   if (code) {
     return (
-      <div className="flex space-x-1 xl:ml-64">
+      <div className="flex space-x-20 xl:ml-64">
         <div className="space-y-6 md:hidden flex-col hidden lg:flex ">
           {data.map((item, index) => (
             <motion.button
@@ -52,11 +52,11 @@ export default function ListButtons({
           ))}
         </div>
         <div className="flex-col items-center justify-center mt-9 text-center hidden lg:flex ">
-          <SyntaxHighlighter language="javascript" style={shadesOfPurple}>
+          <SyntaxHighlighter language="javascript" style={shadesOfPurple} wrapLongLines={true}>
             {data[imageIndex].url}
           </SyntaxHighlighter>
-          <h4 className="font-semibold">{data[imageIndex].title}</h4>
-          <p className="">{data[imageIndex].desc}</p>
+          <h4 className="font-semibold mt-5">{data[imageIndex].title}</h4>
+          <p className=" w-3/4 ">{data[imageIndex].desc}</p>
         </div>
       </div>
     );

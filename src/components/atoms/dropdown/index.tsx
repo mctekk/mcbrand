@@ -53,11 +53,11 @@ export default function Dropdown({ data, code }: DropdownProps) {
             </ul>
           )}
         </div>
-        <div className="flex flex-col items-center justify-center mt-9 text-center  ">
-        <SyntaxHighlighter language="javascript" style={shadesOfPurple}>
+        <div className="flex flex-col items-center justify-center mt-9 text-center ">
+        <SyntaxHighlighter language="javascript" style={shadesOfPurple} wrapLongLines={true} >
             {data[imageIndex].url}
           </SyntaxHighlighter>
-          <h4 className="font-semibold">{data[imageIndex].title}</h4>
+          <h4 className="font-semibold mt-6">{data[imageIndex].title}</h4>
           <p>{data[imageIndex].desc}</p>
         </div>
       </div>

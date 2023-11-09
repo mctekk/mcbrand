@@ -22,7 +22,7 @@ const VerticalImageStack: React.FC<VerticalImageStackProps> = ({ images }) => {
 
   return (
     <section className='section'>
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} className='mb-36'>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} className=''>
      <h1 className='pb-6 md:pb-10 font-semibold md:leading-10 tracking-tight 	lg:self-center'>Case studies from some of our customers
 </h1>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
