@@ -41,13 +41,11 @@ const mctekk = {
   ],
 };
 const kanvas = {
-  title: `${translate("routesTitles.title")}`,
+  title: `Kanvas`,
   links: [
     { path: "/#how-it-works", name: RouteNames.howItWorks },
-    { path: `${Paths.whySalesAssist}/#benefits`, name: RouteNames.benefits },
-    { path: "/#actions", name: RouteNames.actions },
-    { path: Paths.pricing, name: RouteNames.pricing },
-    { path: `${Paths.pricing}/#Q&A`, name: RouteNames.qAndA },
+    { path: "/#features", name: "Core Functionalities "},
+
   ],
 };
 const gewaer = {

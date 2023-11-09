@@ -151,7 +151,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <Header
       menu={<KanvasMenu />}
       className="bg-sky-600"
-      logo="/images/klogof.png"
+      logo="/images/kanvasL.svg"
       iconColor="text-white"
     />,
     <GA />,
@@ -189,7 +189,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     />,
     <Automated
       desc="When undertaking custom development, backend data management can be a significant challenge. To address this, we offer a versatile admin interface that provides comprehensive control over all modules."
-      img={"/images/kanvasAdmin.jpg"}
+      img={"/images/kanvasBoard.png"}
       title="Control over every aspect of the application ecosystem."
       descColor="text-cyan-600"
       titleColor="text-cyan-600"
