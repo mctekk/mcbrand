@@ -174,7 +174,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Your Backend Complement"
       desc="
       Kanvas Niche is not a replacement for your existing development framework or backend-as-a-service. Instead, it complements them by providing specific modules for common problems that you would otherwise need to develop yourself."
-      img="/images/HeroKanvas.png"
+      img="/images/heroKanvas.png"
       colorFonts="text-sky-600"
       back="bg-white"
     />,

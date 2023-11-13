@@ -10,19 +10,19 @@ interface Action {
 const translateData = Array.from(translate("home.actions"));
 const Data = [
   {
-    url: "/images/actionsKanvas/auth.png",
+    url: "/images/actionsKanvas/Ecosystem.png",
   },
   {
-    url: "/images/actions/e-Forms.webp",
+    url: "/images/actionsKanvas/CRM.png",
   },
   {
-    url: "/images/actions/e-Signature.webp",
+    url:"/images/actionsKanvas/Inventory.png",
   },
   {
-    url: "/images/actions/Product-Sharing.webp",
+    url: "/images/actionsKanvas/Social.png",
   },
   {
-    url: "/images/actions/Request-Referrals.webp",
+    url:"/images/actionsKanvas/auth.png",
   },
 ];
 
