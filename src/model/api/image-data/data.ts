@@ -22,7 +22,7 @@ const Data = [
     url: "/images/actionsKanvas/Social.png",
   },
   {
-    url:"/images/actionsKanvas/auth.png",
+    url:"/images/actionsKanvas/Workflow.png",
   },
 ];
 

@@ -17,12 +17,14 @@ interface ListProps {
   buttonColor?: string;
   selected?: string;
   code?: boolean;
+  double : 400 | 200
 }
 export default function ListButtons({
   data,
   buttonColor,
   selected,
   code,
+  double
 }: ListProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const handleClick = (index: number) => {
@@ -87,12 +89,14 @@ export default function ListButtons({
           <Image
             src={data[imageIndex].url}
             alt={data[imageIndex].desc}
-            width={200}
+            width={double}
             height={24}
-            className="mb-20 "
+            className="mb-10 "
           />
-          <h4 className="font-semibold">{data[imageIndex].title}</h4>
+          <div className="w-[80%]">
+          <h4 className="font-semibold  ">{data[imageIndex].title}</h4>
           <p className="">{data[imageIndex].desc}</p>
+          </div>
         </div>
       </div>
     );

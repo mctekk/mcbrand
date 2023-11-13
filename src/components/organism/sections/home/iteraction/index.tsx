@@ -20,9 +20,10 @@ interface ImageChangerProps {
   title:string
   desc:string
   code?:boolean
+  double : 400 | 200
 }
 
-export default function ImageChanger({ data, buttonColor,selected,className,desc,title,code }: ImageChangerProps) {
+export default function ImageChanger({ data, buttonColor,selected,className,desc,title,code,double }: ImageChangerProps) {
   return (
     <div className={`section  ${className}`} id="features">
       <Section>
@@ -32,9 +33,9 @@ export default function ImageChanger({ data, buttonColor,selected,className,desc
            {desc}
           </h4>
         </div>
-        <Dropdown data={data} code={code}></Dropdown>
+        <Dropdown data={data} code={code} double={double}></Dropdown>
         <div>
-          <ListButtons data={data} buttonColor={buttonColor} selected={selected} code={code}/>
+          <ListButtons data={data} buttonColor={buttonColor} selected={selected} code={code} double={double}/>
         </div>
       </Section>
     </div>

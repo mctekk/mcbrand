@@ -15,9 +15,10 @@ interface ImageData {
 interface DropdownProps {
   data: ImageData[];
   code?: boolean;
+  double : 400 | 200
 }
 
-export default function Dropdown({ data, code }: DropdownProps) {
+export default function Dropdown({ data, code,double }: DropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
   const handleClick = (index: number) => {
@@ -96,7 +97,7 @@ export default function Dropdown({ data, code }: DropdownProps) {
           <Image
             src={data[imageIndex].url}
             alt={data[imageIndex].desc}
-            width={200}
+            width={double}
             height={24}
             className="mb-20 "
           />
