@@ -57,6 +57,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       desc={translate("home.completiontools.desc")}
       img="/images/completion-tools-screenshot.png"
       title={translate("home.completiontools.title")}
+      back="bg-white"
     />,
     <ImageChanger
       data={actionsData}
@@ -163,7 +164,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       messageDesc="Downscale the development grind. Our packages streamline CRM, Inventory, Social interactions, and User Management features,"
       messageEnd=" letting you focus on your unique challenges."
       upperMessage="Supercharged headless app"
-      lowerMessage="development for"
+      lowerMessage="Development for"
       words={["agencies", "startups", "freelancers"]}
       colorDesc="text-white"
       colorFonts="text-white"
@@ -187,7 +188,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Ecosystem"
       desc="The foundation for any user facing app.
       User Authentication, Groups, permissions, notifications, and more."
-      double={400}
+      double={500}
       
     />,
     <Automated

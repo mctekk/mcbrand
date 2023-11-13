@@ -6,9 +6,9 @@ interface Props {
   desc: string;
   img: string;
   subtitle?: string;
-  subdesc?: string | "bg-white";
+  subdesc?: string ;
   colorFonts?: string;
-  back?:string
+  back?:string | "bg-white"
 }
 export default function CompletionTools({
   desc,
@@ -23,11 +23,13 @@ export default function CompletionTools({
     <div className={`section mx-auto ${back} `}>
       {" "}
       <Section
-        className={`flex flex-col gap-6 xl:w-2/3 lg:w-full lg:px-16 mx-auto   ${colorFonts}  `}
+        className={`flex flex-col gap-6   lg:w-full lg:px-16 mx-auto   ${colorFonts}  `}
       >
         {" "}
-        <h1 className="text-[2.125rem]"> {title}</h1>{" "}
+        <div className="xl:w-3/4 flex-col mx-auto">
+        <h1 className="text-[2.125rem] "> {title}</h1>{" "}
         <h4 className="mb-6 ">{desc}</h4>{" "}
+        </div>
         <Image alt="Completion Tools" src={img} width={2000} height={24} />{" "}
         <h1 className="text-[2.125rem]"> {subtitle}</h1>
         <h4 className="mb-24 ">{subdesc}</h4>
