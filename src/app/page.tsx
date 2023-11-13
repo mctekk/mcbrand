@@ -219,7 +219,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-cyan-600"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
     ></InfoSection>,
-    <VerticalImageStack images={imagesDataKanvas}></VerticalImageStack>,
+    // <VerticalImageStack images={imagesDataKanvas}></VerticalImageStack>,
     <Brands
       imageUrls={kanvasImagesBrand}
       title="Brands that trust us"

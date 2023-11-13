@@ -64,7 +64,7 @@ export default function ListButtons({
     );
   } else {
     return (
-      <div className="flex space-x-1 xl:ml-64">
+      <div className="flex space-x-36 xl:ml-64">
         <div className="space-y-6 md:hidden flex-col hidden lg:flex ">
           {data.map((item, index) => (
             <motion.button
@@ -93,7 +93,7 @@ export default function ListButtons({
             height={24}
             className="mb-10 "
           />
-          <div className="w-[80%]">
+           <div className="w-[80%]">
           <h4 className="font-semibold  ">{data[imageIndex].title}</h4>
           <p className="">{data[imageIndex].desc}</p>
           </div>
