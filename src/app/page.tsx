@@ -121,7 +121,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
-      buttonLink=""
+      buttonLink="/"
     ></InfoSection>,
     <Slider
       data={dataMcSlide}
@@ -139,7 +139,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
-      buttonLink=""
+      buttonLink="/"
     ></InfoSection>,
     <InfoSection
       desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
@@ -148,7 +148,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button={false}
       reverse
       backColor="bg-white"
-      buttonLink=""
+      buttonLink="/"
     ></InfoSection>,
     <SimpleForm></SimpleForm>,
     <Footer mctekk></Footer>,
@@ -210,7 +210,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button={false}
       backColor="bg-sky-50"
       textColor="text-sky-700"
-      buttonLink=""
+      buttonLink="/"
     ></InfoSection>,
     <InfoSection
       desc="Simplify your app development using our pre-built components based on the Atomic Design concept. Integrated seamlessly with Kanvas Niche, they offer a quick solution for launching your frontend app effortlessly."
@@ -286,7 +286,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button={false}
       backColor="bg-violet-50"
       textColor="text-blue-950"
-      buttonLink=""
+      buttonLink="/"
     ></InfoSection>,
     <InfoSection
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
