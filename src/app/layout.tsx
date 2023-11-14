@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: process.env.PAGE_TYPE?.toUpperCase(),
+  title: process.env.PAGE_TITLE ?? process.env.PAGE_TYPE?.toUpperCase(),
   description: "Mctekk brand page",
 };
 
