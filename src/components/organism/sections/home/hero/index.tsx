@@ -94,7 +94,7 @@ export default function Hero({
           {kanvas &&<div className=" mx-auto xl:ml-28 lg:ml-0 ml-0 2xl:ml-36 md:ml-2 ">  <h4
               className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0 font-semibold`}
             >
-             Join our waitlist for our open beta release</h4> <div className="ml-5 md:ml-0">  <EmailForm /> </div></div>}
+             Join our waitlist for our open beta release:</h4> <div className="ml-5 md:ml-0">  <EmailForm /> </div></div>}
           {button && (
             <a
               href={buttonLink}
