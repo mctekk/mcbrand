@@ -114,12 +114,11 @@
         "url": "/images/actions/Digital Consent.webp"
       }
     ],
-
     "kanvasActions": [
       {
-        "name": "Ecosystem",
-        "title": "The foundation for any user facing app.",
-        "desc": "All the building blocks you need to build a user facing app. Dive into authentication and team (or multi-tenant) management, permissions, notifications, and more."
+        "name": "Multitenancy",
+        "title": "Company and User Management in a single place.",
+        "desc": "Easily create, modify, group, remove, and set permission roles for companies and users."
       },
       {
         "name": "Customers (CRM)",
@@ -129,12 +128,12 @@
       {
         "name": "Inventory",
         "title": "Handle your inventory in a single place.",
-        "desc": "Extend your e-commerce solution with headless bundles, create marketplaces, or build your own inventory management system."
+        "desc": "Extend your e-commerce solution with headless bundles, create marketplaces, or build your own inventory management UI."
       },
       {
         "name": "Social",
         "title": "Add social media features to any app.",
-        "desc": "Share products, follow users , add groups , messaging, comments, likes, and more. All the building blocks you need to build a social app."
+        "desc": "Share products, follow users, create groups, messaging, comments, likes and more. All the building blocks you need to add a social to your app."
       },
       {
         "name": "Workflow",

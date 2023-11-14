@@ -161,10 +161,10 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-sky-600 "
       buttonInfo="Get Notified"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
-      messageDesc="Downscale the development grind. Our packages streamline CRM, Inventory, Social interactions, and User Management features,"
-      messageEnd=" letting you focus on your unique challenges."
-      upperMessage="Supercharged headless app"
-      lowerMessage="Development for"
+      messageDesc="Deploy new projects at super-speed or enhance existing ones by utilizing our headless modules as building blocks for you application."
+      messageEnd="We provide ready-made, easy to configure CRM, Inventory, Social Interactions, and User Management components."
+      upperMessage="Supercharge your development"
+      lowerMessage=" Headless Modules for"
       words={["agencies", "startups", "freelancers"]}
       colorDesc="text-white"
       colorFonts="text-white"
@@ -185,23 +185,22 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonColor="bg-white text-sky-600"
       selected="text-white"
       className="bg-sky-700 text-white"
-      title="Ecosystem"
-      desc="The foundation for any user facing app.
-      User Authentication, Groups, permissions, notifications, and more."
+      title="Our Headless Modules"
+      desc="Easy to use foundation for any client facing application. Our purpose is to provide you with the necessary tools to get things done swiftly and effortlessly in order to achieve your goals."
       double={500}
       
     />,
     <Automated
       desc="When undertaking custom development, backend data management can be a significant challenge. To address this, we offer a versatile admin interface that provides comprehensive control over all modules."
       img={"/images/kanvasBoard.png"}
-      title="Control over every aspect of the application ecosystem."
+      title="Control every aspect of the application ecosystem"
       descColor="text-cyan-600"
       titleColor="text-cyan-600"
       bg="bg-sky-50"
     />,
     <InfoSection
-      desc="Kanvas Modules are MIT licensed to ensure that you are in full control of your headless stack"
-      title="Open Source."
+      desc="Kanvas Modules are MIT licensed to ensure that you are in full control of your headless stack."
+      title="Open Source"
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-sky-50"
@@ -209,7 +208,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     ></InfoSection>,
     <InfoSection
       desc="Simplify your app development using our pre-built components based on the Atomic Design concept. Integrated seamlessly with Kanvas Niche, they offer a quick solution for launching your frontend app effortlessly."
-      title="Get a head start with Phoenix."
+      title="Get a head start with Phoenix"
       img="/images/Frame.jpg"
       reverse
       button={true}
