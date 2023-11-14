@@ -34,6 +34,7 @@ import {
 } from "@/model/api/instant-changes/data";
 import { GA } from "@/components/atoms/analitiycs";
 import VerticalImageStack from "@/components/atoms/case-studies-kanvas";
+import { GaKanvas } from "@/components/atoms/analitiycs/kanvasGa";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -160,7 +161,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/kanvasL.svg"
       iconColor="text-white"
     />,
-    <GA />,
+    <GaKanvas/>,
     <Hero
       className="bg-sky-600 "
       buttonInfo="Get Notified"
