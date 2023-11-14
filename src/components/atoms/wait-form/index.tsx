@@ -1,43 +1,95 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import Swal from "sweetalert2";
 
-declare global {
-  interface Window {
-    hbspt: any;
-  }
+interface EmailFormProps {
+  // Puedes eliminar las propiedades onSuccess y onError de aquí
 }
-function HubSpotForm (){
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://js.hsforms.net/forms/embed/v2.js";
-    script.crossOrigin = "anonymous";
-    document.head.appendChild(script);
 
-    const initializeHubSpotForm = () => {
-      if (window.hbspt) {
-        window.hbspt.forms.create({
-          region: "na1",
-          portalId: "23755688",
-          formId: "cfe8d7cb-1d62-459f-bfee-812ccd3d758f",
-          target: "#hubspotForm",
-        });
+const EmailForm: React.FC<EmailFormProps> = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Validación básica del correo electrónico
+    if (!email || !email.trim()) {
+      showError("Por favor, introduce un correo electrónico válido.");
+      return;
+    }
+
+    // Enviar el correo electrónico a la API de CRM
+    try {
+      const response = await axios.post(
+        "https://crm.api.dealerappcenter.com/v2/receivers/0bd19a61-28d2-4a44-9755-e291a3785f9c/lead",
+        {
+          email,
+          description: "KanvasLanding",
+          people: {
+            contacts: [
+              {
+                contacts_types_id: 1,
+                value: email,
+              },
+            ],
+          },
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "*/*",
+          },
+        }
+      );
+
+      if (response.status === 200) {
+        showSuccess("Correo electrónico enviado con éxito");
+        setEmail("")
       } else {
-        setTimeout(initializeHubSpotForm, 100);
+        showError("Error al enviar el correo electrónico.");
       }
-    };
+    } catch (error) {
+      showError("Error al enviar el correo electrónico.");
+    }
+  };
 
-    script.onload = initializeHubSpotForm;
+  const showSuccess = (message: string) => {
+    Swal.fire({
+      icon: "success",
+      title: "Éxito",
+      text: message,
+    });
+  };
 
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
+  const showError = (message: string) => {
+    Swal.fire({
+      icon: "error",
+      title: "Error",
+      text: message,
+    });
+  };
 
   return (
-    <div>
-      <div id="hubspotForm"></div>
+    <div className="">
+      <form onSubmit={handleSubmit} className="space-y-2">
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          className="h-10 p-3 mr-5 rounded"
+          placeholder="Enter your email"
+        />
+
+        <button
+          type="submit"
+          className="p-2 px-5 bg-white rounded text-sky-600 font-semibold"
+        >
+          Subscribe
+        </button>
+      </form>
     </div>
   );
 };
 
-export default HubSpotForm;
+export default EmailForm;

@@ -32,7 +32,7 @@ export default function CompletionTools({
         </div>
         <Image alt="Completion Tools" src={img} width={2000} height={24} />{" "}
         <h1 className="text-[2.125rem]"> {subtitle}</h1>
-        <h4 className="mb-24 ">{subdesc}</h4>
+        <h4 className=" ">{subdesc}</h4>
       </Section>{" "}
     </div>
   );

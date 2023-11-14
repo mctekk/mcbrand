@@ -78,6 +78,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/completion-process-example.png"
       title={translate("home.completionprocess.title")}
       button={false}
+      buttonLink=""
     />,
     <InstantChanges
       title={translate("home.changesPage.title")}
@@ -120,6 +121,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
+      buttonLink=""
     ></InfoSection>,
     <Slider
       data={dataMcSlide}
@@ -137,6 +139,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
+      buttonLink=""
     ></InfoSection>,
     <InfoSection
       desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
@@ -145,6 +148,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button={false}
       reverse
       backColor="bg-white"
+      buttonLink=""
     ></InfoSection>,
     <SimpleForm></SimpleForm>,
     <Footer mctekk></Footer>,
@@ -169,8 +173,9 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
-      buttonColor="bg-white text-sky-600"
+      buttonColor="bg-white text-sky-700"
     kanvas
+    id="Newsletter"
     ></Hero>,
     <CompletionTools
       title="Your Backend Complement"
@@ -194,8 +199,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       desc="When undertaking custom development, backend data management can be a significant challenge. To address this, we offer a versatile admin interface that provides comprehensive control over all modules."
       img={"/images/kanvasBoard.png"}
       title="Control every aspect of the application ecosystem"
-      descColor="text-cyan-600"
-      titleColor="text-cyan-600"
+      descColor="text-sky-700"
+      titleColor="text-sky-700"
       bg="bg-sky-50"
     />,
     <InfoSection
@@ -204,7 +209,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-sky-50"
-      textColor="text-cyan-600"
+      textColor="text-sky-700"
+      buttonLink=""
     ></InfoSection>,
     <InfoSection
       desc="Simplify your app development using our pre-built components based on the Atomic Design concept. Integrated seamlessly with Kanvas Niche, they offer a quick solution for launching your frontend app effortlessly."
@@ -212,11 +218,11 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/Frame.jpg"
       reverse
       button={true}
-      buttonColor="bg-cyan-600 "
+      buttonColor="bg-sky-700 "
       buttonTitle="Get Notified"
       backColor="bg-sky-50"
-      textColor="text-cyan-600"
-      buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
+      textColor="text-sky-700"
+      buttonLink="#Newsletter"
     ></InfoSection>,
     // <VerticalImageStack images={imagesDataKanvas}></VerticalImageStack>,
     <Brands
@@ -280,6 +286,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button={false}
       backColor="bg-violet-50"
       textColor="text-blue-950"
+      buttonLink=""
     ></InfoSection>,
     <InfoSection
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"

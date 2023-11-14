@@ -2,6 +2,7 @@
 import { Button } from "@/components/atoms/button/base";
 
 import { Section } from "@/components/atoms/section";
+import EmailForm from "@/components/atoms/wait-form";
 import HubSpotForm from "@/components/atoms/wait-form";
 
 
@@ -23,6 +24,7 @@ interface Props {
   buttonColor?: string;
   button?: boolean;
   kanvas?: boolean;
+  id?:string
 }
 
 
@@ -42,12 +44,13 @@ export default function Hero({
   buttonColor = "bg-orange-500",
   button,
   kanvas,
+  id
 }: Props) {
   return (
-    <div className={`section ${className} `} id="how-it-works">
-      <Section className="lg:mt-6 pl-0  flex items-center justify-start ">
-        <div className="flex justify-center  flex-col gap-6  lg:w-fit xl:w-fit xl:ml-64  ">
-          <div className="flex flex-col pb-12 w-fit">
+    <div className={`section ${className} mx-auto justify-center items-center`} id={id}>
+      <Section className="lg:mt-6 pl-0  flex  ">
+        <div className="flex justify-center  flex-col gap-6  lg:w-fit mx-auto items-center xl:ml-4 2xl:ml-16">
+          <div className="flex flex-col pb-12 xl:w-[80%] w-full justify-center items-start " >
             <h1
               className={`${colorFonts} md:text-[3rem] lg:text-[4.5rem] lg:tracking-wide lg:mb-1.5  md:ml-0 lg:ml-0 w-fit ml-3 `}
             >
@@ -55,13 +58,13 @@ export default function Hero({
             </h1>
             <div className="flex flex-col lg:flex-row lg:w-fit  md:gap-4 lg:tracking-wide  ">
               <h1
-                className={`${colorWords} md:text-[3rem] lg:text-[4.5rem]  font-normal  md:ml-0 lg:ml-0 whitespace-nowrap text-[1.80rem] ml-3`}
+                className={`${colorWords} md:text-[3rem] lg:text-[4rem] 2xl:text-[4.5rem]  font-normal  md:ml-0 lg:ml-0 whitespace-nowrap text-[1.80rem] ml-3`}
               >
                 {lowerMessage}
               </h1>
               <div className="overflow-hidden gap-6 flex flex-col h-[50px] md:h-[90px] lg:h-[99px] slices  ">
                 <h1
-                  className={`${colorWords}  md:text-[3rem] lg:text-[4rem] xl:text-[4.5rem]  slice ml-3 md:ml-0 lg:ml-0 lg:mt-5`}
+                  className={`${colorWords}  md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] 2xl:text-[4.5rem]  slice ml-3 md:ml-0 lg:ml-0 lg:mt-2`}
                 >
                   <Typewriter
                     words={words}
@@ -77,7 +80,7 @@ export default function Hero({
             </div>
           </div>
 
-          <div className="xl:w-3/4  md:mr-28">
+          <div className="xl:w-3/4  md:mr-28 xl:ml-9">
             <h4
               className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0`}
             >
@@ -88,10 +91,10 @@ export default function Hero({
               {messageEnd}
             </h4>
           </div>
-          {kanvas && <div className=" ml-5 md:ml-0 md:w-2/4 xl:w-1/3">  <h4
-              className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0`}
+          {kanvas &&<div className=" mx-auto xl:ml-28 lg:ml-0 ml-0 2xl:ml-36 md:ml-2 ">  <h4
+              className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0 font-semibold`}
             >
-              Subscribe to the waitlist</h4><HubSpotForm/> </div>}
+             Join our waitlist for our open beta release</h4> <div className="ml-5 md:ml-0">  <EmailForm /> </div></div>}
           {button && (
             <a
               href={buttonLink}

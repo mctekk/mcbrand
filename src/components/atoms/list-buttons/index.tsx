@@ -64,7 +64,7 @@ export default function ListButtons({
     );
   } else {
     return (
-      <div className="flex space-x-36 xl:ml-64">
+      <div className="flex space-x-48 xl:ml-64">
         <div className="space-y-6 md:hidden flex-col hidden lg:flex ">
           {data.map((item, index) => (
             <motion.button
@@ -85,7 +85,7 @@ export default function ListButtons({
             </motion.button>
           ))}
         </div>
-        <div className="flex-col items-center justify-center mt-9 text-center hidden lg:flex ">
+        <div className="flex-col  justify-center mt-9 text-center hidden lg:flex ">
           <Image
             src={data[imageIndex].url}
             alt={data[imageIndex].desc}
