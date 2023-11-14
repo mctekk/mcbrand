@@ -10,7 +10,7 @@ export default function FooterRights({mctekk,gewaer,kanvas}:Props) {
 if(mctekk || kanvas || gewaer ){
   return (
     <>
-      {"MCTEKK. All rights reserved 2023."} {new Date().getFullYear()}
+      {"MCTEKK. All rights reserved."} {new Date().getFullYear()}
     </>
   );
 }else{

@@ -48,7 +48,7 @@ export function Footer({
               {gewaer && <img src="/images/Gewaer.svg" />}
             </div>
             <h4 className="hidden md:block text-[0.75rem]">
-            <FooterRights kanvas={kanvas} />
+              <FooterRights kanvas={kanvas} />
             </h4>
             {sales && (
               <FooterList
@@ -113,17 +113,29 @@ export function Footer({
         >
           {/* useful links */}
           <div className=" w-1/6 border block md:hidden"></div>
-
-          <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
-            {[
-              { name: "Privacy Policy", path: "/privacy-policy" },
-              { name: "Terms of Service", path: "/terms-of-service" },
-            ].map((link) => (
-              <NextLink key={link.path} passHref href={link.path}>
-                <p className="px-0 ">{link.name}</p>
-              </NextLink>
-            ))}
-          </div>
+          {kanvas ? (
+            <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
+              {[
+                { name: "", path: "" },
+                { name: "", path: "" },
+              ].map((link) => (
+                <NextLink key={link.path} passHref href={link.path}>
+                  <p className="px-0 ">{link.name}</p>
+                </NextLink>
+              ))}
+            </div>
+          ) : (
+            <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
+              {[
+                { name: "Privacy Policy", path: "/privacy-policy" },
+                { name: "Terms of Service", path: "/terms-of-service" },
+              ].map((link) => (
+                <NextLink key={link.path} passHref href={link.path}>
+                  <p className="px-0 ">{link.name}</p>
+                </NextLink>
+              ))}
+            </div>
+          )}
 
           {/* social media */}
           <div className="md:w-1/2 h-full flex justify-end gap-2 md:gap-6 flex-col md:flex-row w-full md:pb-12">
