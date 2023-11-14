@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { BsBookmarkFill, BsCheck, BsCheck2 } from "react-icons/bs";
 
 interface EmailFormProps {
   // Puedes eliminar las propiedades onSuccess y onError de aquí
@@ -8,6 +9,8 @@ interface EmailFormProps {
 
 const EmailForm: React.FC<EmailFormProps> = () => {
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -18,10 +21,13 @@ const EmailForm: React.FC<EmailFormProps> = () => {
       return;
     }
 
+    // Iniciar el estado de carga
+    setLoading(true);
+
     // Enviar el correo electrónico a la API de CRM
     try {
       const response = await axios.post(
-        "https://crm.api.dealerappcenter.com/v2/receivers/0bd19a61-28d2-4a44-9755-e291a3785f9c/lead",
+        "https://crm.api.salesassist.io/v2/receivers/0bd19a61-28d2-4a44-9755-e291a3785f9c/lead",
         {
           email,
           description: "KanvasLanding",
@@ -43,23 +49,18 @@ const EmailForm: React.FC<EmailFormProps> = () => {
       );
 
       if (response.status === 200) {
-        showSuccess("Correo electrónico enviado con éxito");
-        setEmail("")
+        setEmail("");
+        setSubmitted(true);
       } else {
-        showError("Error al enviar el correo electrónico.");
+        showError("Try again");
       }
     } catch (error) {
-      showError("Error al enviar el correo electrónico.");
+      showError("Try again");
+    } finally {
+      setLoading(false);
     }
   };
 
-  const showSuccess = (message: string) => {
-    Swal.fire({
-      icon: "success",
-      title: "Éxito",
-      text: message,
-    });
-  };
 
   const showError = (message: string) => {
     Swal.fire({
@@ -71,23 +72,39 @@ const EmailForm: React.FC<EmailFormProps> = () => {
 
   return (
     <div className="">
-      <form onSubmit={handleSubmit} className="space-y-2">
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          className="h-10 p-3 mr-5 rounded"
-          placeholder="Enter your email"
-        />
+      {!submitted ? (
+        <form onSubmit={handleSubmit} className="space-y-2">
+          <div className="flex space-x-2">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="flex-grow h-10 p-3 rounded"
+              placeholder="Enter your email"
+            />
 
-        <button
-          type="submit"
-          className="p-2 px-5 bg-white rounded text-sky-600 font-semibold"
-        >
-          Subscribe
-        </button>
-      </form>
+            <button
+              type="submit"
+              className="w-32 h-10 bg-white rounded text-sky-600 font-semibold relative"
+              disabled={loading}
+            >
+              {loading && (
+                <span className="absolute  inset-0 flex items-center justify-center">
+                  <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-sky-600"></div>
+                </span>
+              )}
+              {!loading && (
+                <p className={loading ? "text-white" : ""}>Subscribe</p>
+              )}
+            </button>
+          </div>
+        </form>
+      ) : (
+        <div className="text-white text-[1.3rem]">
+          <p className="flex ">Thanks for subscribing! <div className="mt-1 ml-2 text-[1.6rem]"><BsCheck2/></div></p>
+        </div>
+      )}
     </div>
   );
 };
