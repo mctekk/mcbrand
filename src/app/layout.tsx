@@ -7,7 +7,20 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: process.env.PAGE_TITLE ?? process.env.PAGE_TYPE?.toUpperCase(),
-  description: "Mctekk brand page",
+  description: (() => {
+    switch (process.env.PAGE_TYPE) {
+      case 'kanvas':
+        return 'Swiftly deploy projects or enhance existing ones with our ready-to-use headless module';
+      case 'gewaer':
+        return 'Gewaer Page';
+      case 'mctekk':
+        return 'Mctekk Page';
+      case 'salesassist':
+        return 'SalesAssist';
+      default:
+        return 'Mctekk brand page';
+    }
+  })(),
 };
 
 const type = process.env.PAGE_TYPE || "";
