@@ -208,8 +208,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-cyan-600"
     ></InfoSection>,
     <InfoSection
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      title="Manage your leads, agents, and commissions with ease."
+      desc="Simplify your app development using our pre-built components based on the Atomic Design concept. Integrated seamlessly with Kanvas Niche, they offer a quick solution for launching your frontend app effortlessly."
+      title="Get a head start with Phoenix."
       img="/images/Frame.jpg"
       reverse
       button={true}
