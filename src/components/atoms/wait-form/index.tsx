@@ -3,11 +3,9 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import { BsBookmarkFill, BsCheck, BsCheck2 } from "react-icons/bs";
 
-interface EmailFormProps {
-  // Puedes eliminar las propiedades onSuccess y onError de aquí
-}
 
-const EmailForm: React.FC<EmailFormProps> = () => {
+
+export function EmailForm  () {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -15,9 +13,8 @@ const EmailForm: React.FC<EmailFormProps> = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Validación básica del correo electrónico
     if (!email || !email.trim()) {
-      showError("Por favor, introduce un correo electrónico válido.");
+      showError("Please enter a valid email");
       return;
     }
 
@@ -73,20 +70,20 @@ const EmailForm: React.FC<EmailFormProps> = () => {
   return (
     <div className="">
       {!submitted ? (
-        <form onSubmit={handleSubmit} className="space-y-2">
-          <div className="flex space-x-2">
+        <form onSubmit={handleSubmit} className="space-y-2 flex-col">
+          <div className="flex-col md:flex-row md:space-x-2 space-y-3">
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-grow h-10 p-3 rounded"
+              className="flex-grow h-10 p-3 rounded mr-1"
               placeholder="Enter your email"
             />
 
             <button
               type="submit"
-              className="w-32 h-10 bg-white rounded text-sky-600 font-semibold relative"
+              className="w-24 h-10 bg-white rounded text-sky-600 font-semibold relative"
               disabled={loading}
             >
               {loading && (
@@ -109,4 +106,4 @@ const EmailForm: React.FC<EmailFormProps> = () => {
   );
 };
 
-export default EmailForm;
+
