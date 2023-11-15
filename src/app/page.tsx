@@ -161,7 +161,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/kanvasL.svg"
       iconColor="text-white"
     />,
-    <GaKanvas/>,
+    <GaKanvas />,
     <Hero
       className="bg-sky-600 "
       buttonInfo="Get Notified"
@@ -175,8 +175,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorFonts="text-white"
       colorWords="text-white"
       buttonColor="bg-white text-sky-700"
-    kanvas
-    id="Newsletter"
+      kanvas
+      id="Newsletter"
     ></Hero>,
     <CompletionTools
       title="Your Backend Complement"
@@ -194,7 +194,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Our Headless Modules"
       desc="Easy to use foundation for any client facing application. Our purpose is to provide you with the necessary tools to get things done swiftly and effortlessly in order to achieve your goals."
       double={500}
-      
     />,
     <Automated
       desc="When undertaking custom development, backend data management can be a significant challenge. To address this, we offer a versatile admin interface that provides comprehensive control over all modules."
@@ -202,26 +201,26 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Control every aspect of the application ecosystem"
       descColor="text-sky-700"
       titleColor="text-sky-700"
-      bg="bg-sky-50"
+      bg="bg-white"
     />,
     <InfoSection
       desc="Kanvas Modules are MIT licensed to ensure that you are in full control of your headless stack."
       title="Open Source"
-      img="/images/Frame.jpg"
+      img="/images/Github.png"
       button={false}
-      backColor="bg-sky-50"
+      backColor="bg-white"
       textColor="text-sky-700"
       buttonLink="/"
     ></InfoSection>,
     <InfoSection
       desc="Simplify your app development using our pre-built components based on the Atomic Design concept. Integrated seamlessly with Kanvas Niche, they offer a quick solution for launching your frontend app effortlessly."
       title="Get a head start with Phoenix"
-      img="/images/Frame.jpg"
+      img="/images/Gewaer.png"
       reverse
       button={true}
       buttonColor="bg-sky-700 "
       buttonTitle="Get Notified"
-      backColor="bg-sky-50"
+      backColor="bg-white"
       textColor="text-sky-700"
       buttonLink="#Newsletter"
     ></InfoSection>,
