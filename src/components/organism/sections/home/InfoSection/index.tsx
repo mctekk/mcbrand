@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { Section } from "@/components/atoms/section";
 import { Solid } from "@/components/atoms/button/solid";
-
+import Link from "next/link";
 interface Props {
   title?: string;
   desc: string;
   button: boolean;
-  buttonLink?: string;
+  buttonLink: string;
   buttonTitle?: string;
   img: string;
   backColor?: string;
@@ -38,11 +38,11 @@ export default function InfoSection({
             {desc}
           </h4>
           {button && (
-              <a href={buttonLink} target="_blank" rel="noreferrer" >
+              <Link href={buttonLink}  >
                 <Solid className={`px-5 mt-4 lg:px-3 ${buttonColor}`}>
                   {buttonTitle}
                 </Solid>
-              </a>
+              </Link>
             )}
         </div>
         <div className="shrink-0 md:w-[35.5rem] md:h-[27.5rem] rounded-lg drop-shadow-sa overflow-hidden ">

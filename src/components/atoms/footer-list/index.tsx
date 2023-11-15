@@ -33,7 +33,7 @@ export function FooterList({
         href={path}
         target="_blank"
         rel="noreferrer"
-        className="hover:text-orange-500"
+        className=""
       >
         {name}
       </a>
@@ -42,7 +42,7 @@ export function FooterList({
 
   function renderLink(name: string, path: string) {
     return (
-      <NextLink passHref href={path} className="hover:text-orange-500  ">
+      <NextLink passHref href={path} className=" ">
         {name}
       </NextLink>
     );

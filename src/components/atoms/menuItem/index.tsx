@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import classNames from "classnames";
 import { Solid } from "../button/solid";
 import { Link as ButtonLink } from "../button/link";
 

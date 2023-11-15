@@ -8,18 +8,18 @@ const menuItems = [
     text: "Home",
     link: "/",
   },
-  { text:"Core Functionalities", link: "#features" },
+  { text:"Core Functionalities", link: "/#features" },
   { text:"GitHub", link: "https://github.com/bakaphp/kanvas-ecosystem-api" },
 
 
 ];
 const externalLinks = [
   {
-    text: "Get Notified",
-    link: "https://meetings.hubspot.com/jennherasme/kanvas",
+    text: "Newsletter",
+    link: "#Newsletter",
     isExternal: true,
     className:
-      "lg:bg-white  lg:text-sky-600  lg:hover:border  text-white lg:ml-64 ",
+      "lg:bg-white  lg:text-sky-600  lg:hover:border  text-white xl:ml-64 w-fit",
   },
 ];
 

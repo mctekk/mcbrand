@@ -114,37 +114,31 @@
         "url": "/images/actions/Digital Consent.webp"
       }
     ],
-
     "kanvasActions": [
       {
-        "name": "Ecosystem",
-        "title": "The foundation for any user facing app.",
-        "desc": "Dive into authentication and teams (or multi-tenant) management, permission, notification and more. All the building blocks you need to build a user facing app.",
-        "url": "/images/actions/Get-Docs.webp"
+        "name": "Multitenancy",
+        "title": "Company and User Management in a single place.",
+        "desc": "Easily create, modify, group, remove, and set permission roles for companies and users."
       },
       {
         "name": "Customers (CRM)",
         "title": "Customers are the most important part of any business.",
-        "desc": "Handle customer information, communication, and relationships in a single place. Manage your sales process and customer journey from lead to customer.",
-        "url": "/images/actions/e-Forms.webp"
+        "desc": "Handle customer information, communication, and relationships in a single place. Manage your sales process and customer journey from lead to customer."
       },
       {
         "name": "Inventory",
         "title": "Handle your inventory in a single place.",
-        "desc": "Extend your e-commerce solution with headless bundles, create marketplaces, or build your own inventory management system.",
-        "url": "/images/actions/e-Signature.webp"
+        "desc": "Extend your e-commerce solution with headless bundles, create marketplaces, or build your own inventory management UI."
       },
       {
         "name": "Social",
         "title": "Add social media features to any app.",
-        "desc": "Share product, follow users , add groups , messaging, comments, likes, and more. All the building blocks you need to build a social app.",
-        "url": "/images/actions/Product-Sharing.webp"
+        "desc": "Share products, follow users, create groups, messaging, comments, likes and more. All the building blocks you need to add a social to your app."
       },
       {
         "name": "Workflow",
-        "title": "Connect kanvas modules with other systems.",
-        "desc": "Allow you to set the rules to trigger actions based on events you define withing the kanvas ecosystem. After create lead creating send it to your CRM, or send a notification to your team, you just define it",
-        "url": "/images/actions/Request-Referrals.webp"
+        "title": "Connect Kanvas modules with other systems.",
+        "desc": "Set rules to trigger actions based on events you define within the Kanvas Ecosystem. After a lead is created, send it to your CRM or send a notification to your team. You define it."
       }
     ],
 

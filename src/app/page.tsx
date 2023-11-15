@@ -20,7 +20,7 @@ import Menu from "@/components/molecules/menu";
 import McMenu from "@/components/molecules/mc-menu";
 import { translate } from "@/locales";
 import { Slider } from "@/components/organism/sections/why-sales-assist/simplify-sales";
-import { dataMcSlide, dataSlide } from "@/model/api/simplify-sales";
+import { dataMcSlide } from "@/model/api/simplify-sales";
 import Brands from "@/components/atoms/brands";
 import SimpleForm from "@/components/organism/sections/home/formContact";
 import { imagesBrand, kanvasImagesBrand } from "@/model/api";
@@ -28,13 +28,13 @@ import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import { GMenu } from "@/components/molecules/gewaer-menu";
 import {
   columnsData,
-  columnsDataKanvas,
+  imagesDataKanvas,
   leadingData,
-  leadingDataKanvas,
   ratesData,
-  ratesDataKanvas,
 } from "@/model/api/instant-changes/data";
 import { GA } from "@/components/atoms/analitiycs";
+import VerticalImageStack from "@/components/atoms/case-studies-kanvas";
+import { GaKanvas } from "@/components/atoms/analitiycs/kanvasGa";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -58,6 +58,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       desc={translate("home.completiontools.desc")}
       img="/images/completion-tools-screenshot.png"
       title={translate("home.completiontools.title")}
+      back="bg-white"
     />,
     <ImageChanger
       data={actionsData}
@@ -66,7 +67,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className=" bg-zinc-800 text-white"
       title={translate("home.iteraction.title")}
       desc={translate("home.iteraction.desc")}
-      id="actions"
+      double={200}
     />,
     <Automated
       desc={translate("home.automated.desc")}
@@ -78,6 +79,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/completion-process-example.png"
       title={translate("home.completionprocess.title")}
       button={false}
+      buttonLink=""
     />,
     <InstantChanges
       title={translate("home.changesPage.title")}
@@ -120,6 +122,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
+      buttonLink="/"
     ></InfoSection>,
     <Slider
       data={dataMcSlide}
@@ -137,6 +140,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
+      buttonLink="/"
     ></InfoSection>,
     <InfoSection
       desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
@@ -145,6 +149,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button={false}
       reverse
       backColor="bg-white"
+      buttonLink="/"
     ></InfoSection>,
     <SimpleForm></SimpleForm>,
     <Footer mctekk></Footer>,
@@ -153,77 +158,73 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <Header
       menu={<KanvasMenu />}
       className="bg-sky-600"
-      logo="/images/klogof.png"
+      logo="/images/kanvasL.svg"
       iconColor="text-white"
     />,
-    <GA />,
+    <GaKanvas />,
     <Hero
       className="bg-sky-600 "
       buttonInfo="Get Notified"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
-      messageDesc="Skip the development grind. Our packages streamline CRM, Inventory, Social interactions, and User Management features,"
-      messageEnd=" letting you focus on your unique challenges."
-      upperMessage="Supercharge headless app"
-      lowerMessage="development for"
-      words={["agencies", "startup's", "freelancers"]}
+      messageDesc="Deploy new projects at super-speed or enhance existing ones by utilizing our headless modules as building blocks for your application."
+      messageEnd="We provide ready-made, easy to configure CRM, Inventory, Social Interactions, and Multitenancy components."
+      upperMessage="Supercharge your development"
+      lowerMessage=" Headless Modules for"
+      words={["agencies", "startups", "freelancers"]}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
-      buttonColor="bg-white text-sky-600"
-      button
+      buttonColor="bg-white text-sky-700"
+      kanvas
+      id="Newsletter"
     ></Hero>,
     <CompletionTools
-      title="Our set of components"
+      title="Your Backend Complement"
       desc="
-      A versatile set of components addressing common challenges in app development, including authentication, product management (inventory), customer relations (CRM), social interactions, and seamless integration with third-party apps."
-      img="/images/kanvastool.png"
+      Kanvas Niche is not a replacement for your existing development framework or backend-as-a-service. Instead, it complements them by providing specific modules for common problems that you would otherwise need to develop yourself."
+      img="/images/HeroKanvas.png"
       colorFonts="text-sky-600"
+      back="bg-white"
     />,
     <ImageChanger
       data={kanvasActionsData}
       buttonColor="bg-white text-sky-600"
       selected="text-white"
       className="bg-sky-700 text-white"
-      title="Ecosystem"
-      desc="The foundation for any user facing app.
-      User Authentication, Groups, permissions, notifications, and more."
-      id="features"
+      title="Our Headless Modules"
+      desc="Easy to use foundation for any client facing application. Our purpose is to provide you with the necessary tools to get things done swiftly and effortlessly in order to achieve your goals."
+      double={500}
     />,
     <Automated
       desc="When undertaking custom development, backend data management can be a significant challenge. To address this, we offer a versatile admin interface that provides comprehensive control over all modules."
-      img={"/images/automated.svg"}
-      title="Control over every aspect of the application ecosystem."
-      descColor="text-cyan-600"
-      titleColor="text-cyan-600"
-      bg="bg-sky-50"
+      img={"/images/kanvasBoard.png"}
+      title="Control every aspect of the application ecosystem"
+      descColor="text-sky-700"
+      titleColor="text-sky-700"
+      bg="bg-white"
     />,
     <InfoSection
-      desc="Kanvas modules are MIT licensed to ensure that you are in full control of your headless stack"
+      desc="Kanvas Modules are MIT licensed to ensure that you are in full control of your headless stack."
       title="Open Source"
-      img="/images/Frame.jpg"
+      img="/images/Github.png"
       button={false}
-      backColor="bg-sky-50"
-      textColor="text-cyan-600"
+      backColor="bg-white"
+      textColor="text-sky-700"
+      buttonLink="/"
     ></InfoSection>,
     <InfoSection
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      title="Manage your leads, agents, and commissions with ease."
-      img="/images/Frame.jpg"
+      desc="Simplify your app development using our pre-built components based on the Atomic Design concept. Integrated seamlessly with Kanvas Niche, they offer a quick solution for launching your frontend app effortlessly."
+      title="Get a head start with Phoenix"
+      img="/images/Gewaer.png"
       reverse
       button={true}
-      buttonColor="bg-cyan-600 "
+      buttonColor="bg-sky-700 "
       buttonTitle="Get Notified"
-      backColor="bg-sky-50"
-      textColor="text-cyan-600"
-      buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
+      backColor="bg-white"
+      textColor="text-sky-700"
+      buttonLink="#Newsletter"
     ></InfoSection>,
-    <InstantChanges
-      className="bg-white"
-      title="Case studies from some of our customers"
-      columnsData={columnsDataKanvas}
-      leadingData={leadingDataKanvas}
-      ratesData={ratesDataKanvas}
-    />,
+    // <VerticalImageStack images={imagesDataKanvas}></VerticalImageStack>,
     <Brands
       imageUrls={kanvasImagesBrand}
       title="Brands that trust us"
@@ -268,7 +269,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-violet-500 text-white"
       title="Manage your leads, agents, and commissions with ease."
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      id="learnMore"
+      double={200}
     />,
     <Automated
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
@@ -285,6 +286,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button={false}
       backColor="bg-violet-50"
       textColor="text-blue-950"
+      buttonLink="/"
     ></InfoSection>,
     <InfoSection
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"

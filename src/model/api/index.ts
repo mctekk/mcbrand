@@ -14,5 +14,6 @@ const kanvasImagesBrand = [
   "/images/brands/nzxt.png",
 
   "/images/brands/copic.png",
+  "/images/brands/popularCar.svg",
 ];
 export { imagesBrand, kanvasImagesBrand };

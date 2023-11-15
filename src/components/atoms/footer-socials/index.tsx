@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import { BsGithub, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { RiLinkedinBoxLine, RiLinkedinLine } from "react-icons/ri";
 
 type Props = {
   kind?: "dark" | "light";
@@ -18,10 +19,10 @@ const social = [
 ];
 const kanvasSocial = [
   {
-    url: "https://www.linkedin.com/company/getsalesassist",
-    icon: <BsLinkedin />,
+    url: "https://github.com/bakaphp/kanvas-ecosystem-api",
+    icon: <BsGithub />,
   },
-  { url: "https://twitter.com/SalesAssistSaaS", icon: <BsInstagram /> },
+  { url: "https://www.linkedin.com/company/944172/admin/feed/posts/", icon: <BsLinkedin/> },
 ];
 const MCsocial = [
   {
@@ -35,7 +36,8 @@ const MCsocial = [
 
 export default function FooterSocials({ kind, sales, kanvas }: Props) {
   const socialClasses = classNames("text-[1.875rem] text-white rounded", {
-    "bg-zinc-800": kind === "light",
+    "bg-sky-700": kanvas,
+    "bg-zinc-800": kind === "light" && sales,
   });
   if (kanvas) {
     return (
