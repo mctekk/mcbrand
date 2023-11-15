@@ -2,8 +2,8 @@
 import { Button } from "@/components/atoms/button/base";
 
 import { Section } from "@/components/atoms/section";
-import EmailForm from "@/components/atoms/wait-form";
-import HubSpotForm from "@/components/atoms/wait-form";
+import { EmailForm } from "@/components/atoms/wait-form";
+
 
 
 import { Typewriter } from "react-simple-typewriter";
