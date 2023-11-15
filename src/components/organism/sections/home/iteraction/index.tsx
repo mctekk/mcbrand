@@ -1,4 +1,4 @@
-"use client";
+// En tu componente ImageChanger.tsx
 import React from "react";
 import { Section } from "@/components/atoms/section";
 import { translate } from "@/locales";
@@ -11,19 +11,31 @@ interface ImageData {
   name: string;
   title: string;
 }
-export default function ImageChanger({ data }: { data: ImageData[] }) {
+
+interface ImageChangerProps {
+  data: ImageData[];
+  buttonColor?: string; 
+  selected?:string
+  className:string
+  title:string
+  desc:string
+  code?:boolean
+  double : 500 | 200
+}
+
+export default function ImageChanger({ data, buttonColor,selected,className,desc,title,code,double }: ImageChangerProps) {
   return (
-    <div className="section bg-zinc-800 text-white" id="actions">
+    <div className={`section  ${className}`} id="features">
       <Section>
         <div className="xl:ml-64 mb-10">
-          <h1 className="mb-4">{translate("home.iteraction.title")}</h1>
+          <h1 className="mb-4">{title}</h1>
           <h4 className="text-white-normal">
-            {translate("home.iteraction.desc")}
+           {desc}
           </h4>
         </div>
-        <Dropdown data={data}></Dropdown>
+        <Dropdown data={data} code={code} double={double}></Dropdown>
         <div>
-          <ListButtons data={data}></ListButtons>
+          <ListButtons data={data} buttonColor={buttonColor} selected={selected} code={code} double={double}/>
         </div>
       </Section>
     </div>
