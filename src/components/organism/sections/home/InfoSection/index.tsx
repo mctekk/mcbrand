@@ -13,6 +13,7 @@ interface Props {
   textColor?: string;
   buttonColor?: string;
   reverse?:boolean
+  link?:string
 }
 
 export default function InfoSection({
@@ -25,14 +26,15 @@ export default function InfoSection({
   backColor,
   textColor,
   buttonColor,
-  reverse
+  reverse,
+  link
 }: Props) {
   return (
     <section className={`${backColor} section  `}>
       <Section
-        className={`flex flex-col  lg:flex-row ${reverse? "lg:flex-row-reverse":"lg:flex-row"} gap-4 md:gap-20 items-center`}
+        className={`flex flex-col  lg:flex-row ${reverse? "lg:flex-row-reverse":"lg:flex-row"} gap-4  items-center`}
       >
-        <div className={`flex flex-col gap-6 xl:w-fit xl:ml-72 ${textColor} `}>
+        <div className={`flex flex-col gap-6 xl:w-fit xl:ml-56 ${textColor} `}>
           <h1>{title}</h1>
           <h4>
             {desc}
@@ -45,13 +47,15 @@ export default function InfoSection({
               </Link>
             )}
         </div>
-        <div className="shrink-0 md:w-[35.5rem] md:h-[27.5rem] rounded-lg drop-shadow-sa overflow-hidden ">
+        <div className="shrink-0 md:w-fit md:h-[27.5rem] rounded-lg drop-shadow-sa overflow-hidden ">
+          <a href={link}>
           <Image
             alt="Completion Process Example"
             src={img}
-            width={1000}
+            width={600}
             height={96}
           />
+          </a>
         </div>
       </Section>
     </section>

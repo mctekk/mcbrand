@@ -1,6 +1,7 @@
 import React from "react";
 import { MenuItem } from "../../atoms/menuItem";
 import { translate } from "@/locales";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 
 const menuItems = [
@@ -15,11 +16,20 @@ const menuItems = [
 ];
 const externalLinks = [
   {
-    text: "Newsletter",
-    link: "#Newsletter",
+    text: <BsGithub></BsGithub>,
+    link: "https://github.com/bakaphp/kanvas-ecosystem-api",
     isExternal: true,
     className:
-      "lg:bg-white  lg:text-sky-600  lg:hover:border  text-white xl:ml-64 w-fit",
+      "   xl:ml-64 text-white ",
+    isIcon: true
+  },
+  {
+    text: <BsLinkedin/>,
+    link: "https://www.linkedin.com/company/944172/admin/feed/posts/",
+    isExternal: true,
+    className:
+      "    text-white ",
+    isIcon: true
   },
 ];
 
@@ -42,6 +52,7 @@ export function KanvasMenu({}) {
             link={item.link}
             isExternal={item.isExternal}
             className={item.className}
+            isIcon={item.isIcon}
           />
         ))}
       </div>
