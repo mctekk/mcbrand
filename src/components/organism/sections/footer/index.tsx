@@ -116,7 +116,7 @@ export function Footer({
           <div className=" w-1/6 border block md:hidden"></div>
           
           {kanvas ? (
-             <a href="http://mctekk.com/">Made With 💙 in Mctekk  </a>
+             <a href="http://mctekk.com/">Made With 💙 By Mctekk  </a>
           ) : (
             <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
               {[
