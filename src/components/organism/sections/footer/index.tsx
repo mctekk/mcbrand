@@ -145,8 +145,11 @@ export function Footer({
             {sales && <FooterSocials kind={kind} sales />}
             {mctekk && <FooterSocials kind={kind} />}
             {kanvas && <FooterSocials kind={kind} kanvas />}
+            
           </div>
         </div>
+        {kanvas &&  <a href="http://mctekk.com/">Made With 💙 in Mctekk  </a>}
+       
       </div>
     </footer>
   );
