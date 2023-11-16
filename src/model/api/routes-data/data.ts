@@ -75,15 +75,7 @@ const company = {
     { path: calendlyLink, name: RouteNames.bookADemo },
   ],
 };
-const KanvasCompany = {
-  title: `${translate("routesTitles.title1")}`,
-  links: [
-    {
-      path: "https://meetings.hubspot.com/jennherasme/kanvas",
-      name: "Contact",
-    },
-  ],
-};
+
 const GewaerCompany = {
   title: `${translate("routesTitles.title1")}`,
   links: [
@@ -131,7 +123,6 @@ export const footerLinks = {
   mcContact,
   mctekk,
   company,
-  KanvasCompany,
   contact,
   kanvas,
   kanvasContact,

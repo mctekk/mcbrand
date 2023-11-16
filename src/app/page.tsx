@@ -211,6 +211,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       backColor="bg-white"
       textColor="text-sky-700"
       buttonLink="/"
+      link="https://github.com/bakaphp/kanvas-ecosystem-api"
     ></InfoSection>,
     <InfoSection
       desc="Simplify your app development using our pre-built components based on the Atomic Design concept. Integrated seamlessly with Kanvas Niche, they offer a quick solution for launching your frontend app effortlessly."
