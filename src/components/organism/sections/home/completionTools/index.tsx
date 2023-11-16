@@ -6,9 +6,9 @@ interface Props {
   desc: string;
   img: string;
   subtitle?: string;
-  subdesc?: string ;
+  subdesc?: string;
   colorFonts?: string;
-  back?:string | "bg-white"
+  back?: string | "bg-white";
 }
 export default function CompletionTools({
   desc,
@@ -17,7 +17,7 @@ export default function CompletionTools({
   title,
   subtitle,
   colorFonts,
-  back
+  back,
 }: Props) {
   return (
     <div className={`section mx-auto ${back} `}>
@@ -27,10 +27,10 @@ export default function CompletionTools({
       >
         {" "}
         <div className="xl:w-3/4 flex-col mx-auto">
-        <h1 className="text-[2.125rem] "> {title}</h1>{" "}
-        <h4 className="mb-6 ">{desc}</h4>{" "}
+          <h1 className="text-[2.125rem] "> {title}</h1>{" "}
+          <h4 className="mb-6 ">{desc}</h4>{" "}
+          <Image alt="Completion Tools" src={img} width={2000} height={24} />{" "}
         </div>
-        <Image alt="Completion Tools" src={img} width={2000} height={24} />{" "}
         <h1 className="text-[2.125rem]"> {subtitle}</h1>
         <h4 className=" ">{subdesc}</h4>
       </Section>{" "}
