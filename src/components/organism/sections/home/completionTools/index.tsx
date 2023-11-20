@@ -26,7 +26,7 @@ export default function CompletionTools({
         className={`flex flex-col gap-6   lg:w-full lg:px-16 mx-auto   ${colorFonts}  `}
       >
         {" "}
-        <div className="xl:w-3/4 flex-col mx-auto">
+        <div className="xl:w-5/6 flex-col mx-auto">
           <h1 className="text-[2.125rem] "> {title}</h1>{" "}
           <h4 className="mb-6 ">{desc}</h4>{" "}
           <Image alt="Completion Tools" src={img} width={2000} height={24} />{" "}
