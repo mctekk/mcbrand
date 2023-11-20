@@ -20,11 +20,11 @@ export default function FooterLinks({ kind, mctekk, sales, kanvas,gewaer }: Prop
           title={footerLinks.kanvas.title}
           links={footerLinks.kanvas.links}
         />
-        <FooterList
+        {/* <FooterList
           kind={kind}
           title={footerLinks.KanvasCompany.title}
           links={footerLinks.KanvasCompany.links}
-        />
+        /> */}
         <FooterList
           kind={kind}
           title={footerLinks.kanvasContact.title}

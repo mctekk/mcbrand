@@ -41,13 +41,11 @@ const mctekk = {
   ],
 };
 const kanvas = {
-  title: `${translate("routesTitles.title")}`,
+  title: `Kanvas`,
   links: [
     { path: "/#how-it-works", name: RouteNames.howItWorks },
-    { path: `${Paths.whySalesAssist}/#benefits`, name: RouteNames.benefits },
-    { path: "/#actions", name: RouteNames.actions },
-    { path: Paths.pricing, name: RouteNames.pricing },
-    { path: `${Paths.pricing}/#Q&A`, name: RouteNames.qAndA },
+    { path: "/#features", name: "Core Functionalities "},
+
   ],
 };
 const gewaer = {
@@ -77,15 +75,7 @@ const company = {
     { path: calendlyLink, name: RouteNames.bookADemo },
   ],
 };
-const KanvasCompany = {
-  title: `${translate("routesTitles.title1")}`,
-  links: [
-    {
-      path: calendlyLink,
-      name: "https://meetings.hubspot.com/jennherasme/kanvas",
-    },
-  ],
-};
+
 const GewaerCompany = {
   title: `${translate("routesTitles.title1")}`,
   links: [
@@ -106,8 +96,7 @@ const contact = {
 const kanvasContact = {
   title: `${translate("routesTitles.title2")}`,
   links: [
-    { path: "mailto:help@salesassist.io", name: "help@salesassist.io" },
-    { path: "#", name: "251 Little Falls Drive, Wilmington, Delaware 19808" },
+    { path: "mailto:info@kanvas.dev", name: " info@kanvas.dev" },
   ],
 };
 const GewaerContact = {
@@ -133,7 +122,6 @@ export const footerLinks = {
   mcContact,
   mctekk,
   company,
-  KanvasCompany,
   contact,
   kanvas,
   kanvasContact,

@@ -41,6 +41,7 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       logo="/images/McLogo.svg"
       iconColor="text-white"
     />,
+    <GA />,
     <Hero
       buttonInfo="Get Started"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
@@ -60,6 +61,7 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
+      buttonLink=""
     ></InfoSection>,
     <InfoSection
       desc="Whether it's enhancing E-commerce platforms, optimizing inventory management systems, or elevating client portals, our extensive experience with a diverse clientele has equipped us to tackle your software-related challenges effectively, enabling you to concentrate on your company's overarching objectives."
@@ -67,8 +69,9 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       button={false}
       reverse={true}
       backColor="bg-white"
+      buttonLink=""
     ></InfoSection>,
-    <Brands imageUrls={imagesBrand} title="Brands that trust us" />,
+    <Brands imageUrls={imagesBrand} title="Brands that trust us" titleColor="text-white" />,
    <Behind></Behind>,
     <SimpleForm></SimpleForm>,
     <Footer mctekk></Footer>,

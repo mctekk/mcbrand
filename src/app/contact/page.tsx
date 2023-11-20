@@ -1,3 +1,4 @@
+import { GA } from "@/components/atoms/analitiycs";
 import Brands from "@/components/atoms/brands";
 import McMenu from "@/components/molecules/mc-menu";
 import Header from "@/components/organism/header";
@@ -18,6 +19,7 @@ export default function page() {
         logo="/images/McLogo.svg"
         iconColor="text-white"
       />
+      <GA />
       <Hero
         messageDesc="We’re here to help you develop your product or talk about your ideas. "
         messageEnd=" "
@@ -28,7 +30,7 @@ export default function page() {
         colorWords="text-black font-semibold"
       ></Hero>
       
-      <Brands imageUrls={imagesBrand} title="Brands that trust us" />
+      <Brands imageUrls={imagesBrand} title="Brands that trust us"  titleColor="text-white"/>
       <SimpleForm></SimpleForm>
       <ContactCards></ContactCards>
       <Footer mctekk></Footer>

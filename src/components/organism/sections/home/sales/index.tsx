@@ -15,7 +15,7 @@ export default function Sales({className }:Props){
     <section className={`section relative  h-auto ${className}`}>
       <Section>
         <div className='container md:gap-24 mx-auto md:flex-row justify-start items-center md:items-start h-full flex '>
-          <div className='xl:w-1/3 md:w-1/2 xl:ml-64 '>
+        <div className='xl:w-1/3 md:w-1/2 xl:ml-64 '>
             <h1>Let’s Simplify How You Gather Info from Customers</h1>
 
             <a href='https://calendly.com/salesasssit/30min' target="_blank" rel="noreferrer">

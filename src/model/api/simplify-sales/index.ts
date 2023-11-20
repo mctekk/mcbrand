@@ -10,6 +10,7 @@ export const dataSlide = {
   ],
   show_case: [
     {
+<<<<<<< HEAD
       option: `${translate("whySalesAssist.swiperData.show_case[0].option")}`,
       url: `${translate("whySalesAssist.swiperData.show_case[0].url")}`,
       title: `${translate("whySalesAssist.swiperData.show_case[0].title")}`,
@@ -27,6 +28,23 @@ export const dataSlide = {
       title: `${translate("whySalesAssist.swiperData.show_case[2].title")}`,
       desc: `${translate("whySalesAssist.swiperData.show_case[2].desc")}`,
     },
+=======
+      "option":  `Kanvas`,
+      "url": `${translate("whySalesAssist.swiperData.show_case[0].url")}`,
+      "title": `Building blocks for headless app development for your`,
+      "desc": `Kanvas Niche’s modules simplify complexities, letting you concentrate on building exceptional experiences. See the difference!`
+    },{
+      "option":  `${translate("whySalesAssist.swiperData.show_case[1].option")}`,
+      "url": `${translate("whySalesAssist.swiperData.show_case[1].url")}`,
+      "title": `${translate("whySalesAssist.swiperData.show_case[1].title")}`,
+      "desc": `${translate("whySalesAssist.swiperData.show_case[1].desc")}`
+    },{
+      "option":  `${translate("whySalesAssist.swiperData.show_case[2].option")}`,
+      "url": `${translate("whySalesAssist.swiperData.show_case[2].url")}`,
+      "title": `${translate("whySalesAssist.swiperData.show_case[2].title")}`,
+      "desc": `${translate("whySalesAssist.swiperData.show_case[2].desc")}`
+    }
+>>>>>>> dev
   ],
 };
 export const dataMcSlide = {

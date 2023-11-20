@@ -19,12 +19,13 @@ interface ImageChangerProps {
   className:string
   title:string
   desc:string
-  id:string
+  code?:boolean
+  double : 500 | 200
 }
 
-export default function ImageChanger({ data, buttonColor,selected,className,desc,title,id }: ImageChangerProps) {
+export default function ImageChanger({ data, buttonColor,selected,className,desc,title,code,double }: ImageChangerProps) {
   return (
-    <div className={`section  ${className}`} id={id}>
+    <div className={`section  ${className}`} id="features">
       <Section>
         <div className="xl:ml-64 mb-10">
           <h1 className="mb-4">{title}</h1>
@@ -32,9 +33,9 @@ export default function ImageChanger({ data, buttonColor,selected,className,desc
            {desc}
           </h4>
         </div>
-        <Dropdown data={data}></Dropdown>
+        <Dropdown data={data} code={code} double={double}></Dropdown>
         <div>
-          <ListButtons data={data} buttonColor={buttonColor} selected={selected} /> {/* Pasar el color a ListButtons */}
+          <ListButtons data={data} buttonColor={buttonColor} selected={selected} code={code} double={double}/>
         </div>
       </Section>
     </div>

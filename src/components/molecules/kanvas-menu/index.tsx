@@ -1,6 +1,7 @@
 import React from "react";
 import { MenuItem } from "../../atoms/menuItem";
 import { translate } from "@/locales";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 
 const menuItems = [
@@ -8,17 +9,27 @@ const menuItems = [
     text: "Home",
     link: "/",
   },
-  { text:"Features", link: "#features" },
-  { text:"GitHub", link: "https://github.com/bakaphp" },
+  { text:"Core Functionalities", link: "/#features" },
+  { text:"GitHub", link: "https://github.com/bakaphp/kanvas-ecosystem-api" },
+
 
 ];
 const externalLinks = [
   {
-    text: translate("mcnavbar.section.GetStarted"),
-    link: "https://meetings.hubspot.com/jennherasme/kanvas",
+    text: <BsGithub></BsGithub>,
+    link: "https://github.com/bakaphp/kanvas-ecosystem-api",
     isExternal: true,
     className:
-      "lg:bg-white  lg:text-sky-600  lg:hover:border  text-white lg:ml-64 ",
+      "   xl:ml-64 text-white ",
+    isIcon: true
+  },
+  {
+    text: <BsLinkedin/>,
+    link: "https://www.linkedin.com/company/944172/admin/feed/posts/",
+    isExternal: true,
+    className:
+      "    text-white ",
+    isIcon: true
   },
 ];
 
@@ -41,6 +52,7 @@ export function KanvasMenu({}) {
             link={item.link}
             isExternal={item.isExternal}
             className={item.className}
+            isIcon={item.isIcon}
           />
         ))}
       </div>
