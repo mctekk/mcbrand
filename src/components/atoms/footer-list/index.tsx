@@ -10,8 +10,8 @@ export interface FooterLinkProps {
   className?: string;
   hideTitle?: boolean;
   kind?: "dark" | "light";
- 
-  icon?:ReactNode
+  direction?: string;
+  icon?: ReactNode;
 }
 
 export function FooterList({
@@ -20,21 +20,16 @@ export function FooterList({
   className,
   hideTitle,
   kind,
+  direction
 }: FooterLinkProps) {
-  const baseClass = classNames("md:w-1/2 text-left", className,);
-  const titleClass = classNames(
-    "font-bold  mb-2 text-[1rem] md:text-[1.125]",
-    { "text-white": kind == "dark" })
+  const baseClass = classNames("md:w-1/2 text-left", className);
+  const titleClass = classNames("font-bold  mb-2 text-[1rem] md:text-[1.125]", {
+    "text-white": kind == "dark",
+  });
 
   function renderBookDemo(name: string, path: string) {
     return (
-      <a
-        key={path}
-        href={path}
-        target="_blank"
-        rel="noreferrer"
-        className=""
-      >
+      <a key={path} href={path} target="_blank" rel="noreferrer" className="">
         {name}
       </a>
     );
@@ -58,7 +53,7 @@ export function FooterList({
       <ul className="text-[.9rem] md:text-[1rem] w-full ">
         {links.map((link, i) => (
           <li
-            className="text-left w-full"
+            className={` w-full ${direction}`}
             key={link.name + i}
             style={{ wordBreak: "break-all" }}
           >

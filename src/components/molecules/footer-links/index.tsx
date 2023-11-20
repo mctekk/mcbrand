@@ -16,9 +16,10 @@ export default function FooterLinks({ kind, mctekk, sales, kanvas,gewaer }: Prop
       <div className="lg:w-1/2 h-full flex justify-between  px-2 md:py-2 flex-wrap md:flex-nowrap">
         <FooterList
           kind={kind}
-          className="hidden md:block"
+          className="hidden md:block text-right "
           title={footerLinks.kanvas.title}
           links={footerLinks.kanvas.links}
+          direction="text-right"
         />
         {/* <FooterList
           kind={kind}
@@ -28,7 +29,9 @@ export default function FooterLinks({ kind, mctekk, sales, kanvas,gewaer }: Prop
         <FooterList
           kind={kind}
           title={footerLinks.kanvasContact.title}
+          className="text-right"
           links={footerLinks.kanvasContact.links}
+          direction="text-right"
         />
       </div>
     );
