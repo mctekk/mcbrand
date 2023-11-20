@@ -101,7 +101,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     />,
     <GA />,
     <Hero
-      className="bg-black "
+      className="bg-hero-pattern bg-contain bg-center  " 
       buttonInfo="Get Started"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       highligh=""
@@ -124,11 +124,43 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       backColor="bg-white"
       buttonLink="/"
     ></InfoSection>,
-    <Slider
-      data={dataMcSlide}
-      background="bg-kanvas-bg bg-cover"
-      color="bg-cyan-600"
-    ></Slider>,
+    <InfoSection
+      desc="Kanvas Niche’s modules simplify complexities, letting you concentrate on building exceptional experiences. See the difference!"
+      title="Unlock Seamless App Development"
+      img="/images/Kpro.svg"
+      button={true}
+      buttonTitle="Learn More "
+      buttonColor="bg-sky-600"
+      backColor="bg-kanvas-bg bg-cover"
+      buttonLink="https://kanvas.dev/"
+      textColor="text-white"
+      imgSize={490}
+    ></InfoSection>,
+    <InfoSection
+    desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
+    title="All Managed with ease"
+    img="/images/Gpro.svg"
+    button={true}
+    buttonTitle="Learn More "
+    buttonColor="bg-violet-600"
+    backColor="bg-violet-400"
+    buttonLink="https://gewaer.webflow.io/"
+    textColor="text-white"
+    imgSize={490}
+    reverse
+  ></InfoSection>,
+  <InfoSection
+    desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
+    title="All Managed with ease"
+    img="/images/Dpro.svg"
+    button={true}
+    buttonTitle="Learn More "
+    buttonColor="bg-sky-600"
+    backColor="bg-sky-700"
+    buttonLink="https://gewaer.webflow.io/"
+    textColor="text-white"
+    imgSize={490}
+  ></InfoSection>,
     <Brands
       imageUrls={imagesBrand}
       title="Brands that trust us"
