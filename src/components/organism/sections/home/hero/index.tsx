@@ -45,7 +45,8 @@ export default function Hero({
 }: Props) {
   return (
     <div
-      className={`section ${className} mx-auto justify-center items-center`}
+      className={`section ${className} mx-auto justify-center items-center ` }
+      
       id={id}
     >
       <Section className="lg:mt-6 pl-0  flex  ">

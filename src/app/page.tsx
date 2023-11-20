@@ -101,12 +101,12 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     />,
     <GA />,
     <Hero
-      className="bg-hero-pattern xl:bg-contain bg-center bg-cover " 
+      className="bg-hero-pattern xl:bg-contain bg-center bg-cover filter"
       buttonInfo="Get Started"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       highligh=""
-      messageDesc="MCTEKK was born in 2004, and since then, we’ve been offering services and products to help companies grow. Dedicated to solving problems,"
-      messageEnd=" creating solutions, and growing businesses across all platforms."
+      messageDesc="We leverage 18 years of experience in software development and a suite of headless components to help your business grow."
+      messageEnd="We solve problems and create solutions."
       upperMessage="Taking your business to the"
       lowerMessage="next level with"
       words={["Smart Code ", "Practical Solutions"]}
@@ -137,46 +137,46 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       imgSize={490}
     ></InfoSection>,
     <InfoSection
-    desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
-    title="All Managed with ease"
-    img="/images/Gpro.svg"
-    button={true}
-    buttonTitle="Learn More "
-    buttonColor="bg-violet-600"
-    backColor="bg-violet-400"
-    buttonLink="https://gewaer.webflow.io/"
-    textColor="text-white"
-    imgSize={490}
-    reverse
-  ></InfoSection>,
-  <InfoSection
-    desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
-    title="All Managed with ease"
-    img="/images/Dpro.svg"
-    button={true}
-    buttonTitle="Learn More "
-    buttonColor="bg-sky-600"
-    backColor="bg-sky-700"
-    buttonLink="https://gewaer.webflow.io/"
-    textColor="text-white"
-    imgSize={490}
-  ></InfoSection>,
+      desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
+      title="All Managed with ease"
+      img="/images/Gpro.svg"
+      button={true}
+      buttonTitle="Learn More "
+      buttonColor="bg-violet-600"
+      backColor="bg-violet-400"
+      buttonLink="https://gewaer.webflow.io/"
+      textColor="text-white"
+      imgSize={490}
+      reverse
+    ></InfoSection>,
+    <InfoSection
+      desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
+      title="All Managed with ease"
+      img="/images/Dpro.svg"
+      button={true}
+      buttonTitle="Learn More "
+      buttonColor="bg-sky-600"
+      backColor="bg-sky-700"
+      buttonLink="https://gewaer.webflow.io/"
+      textColor="text-white"
+      imgSize={490}
+    ></InfoSection>,
     <Brands
       imageUrls={imagesBrand}
       title="Brands that trust us"
       titleColor="text-white"
     />,
     <InfoSection
-      desc="Utilize our components to accelerate development and concentrate on solving your business challenges. "
-      title="Are you tired of repeatedly refactoring the same code?"
+      desc="Are you tired of repeatedly refactoring the same code? Utilize our components to accelerate development and concentrate on solving your business challenges."
+      title="Prebuilt Components "
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
       buttonLink="/"
     ></InfoSection>,
     <InfoSection
-      desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-      title="Lorem Ipsum"
+      desc="Our Kanvas Headless modules provide businesses with the infrastructure they need to jump start projects and focus on the features that make their product unique. A complete PHP ecosystem that provides you with the common features like User authentication, Roles, notifications, session management, Inventory, Social components, Payment processors, and more."
+      title="Headless Solutions"
       img="/images/Frame.jpg"
       button={false}
       reverse

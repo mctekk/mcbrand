@@ -10,6 +10,7 @@ interface MenuItemProps {
   isIcon?: boolean;
   className?: string;
   optionsColor?: string;
+  target?:string
 }
 
 export function MenuItem({
@@ -19,10 +20,11 @@ export function MenuItem({
   isIcon,
   className,
   optionsColor,
+  target
 }: MenuItemProps) {
   return (
     <li>
-      <Link href={link} className="lg:font-semibold">
+      <Link href={link} target={target} className="lg:font-semibold">
         {isExternal ? (
           isIcon ? (
             <ButtonLink

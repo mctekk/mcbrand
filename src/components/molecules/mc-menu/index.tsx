@@ -12,6 +12,7 @@ const menuItems = [
   {
     text: translate("mcnavbar.section.jobs"),
     link: "https://mctekk.grovehr.com/careers/job?id=65117eed2487c21055883347",
+    target:"_blank"
   },
   { text: translate("mcnavbar.section.Contact"), link: "/contact" },
 ];
@@ -23,13 +24,14 @@ const externalLinks = [
     className:
       "lg:bg-orange-400 hover:bg-black lg:text-white  lg:hover:border border-orange-400 lg:hover:text-orange-400 text-gray-400 hover:text-white ",
   },
+
 ];
 const options = [
   {
     name: "Kanvas",
-    link: "https://dev.kanvas.dev/",
+    link: "https://kanvas.dev/",
   },
-  { name: "Gewaer", link: "/Gewaer" },
+  { name: "Gewaer", link: "https://www.gewaer.io/" },
 ];
 function McMenu({}) {
   return (
@@ -41,6 +43,7 @@ function McMenu({}) {
           title={item.text}
           link={item.link}
           optionsColor="text-gray-400 hover:text-white"
+          target={item.target}
         />
       ))}
       <div className="lg:ml-80 flex lg:space-x-2">
