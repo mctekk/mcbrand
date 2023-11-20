@@ -101,7 +101,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     />,
     <GA />,
     <Hero
-      className="bg-hero-pattern bg-contain bg-center  " 
+      className="bg-hero-pattern xl:bg-contain bg-center bg-cover " 
       buttonInfo="Get Started"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       highligh=""

@@ -52,7 +52,7 @@ export default function Hero({
         <div className="flex justify-center  flex-col gap-6  lg:w-fit mx-auto items-center xl:ml-4 2xl:ml-16">
           <div className="flex flex-col pb-12 xl:w-[80%] w-full justify-center items-start ">
             <h1
-              className={`${colorFonts} md:text-[3rem] lg:text-[4.5rem] lg:tracking-wide lg:mb-1.5  md:ml-0 lg:ml-0 w-fit ml-3 `}
+              className={`${colorFonts} md:text-[3rem] lg:text-[4rem] lg:tracking-wide lg:mb-1.5  md:ml-0 lg:ml-0 w-fit ml-3 `}
             >
               {upperMessage}
             </h1>
