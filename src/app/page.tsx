@@ -238,7 +238,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <InfoSection
       desc="Kanvas Modules are MIT licensed to ensure that you are in full control of your headless stack."
       title="Open Source"
-      img="/images/Github.png"
+      img="/images/gt.png"
+      imgSize={500}
       button={false}
       backColor="bg-white"
       textColor="text-sky-700"

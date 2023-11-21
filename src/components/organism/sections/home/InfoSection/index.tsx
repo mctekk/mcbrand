@@ -34,7 +34,7 @@ export default function InfoSection({
   imgSize,
   space
 }: Props) {
-  reverse? space = "xl:ml-44":space=""
+  reverse? space = "xl:ml-32":space=""
   return (
     <section className={`${backColor} section  `}>
       <Section
