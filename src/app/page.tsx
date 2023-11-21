@@ -101,7 +101,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     />,
     <GA />,
     <Hero
-      className="bg-hero-pattern xl:bg-contain bg-center bg-cover filter"
+      className="bg-hero-pattern xl:bg-contain bg-center bg-cover "
       buttonInfo="Get Started"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       highligh=""
@@ -200,7 +200,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       messageDesc="Deploy new projects at super-speed or enhance existing ones by utilizing our headless modules as building blocks for your application."
       messageEnd="We provide ready-made, easy to configure CRM, Inventory, Social Interactions, and Multitenancy components."
-      upperMessage="Supercharge your development"
+      upperMessage="Don't start from scratch"
       lowerMessage=" Headless Modules for"
       words={["agencies", "startups", "freelancers"]}
       colorDesc="text-white"

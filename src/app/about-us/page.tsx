@@ -49,11 +49,12 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       messageEnd=" Kanvas Graph Api Layer, in order to help you scale your business to the next level."
       lowerMessage="We are Mctekk"
       words={[]}
-      colorDesc="text-black"
-      colorFonts="text-black"
-      colorWords="text-black font-semibold"
+      colorDesc="text-white"
+      colorFonts="text-white"
+      colorWords="text-white font-semibold"
       buttonColor="bg-black"
       button
+      className="bg-comp-bg bg-cover bg-center"
     ></Hero>,
     <InfoSection
       desc="We are deeply committed to addressing business challenges through ingenious coding solutions. In collaboration with our valued partners, we have pinpointed specific domains where we are confident in our ability to drive meaningful change. "

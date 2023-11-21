@@ -42,6 +42,7 @@ const config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           'hero-pattern': "url('/images/He2.png')",
           'kanvas-bg': "url('/images/Kanvas.jpeg')",
+          'comp-bg': "url('/images/comp.jpg')",
       },
       backgroundSize: {
         'auto': 'auto',
