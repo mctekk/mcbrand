@@ -63,8 +63,11 @@ const mcCompany = {
   links: [
     { path: "/about-us", name: RouteNames.about },
     {
+      path: "https://mctekk.grovehr.com/careers/job?id=65117eed2487c21055883347",
+      name: "Jobs",
+    },{
       path: "https://meetings.hubspot.com/jennifer-herasme",
-      name: "Get Started",
+      name: " Contact sales",
     },
   ],
 };
@@ -109,7 +112,9 @@ const GewaerContact = {
 const mcContact = {
   title: `${translate("routesTitles.title2")}`,
   links: [
+    { path: "/Contact", name: "Contact us " },
     { path: "mailto: contacto@mctekk.com", name: " contacto@mctekk.com    " },
+    
   ],
 };
 

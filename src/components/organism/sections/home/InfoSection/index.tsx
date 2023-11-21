@@ -15,7 +15,9 @@ interface Props {
   reverse?:boolean
   link?:string
   imgSize?:number | 600
+  space?:string
 }
+
 
 export default function InfoSection({
   button,
@@ -29,12 +31,14 @@ export default function InfoSection({
   buttonColor,
   reverse,
   link,
-  imgSize 
+  imgSize,
+  space
 }: Props) {
+  reverse? space = "xl:ml-44":space=""
   return (
     <section className={`${backColor} section  `}>
       <Section
-        className={`flex flex-col  lg:flex-row ${reverse? "lg:flex-row-reverse":"lg:flex-row"} gap-4  items-center`}
+        className={`flex flex-col  lg:flex-row ${reverse? "lg:flex-row-reverse":"lg:flex-row"}  items-center`}
       >
         <div className={`flex flex-col gap-6 xl:w-fit xl:ml-56 ${textColor} `}>
           <h1>{title}</h1>
@@ -49,7 +53,7 @@ export default function InfoSection({
               </Link>
             )}
         </div>
-        <div className="shrink-0 md:w-fit md:h-[27.5rem] rounded-lg drop-shadow-sa overflow-hidden xl:-mr-20 ">
+        <div className={`shrink-0 md:w-fit md:h-[27.5rem] rounded-lg drop-shadow-sa overflow-hidden ${space} `}>
           <a href={link}>
           <Image
             alt="Completion Process Example"

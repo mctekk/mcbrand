@@ -5,16 +5,13 @@ import ButtonOptions from "@/components/atoms/optionsButton";
 
 const menuItems = [
   {
+    text: "Services",
+    link: "/Services",
+  },
+  {
     text: translate("mcnavbar.section.Blog"),
     link: "https://mctekk.substack.com/",
   },
-  { text:translate("mcnavbar.section.aboutUs"), link: "/about-us" },
-  {
-    text: translate("mcnavbar.section.jobs"),
-    link: "https://mctekk.grovehr.com/careers/job?id=65117eed2487c21055883347",
-    target:"_blank"
-  },
-  { text: translate("mcnavbar.section.Contact"), link: "/contact" },
 ];
 const externalLinks = [
   {
@@ -24,7 +21,6 @@ const externalLinks = [
     className:
       "lg:bg-orange-400 hover:bg-black lg:text-white  lg:hover:border border-orange-400 lg:hover:text-orange-400 text-gray-400 hover:text-white ",
   },
-
 ];
 const options = [
   {
@@ -43,7 +39,6 @@ function McMenu({}) {
           title={item.text}
           link={item.link}
           optionsColor="text-gray-400 hover:text-white"
-          target={item.target}
         />
       ))}
       <div className="lg:ml-80 flex lg:space-x-2">

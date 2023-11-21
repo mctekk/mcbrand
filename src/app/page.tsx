@@ -102,7 +102,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <GA />,
     <Hero
       className="bg-hero-pattern xl:bg-contain bg-center bg-cover "
-      buttonInfo="Get Started"
+      buttonInfo=" Schedule a Meeting "
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       highligh=""
       messageDesc="We leverage 18 years of experience in software development and a suite of headless components to help your business grow."
