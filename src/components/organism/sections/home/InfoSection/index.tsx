@@ -47,7 +47,7 @@ export default function InfoSection({
               </Link>
             )}
         </div>
-        <div className="shrink-0 md:w-fit md:h-[27.5rem] rounded-lg drop-shadow-sa overflow-hidden ">
+        <div className="shrink-0 md:w-fit md:h-[27.5rem] rounded-lg drop-shadow-sa overflow-hidden -mr-20 ">
           <a href={link}>
           <Image
             alt="Completion Process Example"
