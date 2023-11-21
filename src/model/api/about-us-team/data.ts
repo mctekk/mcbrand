@@ -14,7 +14,7 @@ export const aboutTeamData={
 export const mcAboutTeamData={
     "team": [
         { "name": "Max Castro", "title": "Founder", "social": "https://www.linkedin.com/in/maximo-castro-pou", "code": "Max" },
-        { "name": "Jennifer Herasme", "title": "Founder & CEO", "social": "https://www.linkedin.com/in/snowcanfly/", "code": "Jenn" },
+        { "name": "Jennifer Herasme", "title": "Founder & CEO", "social": "https://www.linkedin.com/in/jennhl/", "code": "Jenn" },
         { "name": "Rogelio Morey", "title": "Founder", "social": "https://www.linkedin.com/in/rogelio-morey/", "code": "Rogelio" },
         
     ]

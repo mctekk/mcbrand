@@ -14,6 +14,7 @@ interface Props {
   buttonColor?: string;
   reverse?:boolean
   link?:string
+  imgSize?:number | 600
 }
 
 export default function InfoSection({
@@ -27,7 +28,8 @@ export default function InfoSection({
   textColor,
   buttonColor,
   reverse,
-  link
+  link,
+  imgSize 
 }: Props) {
   return (
     <section className={`${backColor} section  `}>
@@ -52,7 +54,7 @@ export default function InfoSection({
           <Image
             alt="Completion Process Example"
             src={img}
-            width={600}
+            width={imgSize || 600}
             height={96}
           />
           </a>

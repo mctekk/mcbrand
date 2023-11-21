@@ -40,16 +40,19 @@ const config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-          'hero-pattern': "url('/images/bg.png')",
+          'hero-pattern': "url('/images/He2.png')",
           'kanvas-bg': "url('/images/Kanvas.jpeg')",
+          'comp-bg': "url('/images/comp.jpg')",
       },
       backgroundSize: {
         'auto': 'auto',
         'cover': 'cover',
         'contain': 'contain',
         '50%': '50%',
-        '16': '4rem',
+        '100%': '100%',
+        '16': '4rem', 
       },
+      
       colors: {
         base: {
           primary: {

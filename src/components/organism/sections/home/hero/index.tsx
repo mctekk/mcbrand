@@ -4,8 +4,6 @@ import { Button } from "@/components/atoms/button/base";
 import { Section } from "@/components/atoms/section";
 import { EmailForm } from "@/components/atoms/wait-form";
 
-
-
 import { Typewriter } from "react-simple-typewriter";
 
 interface Props {
@@ -24,9 +22,8 @@ interface Props {
   buttonColor?: string;
   button?: boolean;
   kanvas?: boolean;
-  id?:string
+  id?: string;
 }
-
 
 export default function Hero({
   highligh,
@@ -44,15 +41,19 @@ export default function Hero({
   buttonColor = "bg-orange-500",
   button,
   kanvas,
-  id
+  id,
 }: Props) {
   return (
-    <div className={`section ${className} mx-auto justify-center items-center`} id={id}>
+    <div
+      className={`section ${className} mx-auto justify-center items-center ` }
+      
+      id={id}
+    >
       <Section className="lg:mt-6 pl-0  flex  ">
         <div className="flex justify-center  flex-col gap-6  lg:w-fit mx-auto items-center xl:ml-4 2xl:ml-16">
-          <div className="flex flex-col pb-12 xl:w-[80%] w-full justify-center items-start " >
+          <div className="flex flex-col pb-12 xl:w-[80%] w-full justify-center items-start ">
             <h1
-              className={`${colorFonts} md:text-[3rem] lg:text-[4.5rem] lg:tracking-wide lg:mb-1.5  md:ml-0 lg:ml-0 w-fit ml-3 `}
+              className={`${colorFonts} md:text-[3rem] lg:text-[4rem] lg:tracking-wide lg:mb-1.5  md:ml-0 lg:ml-0 w-fit ml-3 `}
             >
               {upperMessage}
             </h1>
@@ -90,12 +91,7 @@ export default function Hero({
               </span>{" "}
               {messageEnd}
             </h4>
-          </div>
-          {kanvas &&<div className=" mx-auto xl:ml-28 lg:ml-0 ml-0 2xl:ml-36 md:ml-2 ">  <h4
-              className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0 font-semibold`}
-            >
-             Join our waitlist for our open beta release:</h4> <div className="ml-5 md:ml-0">  <EmailForm /> </div></div>}
-          {button && (
+            {button && (
             <a
               href={buttonLink}
               target="_blank"
@@ -103,12 +99,29 @@ export default function Hero({
               className="w-fit"
             >
               <Button
-                className={`${buttonColor} text-[1.063rem] font-semibold  ml-5 md:ml-0 lg:ml-0 w-fit h-full`}
+                className={`${buttonColor} text-[1.063rem] font-semibold  ml-5 md:ml-0 lg:ml-0 w-fit h-15 `}
               >
                 {buttonInfo}
               </Button>
             </a>
           )}
+          </div>
+          
+          {kanvas && (
+            <div className=" mx-auto xl:ml-28 lg:ml-0 ml-0 2xl:ml-36 md:ml-2 ">
+              {" "}
+              <h4
+                className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0 font-semibold`}
+              >
+                Join our waitlist for our open beta release:
+              </h4>{" "}
+              <div className="ml-5 md:ml-0">
+                {" "}
+                <EmailForm />{" "}
+              </div>
+            </div>
+          )}
+          
         </div>
       </Section>
     </div>
