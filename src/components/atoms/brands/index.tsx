@@ -43,8 +43,8 @@ function ImageList({ title, imageUrls, slider ,titleColor}: ImageListProps) {
               key={index}
               src={imageUrl}
               alt={`Image ${index}`}
-              className="mb-20"
-              width={100}
+              className="mb-20  "
+              width={93}
               height={24}
             />
           ))}

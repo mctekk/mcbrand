@@ -22,7 +22,7 @@ export function AboutUsTeam({ data,bgColor,mctekk }: Props) {
       <Section className="flex-grow container mx-auto">
         <div className="w-full flex items-center justify-center flex-col  ">
           {/* first row */}
-          <div className="w-full flex flex-wrap items-start justify-center gap-2 mb-9">
+          <div className="w-full flex flex-wrap items-start justify-center gap-6 mb-9">
             {data.team.slice(0, 4).map((team) => (
               <TeamIcon
                 code={team.code}
