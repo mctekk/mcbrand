@@ -54,7 +54,7 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       colorWords="text-white font-semibold"
       buttonColor="bg-black"
       button
-      className="bg-comp-bg bg-cover bg-center"
+      className="bg-comp-bg bg-cover bg-center bg-black fill-black"
     ></Hero>,
     <InfoSection
       desc="We are deeply committed to addressing business challenges through ingenious coding solutions. In collaboration with our valued partners, we have pinpointed specific domains where we are confident in our ability to drive meaningful change. "

@@ -33,19 +33,20 @@ function ImageList({ title, imageUrls, slider ,titleColor}: ImageListProps) {
     );
   } else {
     return (
-      <div className="lg:flex lg:flex-col justify-center mx-auto items-center bg-black text-white">
+      <div className="  bg-black text-white">
         <p className="text-[32px] font-semibold pt-20 mb-10 mx-auto items-center w-fit">
           {title}
         </p>
-        <div className=" lg:flex lg:flex-row flex flex-col w-fit  lg:space-x-20 mx-auto">
+        <div className=" lg:flex lg:flex-row flex flex-col w-fit  lg:space-x-20 mx-auto items-center">
           {imageUrls.map((imageUrl, index) => (
             <Image
               key={index}
               src={imageUrl}
               alt={`Image ${index}`}
-              className="mb-20  "
+              className="mb-20 w-full "
               width={93}
               height={24}
+              quality={100}
             />
           ))}
         </div>

@@ -40,9 +40,9 @@ const config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-          'hero-pattern': "url('/images/He2.png')",
+          'hero-pattern': "url('/images/heror.png')",
           'kanvas-bg': "url('/images/Kanvas.jpeg')",
-          'comp-bg': "url('/images/comp.jpg')",
+          'comp-bg': "url('/images/comp.png')",
       },
       backgroundSize: {
         'auto': 'auto',

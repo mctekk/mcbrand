@@ -134,7 +134,9 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       backColor="bg-kanvas-bg bg-cover"
       buttonLink="https://kanvas.dev/"
       textColor="text-white"
-      imgSize={490}
+      imgSize={450}
+      isCase
+      upperLogo="/images/k1.svg"
     ></InfoSection>,
     <InfoSection
       desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
@@ -143,11 +145,13 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button={true}
       buttonTitle="Learn More "
       buttonColor="bg-violet-600"
-      backColor="bg-violet-400"
+      backColor="bg-gradient-to-r from-violet-100 to-violet-400"
       buttonLink="https://gewaer.webflow.io/"
       textColor="text-white"
-      imgSize={490}
+      imgSize={480}
       reverse
+      isCase
+      upperLogo="/images/g1.svg"
     ></InfoSection>,
     <InfoSection
       desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
@@ -160,11 +164,14 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonLink="https://gewaer.webflow.io/"
       textColor="text-white"
       imgSize={490}
+      isCase
+      upperLogo="/images/d1.svg"
     ></InfoSection>,
     <Brands
       imageUrls={imagesBrand}
       title="Brands that trust us"
       titleColor="text-white"
+      
     />,
     <InfoSection
       desc="Are you tired of repeatedly refactoring the same code? Utilize our components to accelerate development and concentrate on solving your business challenges."
