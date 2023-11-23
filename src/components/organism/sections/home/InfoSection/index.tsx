@@ -34,13 +34,13 @@ export default function InfoSection({
   imgSize,
   space
 }: Props) {
-  reverse? space = "xl:ml-32":space=""
+  reverse? space = "xl:ml-32":space="xl:mr-40"
   return (
     <section className={`${backColor} section  `}>
       <Section
         className={`flex flex-col  lg:flex-row ${reverse? "lg:flex-row-reverse":"lg:flex-row"}  items-center`}
       >
-        <div className={`flex flex-col gap-6 xl:w-fit xl:ml-56 ${textColor} `}>
+        <div className={`flex flex-col gap-6 xl:w-fit xl:ml-48 ${textColor} `}>
           <h1>{title}</h1>
           <h4>
             {desc}

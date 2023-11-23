@@ -117,7 +117,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button
     ></Hero>,
     <InfoSection
-      desc="Avoid redundancy and excessive coding. With Kanvas modules you can solve some of your client's recurrent problems like inventory, CRM, social apps, and more. Talk to us to find out how we can help you. "
+      desc=" No matter if you're just starting out with a new idea or have been running a business for a long time, MCTEKK has the skills to help you make your product successful. Talk to us to find out how we can help you. "
       title="Let us help you move 2x faster"
       img="/images/Frame.jpg"
       button={false}

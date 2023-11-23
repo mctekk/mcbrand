@@ -19,7 +19,7 @@ const externalLinks = [
     link: "https://meetings.hubspot.com/jennifer-herasme",
     isExternal: true,
     className:
-      "lg:bg-orange-400 hover:bg-black lg:text-white  lg:hover:border border-orange-400 lg:hover:text-orange-400 text-gray-400 hover:text-white ",
+      "lg:bg-orange-400 hover:bg-black lg:text-white  lg:hover:border border-orange-400 lg:hover:text-orange-400 text-gray-400 hover:text-white xl:ml-72",
   },
 ];
 const options = [
