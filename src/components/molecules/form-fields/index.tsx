@@ -30,7 +30,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="name"
           >
-            Name
+           First name
           </label>
           <Input
             type="text"
@@ -99,7 +99,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
           className="block text-gray-700 text-sm font-bold mb-2"
           htmlFor="message"
         >
-          Message
+          Description
         </label>
         <Textarea
           name="message"
