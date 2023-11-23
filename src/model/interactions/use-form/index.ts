@@ -54,7 +54,6 @@ const useSimpleForm = (): UseSimpleFormHook => {
 
       if (response.ok) {
         console.log('Data sent successfully');
-        Swal.fire('Success', 'Data sent successfully!', 'success');
         setFormData(initialFormData);
       } else {
         console.error('Failed to send data');

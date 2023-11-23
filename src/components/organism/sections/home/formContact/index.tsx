@@ -1,11 +1,26 @@
-"use client"
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { Button } from "@/components/atoms/button/base";
 import FormFields from "@/components/molecules/form-fields";
 import useSimpleForm from "@/model/interactions/use-form";
+import Swal from "sweetalert2";
+import { BsCheck } from "react-icons/bs";
 
 function SimpleForm() {
   const { formData, handleChange, handleSubmit } = useSimpleForm();
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  const handleFormSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+
+    try {
+      await handleSubmit();
+      setFormSubmitted(true);
+    } catch (error) {
+      Swal.fire("Error", "An error occurred. Please try again later.", "error");
+      console.error("Form submission error:", error);
+    }
+  };
 
   return (
     <div className="section">
@@ -20,17 +35,21 @@ function SimpleForm() {
           your product.
         </p>
       </div>
-      <div className="w-fit mx-auto mt-10 ">
-        <form onSubmit={(e) => e.preventDefault()} className="rounded px-8 pt-6 pb-8 mb-4">
+      <div className="w-fit mx-auto mt-10">
+        <form onSubmit={handleFormSubmit} className="rounded px-8 pt-6 pb-8 mb-4">
           <FormFields formData={formData} onChange={handleChange}></FormFields>
           <div className="flex items-center justify-center w">
-            <Button
-              className="bg-black hover:bg-orange-300 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline w-full items-center justify-center"
-              type="button"
-              onClick={handleSubmit}
-            >
-              Send Message
-            </Button>
+            {formSubmitted ? (
+              <div className="flex"><p className="text-black text-[1.2rem] font-semibold">Form submitted we will we will be with you soon</p><div className="-mt-1 text-[2rem]"><BsCheck ></BsCheck></div> </div>
+              
+            ) : (
+              <Button
+                className="bg-black hover:bg-orange-300 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline w-full items-center justify-center"
+                type="submit"
+              >
+                Send Message
+              </Button>
+            )}
           </div>
         </form>
       </div>
