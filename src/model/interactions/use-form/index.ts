@@ -1,6 +1,7 @@
+"use client"
 import { useState } from 'react';
-import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+
 export interface FormData {
   name: string;
   companyName: string;
@@ -31,33 +32,37 @@ const useSimpleForm = (): UseSimpleFormHook => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const sendEmail = (templateParams: any) => {
-    const SERVICE_ID = 'service_zutthwt';
-    const TEMPLATE_ID = 'template_8hxriok';
-    const USER_ID = 'B92bpwawsFzQtGkex';
-
-    return emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID);
-  };
-
   const handleSubmit = async () => {
     const { name, companyName, email, budget, message } = formData;
 
-    const templateParams = {
-      name,
-      companyName,
-      email,
-      budget,
-      message,
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name,
+        companyName,
+        email,
+        budget,
+        message,
+      }),
     };
 
     try {
-      const response = await sendEmail(templateParams);
-      console.log('Email sent:', response);
-      Swal.fire('Success', 'Email sent successfully!', 'success');
-      setFormData(initialFormData);
+      const response = await fetch("https://crm.api.salesassist.io/v2/receivers/b45a28bf-92bb-4c17-b1d6-0ce2ca5fb110/lead", requestOptions);
+
+      if (response.ok) {
+        console.log('Data sent successfully');
+        Swal.fire('Success', 'Data sent successfully!', 'success');
+        setFormData(initialFormData);
+      } else {
+        console.error('Failed to send data');
+        Swal.fire('Error', 'Failed to send data.', 'error');
+      }
     } catch (error) {
-      console.error('Error sending email:', error);
-      Swal.fire('Error', 'Failed to send email.', 'error');
+      console.error('Error sending data:', error);
+      Swal.fire('Error', 'Failed to send data.', 'error');
     }
   };
 
