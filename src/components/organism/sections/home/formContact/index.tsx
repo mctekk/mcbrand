@@ -23,7 +23,7 @@ function SimpleForm() {
   };
 
   return (
-    <div className="section">
+    <div className="section" id="contact">
       <div className="w-fit justify-center items-center mx-auto">
         <p className="text-orange-300 font-semibold w-fit ">Contact us</p>
         <p className="text-[3rem] font-semibold">Let's work together!</p>
@@ -44,7 +44,7 @@ function SimpleForm() {
               
             ) : (
               <Button
-                className="bg-black hover:bg-orange-300 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline w-full items-center justify-center"
+                className="bg-black hover:bg-orange-300 text-white font-bold py-2 px-4 rounded-none focus:outline-none focus:shadow-outline w-full items-center justify-center"
                 type="submit"
               >
                 Send Message

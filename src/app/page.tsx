@@ -134,7 +134,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       backColor="bg-kanvas-bg bg-cover"
       buttonLink="https://kanvas.dev/"
       textColor="text-white"
-      imgSize={450}
+      imgSize={400}
       isCase
       upperLogo="/images/k1.svg"
     ></InfoSection>,
@@ -145,28 +145,28 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button={true}
       buttonTitle="Learn More "
       buttonColor="bg-violet-600"
-      backColor="bg-gradient-to-r from-violet-100 to-violet-400"
-      buttonLink="https://gewaer.webflow.io/"
-      textColor="text-white"
-      imgSize={480}
+      backColor="bg-gradient-to-r from-violet-200 to-violet-300"
+      buttonLink="https://www.gewaer.io/"
+      textColor="text-blue-900"
+      imgSize={400}
       reverse
       isCase
       upperLogo="/images/g1.svg"
     ></InfoSection>,
-    <InfoSection
-      desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
-      title="All Managed with ease"
-      img="/images/Dpro.svg"
-      button={true}
-      buttonTitle="Learn More "
-      buttonColor="bg-sky-600"
-      backColor="bg-sky-700"
-      buttonLink="https://gewaer.webflow.io/"
-      textColor="text-white"
-      imgSize={490}
-      isCase
-      upperLogo="/images/d1.svg"
-    ></InfoSection>,
+    // <InfoSection
+    //   desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
+    //   title="All Managed with ease"
+    //   img="/images/Dpro.svg"
+    //   button={true}
+    //   buttonTitle="Learn More "
+    //   buttonColor="bg-sky-600"
+    //   backColor="bg-sky-700"
+    //   buttonLink="https://gewaer.webflow.io/"
+    //   textColor="text-white"
+    //   imgSize={490}
+    //   isCase
+    //   upperLogo="/images/d1.svg"
+    // ></InfoSection>,
     <Brands
       imageUrls={imagesBrand}
       title="Brands that trust us"
@@ -174,12 +174,13 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       
     />,
     <InfoSection
-      desc="Are you tired of repeatedly refactoring the same code? Utilize our components to accelerate development and concentrate on solving your business challenges."
-      title="Prebuilt Components "
+      desc=" We understand the dynamic needs of the tech industry and offer tailored staff augmentation services to meet those demands. Our team of experts specializes in seamlessly integrating skilled professionals into your existing workforce, ensuring they align with your company's culture and project requirements. Whether you need short-term assistance or long-term support, we provide flexible solutions to enhance your team's capabilities."
+      title="We’ve got you covered"
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-white"
       buttonLink="/"
+      id="Services"
     ></InfoSection>,
     <InfoSection
       desc="Our Kanvas Headless modules provide businesses with the infrastructure they need to jump start projects and focus on the features that make their product unique. A complete PHP ecosystem that provides you with the common features like User authentication, Roles, notifications, session management, Inventory, Social components, Payment processors, and more."

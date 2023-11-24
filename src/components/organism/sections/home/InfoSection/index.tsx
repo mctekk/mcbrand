@@ -18,6 +18,7 @@ interface Props {
   space?: string;
   isCase?: boolean;
   upperLogo?: string;
+  id?:string
 }
 
 export default function InfoSection({
@@ -35,20 +36,22 @@ export default function InfoSection({
   imgSize,
   space,
   isCase,
-  upperLogo
+  upperLogo,
+  id
+
 }: Props) {
   reverse ? ( isCase?space = "xl:ml-32 -ml-26":"") : (space = "2xl:mr-40");
   return (
-    <section className={`${backColor} section  `}>
+    <section className={`${backColor} section  ` } id={id}>
       <Section
         className={`flex flex-col  lg:flex-row ${
-          reverse ? "lg:flex-row-reverse  space-x-36 " : "lg:flex-row"
-        }  items-center  ${isCase ? "space-x-56" : "space-x-20"}`}
+          reverse ? "lg:flex-row-reverse  lg:space-x-24 " : "lg:flex-row"
+        }  items-center  ${isCase ? "xl:space-x-56" : ""}`}
       >
         <div
-          className={`flex flex-col gap-6 ${
+          className={`flex flex-col gap-6 mb-5 md:ml-14 ${
             isCase ? "xl:w-2/4 xl:ml-32 " : "xl:w-1/2 "
-          } xl:ml-48 ${reverse ? "xl:mr-32" : ""} ${textColor} `}
+          } xl:ml-48 2xl:mr-9 ${reverse ? "2xl:mr-32" : "ml-0"} ${textColor} `}
         >
           {isCase? <Image
             alt="Logo"
@@ -57,13 +60,13 @@ export default function InfoSection({
             height={96}
 
           ></Image>:""}
-          <h1>{title}</h1>
+          <h1 >{title}</h1>
           <h4>{desc}</h4>
           {button && (
-            <Link href={buttonLink}>
-              <Solid className={`px-5 mt-4 lg:px-3 ${buttonColor}`}>
+            <Link href={buttonLink} className="text-white">
+              <button className={`px-5 p-2 mt-4 lg:px-3 ${buttonColor}`}>
                 {buttonTitle}
-              </Solid>
+              </button>
             </Link>
           )}
         </div>
