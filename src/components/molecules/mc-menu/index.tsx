@@ -4,10 +4,7 @@ import { translate } from "@/locales";
 import ButtonOptions from "@/components/atoms/optionsButton";
 
 const menuItems = [
-  {
-    text: "Services",
-    link: "/#Services",
-  },
+ 
   {
     text: translate("mcnavbar.section.Blog"),
     link: "https://mctekk.substack.com/",

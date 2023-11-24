@@ -101,7 +101,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     />,
     <GA />,
     <Hero
-      className="bg-hero-pattern xl:bg-contain bg-center bg-cover "
+      className="bg-black "
       buttonInfo=" Schedule a Meeting "
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       highligh=""
@@ -182,15 +182,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonLink="/"
       id="Services"
     ></InfoSection>,
-    <InfoSection
-      desc="Our Kanvas Headless modules provide businesses with the infrastructure they need to jump start projects and focus on the features that make their product unique. A complete PHP ecosystem that provides you with the common features like User authentication, Roles, notifications, session management, Inventory, Social components, Payment processors, and more."
-      title="Headless Solutions"
-      img="/images/Frame.jpg"
-      button={false}
-      reverse
-      backColor="bg-white"
-      buttonLink="/"
-    ></InfoSection>,
+
     <SimpleForm></SimpleForm>,
     <Footer mctekk></Footer>,
   ],
