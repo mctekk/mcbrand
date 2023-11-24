@@ -119,10 +119,11 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <InfoSection
       desc=" No matter if you're just starting out with a new idea or have been running a business for a long time, MCTEKK has the skills to help you make your product successful. Talk to us to find out how we can help you. "
       title="Let us help you move 2x faster"
-      img="/images/Frame.jpg"
+      img="/images/fast.png"
       button={false}
       backColor="bg-white"
       buttonLink="/"
+      imgSize={650}
     ></InfoSection>,
     <InfoSection
       desc="Kanvas Niche’s modules simplify complexities, letting you concentrate on building exceptional experiences. See the difference!"
@@ -176,7 +177,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <InfoSection
       desc=" We understand the dynamic needs of the tech industry and offer tailored staff augmentation services to meet those demands. Our team of experts specializes in seamlessly integrating skilled professionals into your existing workforce, ensuring they align with your company's culture and project requirements. Whether you need short-term assistance or long-term support, we provide flexible solutions to enhance your team's capabilities."
       title="We’ve got you covered"
-      img="/images/Frame.jpg"
+      img="/images/ser.jpg"
       button={false}
       backColor="bg-white"
       buttonLink="/"
