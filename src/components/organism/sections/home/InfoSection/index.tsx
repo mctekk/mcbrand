@@ -18,7 +18,10 @@ interface Props {
   space?: string;
   isCase?: boolean;
   upperLogo?: string;
-  id?:string
+  id?: string;
+  linkLetters?: string;
+  finalLink?: string;
+  linkColor?:string
 }
 
 export default function InfoSection({
@@ -37,12 +40,14 @@ export default function InfoSection({
   space,
   isCase,
   upperLogo,
-  id
-
+  id,
+  finalLink,
+  linkLetters,
+  linkColor,
 }: Props) {
-  reverse ? ( isCase?space = "xl:ml-32 -ml-26":"") : (space = "2xl:mr-40");
+  reverse ? (isCase ? (space = "xl:ml-32 -ml-26") : "") : (space = "2xl:mr-40");
   return (
-    <section className={`${backColor} section  ` } id={id}>
+    <section className={`${backColor} section  `} id={id}>
       <Section
         className={`flex flex-col  lg:flex-row ${
           reverse ? "lg:flex-row-reverse  lg:space-x-24 " : "lg:flex-row"
@@ -53,15 +58,19 @@ export default function InfoSection({
             isCase ? "xl:w-2/4 xl:ml-32 " : "xl:w-1/2 "
           } xl:ml-48 2xl:mr-9 ${reverse ? "2xl:mr-32" : "ml-0"} ${textColor} `}
         >
-          {isCase? <Image
-            alt="Logo"
-            src={upperLogo || ""}
-            width={50}
-            height={96}
-
-          ></Image>:""}
-          <h1 >{title}</h1>
+          {isCase ? (
+            <Image
+              alt="Logo"
+              src={upperLogo || ""}
+              width={50}
+              height={96}
+            ></Image>
+          ) : (
+            ""
+          )}
+          <h1>{title}</h1>
           <h4>{desc}</h4>
+          <h4><a href={finalLink} target="_blank" className={linkColor}>{linkLetters}</a></h4>
           {button && (
             <Link href={buttonLink} className="text-white">
               <button className={`px-5 p-2 mt-4 lg:px-3 ${buttonColor}`}>
@@ -79,7 +88,7 @@ export default function InfoSection({
               src={img}
               width={imgSize || 600}
               height={96}
-              className={`${space} `}
+              className={`${space} mt-20`}
             />
           </a>
         </div>

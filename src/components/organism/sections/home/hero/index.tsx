@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "@/components/atoms/button/base";
+import { Solid } from "@/components/atoms/button/solid";
 
 import { Section } from "@/components/atoms/section";
 import { EmailForm } from "@/components/atoms/wait-form";
@@ -98,11 +99,11 @@ export default function Hero({
               rel="noreferrer"
               className="w-fit"
             >
-              <Button
+              <Solid
                 className={`${buttonColor} text-[1.063rem] font-semibold  ml-5 md:ml-0 lg:ml-0 w-fit h-15 rounded-none `}
               >
                 {buttonInfo}
-              </Button>
+              </Solid>
             </a>
           )}
           </div>

@@ -113,7 +113,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
-      buttonColor="bg-orange-400"
+      buttonColor="bg-orange-300"
       button
     ></Hero>,
     <InfoSection
@@ -182,6 +182,9 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       backColor="bg-white"
       buttonLink="/"
       id="Services"
+      finalLink="https://meetings.hubspot.com/jennifer-herasme"
+      linkLetters="Schedule a meeting with us to learn more about how we can assist you with your business needs"
+      linkColor="text-orange-300 underline"
     ></InfoSection>,
 
     <SimpleForm></SimpleForm>,
