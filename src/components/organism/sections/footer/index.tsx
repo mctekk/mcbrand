@@ -48,7 +48,7 @@ export function Footer({
               {gewaer && <img src="/images/Gewaer.svg" />}
             </div>
             <h4 className="hidden md:block text-[0.75rem]">
-              <FooterRights kanvas={kanvas} />
+              <FooterRights kanvas={kanvas} mctekk={mctekk} />
             </h4>
             {sales && (
               <FooterList

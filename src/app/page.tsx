@@ -186,7 +186,18 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       linkLetters="Schedule a meeting with us to learn more about how we can assist you with your business needs"
       linkColor="text-orange-300 underline"
     ></InfoSection>,
+    <InfoSection
+    desc=" We're committed to empowering your business with our comprehensive suite of services and products. With Kanvas, we simplify app development, allowing you to focus on crafting outstanding experiences.    "
+    title="Our clients    "
+    img="/images/ser.jpg"
+    button={true}
+    buttonColor="bg-orange-300"
+    buttonTitle="Let's get started!"
+    backColor="bg-white"
+    buttonLink="#contact"
+    id="Services"
 
+  ></InfoSection>,
     <SimpleForm></SimpleForm>,
     <Footer mctekk></Footer>,
   ],

@@ -13,10 +13,10 @@ const menuItems = [
 const externalLinks = [
   {
     text: translate("mcnavbar.section.GetStarted"),
-    link: "/#contact",
+    link: "#contact",
     isExternal: true,
     className:
-      "lg:bg-orange-400 hover:bg-black lg:text-white  lg:hover:border border-orange-400 lg:hover:text-orange-400 text-gray-400 hover:text-white xl:ml-72",
+      "lg:bg-orange-300 hover:bg-black lg:text-white  lg:hover:border border-orange-400 lg:hover:text-orange-400 text-gray-400 hover:text-white xl:ml-72",
   },
 ];
 const options = [

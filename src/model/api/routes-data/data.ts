@@ -65,9 +65,6 @@ const mcCompany = {
     {
       path: "https://mctekk.grovehr.com/careers/job?id=65117eed2487c21055883347",
       name: "Jobs",
-    },{
-      path: "/#contact",
-      name: " Contact sales",
     },
   ],
 };
