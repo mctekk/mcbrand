@@ -45,7 +45,7 @@ export default function InfoSection({
   linkLetters,
   linkColor,
 }: Props) {
-  reverse ? (isCase ? (space = "xl:ml-32 -ml-26") : "") : (space = "2xl:mr-40");
+  reverse ? "" : (space = "2xl:mr-40");
   return (
     <section className={`${backColor} section  `} id={id}>
       <Section
