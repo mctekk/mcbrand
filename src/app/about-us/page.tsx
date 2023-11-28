@@ -52,7 +52,7 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white font-semibold"
-      buttonColor="bg-black"
+      buttonColor="bg-mctekk-100"
       button
       className="bg-cover bg-center bg-black fill-black"
     ></Hero>,
