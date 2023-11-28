@@ -113,7 +113,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
-      buttonColor="bg-orange-300"
+      buttonColor="bg-mctekk-100"
       button
     ></Hero>,
     <InfoSection
@@ -185,7 +185,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       finalLink=""
       linkLetters="Schedule a meeting with us to learn more about how we can assist you with your business needs"
       linkColor=" underline"
-      buttonColor="bg-orange-300"
+      buttonColor="bg-mctekk-100"
       buttonTitle="Let's get started!"
     ></InfoSection>,
     <InfoSection
@@ -193,7 +193,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     title="Our clients    "
     img="/images/ser.jpg"
     button={true}
-    buttonColor="bg-orange-300"
+    buttonColor="bg-mctekk-100"
     buttonTitle="Let's get started!"
     backColor="bg-white"
     buttonLink="#contact"
