@@ -178,13 +178,15 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       desc=" We understand the dynamic needs of the tech industry and offer tailored staff augmentation services to meet those demands. Our team of experts specializes in seamlessly integrating skilled professionals into your existing workforce, ensuring they align with your company's culture and project requirements. Whether you need short-term assistance or long-term support, we provide flexible solutions to enhance your team's capabilities."
       title="We’ve got you covered"
       img="/images/ser.jpg"
-      button={false}
+      button={true}
       backColor="bg-white"
-      buttonLink="/"
+      buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       id="Services"
-      finalLink="https://meetings.hubspot.com/jennifer-herasme"
+      finalLink=""
       linkLetters="Schedule a meeting with us to learn more about how we can assist you with your business needs"
-      linkColor="text-orange-300 underline"
+      linkColor=" underline"
+      buttonColor="bg-orange-300"
+      buttonTitle="Let's get started!"
     ></InfoSection>,
     <InfoSection
     desc=" We're committed to empowering your business with our comprehensive suite of services and products. With Kanvas, we simplify app development, allowing you to focus on crafting outstanding experiences.    "
