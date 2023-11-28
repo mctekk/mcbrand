@@ -34,7 +34,7 @@ function ImageList({ title, imageUrls, slider ,titleColor}: ImageListProps) {
   } else {
     return (
       <div className="  bg-black text-white">
-        <p className="text-[32px] font-semibold pt-20 mb-10 mx-auto items-center w-fit">
+        <p className="text-[32px] font-semibold pt-14 mb-10 mx-auto items-center w-fit">
           {title}
         </p>
         <div className=" lg:flex lg:flex-row flex flex-col w-fit  lg:space-x-20 mx-auto items-center">

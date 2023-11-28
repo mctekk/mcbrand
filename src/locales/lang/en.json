@@ -859,5 +859,36 @@
       "Contact": "Contact",
       "GetStarted": " Contact sales"
     }
+  },
+  "mchero": {
+    "buttonInfo": " Schedule a Meeting ",
+    "messageDesc": "We leverage 18 years of experience in software development and a suite of headless components to help your business grow.",
+    "messageEnd": "We solve problems and create solutions.",
+    "upperMessage": "Taking your business to the",
+    "lowerMessage": "next level with",
+    "words": ["Smart Code", "Practical Solutions"]
+  },
+  "secondSection": {
+    "desc": " No matter if you're just starting out with a new idea or have been running a business for a long time, MCTEKK has the skills to help you make your product successful. Talk to us to find out how we can help you. ",
+    "title": "Let us help you move 2x faster"
+  },
+  "kanvasSection": {
+    "desc": "Kanvas Niche’s modules simplify complexities, letting you concentrate on building exceptional experiences. See the difference!",
+    "title": "Unlock Seamless App Development",
+    "buttonTitle": "Learn More "
+  },
+  "gewaerSection": {
+    "desc": "Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more.",
+    "title": "All Managed with ease",
+    "buttonTitle": "Learn More "
+  },
+  "brandSection": {
+    "title": "Brands that trust us"
+  },
+  "weGotSection": {
+    "desc": " We understand the dynamic needs of the tech industry and offer tailored staff augmentation services to meet those demands. Our team of experts specializes in seamlessly integrating skilled professionals into your existing workforce, ensuring they align with your company's culture and project requirements. Whether you need short-term assistance or long-term support, we provide flexible solutions to enhance your team's capabilities.",
+    "title": "We’ve got you covered",
+    "buttonTitle": "Let's get started!",
+    "linkLetters": "Schedule a meeting with us to learn more about how we can assist you with your business needs"
   }
 }

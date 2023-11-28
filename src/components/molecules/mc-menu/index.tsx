@@ -16,7 +16,7 @@ const externalLinks = [
     link: "#contact",
     isExternal: true,
     className:
-      "lg:bg-mctekk-100 hover:bg-black lg:text-white  lg:hover:border border-mctekk-100 lg:hover:text-mctekk-100 text-gray-400 hover:text-white xl:ml-96 ",
+      "lg:bg-mctekk-100 hover:bg-black lg:text-white  lg:hover:border border-mctekk-100 lg:hover:text-mctekk-100 text-gray-400 hover:text-white xl:ml-72 ",
   },
 ];
 const options = [
@@ -28,14 +28,14 @@ const options = [
 ];
 function McMenu({}) {
   return (
-    <ul className="lg:flex  ">
+    <ul className="lg:flex m- ">
       <ButtonOptions options={options} />
       {menuItems.map((item, index) => (
         <MenuItem
           key={index}
           title={item.text}
           link={item.link}
-          optionsColor="text-gray-400 hover:text-white"
+          optionsColor="text-gray-400 hover:text-white "
         />
       ))}
       <div className="lg:ml-80 flex lg:space-x-2">
