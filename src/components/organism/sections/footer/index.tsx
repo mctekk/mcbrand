@@ -48,7 +48,7 @@ export function Footer({
               {gewaer && <img src="/images/Gewaer.svg" />}
             </div>
             <h4 className="hidden md:block text-[0.75rem]">
-              <FooterRights kanvas={kanvas} />
+              <FooterRights kanvas={kanvas} mctekk={mctekk} />
             </h4>
             {sales && (
               <FooterList
@@ -116,10 +116,21 @@ export function Footer({
 
           {kanvas ? (
             <a href="http://mctekk.com/">Made With 💙 By mctekk </a>
+          ) : mctekk ? (
+            <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
+              {[{ name: "Privacy Policy", path: "/privacy-policy" }].map(
+                (link) => (
+                  <NextLink key={link.path} passHref href={link.path}>
+                    <p className="px-0 ">{link.name}</p>
+                  </NextLink>
+                )
+              )}
+            </div>
           ) : (
             <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
               {[
                 { name: "Privacy Policy", path: "/privacy-policy" },
+
                 { name: "Terms of Service", path: "/terms-of-service" },
               ].map((link) => (
                 <NextLink key={link.path} passHref href={link.path}>

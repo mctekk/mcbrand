@@ -36,8 +36,8 @@ const salesAssist = {
 const mctekk = {
   title: `Products `,
   links: [
-    { path: "kanvas", name: "Kanvas" },
-    { path: `Gewaer`, name: "Gewaer" },
+    { path: "https://kanvas.dev/", name: "Kanvas" },
+    { path: `https://www.gewaer.io/`, name: "Gewaer" },
   ],
 };
 const kanvas = {
@@ -63,8 +63,8 @@ const mcCompany = {
   links: [
     { path: "/about-us", name: RouteNames.about },
     {
-      path: "https://meetings.hubspot.com/jennifer-herasme",
-      name: "Get Started",
+      path: "https://mctekk.grovehr.com/careers/job?id=65117eed2487c21055883347",
+      name: "Jobs",
     },
   ],
 };
@@ -110,6 +110,7 @@ const mcContact = {
   title: `${translate("routesTitles.title2")}`,
   links: [
     { path: "mailto: contacto@mctekk.com", name: " contacto@mctekk.com    " },
+    
   ],
 };
 

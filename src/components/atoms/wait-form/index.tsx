@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
-import { BsBookmarkFill, BsCheck, BsCheck2 } from "react-icons/bs";
-
+import {  BsCheck2 } from "react-icons/bs";
 
 
 export function EmailForm  () {
@@ -18,10 +17,9 @@ export function EmailForm  () {
       return;
     }
 
-    // Iniciar el estado de carga
+    
     setLoading(true);
 
-    // Enviar el correo electrónico a la API de CRM
     try {
       const response = await axios.post(
         "https://crm.api.salesassist.io/v2/receivers/0bd19a61-28d2-4a44-9755-e291a3785f9c/lead",

@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "@/components/atoms/button/base";
+import { Solid } from "@/components/atoms/button/solid";
 
 import { Section } from "@/components/atoms/section";
 import { EmailForm } from "@/components/atoms/wait-form";
@@ -83,7 +84,7 @@ export default function Hero({
 
           <div className="xl:w-3/4  md:mr-28 xl:ml-9">
             <h4
-              className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0`}
+              className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0 mb-5`}
             >
               {messageDesc}
               <span className="font-bold underline underline-offset-2 decoration-orange-500">
@@ -98,11 +99,11 @@ export default function Hero({
               rel="noreferrer"
               className="w-fit"
             >
-              <Button
-                className={`${buttonColor} text-[1.063rem] font-semibold  ml-5 md:ml-0 lg:ml-0 w-fit h-15 `}
+              <Solid
+                className={`${buttonColor} text-[1.063rem] font-semibold  ml-5 md:ml-0 lg:ml-0 w-fit h-15 rounded-none `}
               >
                 {buttonInfo}
-              </Button>
+              </Solid>
             </a>
           )}
           </div>

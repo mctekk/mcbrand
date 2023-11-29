@@ -19,8 +19,7 @@ import { industriesData } from "@/model/api/sales-data/data";
 import Menu from "@/components/molecules/menu";
 import McMenu from "@/components/molecules/mc-menu";
 import { translate } from "@/locales";
-import { Slider } from "@/components/organism/sections/why-sales-assist/simplify-sales";
-import { dataMcSlide } from "@/model/api/simplify-sales";
+
 import Brands from "@/components/atoms/brands";
 import SimpleForm from "@/components/organism/sections/home/formContact";
 import { imagesBrand, kanvasImagesBrand } from "@/model/api";
@@ -28,12 +27,10 @@ import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import { GMenu } from "@/components/molecules/gewaer-menu";
 import {
   columnsData,
-  imagesDataKanvas,
   leadingData,
   ratesData,
 } from "@/model/api/instant-changes/data";
 import { GA } from "@/components/atoms/analitiycs";
-import VerticalImageStack from "@/components/atoms/case-studies-kanvas";
 import { GaKanvas } from "@/components/atoms/analitiycs/kanvasGa";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
@@ -101,89 +98,103 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     />,
     <GA />,
     <Hero
-      className="bg-hero-pattern xl:bg-contain bg-center bg-cover "
-      buttonInfo="Get Started"
+      className="bg-black "
+      buttonInfo=" Schedule a Meeting "
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       highligh=""
-      messageDesc="We leverage 18 years of experience in software development and a suite of headless components to help your business grow."
-      messageEnd="We solve problems and create solutions."
-      upperMessage="Taking your business to the"
-      lowerMessage="next level with"
-      words={["Smart Code ", "Practical Solutions"]}
+      messageDesc={translate("mchero.messageDesc")}
+      messageEnd={translate("mchero.messageEnd")}
+      upperMessage={translate("mchero.upperMessage")}
+      lowerMessage={translate("mchero.lowerMessage")}
+      words={Array.from(translate("mchero.words"))}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
-      buttonColor="bg-orange-400"
+      buttonColor="bg-mctekk-100"
       button
     ></Hero>,
     <InfoSection
-      desc="Avoid redundancy and excessive coding. With Kanvas modules you can solve some of your client's recurrent problems like inventory, CRM, social apps, and more. Talk to us to find out how we can help you. "
-      title="Let us help you move 2x faster"
-      img="/images/Frame.jpg"
+      desc={translate("secondSection.desc")}
+      title={translate("secondSection.title")}
+      img="/images/fast.png"
       button={false}
       backColor="bg-white"
       buttonLink="/"
+      imgSize={650}
     ></InfoSection>,
     <InfoSection
-      desc="Kanvas Niche’s modules simplify complexities, letting you concentrate on building exceptional experiences. See the difference!"
-      title="Unlock Seamless App Development"
+      desc={translate("kanvasSection.desc")}
+      title={translate("kanvasSection.title")}
       img="/images/Kpro.svg"
       button={true}
-      buttonTitle="Learn More "
+      buttonTitle={translate("kanvasSection.buttonTitle")}
       buttonColor="bg-sky-600"
       backColor="bg-kanvas-bg bg-cover"
       buttonLink="https://kanvas.dev/"
       textColor="text-white"
-      imgSize={490}
+      imgSize={400}
+      isCase
+      upperLogo="/images/k1.svg"
     ></InfoSection>,
     <InfoSection
-      desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
-      title="All Managed with ease"
+      desc={translate("gewaerSection.desc")}
+      title={translate("gewaerSection.title")}
       img="/images/Gpro.svg"
       button={true}
-      buttonTitle="Learn More "
+      buttonTitle={translate("gewaerSection.buttonTitle")}
       buttonColor="bg-violet-600"
-      backColor="bg-violet-400"
-      buttonLink="https://gewaer.webflow.io/"
-      textColor="text-white"
-      imgSize={490}
+      backColor="bg-gradient-to-r from-violet-200 to-violet-300"
+      buttonLink="https://www.gewaer.io/"
+      textColor="text-blue-900"
+      imgSize={400}
       reverse
+      isCase
+      upperLogo="/images/g1.svg"
     ></InfoSection>,
-    <InfoSection
-      desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
-      title="All Managed with ease"
-      img="/images/Dpro.svg"
-      button={true}
-      buttonTitle="Learn More "
-      buttonColor="bg-sky-600"
-      backColor="bg-sky-700"
-      buttonLink="https://gewaer.webflow.io/"
-      textColor="text-white"
-      imgSize={490}
-    ></InfoSection>,
+    // <InfoSection
+    //   desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
+    //   title="All Managed with ease"
+    //   img="/images/Dpro.svg"
+    //   button={true}
+    //   buttonTitle="Learn More "
+    //   buttonColor="bg-sky-600"
+    //   backColor="bg-sky-700"
+    //   buttonLink="https://gewaer.webflow.io/"
+    //   textColor="text-white"
+    //   imgSize={490}
+    //   isCase
+    //   upperLogo="/images/d1.svg"
+    // ></InfoSection>,
     <Brands
       imageUrls={imagesBrand}
-      title="Brands that trust us"
+      title={translate("brandSection.title")}
       titleColor="text-white"
     />,
     <InfoSection
-      desc="Are you tired of repeatedly refactoring the same code? Utilize our components to accelerate development and concentrate on solving your business challenges."
-      title="Prebuilt Components "
-      img="/images/Frame.jpg"
-      button={false}
+      desc={translate("weGotSection.desc")}
+      title={translate("weGotSection.title")}
+      img="/images/ser.jpg"
+      button={true}
       backColor="bg-white"
-      buttonLink="/"
+      buttonLink="https://meetings.hubspot.com/jennifer-herasme"
+      id="Services"
+      linkLetters={translate("weGotSection.linkLetters")}
+      linkColor=""
+      buttonColor="bg-mctekk-100"
+      buttonTitle={translate("weGotSection.buttonTitle")}
     ></InfoSection>,
-    <InfoSection
-      desc="Our Kanvas Headless modules provide businesses with the infrastructure they need to jump start projects and focus on the features that make their product unique. A complete PHP ecosystem that provides you with the common features like User authentication, Roles, notifications, session management, Inventory, Social components, Payment processors, and more."
-      title="Headless Solutions"
-      img="/images/Frame.jpg"
-      button={false}
-      reverse
-      backColor="bg-white"
-      buttonLink="/"
-    ></InfoSection>,
-    <SimpleForm></SimpleForm>,
+    // <InfoSection
+    //   desc=" We're committed to empowering your business with our comprehensive suite of services and products. With Kanvas, we simplify app development, allowing you to focus on crafting outstanding experiences.    "
+    //   title="Our clients    "
+    //   img="/images/ser.jpg"
+    //   button={true}
+    //   buttonColor="bg-mctekk-100"
+    //   buttonTitle="Let's get started!"
+    //   backColor="bg-white"
+    //   buttonLink="#contact"
+    //   id="Services"
+    // ></InfoSection>,
+    <SimpleForm id="ContactForm"></SimpleForm>,
     <Footer mctekk></Footer>,
   ],
   kanvas: [
@@ -238,11 +249,13 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <InfoSection
       desc="Kanvas Modules are MIT licensed to ensure that you are in full control of your headless stack."
       title="Open Source"
-      img="/images/Github.png"
+      img="/images/gt.png"
+      imgSize={400}
       button={false}
       backColor="bg-white"
       textColor="text-sky-700"
       buttonLink="/"
+
       link="https://github.com/bakaphp/kanvas-ecosystem-api"
     ></InfoSection>,
     <InfoSection
@@ -256,6 +269,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       backColor="bg-white"
       textColor="text-sky-700"
       buttonLink="#Newsletter"
+      imgSize={580}
+      space="mt-4"
     ></InfoSection>,
     // <VerticalImageStack images={imagesDataKanvas}></VerticalImageStack>,
     <Brands

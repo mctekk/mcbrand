@@ -35,6 +35,7 @@ function ButtonOptions({ options }: ButtonWithOptionsProps) {
                 key={index}
                 className="px-4 py-2 cursor-pointer hover:bg-gray-100 "
                 href={option.link}
+                target="_blank"
               >
                 {option.name}
               </a>

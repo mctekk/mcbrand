@@ -104,6 +104,7 @@ export const McPolicyData = {
       name: 'Privacy Policy',
       description: [
         'Last Updated: [Nov 1st, 2023]',
+        "Your privacy is important to us at Mctekk. We respect your privacy regarding any information we may collect from you across our website.",
         'MCTEKK SRL, a software company, is committed to protecting your privacy and ensuring that your personal information is handled with care. This Privacy Policy outlines our practices concerning the collection, use, and disclosure of your personal information when you visit our website, use our services, or interact with us in any other way. By accessing our website or using our services, you consent to the terms outlined in this Privacy Policy.',
       ],
     },

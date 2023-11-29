@@ -30,7 +30,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="name"
           >
-            Name
+           First name
           </label>
           <Input
             type="text"
@@ -39,6 +39,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
             value={formData.name}
             onChange={onChange}
             required
+
           />
         </div>
         <div className="mb-4">
@@ -82,7 +83,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
           Budget
         </label>
         <select
-          className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded-none w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           name="budget"
           value={formData.budget}
           onChange={onChange}
@@ -99,7 +100,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
           className="block text-gray-700 text-sm font-bold mb-2"
           htmlFor="message"
         >
-          Message
+          Description
         </label>
         <Textarea
           name="message"

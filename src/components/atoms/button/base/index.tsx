@@ -17,7 +17,7 @@ export function Button({
     <button
       type={type}
       className={classNames(
-        "rounded-md w-fit text-[0.875rem, 1.25rem] flex flex-row gap-2.5 py-2.5 px-3.5 cursor-pointer",
+        "rounded-md w-fit text-[0.875rem, 1.25rem] flex flex-row gap-2.5 py-2 px-3.5 cursor-pointer",
         model.size,
         model.variant,
         className
