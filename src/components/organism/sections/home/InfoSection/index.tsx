@@ -68,7 +68,6 @@ export default function InfoSection({
           ) : (
             ""
           )}
-         
           <h1>{title}</h1>
           <h4>{desc}</h4>
           <h4><a href={finalLink} target="_blank" className={linkColor}>{linkLetters}</a></h4>
@@ -90,7 +89,7 @@ export default function InfoSection({
               src={img}
               width={imgSize || 600}
               height={96}
-              className={`${space} mt-20`}
+              className={`${space} mt-20 ${reverse?" xl:ml-24":""} `}
             />
           </a>
         </div>

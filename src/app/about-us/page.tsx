@@ -63,21 +63,20 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       button={false}
       backColor="bg-white"
       buttonLink=""
-      
     ></InfoSection>,
     <InfoSection
       desc="Whether it's enhancing E-commerce platforms, optimizing inventory management systems, or elevating client portals, our extensive experience with a diverse clientele has equipped us to tackle your software-related challenges effectively, enabling you to concentrate on your company's overarching objectives."
-      img="/images/Gewaer.png"
+      img="/images/Gewaer.jpg"
       button={false}
       reverse={true}
       backColor="bg-white"
       buttonLink=""
-      imgSize={580}
+      imgSize={480}
       
     ></InfoSection>,
     <Brands imageUrls={imagesBrand} title="Brands that trust us" titleColor="text-white" />,
    <Behind></Behind>,
-    <SimpleForm></SimpleForm>,
+    <SimpleForm id="ContactForm"></SimpleForm>,
     <Footer mctekk></Footer>,
   ],
 };

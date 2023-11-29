@@ -13,7 +13,7 @@ const menuItems = [
 const externalLinks = [
   {
     text: translate("mcnavbar.section.GetStarted"),
-    link: "#ContactForm",
+    link: "/#ContactForm",
     isExternal: true,
     target:"_self",
     className:
