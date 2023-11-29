@@ -33,7 +33,7 @@ export default function RootLayout({
 
   const faviconPath =
     type == "mctekk"
-      ? "/images/favicons/mctekkFav.svg"
+      ? "/images/favicons/mcfavi.png"
       : type == "kanvas"
       ? "/images/favicons/kanvasFav.svg"
       : type == "gewaer"

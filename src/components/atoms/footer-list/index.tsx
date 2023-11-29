@@ -37,7 +37,7 @@ export function FooterList({
 
   function renderLink(name: string, path: string) {
     return (
-      <NextLink passHref href={path} className=" ">
+      <NextLink passHref href={path} className=" " >
         {name}
       </NextLink>
     );

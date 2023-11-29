@@ -34,7 +34,7 @@ export function MenuItem({
           </ButtonLink>
           ) : (
             <Solid
-              className={`${className}  mb-9 lg:mt-1 lg:mb-0  text-[1.25rem] lg:text-[1rem] whitespace-nowrap`}
+              className={`${className}  mb-9 lg:mt-1 lg:mb-0  text-[1.25rem] lg:text-[1rem] whitespace-nowrap rounded-none`}
             >
               {title}
             </Solid>

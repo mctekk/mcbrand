@@ -4,27 +4,21 @@ import { translate } from "@/locales";
 import ButtonOptions from "@/components/atoms/optionsButton";
 
 const menuItems = [
+ 
   {
     text: translate("mcnavbar.section.Blog"),
     link: "https://mctekk.substack.com/",
   },
-  { text:translate("mcnavbar.section.aboutUs"), link: "/about-us" },
-  {
-    text: translate("mcnavbar.section.jobs"),
-    link: "https://mctekk.grovehr.com/careers/job?id=65117eed2487c21055883347",
-    target:"_blank"
-  },
-  { text: translate("mcnavbar.section.Contact"), link: "/contact" },
 ];
 const externalLinks = [
   {
     text: translate("mcnavbar.section.GetStarted"),
-    link: "https://meetings.hubspot.com/jennifer-herasme",
+    link: "/#ContactForm",
     isExternal: true,
+    target:"_self",
     className:
-      "lg:bg-orange-400 hover:bg-black lg:text-white  lg:hover:border border-orange-400 lg:hover:text-orange-400 text-gray-400 hover:text-white ",
+      "lg:bg-mctekk-100 hover:bg-black lg:text-white  lg:hover:border border-mctekk-100 lg:hover:text-mctekk-100 text-gray-400 hover:text-white xl:ml-80  ",
   },
-
 ];
 const options = [
   {
@@ -42,8 +36,7 @@ function McMenu({}) {
           key={index}
           title={item.text}
           link={item.link}
-          optionsColor="text-gray-400 hover:text-white"
-          target={item.target}
+          optionsColor="text-gray-400 hover:text-white "
         />
       ))}
       <div className="lg:ml-80 flex lg:space-x-2">
@@ -54,6 +47,7 @@ function McMenu({}) {
             link={item.link}
             isExternal={item.isExternal}
             className={item.className}
+            target={item.target}
           />
         ))}
       </div>
