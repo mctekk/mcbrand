@@ -6,7 +6,11 @@ import useSimpleForm from "@/model/interactions/use-form";
 import Swal from "sweetalert2";
 import { BsCheck } from "react-icons/bs";
 
-function SimpleForm() {
+
+interface Props{
+  id?: string
+}
+function SimpleForm({id}:Props) {
   const { formData, handleChange, handleSubmit } = useSimpleForm();
   const [formSubmitted, setFormSubmitted] = useState(false);
 
@@ -23,13 +27,13 @@ function SimpleForm() {
   };
 
   return (
-    <div className="section" id="contact">
+    <div className="section" id={id}>
       <div className="w-fit justify-center items-center mx-auto">
         <p className="text-orange-300 font-semibold w-fit ">Contact us</p>
         <p className="text-[3rem] font-semibold">Let's work together!</p>
       </div>
       <div className="w-fit mx-auto text-[1.185rem] max-w-xl justify-center items-center ">
-        <p className="xl:ml-8">
+        <p className="lg:ml-16">
           MCTEKK is dedicated to problem-solving, creating solutions, and
           growing businesses across all America. We’re here to help you develop
           your product.
@@ -44,7 +48,7 @@ function SimpleForm() {
               
             ) : (
               <Button
-                className="bg-black hover:bg-orange-300 text-white font-bold py-2 px-4 rounded-none focus:outline-none focus:shadow-outline w-full items-center justify-center"
+                className="bg-black hover:bg-mctekk-100 text-white font-bold py-2 px-4 rounded-none focus:outline-none focus:shadow-outline w-full items-center justify-center"
                 type="submit"
               >
                 Send Message

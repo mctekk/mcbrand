@@ -179,7 +179,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
       id="Services"
       linkLetters={translate("weGotSection.linkLetters")}
-      linkColor=" underline"
+      linkColor=""
       buttonColor="bg-mctekk-100"
       buttonTitle={translate("weGotSection.buttonTitle")}
     ></InfoSection>,
@@ -194,7 +194,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     //   buttonLink="#contact"
     //   id="Services"
     // ></InfoSection>,
-    <SimpleForm></SimpleForm>,
+    <SimpleForm id="ContactForm"></SimpleForm>,
     <Footer mctekk></Footer>,
   ],
   kanvas: [
@@ -270,6 +270,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-sky-700"
       buttonLink="#Newsletter"
       imgSize={580}
+      space="mt-4"
     ></InfoSection>,
     // <VerticalImageStack images={imagesDataKanvas}></VerticalImageStack>,
     <Brands

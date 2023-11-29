@@ -4,7 +4,6 @@ import { GA } from "@/components/atoms/analitiycs";
 import Info from "@/components/organism/sections/privacy-policy/info";
 import Menu from "@/components/molecules/menu";
 import McMenu from "@/components/molecules/mc-menu";
-import Terms from "@/components/organism/sections/terms-of-service/terms";
 import { usePageBuilder } from "@/model/interactions/use-page-builder";
 import { ReactNode } from "react";
 

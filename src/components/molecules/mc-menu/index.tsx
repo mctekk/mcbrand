@@ -13,10 +13,11 @@ const menuItems = [
 const externalLinks = [
   {
     text: translate("mcnavbar.section.GetStarted"),
-    link: "#contact",
+    link: "#ContactForm",
     isExternal: true,
+    target:"_self",
     className:
-      "lg:bg-mctekk-100 hover:bg-black lg:text-white  lg:hover:border border-mctekk-100 lg:hover:text-mctekk-100 text-gray-400 hover:text-white xl:ml-72 ",
+      "lg:bg-mctekk-100 hover:bg-black lg:text-white  lg:hover:border border-mctekk-100 lg:hover:text-mctekk-100 text-gray-400 hover:text-white xl:ml-80  ",
   },
 ];
 const options = [
@@ -28,7 +29,7 @@ const options = [
 ];
 function McMenu({}) {
   return (
-    <ul className="lg:flex m- ">
+    <ul className="lg:flex ">
       <ButtonOptions options={options} />
       {menuItems.map((item, index) => (
         <MenuItem
@@ -46,6 +47,7 @@ function McMenu({}) {
             link={item.link}
             isExternal={item.isExternal}
             className={item.className}
+            target={item.target}
           />
         ))}
       </div>

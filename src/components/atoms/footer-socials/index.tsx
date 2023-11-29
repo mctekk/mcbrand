@@ -30,12 +30,12 @@ const MCsocial = [
     icon: <BsLinkedin />,
   },
   { url: "https://twitter.com/mctekk", icon: <BsTwitter /> },
-  { url: "https://github.com/mctekk", icon: <BsGithub /> },
+  { url: "https://github.com/mctekk", icon: <BsGithub  /> },
   { url: "https://www.instagram.com/mctekk", icon: <BsInstagram /> },
 ];
 
 export default function FooterSocials({ kind, sales, kanvas }: Props) {
-  const socialClasses = classNames("text-[1.875rem] text-white rounded", {
+  const socialClasses = classNames("text-[1.6rem] text-white rounded", {
     "bg-sky-700": kanvas,
     "bg-zinc-800": kind === "light" && sales,
   });
@@ -83,6 +83,7 @@ export default function FooterSocials({ kind, sales, kanvas }: Props) {
             target="_blank"
             rel="noreferrer"
             className={socialClasses}
+            
           >
             {s.icon}
           </a>

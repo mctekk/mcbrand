@@ -50,11 +50,11 @@ export default function InfoSection({
     <section className={`${backColor} section  `} id={id}>
       <Section
         className={`flex flex-col  lg:flex-row ${
-          reverse ? "lg:flex-row-reverse  lg:space-x-24 " : "lg:flex-row"
+          reverse ? "lg:flex-row-reverse  lg:space-x-24  " : "lg:flex-row"
         }  items-center  ${isCase ? "xl:space-x-56" : ""}`}
       >
         <div
-          className={`flex flex-col gap-6 mb-5 md:ml-14 ${
+          className={`flex flex-col gap-6 mb-5 md:ml-14  ${
             isCase ? "xl:w-2/4 xl:ml-32 " : "xl:w-1/2 "
           } xl:ml-48 2xl:mr-9 ${reverse ? "2xl:mr-32" : "ml-0"} ${textColor} `}
         >
@@ -68,6 +68,7 @@ export default function InfoSection({
           ) : (
             ""
           )}
+         
           <h1>{title}</h1>
           <h4>{desc}</h4>
           <h4><a href={finalLink} target="_blank" className={linkColor}>{linkLetters}</a></h4>
@@ -79,6 +80,7 @@ export default function InfoSection({
             </Link>
           )}
         </div>
+        
         <div
           className={`shrink-0 md:w-fit md:h-[29.5rem] rounded-lg drop-shadow-sa overflow-hidden  `}
         >
