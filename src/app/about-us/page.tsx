@@ -71,6 +71,7 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       reverse={true}
       backColor="bg-white"
       buttonLink=""
+      imgSize={500}
       
     ></InfoSection>,
     <Brands imageUrls={imagesBrand} title="Brands that trust us" titleColor="text-white" />,

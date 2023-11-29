@@ -15,7 +15,7 @@ interface TeamIconProps {
 export const TeamIcon: React.FC<TeamIconProps> = ({ src, title, name, link, code,mctekk }) => {
   if (code && src) throw new Error(`you cannot use src and code at the same time`)
   return (
-    <div className={`w-2/5 gap-4 md:w-1/3 lg:w-1/6 flex items-center justify-center flex-col mx-auto md:mx-0 mb-6 p-2 md:p-9 ${mctekk && "bg-gray-200 "} `}>
+    <div className={`w-2/5 gap-4 md:w-1/3 lg:w-1/6 flex items-center justify-center flex-col mx-auto md:mx-0 mb-6 p-2 md:p-9 ${mctekk && " "} `}>
       <div className='relative h-20 w-20 rounded-full overflow-hidden flex items-center justify-center '>
         {src && <Image src={src} width={64} height={64} alt='name' />}
         {code && buildIcon({
