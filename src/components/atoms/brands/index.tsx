@@ -5,13 +5,14 @@ interface ImageListProps {
   imageUrls: string[];
   titleColor:string
   slider?: boolean;
+  className?:string
 }
 
-function ImageList({ title, imageUrls, slider ,titleColor}: ImageListProps) {
+function ImageList({ title, imageUrls, slider ,titleColor,className}: ImageListProps) {
   if (slider) {
     return (
-      <section className="bg-sky-700 section">
-  <div className="slider-container container mx-auto lg:flex bg-sky-700 flex-col">
+      <section className={`${className} section`}>
+  <div className={`slider-container container mx-auto lg:flex ${className} flex-col`}>
     <p className={`text-[30px] font-semibold pt-10 mb-10 mx-auto items-center w-fit ${titleColor}`}>{title}</p>
     <div className="kanvas-slider-inside">
       <ul className="infinity-x-container ">
@@ -33,7 +34,7 @@ function ImageList({ title, imageUrls, slider ,titleColor}: ImageListProps) {
     );
   } else {
     return (
-      <div className="  bg-black text-white">
+      <div className={` ${className} text-white`}>
         <p className="text-[32px] font-semibold pt-14 mb-10 mx-auto items-center w-fit">
           {title}
         </p>
@@ -43,10 +44,10 @@ function ImageList({ title, imageUrls, slider ,titleColor}: ImageListProps) {
               key={index}
               src={imageUrl}
               alt={`Image ${index}`}
-              className="mb-20 w-full "
-              width={93}
+              className="mb-20  "
+              width={113}
               height={24}
-              quality={100}
+              
             />
           ))}
         </div>

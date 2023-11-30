@@ -16,4 +16,10 @@ const kanvasImagesBrand = [
   "/images/brands/copic.png",
   "/images/brands/popularCar.svg",
 ];
-export { imagesBrand, kanvasImagesBrand };
+const gewaerImagesBrand = [
+  "/images/brands/financeAgents.svg",
+  "/images/brands/factory.png",
+
+  
+];
+export { imagesBrand, kanvasImagesBrand ,gewaerImagesBrand};

@@ -22,7 +22,7 @@ import { translate } from "@/locales";
 
 import Brands from "@/components/atoms/brands";
 import SimpleForm from "@/components/organism/sections/home/formContact";
-import { imagesBrand, kanvasImagesBrand } from "@/model/api";
+import { gewaerImagesBrand, imagesBrand, kanvasImagesBrand } from "@/model/api";
 import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import { GMenu } from "@/components/molecules/gewaer-menu";
 import {
@@ -169,6 +169,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       imageUrls={imagesBrand}
       title={translate("brandSection.title")}
       titleColor="text-white"
+      className="bg-black"
     />,
     <InfoSection
       desc={translate("weGotSection.desc")}
@@ -255,7 +256,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       backColor="bg-white"
       textColor="text-sky-700"
       buttonLink="/"
-
       link="https://github.com/bakaphp/kanvas-ecosystem-api"
     ></InfoSection>,
     <InfoSection
@@ -278,54 +278,47 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Brands that trust us"
       slider
       titleColor="text-white"
+      className="bg-sky-700"
     ></Brands>,
     <Footer kanvas></Footer>,
   ],
   gewaer: [
     <Header
       menu={<GMenu />}
-      className="bg-violet-500"
+      className="bg-gewaer-100"
       logo="/images/Gewaer.svg"
       iconColor="text-white"
     />,
     <GA />,
     <Hero
-      className="bg-violet-500 "
+      className="bg-gewaer-100 "
       buttonInfo="Request Demo"
       buttonLink="https://meetings.hubspot.com/jennherasme/gewaer-leads"
-      messageDesc="Our SaaS solution connects to your CRM and allows for managing leads, agents, "
-      messageEnd="commissions, individual agent websites, referral programs, and more"
-      upperMessage="Manage your leads, agents,  "
-      lowerMessage="and commissions with "
-      words={["ease", "baka", "lorem"]}
+      messageDesc="Gewaer facilitates fast and efficient communication by directly linking your platform  "
+      messageEnd="with sales teams, clients, and agents, enabling real-time data access for seamless interaction.      "
+      upperMessage="Take your business to the cloud  "
+      lowerMessage="no more "
+      words={[" Manual tasks", "Lost Leads", "Wasted time"]}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
-      buttonColor="bg-white text-violet-500"
+      buttonColor="bg-white text-gewaer-100"
       button
     ></Hero>,
     <CompletionTools
       title="Manage your leads, agents, and commissions with ease."
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
       img="/images/gview.png"
-      colorFonts="text-blue-950"
+      colorFonts="text-gewaer-200"
     />,
     <ImageChanger
       data={kanvasActionsData}
       buttonColor="bg-white text-violet-500"
       selected="text-white"
-      className="bg-violet-500 text-white"
+      className="bg-gewaer-100 text-white"
       title="Manage your leads, agents, and commissions with ease."
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      double={200}
-    />,
-    <Automated
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      img={"/images/automated.svg"}
-      title="Manage your leads, agents, and commissions with ease."
-      descColor="text-cyan-600"
-      titleColor="text-cyan-600"
-      bg="bg-violet-50"
+      double={500}
     />,
     <InfoSection
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
@@ -333,7 +326,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/Frame.jpg"
       button={false}
       backColor="bg-violet-50"
-      textColor="text-blue-950"
+      textColor="text-gewaer-200"
       buttonLink="/"
     ></InfoSection>,
     <InfoSection
@@ -342,22 +335,19 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       img="/images/Frame.jpg"
       reverse
       button={true}
-      buttonColor="bg-violet-500 "
+      buttonColor="bg-gewaer-100 "
       buttonTitle="Request Demo"
       backColor="bg-violet-50"
-      textColor="text-blue-950"
+      textColor="text-gewaer-200"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
     ></InfoSection>,
+    <Brands
+      imageUrls={gewaerImagesBrand}
+      title="Brands that trust us"
+      titleColor="text-white"
+      className="bg-gewaer-100"
+    ></Brands>,
 
-    <InstantChanges
-      className="bg-violet-50"
-      title="Companies That Turn to Gewaer See these Benefits"
-      columnsData={columnsData}
-      leadingData={leadingData}
-      ratesData={ratesData}
-    />,
-    <WhySalesAssistSalesProcess data={industriesData} />,
-    <Sales className="bg-violet-50" />,
     <Footer gewaer></Footer>,
   ],
 };

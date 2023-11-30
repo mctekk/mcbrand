@@ -74,7 +74,7 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       imgSize={480}
       
     ></InfoSection>,
-    <Brands imageUrls={imagesBrand} title="Brands that trust us" titleColor="text-white" />,
+    <Brands imageUrls={imagesBrand} title="Brands that trust us" titleColor="text-white" className="bg-black" />,
    <Behind></Behind>,
     <SimpleForm id="ContactForm"></SimpleForm>,
     <Footer mctekk></Footer>,

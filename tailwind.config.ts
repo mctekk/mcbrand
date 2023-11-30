@@ -58,6 +58,10 @@ const config = {
           100: "#faa61a",
           
         },
+        gewaer: {
+          100: "#906ffd",
+          200:"#191863"
+        },
         base: {
           primary: {
             100: "#191863",
