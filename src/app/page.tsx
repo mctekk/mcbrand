@@ -304,8 +304,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       gewaer
     ></Hero>,
     <CompletionTools
-      title="Manage your leads, agents, and commissions with ease."
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      title="A real-time system that links your data with agents, salespeople, or customers."
+      desc="Gewaer provides a smooth integration with your current CRM or system, serving as an effective intermediary platform between your data and your agents or clients. This tool enables you to adeptly handle leads and agents, swiftly set up portals for clients or agents, and other features to improve your processes."
       img="/images/gview.png"
       colorFonts="text-gewaer-200"
     />,
