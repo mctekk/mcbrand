@@ -30,7 +30,7 @@ export function Footer({
     { "text-white": kind === "dark" },
     { "text-white bg-black": mctekk },
     { "text-white bg-sky-700": kanvas },
-    { "text-white bg-violet-500": gewaer },
+    { "text-white bg-gewaer-100": gewaer },
 
     className
   );
@@ -48,7 +48,7 @@ export function Footer({
               {gewaer && <img src="/images/Gewaer.svg" />}
             </div>
             <h4 className="hidden md:block text-[0.75rem]">
-              <FooterRights kanvas={kanvas} mctekk={mctekk} />
+              <FooterRights kanvas={kanvas} mctekk={mctekk} gewaer={gewaer} />
             </h4>
             {sales && (
               <FooterList
