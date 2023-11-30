@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       case 'gewaer':
         return 'Gewaer Page';
       case 'mctekk':
-        return 'Mctekk Page';
+        return 'MCTEKK specializes in Headless E-commerce, Data Analytics, and Community solutions, with over 15 years of experience in technology consulting and custom software development. Our unique Kanvas Graph Api Layer approach enhances business scalability and efficiency. We boast a talented team skilled in front-end and back-end development, UX/UI design, and project management. Our commitment to innovation and quality is evident in partnerships with notable companies like NZXT and Crunchyroll. Choose MCTEKK for smart, effective, and reliable technology solutions that drive business growth.';
       case 'salesassist':
         return 'SalesAssist';
       default:
