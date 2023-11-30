@@ -316,7 +316,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-gewaer-100 text-white"
       title="Manage your leads, agents, and commissions with ease."
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      double={500}
+      double={600}
     />,
     <InfoSection
       desc="Gewaer offers a white-label UI that you can customize with your own branding: This includes changing logo, colors, fonts, and layout without any default branding."
@@ -330,6 +330,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-gewaer-200"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
       imgSize={450}
+      
     ></InfoSection>,
     <Brands
       imageUrls={gewaerImagesBrand}
@@ -337,7 +338,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       titleColor="text-white"
       className="bg-gewaer-100"
     ></Brands>,
-    <GewaerForm id="Contact"/>,
+    // <GewaerForm id="Contact"/>,
     <Footer gewaer></Footer>,
   ],
 };

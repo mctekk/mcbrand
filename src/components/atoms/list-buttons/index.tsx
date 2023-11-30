@@ -17,7 +17,7 @@ interface ListProps {
   buttonColor?: string;
   selected?: string;
   code?: boolean;
-  double : 500 | 200
+  double : 500 | 200 | 600
 }
 export default function ListButtons({
   data,

@@ -8,7 +8,7 @@ const menuItems = [
     link: "/",
   },
   { text: "Features", link: "#features" },
-  { text: "Contact", link: "#Contact" },
+  { text: "Contact", link: "mailto:" },
 ];
 const externalLinks = [
   {

@@ -20,7 +20,7 @@ interface ImageChangerProps {
   title:string
   desc:string
   code?:boolean
-  double : 500 | 200
+  double : 500 | 200 | 600
 }
 
 export default function ImageChanger({ data, buttonColor,selected,className,desc,title,code,double }: ImageChangerProps) {
