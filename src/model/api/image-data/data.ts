@@ -16,14 +16,33 @@ const Data = [
     url: "/images/actionsKanvas/CRM.png",
   },
   {
-    url:"/images/actionsKanvas/Inventory.png",
+    url: "/images/actionsKanvas/Inventory.png",
   },
   {
     url: "/images/actionsKanvas/Social.png",
   },
   {
-    url:"/images/actionsKanvas/Workflow.png",
+    url: "/images/actionsKanvas/Workflow.png",
   },
+];
+
+const gewaerData = [
+  {
+    url: "/images/actionsGewaer/integration.png",
+  },
+  {
+    url: "/images/actionsGewaer/label.png",
+  },
+  {
+    url: "/images/actionsGewaer/management.png",
+  },
+  {
+    url: "/images/actionsGewaer/management1.png",
+  },
+  {
+    url: "/images/actionsGewaer/registration.png",
+  },
+ 
 ];
 
 const actionsData: Action[] = translateData.map(
@@ -42,4 +61,11 @@ const kanvasActionsData: Action[] = Data.map((action: any, index: number) => ({
   url: Data[index].url,
 }));
 
-export { actionsData, kanvasActionsData };
+const gewaerActionsData: Action[] = gewaerData.map((action: any, index: number) => ({
+  name: translate(`home.gewaerActions[${index}].name`),
+  title: translate(`home.gewaerActions[${index}].title`),
+  desc: translate(`home.gewaerActions[${index}].desc`),
+  url: gewaerData[index].url,
+}));
+
+export { actionsData, kanvasActionsData, gewaerActionsData };

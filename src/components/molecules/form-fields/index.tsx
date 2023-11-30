@@ -30,7 +30,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="name"
           >
-           First name
+           Name
           </label>
           <Input
             type="text"
@@ -80,20 +80,16 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
           className="block text-gray-700 text-sm font-bold mb-2"
           htmlFor="budget"
         >
-          Budget
+          Phone
         </label>
-        <select
-          className="shadow appearance-none border rounded-none w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          name="budget"
+        <Input
+          type="phone"
+          name="Phone"
+          placeholder="Your Phone"
           value={formData.budget}
           onChange={onChange}
           required
-        >
-          <option value="$10,000">$10,000</option>
-          <option value="$10,000 - $25,000">$10,000 - $25,000</option>
-          <option value="$25,000 - $50,000">$25,000 - $50,000</option>
-          <option value="To be determined">To be determined</option>
-        </select>
+        />
       </div>
       <div className="mb-6">
         <label

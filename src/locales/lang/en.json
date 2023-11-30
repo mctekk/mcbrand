@@ -142,6 +142,34 @@
       }
     ],
 
+    "gewaerActions": [
+      {
+        "name": "CRM Integration",
+        "title": "Company and User Management in a single place.",
+        "desc": "Easily create, modify, group, remove, and set permission roles for companies and users."
+      },
+      {
+        "name": "White Label",
+        "title": "Customers are the most important part of any business.",
+        "desc": "Handle customer information, communication, and relationships in a single place. Manage your sales process and customer journey from lead to customer."
+      },
+      {
+        "name": "Agent Management",
+        "title": "Handle your inventory in a single place.",
+        "desc": "Extend your e-commerce solution with headless bundles, create marketplaces, or build your own inventory management UI."
+      },
+      {
+        "name": "Lead Management",
+        "title": "Add social media features to any app.",
+        "desc": "Share products, follow users, create groups, messaging, comments, likes and more. All the building blocks you need to add a social to your app."
+      },
+      {
+        "name": "Agent Registration",
+        "title": "Connect Kanvas modules with other systems.",
+        "desc": "Set rules to trigger actions based on events you define within the Kanvas Ecosystem. After a lead is created, send it to your CRM or send a notification to your team. You define it."
+      }
+    ],
+
     "automated": {
       "title": "Complete Sales Faster with Automated Workflows",
       "desc": "Info-gathering tools are scattered and don’t play nice together, we’re here to fix that. Connect all your info-gathering tools and create perfect custom-made workflows. Automate your sales team's work so they can crush sales goals."

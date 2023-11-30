@@ -13,7 +13,7 @@ import { InstantChanges } from "@/components/organism/sections/home/instantChang
 import ImageChanger from "@/components/organism/sections/home/iteraction";
 import Sales from "@/components/organism/sections/home/sales";
 import { WhySalesAssistSalesProcess } from "@/components/organism/sections/home/whySalesAssistSales";
-import { actionsData, kanvasActionsData } from "@/model/api/image-data/data";
+import { actionsData, gewaerActionsData, kanvasActionsData } from "@/model/api/image-data/data";
 import { industriesData } from "@/model/api/sales-data/data";
 
 import Menu from "@/components/molecules/menu";
@@ -32,6 +32,7 @@ import {
 } from "@/model/api/instant-changes/data";
 import { GA } from "@/components/atoms/analitiycs";
 import { GaKanvas } from "@/components/atoms/analitiycs/kanvasGa";
+import GewaerForm from "@/components/organism/sections/home/gewaerContact";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -294,7 +295,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-gewaer-100 "
       messageDesc="Gewaer facilitates fast and efficient communication by directly linking your platform  "
       messageEnd="with sales teams, clients, and agents, enabling real-time data access for seamless interaction.      "
-      upperMessage="Take your business to the cloud  "
+      upperMessage="Take your business to the cloud: "
       lowerMessage="no more "
       words={[" Manual tasks", "Lost Leads", "Wasted time"]}
       colorDesc="text-white"
@@ -309,8 +310,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorFonts="text-gewaer-200"
     />,
     <ImageChanger
-    
-      data={kanvasActionsData}
+      data={gewaerActionsData}
       buttonColor="bg-white text-violet-500"
       selected="text-white"
       className="bg-gewaer-100 text-white"
@@ -319,15 +319,17 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       double={500}
     />,
     <InfoSection
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      title="Manage your leads, agents, and commissions with ease."
-      img="/images/Frame.jpg"
+      desc="Gewaer offers a white-label UI that you can customize with your own branding: This includes changing logo, colors, fonts, and layout without any default branding."
+      title="Branding Free"
+      linkLetters="You can also add a custom domain and customize any email and communication."
+      img="/images/stack.png"
       button={true}
       buttonColor="bg-gewaer-100 "
       buttonTitle="Request Demo"
       backColor="bg-violet-50"
       textColor="text-gewaer-200"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
+      imgSize={450}
     ></InfoSection>,
     <Brands
       imageUrls={gewaerImagesBrand}
@@ -335,7 +337,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       titleColor="text-white"
       className="bg-gewaer-100"
     ></Brands>,
-
+    <GewaerForm id="Contact"/>,
     <Footer gewaer></Footer>,
   ],
 };
