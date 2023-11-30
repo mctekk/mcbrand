@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/atoms/button/base";
 import { Solid } from "@/components/atoms/button/solid";
+import { GewaerEmailForm } from "@/components/atoms/gewaerForm";
 
 import { Section } from "@/components/atoms/section";
 import { EmailForm } from "@/components/atoms/wait-form";
@@ -23,6 +24,7 @@ interface Props {
   buttonColor?: string;
   button?: boolean;
   kanvas?: boolean;
+  gewaer?:boolean
   id?: string;
 }
 
@@ -42,6 +44,7 @@ export default function Hero({
   buttonColor = "bg-orange-500",
   button,
   kanvas,
+  gewaer,
   id,
 }: Props) {
   return (
@@ -122,7 +125,20 @@ export default function Hero({
               </div>
             </div>
           )}
-          
+           {gewaer && (
+            <div className=" mx-auto xl:ml-28 lg:ml-0 ml-0 2xl:ml-36 md:ml-2 ">
+              {" "}
+              <h4
+                className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0 font-semibold`}
+              >
+                Subscribe to get product updates:
+              </h4>{" "}
+              <div className="ml-5 md:ml-0">
+                {" "}
+                <GewaerEmailForm />{" "}
+              </div>
+            </div>
+          )}
         </div>
       </Section>
     </div>

@@ -143,11 +143,12 @@ export function Footer({
           {/* social media */}
           <div className="md:w-1/2 h-full flex justify-end gap-2 md:gap-6 flex-col md:flex-row w-full md:pb-12">
             <h4 className="block md:hidden text-[0.75rem] text-gray-400">
-              <FooterRights kanvas={kanvas} />
+              <FooterRights kanvas={kanvas} gewaer={gewaer}  mctekk={mctekk} />
             </h4>
             {sales && <FooterSocials kind={kind} sales />}
             {mctekk && <FooterSocials kind={kind} />}
             {kanvas && <FooterSocials kind={kind} kanvas />}
+            {gewaer && <FooterSocials kind={kind} gewaer />}
           </div>
         </div>
       </div>

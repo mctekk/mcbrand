@@ -49,13 +49,10 @@ const kanvas = {
   ],
 };
 const gewaer = {
-  title: `${translate("routesTitles.title")}`,
+  title: `Gewaer`,
   links: [
-    { path: "/#how-it-works", name: RouteNames.howItWorks },
-    { path: `${Paths.whySalesAssist}/#benefits`, name: RouteNames.benefits },
-    { path: "/#actions", name: RouteNames.actions },
-    { path: Paths.pricing, name: RouteNames.pricing },
-    { path: `${Paths.pricing}/#Q&A`, name: RouteNames.qAndA },
+    { path: "/#features", name: "Core Functionalities "},
+
   ],
 };
 const mcCompany = {
@@ -102,8 +99,7 @@ const kanvasContact = {
 const GewaerContact = {
   title: `${translate("routesTitles.title2")}`,
   links: [
-    { path: "mailto:help@salesassist.io", name: "help@salesassist.io" },
-    { path: "#", name: "251 Little Falls Drive, Wilmington, Delaware 19808" },
+    { path: "mailto: contacto@mctekk.com", name: " contacto@mctekk.com    " },
   ],
 };
 const mcContact = {

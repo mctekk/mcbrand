@@ -7,8 +7,8 @@ const menuItems = [
     text: "Home",
     link: "/",
   },
-  { text: "Features", link: "#learnMore" },
-  { text: "Learn more", link: "#learnMore" },
+  { text: "Features", link: "#features" },
+  { text: "Learn more", link: "#features" },
 ];
 const externalLinks = [
   {

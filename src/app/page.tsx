@@ -292,8 +292,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <GA />,
     <Hero
       className="bg-gewaer-100 "
-      buttonInfo="Request Demo"
-      buttonLink="https://meetings.hubspot.com/jennherasme/gewaer-leads"
       messageDesc="Gewaer facilitates fast and efficient communication by directly linking your platform  "
       messageEnd="with sales teams, clients, and agents, enabling real-time data access for seamless interaction.      "
       upperMessage="Take your business to the cloud  "
@@ -302,8 +300,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
-      buttonColor="bg-white text-gewaer-100"
-      button
+      gewaer
     ></Hero>,
     <CompletionTools
       title="Manage your leads, agents, and commissions with ease."
@@ -312,6 +309,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorFonts="text-gewaer-200"
     />,
     <ImageChanger
+    
       data={kanvasActionsData}
       buttonColor="bg-white text-violet-500"
       selected="text-white"
@@ -324,16 +322,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
       title="Manage your leads, agents, and commissions with ease."
       img="/images/Frame.jpg"
-      button={false}
-      backColor="bg-violet-50"
-      textColor="text-gewaer-200"
-      buttonLink="/"
-    ></InfoSection>,
-    <InfoSection
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      title="Manage your leads, agents, and commissions with ease."
-      img="/images/Frame.jpg"
-      reverse
       button={true}
       buttonColor="bg-gewaer-100 "
       buttonTitle="Request Demo"

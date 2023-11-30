@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 import {  BsCheck2 } from "react-icons/bs";
 
 
-export function EmailForm  () {
+export function GewaerEmailForm  () {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -75,18 +75,18 @@ export function EmailForm  () {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-grow h-10 p-3  mr-1"
+              className="flex-grow h-10 p-3 mr-1"
               placeholder="Enter your email"
             />
 
             <button
               type="submit"
-              className="w-24 h-10 bg-white  text-sky-600 font-semibold relative"
+              className="w-24 h-10 bg-white  text-gewaer-100 font-semibold relative"
               disabled={loading}
             >
               {loading && (
                 <span className="absolute  inset-0 flex items-center justify-center">
-                  <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-sky-600"></div>
+                  <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-gewaer-100"></div>
                 </span>
               )}
               {!loading && (
