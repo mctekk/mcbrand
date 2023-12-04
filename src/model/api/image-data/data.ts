@@ -28,19 +28,16 @@ const Data = [
 
 const gewaerData = [
   {
-    url: "/images/actionsGewaer/integration.png",
+    url: "/images/actionsGewaer/Client-portal1.png",
   },
   {
-    url: "/images/actionsGewaer/label.png",
+    url: "/images/actionsGewaer/Agent-portal1.png",
   },
   {
-    url: "/images/actionsGewaer/management.png",
+    url: "/images/actionsGewaer/business-marketplaces1.png",
   },
   {
-    url: "/images/actionsGewaer/management1.png",
-  },
-  {
-    url: "/images/actionsGewaer/registration.png",
+    url: "/images/actionsGewaer/Contract-hub1.png",
   },
  
 ];
@@ -61,11 +58,13 @@ const kanvasActionsData: Action[] = Data.map((action: any, index: number) => ({
   url: Data[index].url,
 }));
 
-const gewaerActionsData: Action[] = gewaerData.map((action: any, index: number) => ({
-  name: translate(`home.gewaerActions[${index}].name`),
-  title: translate(`home.gewaerActions[${index}].title`),
-  desc: translate(`home.gewaerActions[${index}].desc`),
-  url: gewaerData[index].url,
-}));
+const gewaerActionsData: Action[] = gewaerData.map(
+  (action: any, index: number) => ({
+    name: translate(`home.gewaerActions[${index}].name`),
+    title: translate(`home.gewaerActions[${index}].title`),
+    desc: translate(`home.gewaerActions[${index}].desc`),
+    url: gewaerData[index].url,
+  })
+);
 
 export { actionsData, kanvasActionsData, gewaerActionsData };

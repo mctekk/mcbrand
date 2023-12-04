@@ -144,29 +144,24 @@
 
     "gewaerActions": [
       {
-        "name": "CRM Integration",
-        "title": "Company and User Management in a single place.",
-        "desc": "Easily create, modify, group, remove, and set permission roles for companies and users."
+        "name": "Client Portal",
+        "title": "Client Portal",
+        "desc": "Enhance client interaction by keeping them updated on projects, securely uploading data, and easily tracking progress. Simplify communication without manual challenges."
       },
       {
-        "name": "White Label",
-        "title": "Customers are the most important part of any business.",
-        "desc": "Handle customer information, communication, and relationships in a single place. Manage your sales process and customer journey from lead to customer."
+        "name": "Agent Portal",
+        "title": "Agent Portal",
+        "desc": "Elevate team efficiency with Gewaer's Agent Management. Seamlessly monitor agents, boost productivity, and streamline commissions for a successful partnership."
       },
       {
-        "name": "Agent Management",
-        "title": "Handle your inventory in a single place.",
-        "desc": "Extend your e-commerce solution with headless bundles, create marketplaces, or build your own inventory management UI."
+        "name": "Business Market Places",
+        "title": "Business Marketplaces",
+        "desc": "Open new business avenues. A central hub for sellers, clients, and partners to buy seamlessly. Enjoy secure, personalized interactions for a smoother business experience."
       },
       {
-        "name": "Lead Management",
-        "title": "Add social media features to any app.",
+        "name": "Contract Hub",
+        "title": "Contract Hub",
         "desc": "Share products, follow users, create groups, messaging, comments, likes and more. All the building blocks you need to add a social to your app."
-      },
-      {
-        "name": "Agent Registration",
-        "title": "Connect Kanvas modules with other systems.",
-        "desc": "Set rules to trigger actions based on events you define within the Kanvas Ecosystem. After a lead is created, send it to your CRM or send a notification to your team. You define it."
       }
     ],
 
