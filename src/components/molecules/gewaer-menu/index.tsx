@@ -13,7 +13,7 @@ const menuItems = [
 const externalLinks = [
   {
     text: "Log In",
-    link: "https://www.gewaer.io/users/login",
+    link: "https://dev.app.gewaer.io/login",
     isExternal: true,
     className: "lg:border  lg:text-white   text-white xl:ml-64 ",
   },

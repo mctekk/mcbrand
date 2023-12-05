@@ -295,8 +295,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-gewaer-100 "
       messageDesc="Launch a platform for your business that allows your sales team to input new orders and potential leads.  "
       messageEnd="Gewaer will enable clients to view progress updates on their projects or to upload the necessary documents to finalize tasks.   "
-      upperMessage="Streamline business processes "
-      lowerMessage="to accommodate "
+      upperMessage=" A portal to your business: "
+      lowerMessage="accommodate "
       words={[" Clients", "Sellers", "Partners"]}
       colorDesc="text-white"
       colorFonts="text-white"
@@ -305,7 +305,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       
     ></Hero>,
     <CompletionTools
-      title="Portals helps you up-level customer experience"
+      title="Level-up customer experience"
       desc="Provide a secure and personalized method for clients, sellers, or partners to engage with your business data, products, and services, eliminating the necessity for manual interaction."
       img="/images/gview.png"
       colorFonts="text-gewaer-200"

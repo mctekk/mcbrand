@@ -95,7 +95,7 @@ export default function ListButtons({
             height={24}
             className="mb-10 "
           />
-           <div className="w-[80%]">
+           <div className={`w-[80%] ${top}`}>
           <h4 className="font-semibold  ">{data[imageIndex].title}</h4>
           <p className="">{data[imageIndex].desc}</p>
           </div>
