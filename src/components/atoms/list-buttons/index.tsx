@@ -19,6 +19,7 @@ interface ListProps {
   code?: boolean;
   double : 500 | 200 | 600
   top?: string
+  margenImagen?:string
 }
 export default function ListButtons({
   data,
@@ -26,7 +27,7 @@ export default function ListButtons({
   selected,
   code,
   double,
-  top
+  top,margenImagen
 }: ListProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const handleClick = (index: number) => {
@@ -66,7 +67,7 @@ export default function ListButtons({
     );
   } else {
     return (
-      <div className="flex space-x-48 xl:ml-64">
+      <div className="flex space-x-48 xl:ml-44">
         <div className="space-y-6 md:hidden flex-col hidden lg:flex ">
           {data.map((item, index) => (
             <motion.button
@@ -93,7 +94,7 @@ export default function ListButtons({
             alt={data[imageIndex].desc}
             width={double}
             height={24}
-            className="mb-10 "
+            className={`mb-10 ${margenImagen} `}
           />
            <div className={`w-[80%] ${top}`}>
           <h4 className="font-semibold  ">{data[imageIndex].title}</h4>

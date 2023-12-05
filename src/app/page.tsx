@@ -13,7 +13,11 @@ import { InstantChanges } from "@/components/organism/sections/home/instantChang
 import ImageChanger from "@/components/organism/sections/home/iteraction";
 import Sales from "@/components/organism/sections/home/sales";
 import { WhySalesAssistSalesProcess } from "@/components/organism/sections/home/whySalesAssistSales";
-import { actionsData, gewaerActionsData, kanvasActionsData } from "@/model/api/image-data/data";
+import {
+  actionsData,
+  gewaerActionsData,
+  kanvasActionsData,
+} from "@/model/api/image-data/data";
 import { industriesData } from "@/model/api/sales-data/data";
 
 import Menu from "@/components/molecules/menu";
@@ -302,7 +306,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorFonts="text-white"
       colorWords="text-white"
       gewaer
-      
     ></Hero>,
     <CompletionTools
       title="Level-up customer experience"
@@ -318,8 +321,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Digitalize your business: end manual tasks"
       desc="Gewaer offers a suite of features crafted to enhance efficiency and streamline operations, including dedicated client portals for personalized customer experiences, agent portals to empower your sales force, marketplaces for broader reach, secure contract hubs for seamless transactions, document management systems and more."
       double={600}
-      top="-mt-24"
-      center="text-center"
+      top="-mt-16 "
+      margenImagen="ml-16"
     />,
     <InfoSection
       desc="Gewaer offers a white-label UI that you can customize with your own branding: This includes changing logo, colors, fonts, and layout without any default branding."
@@ -333,7 +336,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-gewaer-200"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
       imgSize={450}
-      
     ></InfoSection>,
     <Brands
       imageUrls={gewaerImagesBrand}
