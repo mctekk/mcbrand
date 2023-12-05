@@ -18,13 +18,15 @@ interface ListProps {
   selected?: string;
   code?: boolean;
   double : 500 | 200 | 600
+  top?: string
 }
 export default function ListButtons({
   data,
   buttonColor,
   selected,
   code,
-  double
+  double,
+  top
 }: ListProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const handleClick = (index: number) => {
@@ -85,7 +87,7 @@ export default function ListButtons({
             </motion.button>
           ))}
         </div>
-        <div className="flex-col  justify-center mt-9 text-center hidden lg:flex ">
+        <div className={`flex-col  justify-center mt-9 text-center hidden lg:flex ${top} `}>
           <Image
             src={data[imageIndex].url}
             alt={data[imageIndex].desc}

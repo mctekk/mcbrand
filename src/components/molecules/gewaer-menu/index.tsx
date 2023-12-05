@@ -15,7 +15,7 @@ const externalLinks = [
     text: "Log In",
     link: "https://www.gewaer.io/users/login",
     isExternal: true,
-    className: "lg:border  lg:text-white   text-white lg:ml-64 ",
+    className: "lg:border  lg:text-white   text-white xl:ml-64 ",
   },
   {
     text: "Request Demo",

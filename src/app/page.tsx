@@ -293,19 +293,20 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <GA />,
     <Hero
       className="bg-gewaer-100 "
-      messageDesc="Gewaer facilitates fast and efficient communication by directly linking your platform  "
-      messageEnd="with sales teams, clients, and agents, enabling real-time data access for seamless interaction.      "
-      upperMessage="Take your business to the cloud: "
-      lowerMessage="no more "
-      words={[" Manual tasks", "Lost Leads", "Wasted time"]}
+      messageDesc="Launch a platform for your business that allows your sales team to input new orders and potential leads.  "
+      messageEnd="Gewaer will enable clients to view progress updates on their projects or to upload the necessary documents to finalize tasks.   "
+      upperMessage="Streamline business processes "
+      lowerMessage="to accommodate "
+      words={[" Clients", "Sellers", "Partners"]}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
       gewaer
+      
     ></Hero>,
     <CompletionTools
-      title="A real-time system that links your data with agents, salespeople, or customers."
-      desc="Gewaer provides a smooth integration with your current CRM or system, serving as an effective intermediary platform between your data and your agents or clients. This tool enables you to adeptly handle leads and agents, swiftly set up portals for clients or agents, and other features to improve your processes."
+      title="Portals helps you up-level customer experience"
+      desc="Provide a secure and personalized method for clients, sellers, or partners to engage with your business data, products, and services, eliminating the necessity for manual interaction."
       img="/images/gview.png"
       colorFonts="text-gewaer-200"
     />,
@@ -314,9 +315,11 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonColor="bg-white text-violet-500"
       selected="text-white"
       className="bg-gewaer-100 text-white"
-      title="Manage your leads, agents, and commissions with ease."
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      title="Digitalize your business: end manual tasks"
+      desc="Gewaer offers a suite of features crafted to enhance efficiency and streamline operations, including dedicated client portals for personalized customer experiences, agent portals to empower your sales force, marketplaces for broader reach, secure contract hubs for seamless transactions, document management systems and more."
       double={600}
+      top="-mt-24"
+      center="text-center"
     />,
     <InfoSection
       desc="Gewaer offers a white-label UI that you can customize with your own branding: This includes changing logo, colors, fonts, and layout without any default branding."

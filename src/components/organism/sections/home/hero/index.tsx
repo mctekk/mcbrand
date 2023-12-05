@@ -26,6 +26,7 @@ interface Props {
   kanvas?: boolean;
   gewaer?:boolean
   id?: string;
+  lowerI?:string
 }
 
 export default function Hero({
@@ -46,6 +47,7 @@ export default function Hero({
   kanvas,
   gewaer,
   id,
+  lowerI
 }: Props) {
   return (
     <div
@@ -82,7 +84,9 @@ export default function Hero({
                   />
                 </h1>
               </div>
+              
             </div>
+            <h1 className={`${colorWords}  md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] 2xl:text-[4.5rem]  slice ml-3 md:ml-0 lg:ml-0 lg:mt-2`}>{lowerI}</h1>
           </div>
 
           <div className="xl:w-3/4  md:mr-28 xl:ml-9">
