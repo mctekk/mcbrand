@@ -6,6 +6,7 @@ import Menu from "@/components/molecules/menu";
 import { usePageBuilder } from "@/model/interactions/use-page-builder";
 import McMenu from "@/components/molecules/mc-menu";
 import McPrivacyPolicy from "@/components/organism/sections/mc-policy";
+import { GaMc } from "@/components/atoms/analitiycs/mctekkGa";
 
 const PAGE_SECTIONS_TERMS_OF_SERVICE: Record<string, ReactNode> = {
   salesassist: [
@@ -26,6 +27,7 @@ const PAGE_SECTIONS_TERMS_OF_SERVICE: Record<string, ReactNode> = {
       iconColor="text-white"
     />,
     <McPrivacyPolicy />,
+    <GaMc/>,
     <Footer mctekk></Footer>,
   ],
 };

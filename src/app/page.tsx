@@ -37,6 +37,8 @@ import {
 import { GA } from "@/components/atoms/analitiycs";
 import { GaKanvas } from "@/components/atoms/analitiycs/kanvasGa";
 import GewaerForm from "@/components/organism/sections/home/gewaerContact";
+import { GaGewaer } from "@/components/atoms/analitiycs/gewaerGa";
+import { GaMc } from "@/components/atoms/analitiycs/mctekkGa";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -101,7 +103,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/McLogo.svg"
       iconColor="text-white"
     />,
-    <GA />,
+    <GaMc />,
     <Hero
       className="bg-black "
       buttonInfo=" Schedule a Meeting "
@@ -294,7 +296,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       logo="/images/Gewaer.svg"
       iconColor="text-white"
     />,
-    <GA />,
+    <GaGewaer />,
     <Hero
       className="bg-gewaer-100 "
       messageDesc="Launch a platform for your business that allows your sales team to input new orders and potential leads.  "
