@@ -72,7 +72,6 @@ export default function Header({menu,className,logo,iconColor}:Props) {
            {menu}
           </nav>
           </Dialog.Panel>
-          
         </Dialog>
       </Transition>
     </div>

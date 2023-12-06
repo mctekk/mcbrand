@@ -16,7 +16,7 @@ interface UseSimpleFormHook {
   handleSubmit: () => Promise<void>;
 }
 
-const useSimpleForm = (): UseSimpleFormHook => {
+const useGewaerForm = (): UseSimpleFormHook => {
   const initialFormData: FormData = {
     name: '',
     companyName: '',
@@ -72,4 +72,4 @@ const useSimpleForm = (): UseSimpleFormHook => {
   };
 };
 
-export default useSimpleForm;
+export default useGewaerForm;

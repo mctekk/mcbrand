@@ -12,7 +12,7 @@ export const metadata: Metadata = {
       case 'kanvas':
         return 'Swiftly deploy projects or enhance existing ones with our ready-to-use headless module';
       case 'gewaer':
-        return 'Gewaer Page';
+        return ' Launch a platform for your business that allows your sales team to input new orders and potential leads. Gewaer will enable clients to view progress updates on their projects or to upload the necessary documents to finalize tasks.';
       case 'mctekk':
         return 'MCTEKK is focused on developing solutions through software. With headless smart code we assure you will scale your business to the next level. The technologies we use include PHP, Laravel, AWS, VueJS, React Native, and much more.';
       case 'salesassist':

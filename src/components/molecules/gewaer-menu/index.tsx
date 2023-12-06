@@ -7,23 +7,21 @@ const menuItems = [
     text: "Home",
     link: "/",
   },
-  { text: "Features", link: "#learnMore" },
-  { text: "Learn more", link: "#learnMore" },
+  { text: "Features", link: "#features" },
+  { text: "Contact", link: "mailto:" },
 ];
 const externalLinks = [
   {
     text: "Log In",
-    link: "https://www.gewaer.io/users/login",
+    link: "https://dev.app.gewaer.io/login",
     isExternal: true,
-    className:
-      "lg:border  lg:text-white   text-white lg:ml-64 ",
+    className: "lg:border  lg:text-white   text-white xl:ml-64 ",
   },
   {
     text: "Request Demo",
-    link: "https://meetings.hubspot.com/jennherasme/kanvas",
+    link: "https://meetings.hubspot.com/jennherasme/gewaer-leads",
     isExternal: true,
-    className:
-      "lg:bg-white  lg:text-violet-500    text-white  ",
+    className: "lg:bg-white  lg:text-violet-500    text-white  ",
   },
 ];
 
@@ -46,6 +44,7 @@ export function GMenu({}) {
             link={item.link}
             isExternal={item.isExternal}
             className={item.className}
+            target="_blank"
           />
         ))}
       </div>
