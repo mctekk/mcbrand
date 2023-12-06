@@ -25,7 +25,7 @@ export function GewaerEmailForm  () {
         "https://crm.api.salesassist.io/v2/receivers/0bd19a61-28d2-4a44-9755-e291a3785f9c/lead",
         {
           email,
-          description: "KanvasLanding",
+          description: "GewaerLanding",
           people: {
             contacts: [
               {
