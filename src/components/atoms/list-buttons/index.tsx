@@ -17,14 +17,17 @@ interface ListProps {
   buttonColor?: string;
   selected?: string;
   code?: boolean;
-  double : 500 | 200
+  double : 500 | 200 | 600
+  top?: string
+  margenImagen?:string
 }
 export default function ListButtons({
   data,
   buttonColor,
   selected,
   code,
-  double
+  double,
+  top,margenImagen
 }: ListProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const handleClick = (index: number) => {
@@ -64,7 +67,7 @@ export default function ListButtons({
     );
   } else {
     return (
-      <div className="flex space-x-48 xl:ml-64">
+      <div className="flex space-x-48 xl:ml-44">
         <div className="space-y-6 md:hidden flex-col hidden lg:flex ">
           {data.map((item, index) => (
             <motion.button
@@ -76,8 +79,8 @@ export default function ListButtons({
               transition={{ duration: 1, ease: "linear", delay: index / 2 }}
               className={
                 index === imageIndex
-                  ? `${selected}   whitespace-nowrap outline outline-1  rounded-lg px-4 w-64 py-2  flex items-center justify-start text-left gap-2 transition-all duration-500 select-none  text-[1.20rem]`
-                  : ` ${buttonColor} text-[1.20rem] rounded-lg px-4 py-2 w-64 flex items-center justify-start  text-left gap-2 transition-all duration-500 select-none`
+                  ? `${selected}   whitespace-nowrap outline outline-1  rounded-lg px-4 w-72 py-2  flex items-center justify-start text-left gap-2 transition-all duration-500 select-none  text-[1.20rem]`
+                  : ` ${buttonColor} text-[1.20rem] rounded-lg px-4 py-2 w-72 flex items-center justify-start  text-left gap-2 transition-all duration-500 select-none`
               }
             >
               <MdInsights className="md:text-[1.75rem]" />
@@ -85,15 +88,15 @@ export default function ListButtons({
             </motion.button>
           ))}
         </div>
-        <div className="flex-col  justify-center mt-9 text-center hidden lg:flex ">
+        <div className={`flex-col  justify-center mt-9 text-center hidden lg:flex ${top} `}>
           <Image
             src={data[imageIndex].url}
             alt={data[imageIndex].desc}
             width={double}
             height={24}
-            className="mb-10 "
+            className={`mb-10 ${margenImagen} `}
           />
-           <div className="w-[80%]">
+           <div className={`w-[80%] ${top}`}>
           <h4 className="font-semibold  ">{data[imageIndex].title}</h4>
           <p className="">{data[imageIndex].desc}</p>
           </div>

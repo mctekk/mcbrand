@@ -13,7 +13,11 @@ import { InstantChanges } from "@/components/organism/sections/home/instantChang
 import ImageChanger from "@/components/organism/sections/home/iteraction";
 import Sales from "@/components/organism/sections/home/sales";
 import { WhySalesAssistSalesProcess } from "@/components/organism/sections/home/whySalesAssistSales";
-import { actionsData, kanvasActionsData } from "@/model/api/image-data/data";
+import {
+  actionsData,
+  gewaerActionsData,
+  kanvasActionsData,
+} from "@/model/api/image-data/data";
 import { industriesData } from "@/model/api/sales-data/data";
 
 import Menu from "@/components/molecules/menu";
@@ -32,6 +36,7 @@ import {
 } from "@/model/api/instant-changes/data";
 import { GA } from "@/components/atoms/analitiycs";
 import { GaKanvas } from "@/components/atoms/analitiycs/kanvasGa";
+import GewaerForm from "@/components/organism/sections/home/gewaerContact";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -292,54 +297,45 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <GA />,
     <Hero
       className="bg-gewaer-100 "
-      buttonInfo="Request Demo"
-      buttonLink="https://meetings.hubspot.com/jennherasme/gewaer-leads"
-      messageDesc="Gewaer facilitates fast and efficient communication by directly linking your platform  "
-      messageEnd="with sales teams, clients, and agents, enabling real-time data access for seamless interaction.      "
-      upperMessage="Take your business to the cloud  "
-      lowerMessage="no more "
-      words={[" Manual tasks", "Lost Leads", "Wasted time"]}
+      messageDesc="Launch a platform for your business that allows your sales team to input new orders and potential leads.  "
+      messageEnd="Gewaer will enable clients to view progress updates on their projects or to upload the necessary documents to finalize tasks.   "
+      upperMessage=" A portal to your business: "
+      lowerMessage="accommodate "
+      words={[" Clients", "Sellers", "Partners"]}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
-      buttonColor="bg-white text-gewaer-100"
-      button
+      gewaer
     ></Hero>,
     <CompletionTools
-      title="Manage your leads, agents, and commissions with ease."
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
+      title="Level-up customer experience"
+      desc="Provide a secure and personalized method for clients, sellers, or partners to engage with your business data, products, and services, eliminating the necessity for manual interaction."
       img="/images/gview.png"
       colorFonts="text-gewaer-200"
     />,
     <ImageChanger
-      data={kanvasActionsData}
+      data={gewaerActionsData}
       buttonColor="bg-white text-violet-500"
       selected="text-white"
       className="bg-gewaer-100 text-white"
-      title="Manage your leads, agents, and commissions with ease."
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      double={500}
+      title="Digitalize your business: end manual tasks"
+      desc="Gewaer offers a suite of features crafted to enhance efficiency and streamline operations, including dedicated client portals for personalized customer experiences, agent portals to empower your sales force, marketplaces for broader reach, secure contract hubs for seamless transactions, document management systems and more."
+      double={600}
+      top="-mt-16 "
+      margenImagen="ml-16"
     />,
     <InfoSection
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      title="Manage your leads, agents, and commissions with ease."
-      img="/images/Frame.jpg"
-      button={false}
-      backColor="bg-violet-50"
-      textColor="text-gewaer-200"
-      buttonLink="/"
-    ></InfoSection>,
-    <InfoSection
-      desc="Our SaaS solution connects to your CRM and allows for managing leads, agents, commissions, individual agent websites, referral programs, and more"
-      title="Manage your leads, agents, and commissions with ease."
-      img="/images/Frame.jpg"
-      reverse
+      desc="Gewaer offers a white-label UI that you can customize with your own branding: This includes changing logo, colors, fonts, and layout without any default branding."
+      title="Branding Free"
+      linkLetters="You can also add a custom domain and customize any email and communication."
+      img="/images/stack.png"
       button={true}
       buttonColor="bg-gewaer-100 "
       buttonTitle="Request Demo"
       backColor="bg-violet-50"
       textColor="text-gewaer-200"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
+      imgSize={450}
     ></InfoSection>,
     <Brands
       imageUrls={gewaerImagesBrand}
@@ -347,7 +343,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       titleColor="text-white"
       className="bg-gewaer-100"
     ></Brands>,
-
+    // <GewaerForm id="Contact"/>,
     <Footer gewaer></Footer>,
   ],
 };

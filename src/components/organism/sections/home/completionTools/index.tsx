@@ -20,7 +20,7 @@ export default function CompletionTools({
   back,
 }: Props) {
   return (
-    <div className={`section mx-auto ${back} `}>
+    <div className={`section mx-auto ${back} xl:ml-12`}>
       {" "}
       <Section
         className={`flex flex-col gap-6   lg:w-full lg:px-16 mx-auto   ${colorFonts}  `}

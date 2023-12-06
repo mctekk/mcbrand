@@ -142,6 +142,29 @@
       }
     ],
 
+    "gewaerActions": [
+      {
+        "name": "Client Portal",
+        "title": "Client Portal",
+        "desc": "Enhance client interaction by keeping them updated on projects, securely uploading data, and easily tracking progress. Simplify communication without manual challenges."
+      },
+      {
+        "name": "Agent Portal",
+        "title": "Agent Portal",
+        "desc": "Elevate team efficiency with Gewaer's Agent Management. Seamlessly monitor agents, boost productivity, and streamline commissions for a successful partnership."
+      },
+      {
+        "name": "Business Market Places",
+        "title": "Business Marketplaces",
+        "desc": "Open new business avenues. A central hub for sellers, clients, and partners to buy seamlessly. Enjoy secure, personalized interactions for a smoother business experience."
+      },
+      {
+        "name": "Contract Hub",
+        "title": "Contract Hub",
+        "desc": "Share products, follow users, create groups, messaging, comments, likes and more. All the building blocks you need to add a social to your app."
+      }
+    ],
+
     "automated": {
       "title": "Complete Sales Faster with Automated Workflows",
       "desc": "Info-gathering tools are scattered and don’t play nice together, we’re here to fix that. Connect all your info-gathering tools and create perfect custom-made workflows. Automate your sales team's work so they can crush sales goals."

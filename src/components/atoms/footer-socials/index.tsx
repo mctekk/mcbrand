@@ -8,6 +8,8 @@ type Props = {
   mctekk?: boolean;
   sales?: boolean;
   kanvas?: boolean;
+  gewaer?: boolean;
+  
 };
 
 const social = [
@@ -16,6 +18,12 @@ const social = [
     icon: <BsLinkedin />,
   },
   { url: "https://twitter.com/SalesAssistSaaS", icon: <BsTwitter /> },
+];
+const gsocial = [
+  {
+    url: "https://www.linkedin.com/showcase/gewaer/",
+    icon: <BsLinkedin />,
+  },
 ];
 const kanvasSocial = [
   {
@@ -34,7 +42,7 @@ const MCsocial = [
   { url: "https://www.instagram.com/mctekk", icon: <BsInstagram /> },
 ];
 
-export default function FooterSocials({ kind, sales, kanvas }: Props) {
+export default function FooterSocials({ kind, sales, kanvas,gewaer }: Props) {
   const socialClasses = classNames("text-[1.6rem] text-white rounded", {
     "bg-sky-700": kanvas,
     "bg-zinc-800": kind === "light" && sales,
@@ -43,6 +51,23 @@ export default function FooterSocials({ kind, sales, kanvas }: Props) {
     return (
       <div className="flex gap-6 w-full flex-wrap md:justify-end">
         {kanvasSocial.map((s, i) => (
+          <a
+            key={i}
+            href={s.url}
+            target="_blank"
+            rel="noreferrer"
+            className={socialClasses}
+          >
+            {s.icon}
+          </a>
+        ))}
+      </div>
+    );
+  }
+  if (gewaer) {
+    return (
+      <div className="flex gap-6 w-full flex-wrap md:justify-end">
+        {gsocial.map((s, i) => (
           <a
             key={i}
             href={s.url}

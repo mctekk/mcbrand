@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/atoms/button/base";
 import { Solid } from "@/components/atoms/button/solid";
+import { GewaerEmailForm } from "@/components/atoms/gewaerForm";
 
 import { Section } from "@/components/atoms/section";
 import { EmailForm } from "@/components/atoms/wait-form";
@@ -23,7 +24,9 @@ interface Props {
   buttonColor?: string;
   button?: boolean;
   kanvas?: boolean;
+  gewaer?:boolean
   id?: string;
+  lowerI?:string
 }
 
 export default function Hero({
@@ -42,7 +45,9 @@ export default function Hero({
   buttonColor = "bg-orange-500",
   button,
   kanvas,
+  gewaer,
   id,
+  lowerI
 }: Props) {
   return (
     <div
@@ -79,7 +84,9 @@ export default function Hero({
                   />
                 </h1>
               </div>
+              
             </div>
+            <h1 className={`${colorWords}  md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] 2xl:text-[4.5rem]  slice ml-3 md:ml-0 lg:ml-0 lg:mt-2`}>{lowerI}</h1>
           </div>
 
           <div className="xl:w-3/4  md:mr-28 xl:ml-9">
@@ -122,7 +129,20 @@ export default function Hero({
               </div>
             </div>
           )}
-          
+           {gewaer && (
+            <div className=" mx-auto xl:ml-28 lg:ml-0 ml-0 2xl:ml-36 md:ml-2 ">
+              {" "}
+              <h4
+                className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0 font-semibold`}
+              >
+                Subscribe to get product updates:
+              </h4>{" "}
+              <div className="ml-5 md:ml-0">
+                {" "}
+                <GewaerEmailForm />{" "}
+              </div>
+            </div>
+          )}
         </div>
       </Section>
     </div>

@@ -15,7 +15,7 @@ interface ImageData {
 interface DropdownProps {
   data: ImageData[];
   code?: boolean;
-  double : 500 | 200
+  double : 500 | 200 | 600
 }
 
 export default function Dropdown({ data, code,double }: DropdownProps) {
