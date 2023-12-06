@@ -9,6 +9,7 @@ import { ReactNode } from "react";
 
 import { McPolicyData } from "@/model/api/policy-data/data";
 import McPrivacyPolicy from "@/components/organism/sections/mc-policy";
+import { GaMc } from "@/components/atoms/analitiycs/mctekkGa";
 
 const PAGE_SECTIONS_PRIVACY: Record<string, ReactNode> = {
   salesassist: [
@@ -29,6 +30,7 @@ const PAGE_SECTIONS_PRIVACY: Record<string, ReactNode> = {
       logo="/images/McLogo.svg"
       iconColor="text-white"
     />,
+    <GaMc/>,
     <McPrivacyPolicy />,
     <Footer mctekk></Footer>,
   ],
