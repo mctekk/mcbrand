@@ -17,6 +17,7 @@ import Brands from "@/components/atoms/brands";
 import { imagesBrand } from "@/model/api";
 import SimpleForm from "@/components/organism/sections/home/formContact";
 import Behind from "@/components/organism/sections/about-us/behind-laptos";
+import { GaMc } from "@/components/atoms/analitiycs/mctekkGa";
 
 
 const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
@@ -41,7 +42,7 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       logo="/images/McLogo.svg"
       iconColor="text-white"
     />,
-    <GA />,
+    <GaMc />,
     <Hero
       buttonInfo="Get Started"
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
