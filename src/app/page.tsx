@@ -158,20 +158,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       isCase
       upperLogo="/images/g1.svg"
     ></InfoSection>,
-    // <InfoSection
-    //   desc="Our solution connects to your CRM and allows to have an Agent Portal connected to your CRM and manage individual agent websites, referral programs, and more."
-    //   title="All Managed with ease"
-    //   img="/images/Dpro.svg"
-    //   button={true}
-    //   buttonTitle="Learn More "
-    //   buttonColor="bg-sky-600"
-    //   backColor="bg-sky-700"
-    //   buttonLink="https://gewaer.webflow.io/"
-    //   textColor="text-white"
-    //   imgSize={490}
-    //   isCase
-    //   upperLogo="/images/d1.svg"
-    // ></InfoSection>,
     <Brands
       imageUrls={imagesBrand}
       title={translate("brandSection.title")}
@@ -191,17 +177,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonColor="bg-mctekk-100"
       buttonTitle={translate("weGotSection.buttonTitle")}
     ></InfoSection>,
-    // <InfoSection
-    //   desc=" We're committed to empowering your business with our comprehensive suite of services and products. With Kanvas, we simplify app development, allowing you to focus on crafting outstanding experiences.    "
-    //   title="Our clients    "
-    //   img="/images/ser.jpg"
-    //   button={true}
-    //   buttonColor="bg-mctekk-100"
-    //   buttonTitle="Let's get started!"
-    //   backColor="bg-white"
-    //   buttonLink="#contact"
-    //   id="Services"
-    // ></InfoSection>,
     <SimpleForm id="ContactForm"></SimpleForm>,
     <Footer mctekk></Footer>,
   ],
@@ -215,13 +190,13 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <GaKanvas />,
     <Hero
       className="bg-sky-600 "
-      buttonInfo="Get Notified"
+      buttonInfo={translate("kanvasHero.buttonInfo")}
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
-      messageDesc="Deploy new projects at super-speed or enhance existing ones by utilizing our headless modules as building blocks for your application."
-      messageEnd="We provide ready-made, easy to configure CRM, Inventory, Social Interactions, and Multitenancy components."
-      upperMessage="Don't start from scratch"
-      lowerMessage=" Headless Modules for"
-      words={["agencies", "startups", "freelancers"]}
+      messageDesc={translate("kanvasHero.messageDesc")}
+      messageEnd={translate("kanvasHero.messageEnd")}
+      upperMessage={translate("kanvasHero.upperMessage")}
+      lowerMessage={translate("kanvasHero.lowerMessage")}
+      words={Array.from(translate("kanvasHero.words"))}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
@@ -230,9 +205,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       id="Newsletter"
     ></Hero>,
     <CompletionTools
-      title="Your Backend Complement"
-      desc="
-      Kanvas Niche is not a replacement for your existing development framework or backend-as-a-service. Instead, it complements them by providing specific modules for common problems that you would otherwise need to develop yourself."
+      title={translate("kanvasTools.title")}
+      desc={translate("kanvasTools.desc")}
       img="/images/HeroKanvas.png"
       colorFonts="text-sky-600"
       back="bg-white"
@@ -247,16 +221,16 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       double={500}
     />,
     <Automated
-      desc="When undertaking custom development, backend data management can be a significant challenge. To address this, we offer a versatile admin interface that provides comprehensive control over all modules."
+      desc={translate("kanvasAutomated.desc")}
       img={"/images/kanvasBoard.png"}
-      title="Control every aspect of the application ecosystem"
+      title={translate("kanvasAutomated.title")}
       descColor="text-sky-700"
       titleColor="text-sky-700"
       bg="bg-white"
     />,
     <InfoSection
-      desc="Kanvas Modules are MIT licensed to ensure that you are in full control of your headless stack."
-      title="Open Source"
+      desc={translate("kanvasGit.desc")}
+      title={translate("kanvasGit.title")}
       img="/images/gt.png"
       imgSize={400}
       button={false}
@@ -266,23 +240,22 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       link="https://github.com/bakaphp/kanvas-ecosystem-api"
     ></InfoSection>,
     <InfoSection
-      desc="Simplify your app development using our pre-built components based on the Atomic Design concept. Integrated seamlessly with Kanvas Niche, they offer a quick solution for launching your frontend app effortlessly."
-      title="Get a head start with Phoenix"
+      desc={translate("kanvasPhoenix.desc")}
+      title={translate("kanvasPhoenix.title")}
       img="/images/Gewaer.png"
       reverse
       button={true}
       buttonColor="bg-sky-700 "
-      buttonTitle="Get Notified"
+      buttonTitle={translate("kanvasPhoenix.button")}
       backColor="bg-white"
       textColor="text-sky-700"
       buttonLink="#Newsletter"
       imgSize={580}
       space="mt-4"
     ></InfoSection>,
-    // <VerticalImageStack images={imagesDataKanvas}></VerticalImageStack>,
     <Brands
       imageUrls={kanvasImagesBrand}
-      title="Brands that trust us"
+      title={translate("brandSection.title")}
       slider
       titleColor="text-white"
       className="bg-sky-700"
@@ -299,19 +272,19 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <GaGewaer />,
     <Hero
       className="bg-gewaer-100 "
-      messageDesc="Launch a platform for your business that allows your sales team to input new orders and potential leads.  "
-      messageEnd="Gewaer will enable clients to view progress updates on their projects or to upload the necessary documents to finalize tasks.   "
-      upperMessage=" A portal to your business: "
-      lowerMessage="accommodate "
-      words={[" Clients", "Sellers", "Partners"]}
+      messageDesc={translate("gewaerHero.messageDesc")}
+      messageEnd={translate("gewaerHero.messageEnd")}
+      upperMessage={translate("gewaerHero.upperMessage")}
+      lowerMessage={translate("gewaerHero.lowerMessage")}
+      words={Array.from(translate("gewaerHero.words"))}
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
       gewaer
     ></Hero>,
     <CompletionTools
-      title="Level-up customer experience"
-      desc="Provide a secure and personalized method for clients, sellers, or partners to engage with your business data, products, and services, eliminating the necessity for manual interaction."
+      title={translate("GewaerTools.title")}
+      desc={translate("GewaerTools.desc")}
       img="/images/gview.png"
       colorFonts="text-gewaer-200"
     />,
@@ -320,20 +293,20 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonColor="bg-white text-violet-500"
       selected="text-white"
       className="bg-gewaer-100 text-white"
-      title="Digitalize your business: end manual tasks"
-      desc="Gewaer offers a suite of features crafted to enhance efficiency and streamline operations, including dedicated client portals for personalized customer experiences, agent portals to empower your sales force, marketplaces for broader reach, secure contract hubs for seamless transactions, document management systems and more."
+      title={translate("changer.title")}
+      desc={translate("changer.desc")}
       double={600}
       top="-mt-16 "
       margenImagen="ml-16"
     />,
     <InfoSection
-      desc="Gewaer offers a white-label UI that you can customize with your own branding: This includes changing logo, colors, fonts, and layout without any default branding."
-      title="Branding Free"
-      linkLetters="You can also add a custom domain and customize any email and communication."
+      desc={translate("branding.desc")}
+      title={translate("branding.title")}
+      linkLetters={translate("branding.linkLetters")}
       img="/images/stack.png"
       button={true}
       buttonColor="bg-gewaer-100 "
-      buttonTitle="Request Demo"
+      buttonTitle={translate("branding.buttonTitle")}
       backColor="bg-violet-50"
       textColor="text-gewaer-200"
       buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
@@ -341,11 +314,10 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     ></InfoSection>,
     <Brands
       imageUrls={gewaerImagesBrand}
-      title="Brands that trust us"
+      title={translate("brandSection.title")}
       titleColor="text-white"
       className="bg-gewaer-100"
     ></Brands>,
-    // <GewaerForm id="Contact"/>,
     <Footer gewaer></Footer>,
   ],
 };

@@ -3,6 +3,7 @@ import React from "react";
 import Input from "@/components/atoms/input";
 
 import Textarea from "@/components/atoms/text-area";
+import { translate } from "@/locales";
 
 interface FormData {
   name: string;
@@ -30,7 +31,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="name"
           >
-           Name
+           {translate("contactMcFormField.name")}
           </label>
           <Input
             type="text"
@@ -47,7 +48,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="companyName"
           >
-            Company Name
+           {translate("contactMcFormField.companyName")}
           </label>
           <Input
             type="text"
@@ -64,7 +65,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
           className="block text-gray-700 text-sm font-bold mb-2"
           htmlFor="email"
         >
-          Email
+           {translate("contactMcFormField.email")}
         </label>
         <Input
           type="email"
@@ -80,7 +81,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
           className="block text-gray-700 text-sm font-bold mb-2"
           htmlFor="budget"
         >
-          Phone
+          {translate("contactMcFormField.phone")}
         </label>
         <Input
           type="phone"
@@ -96,7 +97,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
           className="block text-gray-700 text-sm font-bold mb-2"
           htmlFor="message"
         >
-          Description
+           {translate("contactMcFormField.description")}
         </label>
         <Textarea
           name="message"
