@@ -5,6 +5,7 @@ import FormFields from "@/components/molecules/form-fields";
 import useSimpleForm from "@/model/interactions/use-form";
 import Swal from "sweetalert2";
 import { BsCheck } from "react-icons/bs";
+import { translate } from "@/locales";
 
 interface Props {
   id?: string;
@@ -29,14 +30,12 @@ function SimpleForm({ id }: Props) {
     <div className="section" id={id}>
       <div className=" text-center">
         <div className="">
-          <p className="text-orange-300 font-semibold  ">Contact us</p>
-          <p className="text-[3rem] font-semibold">Let's work together!</p>
+          <p className="text-orange-300 font-semibold  ">{translate("contactMcForm.title")}</p>
+          <p className="text-[3rem] font-semibold">{translate("contactMcForm.subTitle")}</p>
         </div>
         <div className="w-fit mx-auto text-[1.185rem] max-w-xl justify-center items-center ">
           <p className="">
-            MCTEKK is dedicated to problem-solving, creating solutions, and
-            growing businesses across all America. We’re here to help you
-            develop your product.
+          {translate("contactMcForm.desc")}
           </p>
         </div>
       </div>
@@ -50,7 +49,7 @@ function SimpleForm({ id }: Props) {
             {formSubmitted ? (
               <div className="flex">
                 <p className="text-black text-[1.2rem] font-semibold">
-                  Form submitted we will we will be with you soon
+                {translate("contactMcForm.afterM")}
                 </p>
                 <div className="-mt-1 text-[2rem]">
                   <BsCheck></BsCheck>
@@ -61,7 +60,7 @@ function SimpleForm({ id }: Props) {
                 className="bg-black hover:bg-mctekk-100 text-white font-bold py-2 px-4 rounded-none focus:outline-none focus:shadow-outline w-full items-center justify-center"
                 type="submit"
               >
-                Send Message
+                {translate("contactMcForm.button")}
               </Button>
             )}
           </div>

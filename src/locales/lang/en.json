@@ -913,5 +913,86 @@
     "title": "We’ve got you covered",
     "buttonTitle": "Let's get started!",
     "linkLetters": "Schedule a meeting with us to learn more about how we can assist you with your business needs"
+  },
+  "aboutMcHero": {
+    "buttonInfo": " Get Started ",
+    "messageDesc": "MCTEKK is your partner in different key areas: Headless E-commerce, Data Analytics and Community. We base our solutions on a new approach we call",
+    "messageEnd": " Kanvas Graph Api Layer, in order to help you scale your business to the next level.",
+    "lowerMessage": "We are Mctekk"
+  },
+  "aboutSectionOne": {
+    "desc": "We are deeply committed to addressing business challenges through ingenious coding solutions. In collaboration with our valued partners, we have pinpointed specific domains where we are confident in our ability to drive meaningful change.    ",
+    "title": "Our Mission"
+  },
+  "aboutSectionTwo": {
+    "desc": "Whether it's enhancing E-commerce platforms, optimizing inventory management systems, or elevating client portals, our extensive experience with a diverse clientele has equipped us to tackle your software-related challenges effectively, enabling you to concentrate on your company's overarching objectives."
+  },
+  "brands": {
+    "title": "Brands that trust us"
+  },
+  "behind": {
+    "title": "Behind the laptops",
+    "subTitle": "The founding team’s principles revolve around providing an atmosphere in which",
+    "desc": "our team is able to work on things that we are passionate about and make us happy."
+  },
+  "contactMcForm": {
+    "title": "Contact us",
+    "subTitle": "Let's work together!",
+    "desc": " MCTEKK is dedicated to problem-solving, creating solutions, and growing businesses across all America. We’re here to help you develop your product.",
+    "afterM": "Form submitted we will we will be with you soon",
+    "button": "Send Message"
+  },
+  "contactMcFormField": {
+    "name": "Name",
+    "companyName": "Company Name",
+    "email": "Email",
+    "phone": "Phone",
+    "description": "Description"
+  },
+  "kanvasHero": {
+    "buttonInfo": " Get Notified ",
+    "messageDesc": "Deploy new projects at super-speed or enhance existing ones by utilizing our headless modules as building blocks for your application.",
+    "messageEnd": " We provide ready-made, easy to configure CRM, Inventory, Social Interactions, and Multitenancy components.",
+    "lowerMessage": "Headless Modules for",
+    "upperMessage": "Don't start from scratch",
+    "words": ["agencies", "startups", "freelancers"]
+  },
+  "kanvasTools": {
+    "title": "Your Backend Complement",
+    "desc": "Kanvas Niche is not a replacement for your existing development framework or backend-as-a-service. Instead, it complements them by providing specific modules for common problems that you would otherwise need to develop yourself."
+  },
+  "kanvasAutomated": {
+    "title": "Control every aspect of the application ecosystem",
+    "desc": "When undertaking custom development, backend data management can be a significant challenge. To address this, we offer a versatile admin interface that provides comprehensive control over all modules."
+  },
+  "kanvasGit": {
+    "desc": "Kanvas Modules are MIT licensed to ensure that you are in full control of your headless stack.",
+    "title": "Open Source"
+  },
+  "kanvasPhoenix": {
+    "desc": "Simplify your app development using our pre-built components based on the Atomic Design concept. Integrated seamlessly with Kanvas Niche, they offer a quick solution for launching your frontend app effortlessly.",
+    "title": "Get a head start with Phoenix",
+    "button": "Get Notified"
+  },
+  "gewaerHero": {
+    "messageDesc": "Launch a platform for your business that allows your sales team to input new orders and potential leads.  ",
+    "messageEnd": "Gewaer will enable clients to view progress updates on their projects or to upload the necessary documents to finalize tasks.   ",
+    "upperMessage": " A portal to your business: ",
+    "lowerMessage": "accommodate ",
+    "words": [" Clients", "Sellers", "Partners"]
+  },
+  "GewaerTools": {
+    "title": "Level-up customer experience",
+    "desc": "Provide a secure and personalized method for clients, sellers, or partners to engage with your business data, products, and services, eliminating the necessity for manual interaction."
+  },
+  "changer": {
+    "title": "Digitalize your business: end manual tasks",
+    "desc": "Gewaer offers a suite of features crafted to enhance efficiency and streamline operations, including dedicated client portals for personalized customer experiences, agent portals to empower your sales force, marketplaces for broader reach, secure contract hubs for seamless transactions, document management systems and more."
+  },
+  "branding": {
+    "desc": "Gewaer offers a white-label UI that you can customize with your own branding: This includes changing logo, colors, fonts, and layout without any default branding.",
+    "title": "Branding Free",
+    "buttonTitle":"Request Demo",
+    "linkLetters": "You can also add a custom domain and customize any email and communication."
   }
 }
