@@ -18,6 +18,7 @@ import { imagesBrand } from "@/model/api";
 import SimpleForm from "@/components/organism/sections/home/formContact";
 import Behind from "@/components/organism/sections/about-us/behind-laptos";
 import { GaMc } from "@/components/atoms/analitiycs/mctekkGa";
+import { translate } from "@/locales";
 
 
 const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
@@ -44,11 +45,11 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
     />,
     <GaMc />,
     <Hero
-      buttonInfo="Get Started"
+      buttonInfo={translate("aboutMcHero.buttonInfo")}
       buttonLink="https://meetings.hubspot.com/jennifer-herasme"
-      messageDesc="MCTEKK is your partner in different key areas: Headless E-commerce, Data Analytics and Community. We base our solutions on a new approach we call "
-      messageEnd=" Kanvas Graph Api Layer, in order to help you scale your business to the next level."
-      lowerMessage="We are Mctekk"
+      messageDesc={translate("aboutMcHero.messageDesc")}
+      messageEnd={translate("aboutMcHero.messageEnd")}
+      lowerMessage={translate("aboutMcHero.lowerMessage")}
       words={[]}
       colorDesc="text-white"
       colorFonts="text-white"
@@ -58,15 +59,15 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       className="bg-cover bg-center bg-black fill-black"
     ></Hero>,
     <InfoSection
-      desc="We are deeply committed to addressing business challenges through ingenious coding solutions. In collaboration with our valued partners, we have pinpointed specific domains where we are confident in our ability to drive meaningful change. "
-      title="Our Mission"
+      desc={translate("aboutSectionOne.desc")}
+      title={translate("aboutSectionOne.title")}
       img="/images/comp.jpg"
       button={false}
       backColor="bg-white"
       buttonLink=""
     ></InfoSection>,
     <InfoSection
-      desc="Whether it's enhancing E-commerce platforms, optimizing inventory management systems, or elevating client portals, our extensive experience with a diverse clientele has equipped us to tackle your software-related challenges effectively, enabling you to concentrate on your company's overarching objectives."
+      desc={translate("aboutSectionTwo.desc")}
       img="/images/Gewaer.jpg"
       button={false}
       reverse={true}
@@ -75,10 +76,10 @@ const PAGE_SECTIONS_ABOUT_US: Record<string, ReactNode> = {
       imgSize={480}
       
     ></InfoSection>,
-    <Brands imageUrls={imagesBrand} title="Brands that trust us" titleColor="text-white" className="bg-black" />,
-   <Behind></Behind>,
-    <SimpleForm id="ContactForm"></SimpleForm>,
-    <Footer mctekk></Footer>,
+    <Brands imageUrls={imagesBrand} title={translate("brands.title")} titleColor="text-white" className="bg-black" />,
+   <Behind/>,
+    <SimpleForm id="ContactForm"/>,
+    <Footer mctekk/>,
   ],
 };
 
