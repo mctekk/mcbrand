@@ -3,7 +3,6 @@ import React from "react";
 import Input from "@/components/atoms/input";
 
 import Textarea from "@/components/atoms/text-area";
-import { translate } from "@/locales";
 
 interface FormData {
   name: string;
@@ -31,7 +30,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="name"
           >
-           {translate("contactMcFormField.name")}
+            Name
           </label>
           <Input
             type="text"
@@ -40,7 +39,6 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
             value={formData.name}
             onChange={onChange}
             required
-
           />
         </div>
         <div className="mb-4">
@@ -48,7 +46,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="companyName"
           >
-           {translate("contactMcFormField.companyName")}
+            Company Name
           </label>
           <Input
             type="text"
@@ -65,7 +63,7 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
           className="block text-gray-700 text-sm font-bold mb-2"
           htmlFor="email"
         >
-           {translate("contactMcFormField.email")}
+          Email
         </label>
         <Input
           type="email"
@@ -81,23 +79,27 @@ function FormFields({ formData, onChange }: FormFieldsProps) {
           className="block text-gray-700 text-sm font-bold mb-2"
           htmlFor="budget"
         >
-          {translate("contactMcFormField.phone")}
+          Budget
         </label>
-        <Input
-          type="phone"
-          name="Phone"
-          placeholder="Your Phone"
+        <select
+          className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          name="budget"
           value={formData.budget}
           onChange={onChange}
           required
-        />
+        >
+          <option value="$10,000">$10,000</option>
+          <option value="$10,000 - $25,000">$10,000 - $25,000</option>
+          <option value="$25,000 - $50,000">$25,000 - $50,000</option>
+          <option value="To be determined">To be determined</option>
+        </select>
       </div>
       <div className="mb-6">
         <label
           className="block text-gray-700 text-sm font-bold mb-2"
           htmlFor="message"
         >
-           {translate("contactMcFormField.description")}
+          Message
         </label>
         <Textarea
           name="message"
