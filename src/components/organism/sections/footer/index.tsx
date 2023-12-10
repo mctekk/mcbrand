@@ -127,7 +127,7 @@ export function Footer({
               )}
             </div>
           ) : gewaer? <a href="http://mctekk.com/">Made With 💜 By mctekk </a>:(
-            
+
             <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
               {[
                 { name: "Privacy Policy", path: "/privacy-policy" },
