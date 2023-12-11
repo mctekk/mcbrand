@@ -141,6 +141,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-white"
       imgSize={400}
       isCase
+      isUpperLogo
       upperLogo="/images/k1.svg"
     ></InfoSection>,
     <InfoSection
@@ -156,6 +157,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       imgSize={400}
       reverse
       isCase
+      isUpperLogo
       upperLogo="/images/g1.svg"
     ></InfoSection>,
     <Brands
