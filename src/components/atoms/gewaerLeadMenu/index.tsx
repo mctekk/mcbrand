@@ -14,17 +14,11 @@ const externalLinks = [
     text: "Log In",
     link: "https://dev.app.gewaer.io/login",
     isExternal: true,
-    className: "lg:border  lg:text-white   text-white xl:ml-64 ",
-  },
-  {
-    text: "Request Demo",
-    link: "https://meetings.hubspot.com/jennherasme/gewaer-leads",
-    isExternal: true,
-    className: "lg:bg-white  lg:text-violet-500    text-white  ",
+    className: "lg:border  lg:text-gewaer-100   text-white lg:bg-white xl:ml-64 ",
   },
 ];
 
-export function GMenu({}) {
+export function GLMenu({}) {
   return (
     <ul className="lg:flex ">
       {menuItems.map((item, index) => (

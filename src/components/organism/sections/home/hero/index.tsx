@@ -27,6 +27,7 @@ interface Props {
   gewaer?:boolean
   id?: string;
   lowerI?:string
+  lead?:boolean
 }
 
 export default function Hero({
@@ -47,7 +48,8 @@ export default function Hero({
   kanvas,
   gewaer,
   id,
-  lowerI
+  lowerI,
+  lead
 }: Props) {
   return (
     <div
@@ -143,6 +145,7 @@ export default function Hero({
               </div>
             </div>
           )}
+         
         </div>
       </Section>
     </div>
