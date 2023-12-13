@@ -22,6 +22,7 @@ interface Props {
   linkLetters?: string;
   finalLink?: string;
   linkColor?:string
+  isUpperLogo?:boolean
 }
 
 export default function InfoSection({
@@ -44,6 +45,7 @@ export default function InfoSection({
   finalLink,
   linkLetters,
   linkColor,
+  isUpperLogo
 }: Props) {
   reverse ? "" : (space = "2xl:mr-40");
   return (
@@ -58,7 +60,7 @@ export default function InfoSection({
             isCase ? "xl:w-2/4 xl:ml-32 " : "xl:w-1/2 "
           } xl:ml-48  ${reverse ? "2xl:mr-3" : "ml-0"} ${textColor} `}
         >
-          {isCase ? (
+          {isCase && isUpperLogo? (
             <Image
               alt="Logo"
               src={upperLogo || ""}
