@@ -39,8 +39,9 @@ import { GaKanvas } from "@/components/atoms/analitiycs/kanvasGa";
 import GewaerForm from "@/components/organism/sections/home/gewaerContact";
 import { GaGewaer } from "@/components/atoms/analitiycs/gewaerGa";
 import { GaMc } from "@/components/atoms/analitiycs/mctekkGa";
+import { GLMenu } from "@/components/atoms/gewaerLeadMenu";
 
-const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
+const PAGE_SECTIONS_LEAD: Record<string, ReactNode> = {
   salesassist: [
     <Header
       menu={<Menu></Menu>}
@@ -155,6 +156,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonLink="https://www.gewaer.io/"
       textColor="text-blue-900"
       imgSize={400}
+      reverse
       isCase
       isUpperLogo
       upperLogo="/images/g1.svg"
@@ -264,7 +266,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   ],
   gewaer: [
     <Header
-      menu={<GMenu />}
+      menu={<GLMenu />}
       className="bg-gewaer-100"
       logo="/images/Gewaer.svg"
       iconColor="text-white"
@@ -280,7 +282,11 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
-      gewaer
+      lead
+      button
+      buttonColor="bg-white text-gewaer-100"
+      buttonInfo="Request Demo "
+      buttonLink="https://meetings.hubspot.com/jennherasme/gewaer-leads"
     ></Hero>,
     <CompletionTools
       title={translate("GewaerTools.title")}
@@ -323,5 +329,5 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
 };
 export default function Page() {
   const { generatePage } = usePageBuilder();
-  return generatePage(PAGE_SECTIONS_HOME);
+  return generatePage(PAGE_SECTIONS_LEAD);
 }
