@@ -18,7 +18,7 @@ const externalLinks = [
   },
   {
     text: "Request Demo",
-    link: "https://meetings.hubspot.com/jennherasme/gewaer-leads",
+    link: "/schedule",
     isExternal: true,
     className: "lg:bg-white  lg:text-violet-500    text-white  ",
   },
