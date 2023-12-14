@@ -284,7 +284,7 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
       button
       buttonColor="bg-white text-gewaer-100"
       buttonInfo="Request Demo "
-      buttonLink="https://meetings.hubspot.com/jennherasme/gewaer-leads"
+      buttonLink="/schedule"
     ></Hero>,
     <CompletionTools
       title={translate("GewaerTools.title")}
@@ -313,7 +313,7 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
       buttonTitle={translate("branding.buttonTitle")}
       backColor="bg-violet-50"
       textColor="text-gewaer-200"
-      buttonLink="https://meetings.hubspot.com/jennherasme/kanvas"
+      buttonLink="/schedule"
       imgSize={450}
     ></InfoSection>,
     <Brands
