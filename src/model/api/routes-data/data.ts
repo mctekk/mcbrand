@@ -77,7 +77,7 @@ const GewaerCompany = {
   title: `${translate("routesTitles.title1")}`,
   links: [
     {
-      path: "https://meetings.hubspot.com/jennherasme/gewaer-leads",
+      path: "/schedule",
       name: "Request Demo",
     },
   ],
