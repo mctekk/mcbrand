@@ -42,7 +42,7 @@ import { GaMc } from "@/components/atoms/analitiycs/mctekkGa";
 import { GLMenu } from "@/components/atoms/gewaerLeadMenu";
 import { GaGewaerLaunch } from "@/components/atoms/analitiycs/gewaerGaLaunch";
 
-const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
+const PAGE_SECTIONS_SCHEDULE: Record<string, ReactNode> = {
   salesassist: [
     <Header
       menu={<Menu></Menu>}
@@ -284,7 +284,7 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
       button
       buttonColor="bg-white text-gewaer-100"
       buttonInfo="Request Demo "
-      buttonLink="https://meetings.hubspot.com/jennherasme/gewaer-leads"
+      buttonLink="/hubspot"
     ></Hero>,
     <CompletionTools
       title={translate("GewaerTools.title")}
@@ -327,5 +327,5 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
 };
 export default function Page() {
   const { generatePage } = usePageBuilder();
-  return generatePage(PAGE_SECTIONS_LAUNCH);
+  return generatePage(PAGE_SECTIONS_SCHEDULE);
 }
