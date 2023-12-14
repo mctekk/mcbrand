@@ -40,6 +40,7 @@ import GewaerForm from "@/components/organism/sections/home/gewaerContact";
 import { GaGewaer } from "@/components/atoms/analitiycs/gewaerGa";
 import { GaMc } from "@/components/atoms/analitiycs/mctekkGa";
 import { GLMenu } from "@/components/atoms/gewaerLeadMenu";
+import { GaGewaerLaunch } from "@/components/atoms/analitiycs/gewaerGaLaunch";
 
 const PAGE_SECTIONS_LEAD: Record<string, ReactNode> = {
   salesassist: [
@@ -48,7 +49,6 @@ const PAGE_SECTIONS_LEAD: Record<string, ReactNode> = {
       logo="/images/logo.png"
       iconColor="text-black"
     />,
-    <GA />,
     <Hero
       upperMessage={translate("home.hero.upper_message")}
       lowerMessage={translate("home.hero.lower_message")}
@@ -104,7 +104,6 @@ const PAGE_SECTIONS_LEAD: Record<string, ReactNode> = {
       logo="/images/McLogo.svg"
       iconColor="text-white"
     />,
-    <GaMc />,
     <Hero
       className="bg-black "
       buttonInfo=" Schedule a Meeting "
@@ -190,7 +189,6 @@ const PAGE_SECTIONS_LEAD: Record<string, ReactNode> = {
       logo="/images/kanvasL.svg"
       iconColor="text-white"
     />,
-    <GaKanvas />,
     <Hero
       className="bg-sky-600 "
       buttonInfo={translate("kanvasHero.buttonInfo")}
@@ -271,7 +269,7 @@ const PAGE_SECTIONS_LEAD: Record<string, ReactNode> = {
       logo="/images/Gewaer.svg"
       iconColor="text-white"
     />,
-    <GaGewaer />,
+    <GaGewaerLaunch />,
     <Hero
       className="bg-gewaer-100 "
       messageDesc={translate("gewaerHero.messageDesc")}
