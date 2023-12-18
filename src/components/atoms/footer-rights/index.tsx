@@ -7,7 +7,14 @@ interface Props{
   kanvas?:Boolean
 }
 export default function FooterRights({mctekk,gewaer,kanvas}:Props) {
-if(mctekk || kanvas || gewaer ){
+  if( kanvas){
+    return (
+      <>
+        {"Kyanvasu INC. All rights reserved."} {new Date().getFullYear()}
+      </>
+    );
+  }
+if(mctekk  || gewaer ){
   return (
     <>
       {"MCTEKK. All rights reserved."} {new Date().getFullYear()}
