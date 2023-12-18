@@ -24,10 +24,12 @@ const PostDetail: React.FC = () => {
 
       const pageType = process.env.PAGE_TYPE || "";
 
-      const pageConfig = {
-        kanvas: {
-          apiUrl: "https://graphql.datocms.com/",
-          query: `
+      let apiUrl, query;
+
+      switch (pageType) {
+        case "kanvas":
+          apiUrl = "https://graphql.datocms.com/";
+          query = `
             query {
               kanvasPost(filter: { id: { eq: "${postId}" } }) {
                 id
@@ -38,11 +40,11 @@ const PostDetail: React.FC = () => {
                 _firstPublishedAt
               }
             }
-          `,
-        },
-        salesAssist: {
-          apiUrl: "https://graphql.salesassist.com/",
-          query: `
+          `;
+          break;
+        case "salesAssist":
+          apiUrl = "https://graphql.salesassist.com/";
+          query = `
             query {
               salesPost(filter: { id: { eq: "${postId}" } }) {
                 id
@@ -53,11 +55,11 @@ const PostDetail: React.FC = () => {
                 _firstPublishedAt
               }
             }
-          `,
-        },
-        mctekk: {
-          apiUrl: "https://graphql.mctekk.com/",
-          query: `
+          `;
+          break;
+        case "mctekk":
+          apiUrl = "https://graphql.mctekk.com/";
+          query = `
             query {
               mctekkPost(filter: { id: { eq: "${postId}" } }) {
                 id
@@ -68,11 +70,11 @@ const PostDetail: React.FC = () => {
                 _firstPublishedAt
               }
             }
-          `,
-        },
-        gewaer: {
-          apiUrl: "https://graphql.kanvas.com/",
-          query: `
+          `;
+          break;
+        case "gewaer":
+          apiUrl = "https://graphql.kanvas.com/";
+          query = `
             query {
               gewaerPost(filter: { id: { eq: "${postId}" } }) {
                 id
@@ -83,12 +85,13 @@ const PostDetail: React.FC = () => {
                 _firstPublishedAt
               }
             }
-          `,
-        },
-      };
-
-      const { apiUrl, query } =
-        pageConfig[pageType as keyof typeof pageConfig] || pageConfig.kanvas;
+          `;
+          break;
+        default:
+          console.log("PAGE_TYPE not recognized");
+          console.log(pageType)
+          return;
+      }
 
       try {
         const response = await api.post(
@@ -99,23 +102,14 @@ const PostDetail: React.FC = () => {
             timeout: 5000,
           }
         );
-          if(pageConfig.kanvas){
-            setPost(response.data.data[`kanvasPost`]);
-          }
-          if(pageConfig.gewaer){
-            setPost(response.data.data[`gewaerPost`]);
-          }if(pageConfig.mctekk){
-            setPost(response.data.data[`mctekkPost`]);
-          }
-          if(pageConfig.salesAssist){
-            setPost(response.data.data[`salesAssistPost`]);
-          }
-        console.log(response.data.data[`kanvasPost`]);
+
+        setPost(response.data.data[`${pageType}Post`]);
+        console.log(pageType);
       } catch (error) {
         console.error("Error fetching post details:", error);
       }
     };
-   fetchPostDetail();
+    fetchPostDetail();
   }, []);
 
   return (

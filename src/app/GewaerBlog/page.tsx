@@ -1,13 +1,13 @@
 "use client"
 import React from 'react';
-import useKanvasPosts from '@/model/interactions/use-kanvas';
 import PostCard from '@/components/atoms/postCards';
+import useGewaerPosts from '@/model/interactions/use-gewaer';
 
 const cardContainerClass = 'flex flex-wrap mx-auto justify-center';
 
 const Home: React.FC = () => {
   
-  const { posts } = useKanvasPosts();
+  const { posts } = useGewaerPosts();
 
   return (
     <div>
