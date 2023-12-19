@@ -1,4 +1,4 @@
-// hooks/useKanvasPosts.ts
+"use client"
 import { useEffect, useState } from "react";
 import api from "@/model/api/dato-cms/data";
 import { Imagen } from "@/components/atoms/postCards";
@@ -6,6 +6,7 @@ import { Imagen } from "@/components/atoms/postCards";
 interface Post {
   id: string;
   title: string;
+  subdesc?:string
   info: string;
   image: Imagen;
   _status: string;
@@ -13,7 +14,7 @@ interface Post {
 }
 
 const useKanvasPosts = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [kposts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
     const fetchKanvasPosts = async () => {
@@ -26,6 +27,7 @@ const useKanvasPosts = () => {
                   allKanvasPosts {
                       id
                       title
+                      subdesc
                       info
                       image{url}
                       _status
@@ -50,7 +52,7 @@ const useKanvasPosts = () => {
     fetchKanvasPosts();
   }, []);
 
-  return { posts };
+  return { kposts };
 };
 
 export default useKanvasPosts;

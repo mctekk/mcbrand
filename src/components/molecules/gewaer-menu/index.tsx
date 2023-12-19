@@ -8,6 +8,7 @@ const menuItems = [
   },
   { text: "Features", link: "#features" },
   { text: "Contact", link: "mailto:" },
+  { text:"Blog", link: "/blog" },
 ];
 const externalLinks = [
   {

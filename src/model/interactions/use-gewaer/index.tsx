@@ -6,6 +6,7 @@ import { Imagen } from "@/components/atoms/postCards";
 interface Post {
   id: string;
   title: string;
+  subdesc?:string
   info: string;
   image: Imagen;
   _status: string;
@@ -26,6 +27,7 @@ const useGewaerPosts = () => {
                   allGewaerPosts {
                       id
                       title
+                      subdesc
                       info
                       image{url}
                       _status

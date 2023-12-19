@@ -7,6 +7,7 @@ import { Imagen } from "@/components/atoms/postCards";
 import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import Header from "@/components/organism/header";
 import { Footer } from "@/components/organism/sections/footer";
+import { GMenu } from "@/components/molecules/gewaer-menu";
 
 interface Post {
   id: string;
@@ -145,13 +146,48 @@ const PostDetail: React.FC = () => {
           ) : (
             <p>Loading...</p>
           )}
-          
         </div>
         <Footer kanvas></Footer>
       </>
     );
-  } else {
-    return "";
+  }
+  if (pageType == "gewaer") {
+    return (
+      <>
+        <Header
+          menu={<GMenu />}
+          className="bg-gewaer-100"
+          logo="/images/Gewaer.svg"
+          iconColor="text-white"
+        />
+        <div className="w-fit mx-auto justify-center">
+          {post ? (
+            <>
+              <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+              <p className="text-gray-600 mb-2">ID: {post.id}</p>
+              <p className="text-gray-600 mb-2">Status: {post._status}</p>
+              <small className="text-gray-600 block mb-4">
+                First Published At:{" "}
+                {new Date(post._firstPublishedAt).toLocaleDateString()}
+              </small>
+              <div className="mb-8">
+                <img
+                  alt="ss"
+                  src={post.image.url}
+                  width={800}
+                  height={500}
+                  className="object-cover rounded-lg shadow-lg"
+                />
+              </div>
+              <p className="text-lg leading-relaxed mb-8">{post.info}</p>
+            </>
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
+        <Footer gewaer></Footer>
+      </>
+    );
   }
 };
 

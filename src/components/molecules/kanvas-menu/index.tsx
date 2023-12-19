@@ -11,6 +11,7 @@ const menuItems = [
   },
   { text:"Core Functionalities", link: "/#features" },
   { text:"GitHub", link: "https://github.com/bakaphp/kanvas-ecosystem-api" },
+  { text:"Blog", link: "/blog" },
 
 
 ];
