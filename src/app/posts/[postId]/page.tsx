@@ -3,8 +3,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import api from "@/model/api/dato-cms/data";
-import Image from "next/image";
 import { Imagen } from "@/components/atoms/postCards";
+import { KanvasMenu } from "@/components/molecules/kanvas-menu";
+import Header from "@/components/organism/header";
+import { Footer } from "@/components/organism/sections/footer";
 
 interface Post {
   id: string;
@@ -17,12 +19,10 @@ interface Post {
 
 const PostDetail: React.FC = () => {
   const [post, setPost] = useState<Post | null>(null);
-
+  const pageType = process.env.NEXT_PUBLIC_PAGE_TYPE || "";
   useEffect(() => {
     const fetchPostDetail = async () => {
       const postId = window.location.pathname.split("/").pop();
-
-      const pageType = process.env.PAGE_TYPE || "";
 
       let apiUrl, query;
 
@@ -43,7 +43,7 @@ const PostDetail: React.FC = () => {
           `;
           break;
         case "salesAssist":
-          apiUrl = "https://graphql.salesassist.com/";
+          apiUrl = "https://graphql.datocms.com/";
           query = `
             query {
               salesPost(filter: { id: { eq: "${postId}" } }) {
@@ -58,7 +58,7 @@ const PostDetail: React.FC = () => {
           `;
           break;
         case "mctekk":
-          apiUrl = "https://graphql.mctekk.com/";
+          apiUrl = "https://graphql.datocms.com/";
           query = `
             query {
               mctekkPost(filter: { id: { eq: "${postId}" } }) {
@@ -73,7 +73,7 @@ const PostDetail: React.FC = () => {
           `;
           break;
         case "gewaer":
-          apiUrl = "https://graphql.kanvas.com/";
+          apiUrl = "https://graphql.datocms.com/";
           query = `
             query {
               gewaerPost(filter: { id: { eq: "${postId}" } }) {
@@ -89,7 +89,7 @@ const PostDetail: React.FC = () => {
           break;
         default:
           console.log("PAGE_TYPE not recognized");
-          console.log(pageType)
+          console.log(pageType);
           return;
       }
 
@@ -110,36 +110,49 @@ const PostDetail: React.FC = () => {
       }
     };
     fetchPostDetail();
+    console.log(post);
   }, []);
-
-  return (
-    <div className="w-fit mx-auto justify-center">
-      {post ? (
-        <>
-          <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-          <p className="text-gray-600 mb-2">ID: {post.id}</p>
-          <p className="text-gray-600 mb-2">Status: {post._status}</p>
-          <small className="text-gray-600 block mb-4">
-            First Published At:{" "}
-            {new Date(post._firstPublishedAt).toLocaleDateString()}
-          </small>
-          <div className="mb-8">
-            <Image
-              alt="ss"
-              src={post.image.url}
-              width={800}
-              height={500}
-              className="object-cover rounded-lg shadow-lg"
-            />
-          </div>
-
-          <p className="text-lg leading-relaxed mb-8">{post.info}</p>
-        </>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </div>
-  );
+  if (pageType == "kanvas") {
+    return (
+      <>
+        <Header
+          menu={<KanvasMenu />}
+          className="bg-sky-600"
+          logo="/images/kanvasL.svg"
+          iconColor="text-white"
+        />
+        <div className="w-fit mx-auto justify-center">
+          {post ? (
+            <>
+              <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+              <p className="text-gray-600 mb-2">ID: {post.id}</p>
+              <p className="text-gray-600 mb-2">Status: {post._status}</p>
+              <small className="text-gray-600 block mb-4">
+                First Published At:{" "}
+                {new Date(post._firstPublishedAt).toLocaleDateString()}
+              </small>
+              <div className="mb-8">
+                <img
+                  alt="ss"
+                  src={post.image.url}
+                  width={800}
+                  height={500}
+                  className="object-cover rounded-lg shadow-lg"
+                />
+              </div>
+              <p className="text-lg leading-relaxed mb-8">{post.info}</p>
+            </>
+          ) : (
+            <p>Loading...</p>
+          )}
+          
+        </div>
+        <Footer kanvas></Footer>
+      </>
+    );
+  } else {
+    return "";
+  }
 };
 
 export default PostDetail;
