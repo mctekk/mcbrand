@@ -7,12 +7,16 @@ import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import { Footer } from "@/components/organism/sections/footer";
 import { GMenu } from "@/components/molecules/gewaer-menu";
 import useGewaerPosts from "@/model/interactions/use-gewaer";
+import BlogCards from "@/components/molecules/blog-cards";
 
-const cardContainerClass = "flex-col flex-wrap w-fit mx-auto justify-center  mb-96";
+
 
 function Home() {
-  const { kposts } = useKanvasPosts();
-  const { posts } = useGewaerPosts();
+
+  const { gposts,ghandleLoadMore,gcurrentPage,gtotalPages } = useGewaerPosts();
+
+  const { kposts, handleLoadMore,currentPage,totalPages } = useKanvasPosts();
+
   if (process.env.NEXT_PUBLIC_PAGE_TYPE == "kanvas") {
     return (
       <div>
@@ -22,14 +26,7 @@ function Home() {
           logo="/images/kanvasL.svg"
           iconColor="text-white"
         />
-        <h1>All Posts</h1>
-        <div className={cardContainerClass}>
-          {kposts.map((kpost) => (
-            <div key={kpost.id} >
-              <PostCard post={kpost} />
-            </div>
-          ))}
-        </div>
+        <BlogCards posts={kposts}  handleLoadMore={handleLoadMore} currentPage={currentPage} totalPages={totalPages}></BlogCards>
         <Footer kanvas></Footer>
       </div>
     );
@@ -43,14 +40,7 @@ function Home() {
           logo="/images/Gewaer.svg"
           iconColor="text-white"
         />
-        ,<h1>All Posts</h1>
-        <div className={cardContainerClass}>
-          {posts.map((post) => (
-            <div key={post.id} className="">
-              <PostCard post={post} />
-            </div>
-          ))}
-        </div>
+       <BlogCards posts={gposts}  handleLoadMore={ghandleLoadMore}currentPage={gcurrentPage} totalPages={gtotalPages}></BlogCards>
         <Footer gewaer></Footer>
       </div>
     );

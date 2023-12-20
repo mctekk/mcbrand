@@ -1,4 +1,3 @@
-"use client"
 import { useEffect, useState } from "react";
 import api from "@/model/api/dato-cms/data";
 import { Imagen } from "@/components/atoms/postCards";
@@ -6,7 +5,7 @@ import { Imagen } from "@/components/atoms/postCards";
 interface Post {
   id: string;
   title: string;
-  subdesc?:string
+  subdesc?: string;
   info: string;
   image: Imagen;
   _status: string;
@@ -15,6 +14,10 @@ interface Post {
 
 const useKanvasPosts = () => {
   const [kposts, setPosts] = useState<Post[]>([]);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [totalPages, setTotalPages] = useState<number>(1);
+  const [direction, setDirection] = useState<"forward" | "backward">("forward");
+  const postPerPage = 2;
 
   useEffect(() => {
     const fetchKanvasPosts = async () => {
@@ -24,15 +27,25 @@ const useKanvasPosts = () => {
           {
             query: `
               query {
-                  allKanvasPosts {
-                      id
-                      title
-                      subdesc
-                      info
-                      image{url}
-                      _status
-                      _firstPublishedAt
-                    }
+                _allKanvasPostsMeta {
+                  count
+                }
+                allKanvasPosts(
+                  first: ${postPerPage}
+                  skip: ${(currentPage - 1) * postPerPage}
+                ) {
+                  id
+                  title
+                  subdesc
+                  info{
+                    blocks
+                    links
+                    value
+                  }
+                  image{url}
+                  _status
+                  _firstPublishedAt
+                }
               }
             `,
           },
@@ -42,17 +55,33 @@ const useKanvasPosts = () => {
             },
           }
         );
-        setPosts(response.data.data.allKanvasPosts);
 
+        setTotalPages(
+          Math.ceil(response.data.data._allKanvasPostsMeta.count / postPerPage)
+        );
+        setPosts(response.data.data.allKanvasPosts);
       } catch (error) {
         console.error("Error fetching Kanvas posts:", error);
       }
     };
 
     fetchKanvasPosts();
-  }, []);
+  }, [currentPage, direction]);
 
-  return { kposts };
+  const handleLoadMore = (newDirection: "forward" | "backward") => {
+    setCurrentPage((prevPage) => {
+      if (newDirection === "forward") {
+        setDirection("forward");
+        return prevPage + 1;
+      } else if (newDirection === "backward" && prevPage > 1) {
+        setDirection("backward");
+        return prevPage - 1;
+      }
+      return prevPage;
+    });
+  };
+
+  return { kposts, handleLoadMore, currentPage, totalPages };
 };
 
 export default useKanvasPosts;

@@ -19,12 +19,12 @@ export interface PostCardProps {
 
 const PostCard: React.FC<PostCardProps> = ({ post }) => {
   return (
-    <Link href={`/posts/${post.id}`}>
-      <div className=" md:w-full lg:w-full xl:w-fit p-4">
-        <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:text-gray-300">
+    <Link href={`/posts/${encodeURIComponent(post.title)}`}>
+      <div className=" md:w-full lg:w-full xl:w-full p-4">
+        <div className=" overflow-hidden  transition-transform transform ">
           <div className="p-4">
-            <h3 className=" font-semibold mb-2">{post.title}</h3>
-            {post.subdesc && <h3 className="text-lg font-semibold mb-2">{post.subdesc}</h3>}
+            <p className=" font-bold mb-2 text-[1.85rem] hover:text-gray-600 ">{post.title}</p>
+            {post.subdesc && <p className="text-[1.2rem] font-semibold mb-2">{post.subdesc}</p>}
             <p className="text-gray-600 text-sm">{new Date(post._firstPublishedAt).toLocaleDateString()}</p>
           </div>
         </div>

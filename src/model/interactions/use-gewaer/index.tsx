@@ -1,4 +1,3 @@
-// hooks/useKanvasPosts.ts
 import { useEffect, useState } from "react";
 import api from "@/model/api/dato-cms/data";
 import { Imagen } from "@/components/atoms/postCards";
@@ -6,7 +5,7 @@ import { Imagen } from "@/components/atoms/postCards";
 interface Post {
   id: string;
   title: string;
-  subdesc?:string
+  subdesc?: string;
   info: string;
   image: Imagen;
   _status: string;
@@ -14,7 +13,11 @@ interface Post {
 }
 
 const useGewaerPosts = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [gposts, setPosts] = useState<Post[]>([]);
+  const [gcurrentPage, setCurrentPage] = useState<number>(1);
+  const [gtotalPages, setTotalPages] = useState<number>(1);
+  const [direction, setDirection] = useState<"forward" | "backward">("forward");
+  const postPerPage = 2;
 
   useEffect(() => {
     const fetchGewaerPosts = async () => {
@@ -24,15 +27,28 @@ const useGewaerPosts = () => {
           {
             query: `
               query {
-                  allGewaerPosts {
-                      id
-                      title
-                      subdesc
-                      info
-                      image{url}
-                      _status
-                      _firstPublishedAt
+                _allGewaerPostsMeta {
+                  count
+                }
+                allGewaerPosts(
+                  first: ${postPerPage}
+                  skip: ${(gcurrentPage - 1) * postPerPage}
+                ) {
+                  id
+                  title
+                  subdesc
+                  info{
+                    blocks {
+                      __typename
+                      blocks
+                      links
+                      value
                     }
+                  }
+                  image{url}
+                  _status
+                  _firstPublishedAt
+                }
               }
             `,
           },
@@ -42,6 +58,10 @@ const useGewaerPosts = () => {
             },
           }
         );
+
+        setTotalPages(
+          Math.ceil(response.data.data._allGewaerPostsMeta.count / postPerPage)
+        );
         setPosts(response.data.data.allGewaerPosts);
       } catch (error) {
         console.error("Error fetching Gewaer posts:", error);
@@ -49,9 +69,22 @@ const useGewaerPosts = () => {
     };
 
     fetchGewaerPosts();
-  }, []);
+  }, [gcurrentPage, direction]);
 
-  return { posts };
+  const ghandleLoadMore = (newDirection: "forward" | "backward") => {
+    setCurrentPage((prevPage) => {
+      if (newDirection === "forward") {
+        setDirection("forward");
+        return prevPage + 1;
+      } else if (newDirection === "backward" && prevPage > 1) {
+        setDirection("backward");
+        return prevPage - 1;
+      }
+      return prevPage;
+    });
+  };
+
+  return { gposts, ghandleLoadMore, gcurrentPage, gtotalPages };
 };
 
 export default useGewaerPosts;

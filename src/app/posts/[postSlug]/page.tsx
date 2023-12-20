@@ -1,6 +1,6 @@
 // pages/posts/[postId].tsx
 "use client";
-"use client";
+
 import React, { useEffect, useState } from "react";
 import api from "@/model/api/dato-cms/data";
 import { Imagen } from "@/components/atoms/postCards";
@@ -8,22 +8,26 @@ import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import Header from "@/components/organism/header";
 import { Footer } from "@/components/organism/sections/footer";
 import { GMenu } from "@/components/molecules/gewaer-menu";
-
+import { StructuredText, renderRule } from "react-datocms";
+import McMenu from "@/components/molecules/mc-menu";
 interface Post {
   id: string;
   title: string;
   image: Imagen;
-  info: string;
+  subdesc?: string;
+  info: any;
   _status: string;
   _firstPublishedAt: string;
 }
 
-const PostDetail: React.FC = () => {
+function PostDetail() {
   const [post, setPost] = useState<Post | null>(null);
   const pageType = process.env.NEXT_PUBLIC_PAGE_TYPE || "";
+
   useEffect(() => {
     const fetchPostDetail = async () => {
-      const postId = window.location.pathname.split("/").pop();
+      let postSlug = window.location.pathname.split("/").pop();
+      const newPostSlug = (postSlug ?? "").replace(/%20/g, " ");
 
       let apiUrl, query;
 
@@ -32,10 +36,15 @@ const PostDetail: React.FC = () => {
           apiUrl = "https://graphql.datocms.com/";
           query = `
             query {
-              kanvasPost(filter: { id: { eq: "${postId}" } }) {
+              kanvasPost(filter: { title: { eq: "${newPostSlug}" } }) {
                 id
                 title
-                info
+                subdesc
+                info{
+                  blocks
+                  links
+                  value
+                }
                 image{url}
                 _status
                 _firstPublishedAt
@@ -47,9 +56,10 @@ const PostDetail: React.FC = () => {
           apiUrl = "https://graphql.datocms.com/";
           query = `
             query {
-              salesPost(filter: { id: { eq: "${postId}" } }) {
+              salesPost(filter: { title: { eq: "${postSlug}" } }) {
                 id
                 title
+                subdesc
                 info
                 image{url}
                 _status
@@ -62,9 +72,10 @@ const PostDetail: React.FC = () => {
           apiUrl = "https://graphql.datocms.com/";
           query = `
             query {
-              mctekkPost(filter: { id: { eq: "${postId}" } }) {
+              mctekkPost(filter: { title: { eq: "${postSlug}" } }) {
                 id
                 title
+                subdesc
                 info
                 image{url}
                 _status
@@ -77,10 +88,18 @@ const PostDetail: React.FC = () => {
           apiUrl = "https://graphql.datocms.com/";
           query = `
             query {
-              gewaerPost(filter: { id: { eq: "${postId}" } }) {
+              gewaerPost(filter: { title: { eq: "${postSlug}" } }) {
                 id
                 title
-                info
+                subdesc
+                info {
+                  blocks {
+                    __typename
+                    blocks
+                    links
+                    value
+                  }
+                }
                 image{url}
                 _status
                 _firstPublishedAt
@@ -105,15 +124,15 @@ const PostDetail: React.FC = () => {
         );
 
         setPost(response.data.data[`${pageType}Post`]);
-        console.log(pageType);
       } catch (error) {
         console.error("Error fetching post details:", error);
       }
     };
+
     fetchPostDetail();
-    console.log(post);
-  }, []);
-  if (pageType == "kanvas") {
+  }, [pageType]);
+
+  if (pageType === "kanvas") {
     return (
       <>
         <Header
@@ -122,27 +141,28 @@ const PostDetail: React.FC = () => {
           logo="/images/kanvasL.svg"
           iconColor="text-white"
         />
-        <div className="w-fit mx-auto justify-center">
+        <div className="w-fit mx-auto justify-center ">
           {post ? (
-            <>
-              <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-              <p className="text-gray-600 mb-2">ID: {post.id}</p>
-              <p className="text-gray-600 mb-2">Status: {post._status}</p>
-              <small className="text-gray-600 block mb-4">
+            <div className="section">
+              <small className="text-gray-800 block font-bold mb-4 text-center">
                 First Published At:{" "}
                 {new Date(post._firstPublishedAt).toLocaleDateString()}
               </small>
-              <div className="mb-8">
+              <p className=" text-[2rem] font-bold mb-4 text-center">
+                {post.title}
+              </p>
+
+              <div className="mb-8 flex justify-center">
                 <img
                   alt="ss"
                   src={post.image.url}
-                  width={800}
-                  height={500}
-                  className="object-cover rounded-lg shadow-lg"
+                  className="object-cover rounded-lg shadow-lg w-3/6 "
                 />
               </div>
-              <p className="text-lg leading-relaxed mb-8">{post.info}</p>
-            </>
+              <div className="text-justify w-7/12 mx-auto">
+                <StructuredText data={post.info} />
+              </div>
+            </div>
           ) : (
             <p>Loading...</p>
           )}
@@ -151,7 +171,47 @@ const PostDetail: React.FC = () => {
       </>
     );
   }
-  if (pageType == "gewaer") {
+  if (pageType === "mctekk") {
+    return (
+      <>
+        <Header
+          menu={<McMenu></McMenu>}
+          className="bg-black"
+          logo="/images/McLogo.svg"
+          iconColor="text-white"
+        />
+        ,
+        <div className="w-fit mx-auto justify-center ">
+          {post ? (
+            <div className="section">
+              <small className="text-gray-800 block font-bold mb-4 text-center">
+                First Published At:{" "}
+                {new Date(post._firstPublishedAt).toLocaleDateString()}
+              </small>
+              <p className=" text-[2rem] font-bold mb-4 text-center">
+                {post.title}
+              </p>
+
+              <div className="mb-8 flex justify-center">
+                <img
+                  alt="ss"
+                  src={post.image.url}
+                  className="object-cover rounded-lg shadow-lg w-3/6 "
+                />
+              </div>
+              <div className="text-justify w-7/12 mx-auto">
+                <StructuredText data={post.info} />
+              </div>
+            </div>
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
+        <Footer mctekk></Footer>
+      </>
+    );
+  }
+  if (pageType === "gewaer") {
     return (
       <>
         <Header
@@ -160,27 +220,28 @@ const PostDetail: React.FC = () => {
           logo="/images/Gewaer.svg"
           iconColor="text-white"
         />
-        <div className="w-fit mx-auto justify-center">
+        <div className="w-fit mx-auto justify-center ">
           {post ? (
-            <>
-              <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-              <p className="text-gray-600 mb-2">ID: {post.id}</p>
-              <p className="text-gray-600 mb-2">Status: {post._status}</p>
-              <small className="text-gray-600 block mb-4">
+            <div className="section">
+              <small className="text-gray-800 block font-bold mb-4 text-center">
                 First Published At:{" "}
                 {new Date(post._firstPublishedAt).toLocaleDateString()}
               </small>
-              <div className="mb-8">
+              <p className=" text-[2rem] font-bold mb-4 text-center">
+                {post.title}
+              </p>
+
+              <div className="mb-8 flex justify-center">
                 <img
                   alt="ss"
                   src={post.image.url}
-                  width={800}
-                  height={500}
-                  className="object-cover rounded-lg shadow-lg"
+                  className="object-cover rounded-lg shadow-lg w-3/6 "
                 />
               </div>
-              <p className="text-lg leading-relaxed mb-8">{post.info}</p>
-            </>
+              <div className="text-justify w-7/12 mx-auto">
+                <StructuredText data={post.info} />
+              </div>
+            </div>
           ) : (
             <p>Loading...</p>
           )}
@@ -189,6 +250,8 @@ const PostDetail: React.FC = () => {
       </>
     );
   }
-};
+
+  return null;
+}
 
 export default PostDetail;
