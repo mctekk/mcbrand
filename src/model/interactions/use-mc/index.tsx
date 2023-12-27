@@ -18,7 +18,7 @@ const useMctekkPosts = () => {
   const [mccurrentPage, setCurrentPage] = useState<number>(1);
   const [mctotalPages, setTotalPages] = useState<number>(1);
   const [direction, setDirection] = useState<"forward" | "backward">("forward");
-  const postPerPage = 2;
+  const postPerPage = 5;
 
   useEffect(() => {
     const fetchMctekkPosts = async () => {

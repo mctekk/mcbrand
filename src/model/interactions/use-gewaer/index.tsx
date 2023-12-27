@@ -18,7 +18,7 @@ const useGewaerPosts = () => {
   const [gcurrentPage, setCurrentPage] = useState<number>(1);
   const [gtotalPages, setTotalPages] = useState<number>(1);
   const [direction, setDirection] = useState<"forward" | "backward">("forward");
-  const postPerPage = 1;
+  const postPerPage = 5;
 
   useEffect(() => {
     const fetchGewaerPosts = async () => {

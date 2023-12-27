@@ -33,6 +33,7 @@ function Home() {
           handleLoadMore={handleLoadMore}
           currentPage={currentPage}
           totalPages={totalPages}
+          title="Kanvas Posts"
         ></BlogCards>
         <Footer kanvas></Footer>
       </div>
@@ -52,6 +53,7 @@ function Home() {
           handleLoadMore={ghandleLoadMore}
           currentPage={gcurrentPage}
           totalPages={gtotalPages}
+          title="Gewaer Posts"
         ></BlogCards>
         <Footer gewaer></Footer>
       </div>
@@ -71,6 +73,7 @@ function Home() {
           handleLoadMore={mchandleLoadMore}
           currentPage={mccurrentPage}
           totalPages={mctotalPages}
+          title="Mctekk Posts"
         ></BlogCards>
         <Footer mctekk></Footer>
       </div>
@@ -84,12 +87,12 @@ function Home() {
           logo="/images/logo.png"
           iconColor="text-black"
         />
-        ,
         <BlogCards
           posts={kposts}
           handleLoadMore={handleLoadMore}
           currentPage={currentPage}
           totalPages={totalPages}
+          title="SalesAssist Posts"
         ></BlogCards>
         <Footer sales></Footer>
       </div>

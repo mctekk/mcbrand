@@ -3,9 +3,10 @@ import PostCard, { Imagen } from "@/components/atoms/postCards";
 
 const cardContainerClass = "flex-col flex-wrap w-2/4 mx-auto justify-center mb-72";
 const buttonContainerClass = "flex justify-center mt-4";
-const loadButtonClass = "bg-blue-500 text-white px-4 py-2 m-2 rounded";
+const loadButtonClass = "bg-blue-500 text-white px-4 py-2 m-2 rounded disabled:brightness-50 ";
 
 type Props = {
+  title:string
   posts: {
     id: string;
     title: string;
@@ -20,7 +21,7 @@ type Props = {
   totalPages: number;
 };
 
-const BlogCards: React.FC<Props> = ({ posts, handleLoadMore, currentPage, totalPages }) => {
+const BlogCards: React.FC<Props> = ({ posts, handleLoadMore, currentPage, totalPages,title }) => {
   const [hasMorePosts, setHasMorePosts] = useState(true);
 
   useEffect(() => {
@@ -29,7 +30,7 @@ const BlogCards: React.FC<Props> = ({ posts, handleLoadMore, currentPage, totalP
 
   return (
     <div className="mx-auto section">
-      <h1 className="flex-col flex-wrap w-fit mx-auto justify-center ">Principal Posts</h1>
+      <h1 className="flex-col flex-wrap w-fit mx-auto justify-center ">{title}</h1>
       <div className={cardContainerClass}>
         {posts.map((post) => (
           <div key={post.id} className="">

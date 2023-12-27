@@ -18,7 +18,7 @@ const useKanvasPosts = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [direction, setDirection] = useState<"forward" | "backward">("forward");
-  const postPerPage = 2;
+  const postPerPage = 5;
 
   useEffect(() => {
     const fetchKanvasPosts = async () => {

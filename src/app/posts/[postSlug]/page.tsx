@@ -8,7 +8,8 @@ import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import Header from "@/components/organism/header";
 import { Footer } from "@/components/organism/sections/footer";
 import { GMenu } from "@/components/molecules/gewaer-menu";
-import { StructuredText, renderRule } from "react-datocms";
+import { StructuredText } from "react-datocms";
+import { isHeading, isCode } from 'datocms-structured-text-utils';
 import McMenu from "@/components/molecules/mc-menu";
 interface Post {
   id: string;
@@ -147,7 +148,7 @@ function PostDetail() {
         />
         <div className="w-fit mx-auto justify-center ">
           {post ? (
-            <div className="section">
+            <div className="section prose-h1:">
               <small className="text-gray-800 block font-bold mb-4 text-center">
                 First Published At:{" "}
                 {new Date(post._firstPublishedAt).toLocaleDateString()}
@@ -163,12 +164,14 @@ function PostDetail() {
                   className="object-cover rounded-lg shadow-lg w-7/12 "
                 />
               </div>
-              <div className="text-justify w-7/12 mx-auto " >
+              <div className="xl:text-justify xl:w-7/12 mx-auto  prose prose-lg prose-blue  "id='main-content' >
+                <article key={post.id}>
                 <StructuredText data={post.info}   />
+                </article>
               </div>
             </div>
           ) : (
-            <p>Loading...</p>
+            <p className="p-96">Loading...</p>
           )}
         </div>
         <Footer kanvas></Footer>
@@ -184,7 +187,6 @@ function PostDetail() {
           logo="/images/McLogo.svg"
           iconColor="text-white"
         />
-        ,
         <div className="w-fit mx-auto justify-center ">
           {post ? (
             <div className="section">
@@ -203,12 +205,14 @@ function PostDetail() {
                   className="object-cover rounded-lg shadow-lg w-3/6 "
                 />
               </div>
-              <div className="text-justify w-7/12 mx-auto">
-                <StructuredText data={post.info} />
+              <div className="xl:text-justify xl:w-7/12 mx-auto  prose prose-lg prose-blue  "id='main-content' >
+                <article key={post.id}>
+                <StructuredText data={post.info}   />
+                </article>
               </div>
             </div>
           ) : (
-            <p>Loading...</p>
+            <p className="p-96">Loading...</p>
           )}
         </div>
         <Footer mctekk></Footer>
@@ -242,12 +246,14 @@ function PostDetail() {
                   className="object-cover rounded-lg shadow-lg w-3/6 "
                 />
               </div>
-              <div className="text-justify w-7/12 mx-auto">
-                <StructuredText data={post.info} />
+              <div className="xl:text-justify xl:w-7/12 mx-auto  prose prose-lg prose-blue  "id='main-content' >
+                <article key={post.id}>
+                <StructuredText data={post.info}   />
+                </article>
               </div>
             </div>
           ) : (
-            <p>Loading...</p>
+            <p className="p-96">Loading...</p>
           )}
         </div>
         <Footer gewaer></Footer>
