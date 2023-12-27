@@ -8,14 +8,16 @@ import { Footer } from "@/components/organism/sections/footer";
 import { GMenu } from "@/components/molecules/gewaer-menu";
 import useGewaerPosts from "@/model/interactions/use-gewaer";
 import BlogCards from "@/components/molecules/blog-cards";
-
-
+import McMenu from "@/components/molecules/mc-menu";
+import { Menu } from "@headlessui/react";
+import useMctekkPosts from "@/model/interactions/use-mc";
 
 function Home() {
+  const { gposts, ghandleLoadMore, gcurrentPage, gtotalPages } =
+    useGewaerPosts();
 
-  const { gposts,ghandleLoadMore,gcurrentPage,gtotalPages } = useGewaerPosts();
-
-  const { kposts, handleLoadMore,currentPage,totalPages } = useKanvasPosts();
+  const { kposts, handleLoadMore, currentPage, totalPages } = useKanvasPosts();
+  const { mcposts, mchandleLoadMore, mccurrentPage, mctotalPages } = useMctekkPosts();
 
   if (process.env.NEXT_PUBLIC_PAGE_TYPE == "kanvas") {
     return (
@@ -26,7 +28,12 @@ function Home() {
           logo="/images/kanvasL.svg"
           iconColor="text-white"
         />
-        <BlogCards posts={kposts}  handleLoadMore={handleLoadMore} currentPage={currentPage} totalPages={totalPages}></BlogCards>
+        <BlogCards
+          posts={kposts}
+          handleLoadMore={handleLoadMore}
+          currentPage={currentPage}
+          totalPages={totalPages}
+        ></BlogCards>
         <Footer kanvas></Footer>
       </div>
     );
@@ -40,8 +47,51 @@ function Home() {
           logo="/images/Gewaer.svg"
           iconColor="text-white"
         />
-       <BlogCards posts={gposts}  handleLoadMore={ghandleLoadMore}currentPage={gcurrentPage} totalPages={gtotalPages}></BlogCards>
+        <BlogCards
+          posts={gposts}
+          handleLoadMore={ghandleLoadMore}
+          currentPage={gcurrentPage}
+          totalPages={gtotalPages}
+        ></BlogCards>
         <Footer gewaer></Footer>
+      </div>
+    );
+  }
+  if (process.env.NEXT_PUBLIC_PAGE_TYPE == "mctekk") {
+    return (
+      <div>
+        <Header
+          menu={<McMenu></McMenu>}
+          className="bg-black"
+          logo="/images/McLogo.svg"
+          iconColor="text-white"
+        />
+        <BlogCards
+          posts={mcposts}
+          handleLoadMore={mchandleLoadMore}
+          currentPage={mccurrentPage}
+          totalPages={mctotalPages}
+        ></BlogCards>
+        <Footer mctekk></Footer>
+      </div>
+    );
+  }
+  if (process.env.NEXT_PUBLIC_PAGE_TYPE == "salesAssist") {
+    return (
+      <div>
+        <Header
+          menu={<Menu></Menu>}
+          logo="/images/logo.png"
+          iconColor="text-black"
+        />
+        ,
+        <BlogCards
+          posts={kposts}
+          handleLoadMore={handleLoadMore}
+          currentPage={currentPage}
+          totalPages={totalPages}
+        ></BlogCards>
+        <Footer sales></Footer>
       </div>
     );
   }

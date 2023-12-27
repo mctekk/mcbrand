@@ -115,3 +115,10 @@ body {
   display: inline;
   vertical-align: text-bottom;
 }
+.article {
+  margin: 1rem;
+}
+
+.article img {
+  max-width: 100%;
+}

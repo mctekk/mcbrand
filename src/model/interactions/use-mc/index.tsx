@@ -13,27 +13,27 @@ interface Post {
   _firstPublishedAt: string;
 }
 
-const useKanvasPosts = () => {
-  const [kposts, setPosts] = useState<Post[]>([]);
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const [totalPages, setTotalPages] = useState<number>(1);
+const useMctekkPosts = () => {
+  const [mcposts, setPosts] = useState<Post[]>([]);
+  const [mccurrentPage, setCurrentPage] = useState<number>(1);
+  const [mctotalPages, setTotalPages] = useState<number>(1);
   const [direction, setDirection] = useState<"forward" | "backward">("forward");
   const postPerPage = 2;
 
   useEffect(() => {
-    const fetchKanvasPosts = async () => {
+    const fetchMctekkPosts = async () => {
       try {
         const response = await api.post(
           "https://graphql.datocms.com/",
           {
             query: `
               query {
-                _allKanvasPostsMeta {
+                _allMctekkPostsMeta {
                   count
                 }
-                allKanvasPosts(
+                allMctekkPosts(
                   first: ${postPerPage}
-                  skip: ${(currentPage - 1) * postPerPage}
+                  skip: ${(mccurrentPage - 1) * postPerPage}
                 ) {
                   id
                   title
@@ -59,18 +59,18 @@ const useKanvasPosts = () => {
         );
 
         setTotalPages(
-          Math.ceil(response.data.data._allKanvasPostsMeta.count / postPerPage)
+          Math.ceil(response.data.data._allMctekkPostsMeta.count / postPerPage)
         );
-        setPosts(response.data.data.allKanvasPosts);
+        setPosts(response.data.data.allMctekkPosts);
       } catch (error) {
-        console.error("Error fetching Kanvas posts:", error);
+        console.error("Error fetching Mctekk posts:", error);
       }
     };
 
-    fetchKanvasPosts();
-  }, [currentPage, direction]);
+    fetchMctekkPosts();
+  }, [mccurrentPage, direction]);
 
-  const handleLoadMore = (newDirection: "forward" | "backward") => {
+  const mchandleLoadMore = (newDirection: "forward" | "backward") => {
     setCurrentPage((prevPage) => {
       if (newDirection === "forward") {
         setDirection("forward");
@@ -83,7 +83,7 @@ const useKanvasPosts = () => {
     });
   };
 
-  return { kposts, handleLoadMore, currentPage, totalPages };
+  return { mcposts, mchandleLoadMore, mccurrentPage, mctotalPages };
 };
 
-export default useKanvasPosts;
+export default useMctekkPosts;

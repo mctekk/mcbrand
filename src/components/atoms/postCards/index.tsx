@@ -10,6 +10,7 @@ export interface PostCardProps {
   post: {
     id: string;
     title: string;
+    slug:string
     subdesc?: string;
     image: Imagen;
     _status: string;
@@ -19,7 +20,7 @@ export interface PostCardProps {
 
 const PostCard: React.FC<PostCardProps> = ({ post }) => {
   return (
-    <Link href={`/posts/${encodeURIComponent(post.title)}`}>
+    <Link href={`/posts/${encodeURIComponent(post.slug)}`}>
       <div className=" md:w-full lg:w-full xl:w-full p-4">
         <div className=" overflow-hidden  transition-transform transform ">
           <div className="p-4">

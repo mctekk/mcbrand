@@ -5,6 +5,7 @@ import { Imagen } from "@/components/atoms/postCards";
 interface Post {
   id: string;
   title: string;
+  slug:string
   subdesc?: string;
   info: string;
   image: Imagen;
@@ -17,7 +18,7 @@ const useGewaerPosts = () => {
   const [gcurrentPage, setCurrentPage] = useState<number>(1);
   const [gtotalPages, setTotalPages] = useState<number>(1);
   const [direction, setDirection] = useState<"forward" | "backward">("forward");
-  const postPerPage = 2;
+  const postPerPage = 1;
 
   useEffect(() => {
     const fetchGewaerPosts = async () => {
@@ -26,30 +27,28 @@ const useGewaerPosts = () => {
           "https://graphql.datocms.com/",
           {
             query: `
-              query {
-                _allGewaerPostsMeta {
-                  count
-                }
-                allGewaerPosts(
-                  first: ${postPerPage}
-                  skip: ${(gcurrentPage - 1) * postPerPage}
-                ) {
-                  id
-                  title
-                  subdesc
-                  info{
-                    blocks {
-                      __typename
-                      blocks
-                      links
-                      value
-                    }
-                  }
-                  image{url}
-                  _status
-                  _firstPublishedAt
-                }
+            query {
+              _allGewaerPostsMeta {
+                count
               }
+              allGewaerPosts(
+                first: ${postPerPage}
+                skip: ${(gcurrentPage - 1) * postPerPage}
+              ) {
+                id
+                title
+                slug
+                subdesc
+                info{
+                  blocks
+                  links
+                  value
+                }
+                image{url}
+                _status
+                _firstPublishedAt
+              }
+            }
             `,
           },
           {

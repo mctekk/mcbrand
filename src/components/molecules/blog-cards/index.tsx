@@ -9,6 +9,7 @@ type Props = {
   posts: {
     id: string;
     title: string;
+    slug:string
     subdesc?: string;
     image: Imagen;
     _status: string;

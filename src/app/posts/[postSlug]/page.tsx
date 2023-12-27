@@ -27,7 +27,6 @@ function PostDetail() {
   useEffect(() => {
     const fetchPostDetail = async () => {
       let postSlug = window.location.pathname.split("/").pop();
-      const newPostSlug = (postSlug ?? "").replace(/%20/g, " ");
 
       let apiUrl, query;
 
@@ -36,7 +35,7 @@ function PostDetail() {
           apiUrl = "https://graphql.datocms.com/";
           query = `
             query {
-              kanvasPost(filter: { title: { eq: "${newPostSlug}" } }) {
+              kanvasPost(filter: { slug: { eq: "${postSlug}" } }) {
                 id
                 title
                 subdesc
@@ -56,11 +55,15 @@ function PostDetail() {
           apiUrl = "https://graphql.datocms.com/";
           query = `
             query {
-              salesPost(filter: { title: { eq: "${postSlug}" } }) {
+              salesPost(filter: { slug: { eq: "${postSlug}" } }) {
                 id
                 title
                 subdesc
-                info
+                info{
+                  blocks
+                  links
+                  value
+                }
                 image{url}
                 _status
                 _firstPublishedAt
@@ -72,11 +75,15 @@ function PostDetail() {
           apiUrl = "https://graphql.datocms.com/";
           query = `
             query {
-              mctekkPost(filter: { title: { eq: "${postSlug}" } }) {
+              mctekkPost(filter: { slug: { eq: "${postSlug}" } }) {
                 id
                 title
                 subdesc
-                info
+                info{
+                  blocks
+                  links
+                  value
+                }
                 image{url}
                 _status
                 _firstPublishedAt
@@ -88,17 +95,14 @@ function PostDetail() {
           apiUrl = "https://graphql.datocms.com/";
           query = `
             query {
-              gewaerPost(filter: { title: { eq: "${postSlug}" } }) {
+              gewaerPost(filter: { slug: { eq: "${postSlug}" } }) {
                 id
                 title
                 subdesc
-                info {
-                  blocks {
-                    __typename
-                    blocks
-                    links
-                    value
-                  }
+                info{
+                  blocks
+                  links
+                  value
                 }
                 image{url}
                 _status
@@ -156,11 +160,11 @@ function PostDetail() {
                 <img
                   alt="ss"
                   src={post.image.url}
-                  className="object-cover rounded-lg shadow-lg w-3/6 "
+                  className="object-cover rounded-lg shadow-lg w-7/12 "
                 />
               </div>
-              <div className="text-justify w-7/12 mx-auto">
-                <StructuredText data={post.info} />
+              <div className="text-justify w-7/12 mx-auto " >
+                <StructuredText data={post.info}   />
               </div>
             </div>
           ) : (
