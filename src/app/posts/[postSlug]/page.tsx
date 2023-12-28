@@ -196,11 +196,11 @@ function PostDetail() {
                 First Published At:{" "}
                 {new Date(post._firstPublishedAt).toLocaleDateString()}
               </small>
-              <div className="w-1/2 mx-auto ">
-              <p className=" text-[48px] font-bold mb-4 text-center ">
+              <div className="w-3/4 mx-auto ">
+              <p className=" md:text-[2.9rem] text-[1.6rem] font-bold mb-4 text-center">
                 {post.title}
               </p>
-              <p className=" text-[20px]  mb-4 text-center">
+              <p className=" md:text-[1.5rem] text-[1]  mb-4 text-center">
                 {post.subdesc}
               </p>
               </div>
@@ -241,11 +241,11 @@ function PostDetail() {
                 First Published At:{" "}
                 {new Date(post._firstPublishedAt).toLocaleDateString()}
               </small>
-              <div className="w-2/3 md:mx-auto justify-center items-center ">
-              <p className=" text-[2.9rem] font-bold mb-4 text-center">
+              <div className="w-3/4 mx-auto ">
+              <p className=" md:text-[2.9rem] text-[1.6rem] font-bold mb-4 text-center">
                 {post.title}
               </p>
-              <p className=" text-[1.5rem]  mb-4 text-center">
+              <p className=" md:text-[1.5rem] text-[1]  mb-4 text-center">
                 {post.subdesc}
               </p>
               </div>
