@@ -27,7 +27,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
             <div className="flex-row flex justify-between">
               <div>
                 {" "}
-                <p className=" font-bold mb-2 text-[1.85rem] hover:text-gray-600 ">
+                <p className=" font-bold mb-2 text-[1.5rem] hover:text-gray-600 ">
                   {post.title}
                 </p>
               </div>
