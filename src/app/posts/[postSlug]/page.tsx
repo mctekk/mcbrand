@@ -9,10 +9,11 @@ import Header from "@/components/organism/header";
 import { Footer } from "@/components/organism/sections/footer";
 import { GMenu } from "@/components/molecules/gewaer-menu";
 import { StructuredText } from "react-datocms";
-import { isHeading, isCode } from 'datocms-structured-text-utils';
+import { isHeading, isCode } from "datocms-structured-text-utils";
 import McMenu from "@/components/molecules/mc-menu";
 import { IconBox } from "@/components/atoms/icon-box";
 import { BsArrow90DegLeft } from "react-icons/bs";
+import { Head } from "next/document";
 interface Post {
   id: string;
   title: string;
@@ -150,28 +151,40 @@ function PostDetail() {
         />
         <div className="w-fit mx-auto justify-center ">
           {post ? (
-            <div className="section prose-h1:">
-              <small className="text-gray-800 block font-bold mb-4 text-center">
-                First Published At:{" "}
-                {new Date(post._firstPublishedAt).toLocaleDateString()}
-              </small>
-              <p className=" text-[2rem] font-bold mb-4 text-center">
-                {post.title}
-              </p>
+            <>
+              <Head>
+                <title>{post.title}</title>
 
-              <div className="mb-8 flex justify-center">
-                <img
-                  alt="ss"
-                  src={post.image.url}
-                  className="object-cover rounded-lg shadow-lg w-7/12 "
-                />
+                <meta property="og:title" content={post.title} />
+                <meta property="og:description" content={post.subdesc} />
+                <meta property="og:image" content={post.image.url} />
+              </Head>
+              <div className="section prose-h1:">
+                <small className="text-gray-800 block font-bold mb-4 text-center">
+                  First Published At:{" "}
+                  {new Date(post._firstPublishedAt).toLocaleDateString()}
+                </small>
+                <p className=" text-[2rem] font-bold mb-4 text-center">
+                  {post.title}
+                </p>
+
+                <div className="mb-8 flex justify-center">
+                  <img
+                    alt="ss"
+                    src={post.image.url}
+                    className="object-cover rounded-lg shadow-lg w-7/12 "
+                  />
+                </div>
+                <div
+                  className="xl:text-justify xl:w-7/12 mx-auto  prose prose-lg prose-blue  "
+                  id="main-content"
+                >
+                  <article key={post.id}>
+                    <StructuredText data={post.info} />
+                  </article>
+                </div>
               </div>
-              <div className="xl:text-justify xl:w-7/12 mx-auto  prose prose-lg prose-blue  "id='main-content' >
-                <article key={post.id}>
-                <StructuredText data={post.info}   />
-                </article>
-              </div>
-            </div>
+            </>
           ) : (
             <p className="p-96">Loading...</p>
           )}
@@ -191,32 +204,44 @@ function PostDetail() {
         />
         <div className="w-fit mx-auto justify-center ">
           {post ? (
-            <div className="section">
-              <small className="text-mctekk-100 block font-semibold text-[16px] mb-4 text-center">
-                First Published At:{" "}
-                {new Date(post._firstPublishedAt).toLocaleDateString()}
-              </small>
-              <div className="w-3/4 mx-auto ">
-              <p className=" md:text-[2.9rem] text-[1.6rem] font-bold mb-4 text-center">
-                {post.title}
-              </p>
-              <p className=" md:text-[1.5rem] text-[1]  mb-4 text-center">
-                {post.subdesc}
-              </p>
+            <>
+              <Head>
+                <title>{post.title}</title>
+
+                <meta property="og:title" content={post.title} />
+                <meta property="og:description" content={post.subdesc} />
+                <meta property="og:image" content={post.image.url} />
+              </Head>
+              <div className="section">
+                <small className="text-mctekk-100 block font-semibold text-[16px] mb-4 text-center">
+                  First Published At:{" "}
+                  {new Date(post._firstPublishedAt).toLocaleDateString()}
+                </small>
+                <div className="w-3/4 mx-auto ">
+                  <p className=" md:text-[2.9rem] text-[1.6rem] font-bold mb-4 text-center">
+                    {post.title}
+                  </p>
+                  <p className=" md:text-[1.5rem] text-[1]  mb-4 text-center">
+                    {post.subdesc}
+                  </p>
+                </div>
+                <div className="mb-8 flex justify-center">
+                  <img
+                    alt="ss"
+                    src={post.image.url}
+                    className="object-cover rounded-lg shadow-lg w-3/6 "
+                  />
+                </div>
+                <div
+                  className="xl:text-justify xl:w-1/2 mx-auto  prose prose-lg prose-blue  "
+                  id="main-content"
+                >
+                  <article key={post.id}>
+                    <StructuredText data={post.info} />
+                  </article>
+                </div>
               </div>
-              <div className="mb-8 flex justify-center">
-                <img
-                  alt="ss"
-                  src={post.image.url}
-                  className="object-cover rounded-lg shadow-lg w-3/6 "
-                />
-              </div>
-              <div className="xl:text-justify xl:w-1/2 mx-auto  prose prose-lg prose-blue  "id='main-content' >
-                <article key={post.id}>
-                <StructuredText data={post.info}   />
-                </article>
-              </div>
-            </div>
+            </>
           ) : (
             <p className="p-96">Loading...</p>
           )}
@@ -236,32 +261,44 @@ function PostDetail() {
         />
         <div className="mx-auto justify-center  ">
           {post ? (
-            <div className="section">
-               <small className="text-gewaer-100 block font-semibold text-[16px] mb-4 text-center">
-                First Published At:{" "}
-                {new Date(post._firstPublishedAt).toLocaleDateString()}
-              </small>
-              <div className="w-3/4 mx-auto ">
-              <p className=" md:text-[2.9rem] text-[1.6rem] font-bold mb-4 text-center">
-                {post.title}
-              </p>
-              <p className=" md:text-[1.5rem] text-[1]  mb-4 text-center">
-                {post.subdesc}
-              </p>
+            <>
+              <Head>
+                <title>{post.title}</title>
+
+                <meta property="og:title" content={post.title} />
+                <meta property="og:description" content={post.subdesc} />
+                <meta property="og:image" content={post.image.url} />
+              </Head>
+              <div className="section">
+                <small className="text-gewaer-100 block font-semibold text-[16px] mb-4 text-center">
+                  First Published At:{" "}
+                  {new Date(post._firstPublishedAt).toLocaleDateString()}
+                </small>
+                <div className="w-3/4 mx-auto ">
+                  <p className=" md:text-[2.9rem] text-[1.6rem] font-bold mb-4 text-center">
+                    {post.title}
+                  </p>
+                  <p className=" md:text-[1.5rem] text-[1]  mb-4 text-center">
+                    {post.subdesc}
+                  </p>
+                </div>
+                <div className="mb-8 flex justify-center">
+                  <img
+                    alt="ss"
+                    src={post.image.url}
+                    className="object-cover rounded-lg shadow-lg w-3/6 "
+                  />
+                </div>
+                <div
+                  className="xl:text-justify xl:w-7/12 mx-auto  prose lg:prose-xl prose-lg prose-blue  "
+                  id="main-content"
+                >
+                  <article key={post.id}>
+                    <StructuredText data={post.info} />
+                  </article>
+                </div>
               </div>
-              <div className="mb-8 flex justify-center">
-                <img
-                  alt="ss"
-                  src={post.image.url}
-                  className="object-cover rounded-lg shadow-lg w-3/6 "
-                />
-              </div>
-              <div className="xl:text-justify xl:w-7/12 mx-auto  prose lg:prose-xl prose-lg prose-blue  "id='main-content'  >
-                <article key={post.id}>
-                <StructuredText data={post.info}   />
-                </article>
-              </div>
-            </div>
+            </>
           ) : (
             <p className="p-96">Loading...</p>
           )}
