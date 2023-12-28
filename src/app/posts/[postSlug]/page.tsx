@@ -9,10 +9,7 @@ import Header from "@/components/organism/header";
 import { Footer } from "@/components/organism/sections/footer";
 import { GMenu } from "@/components/molecules/gewaer-menu";
 import { StructuredText } from "react-datocms";
-import { isHeading, isCode } from "datocms-structured-text-utils";
 import McMenu from "@/components/molecules/mc-menu";
-import { IconBox } from "@/components/atoms/icon-box";
-import { BsArrow90DegLeft } from "react-icons/bs";
 import { Head } from "next/document";
 interface Post {
   id: string;
@@ -205,13 +202,12 @@ function PostDetail() {
         <div className="w-fit mx-auto justify-center ">
           {post ? (
             <>
-              <Head>
-                <title>{post.title}</title>
+              <head>
 
                 <meta property="og:title" content={post.title} />
                 <meta property="og:description" content={post.subdesc} />
                 <meta property="og:image" content={post.image.url} />
-              </Head>
+              </head>
               <div className="section">
                 <small className="text-mctekk-100 block font-semibold text-[16px] mb-4 text-center">
                   First Published At:{" "}
@@ -262,13 +258,12 @@ function PostDetail() {
         <div className="mx-auto justify-center  ">
           {post ? (
             <>
-              <Head>
-                <title>{post.title}</title>
+              <head>
 
                 <meta property="og:title" content={post.title} />
                 <meta property="og:description" content={post.subdesc} />
                 <meta property="og:image" content={post.image.url} />
-              </Head>
+              </head>
               <div className="section">
                 <small className="text-gewaer-100 block font-semibold text-[16px] mb-4 text-center">
                   First Published At:{" "}
