@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import PostCard, { Imagen } from "@/components/atoms/postCards";
 
-const cardContainerClass = "flex-col flex-wrap w-2/4 mx-auto justify-center mb-72";
+const cardContainerClass = "flex-col flex-wrap w-9/12 mx-auto justify-center mb-72";
 const buttonContainerClass = "flex justify-center mt-4";
-const loadButtonClass = `bg-blue-500 text-white px-4 py-2 m-2 rounded disabled:brightness-50 `;
+const loadButtonClass = ` text-white px-4 py-2 m-2 rounded disabled:brightness-50 ${process.env.PAGE_TYPE === "mctekk" ? 'bg-mctekk-100' : ''} ${process.env.PAGE_TYPE === "gewaer" ? 'bg-gewaer-100' : ''}`;
+
 
 type Props = {
   title:string

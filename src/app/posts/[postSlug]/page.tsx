@@ -11,6 +11,8 @@ import { GMenu } from "@/components/molecules/gewaer-menu";
 import { StructuredText } from "react-datocms";
 import { isHeading, isCode } from 'datocms-structured-text-utils';
 import McMenu from "@/components/molecules/mc-menu";
+import { IconBox } from "@/components/atoms/icon-box";
+import { BsArrow90DegLeft } from "react-icons/bs";
 interface Post {
   id: string;
   title: string;
@@ -232,14 +234,14 @@ function PostDetail() {
           logo="/images/Gewaer.svg"
           iconColor="text-white"
         />
-        <div className="w-fit mx-auto justify-center  ">
+        <div className="mx-auto justify-center  ">
           {post ? (
             <div className="section">
                <small className="text-gewaer-100 block font-semibold text-[16px] mb-4 text-center">
                 First Published At:{" "}
                 {new Date(post._firstPublishedAt).toLocaleDateString()}
               </small>
-              <div className="w-1/2 md:mx-auto justify-center items-center ">
+              <div className="w-2/3 md:mx-auto justify-center items-center ">
               <p className=" text-[2.9rem] font-bold mb-4 text-center">
                 {post.title}
               </p>
