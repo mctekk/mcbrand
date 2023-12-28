@@ -3,7 +3,7 @@ import PostCard, { Imagen } from "@/components/atoms/postCards";
 
 const cardContainerClass = "flex-col flex-wrap w-2/4 mx-auto justify-center mb-72";
 const buttonContainerClass = "flex justify-center mt-4";
-const loadButtonClass = "bg-blue-500 text-white px-4 py-2 m-2 rounded disabled:brightness-50 ";
+const loadButtonClass = `bg-blue-500 text-white px-4 py-2 m-2 rounded disabled:brightness-50 `;
 
 type Props = {
   title:string
