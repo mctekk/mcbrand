@@ -232,18 +232,18 @@ function PostDetail() {
           logo="/images/Gewaer.svg"
           iconColor="text-white"
         />
-        <div className="w-fit mx-auto justify-center ">
+        <div className="w-fit mx-auto justify-center  ">
           {post ? (
             <div className="section">
                <small className="text-gewaer-100 block font-semibold text-[16px] mb-4 text-center">
                 First Published At:{" "}
                 {new Date(post._firstPublishedAt).toLocaleDateString()}
               </small>
-              <div className="w-1/2 mx-auto ">
-              <p className=" text-[48px] font-bold mb-4 text-center ">
+              <div className="w-1/2 md:mx-auto justify-center items-center ">
+              <p className=" text-[2.9rem] font-bold mb-4 text-center">
                 {post.title}
               </p>
-              <p className=" text-[20px]  mb-4 text-center">
+              <p className=" text-[1.5rem]  mb-4 text-center">
                 {post.subdesc}
               </p>
               </div>
@@ -254,7 +254,7 @@ function PostDetail() {
                   className="object-cover rounded-lg shadow-lg w-3/6 "
                 />
               </div>
-              <div className="xl:text-justify xl:w-7/12 mx-auto  prose prose-lg prose-blue  "id='main-content' >
+              <div className="xl:text-justify xl:w-7/12 mx-auto  prose lg:prose-xl prose-lg prose-blue  "id='main-content'  >
                 <article key={post.id}>
                 <StructuredText data={post.info}   />
                 </article>
