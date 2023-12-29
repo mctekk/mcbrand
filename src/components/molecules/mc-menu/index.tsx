@@ -7,7 +7,7 @@ const menuItems = [
  
   {
     text: translate("mcnavbar.section.Blog"),
-    link: "https://mctekk.substack.com/",
+    link: "/blog",
   },
 ];
 const externalLinks = [
