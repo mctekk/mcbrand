@@ -36,6 +36,10 @@ const config = {
         "elevation-3":
           "0px 20px 30px rgba(0, 0, 0, 0.06), 0px 10px 20px rgba(0, 0, 0, 0.08)",
       },
+      
+        fontFamily: {
+          inter: ['Inter', 'sans-serif'],
+        },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -133,7 +137,7 @@ const config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'),],
 };
 
 export default config;
