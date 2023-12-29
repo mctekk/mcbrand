@@ -10,7 +10,7 @@ import { Footer } from "@/components/organism/sections/footer";
 import { GMenu } from "@/components/molecules/gewaer-menu";
 import { StructuredText } from "react-datocms";
 import McMenu from "@/components/molecules/mc-menu";
-import { Head } from "next/document";
+import Head from "next/head";
 interface Post {
   id: string;
   title: string;
@@ -140,6 +140,15 @@ function PostDetail() {
   if (pageType === "kanvas") {
     return (
       <>
+        {post ? (
+          <Head>
+            <meta property="og:title" content={post.title} />
+            <meta property="og:description" content={post.subdesc} />
+            <meta property="og:image" content={post.image.url} />
+          </Head>
+        ) : (
+          ""
+        )}
         <Header
           menu={<KanvasMenu />}
           className="bg-sky-600"
@@ -149,13 +158,6 @@ function PostDetail() {
         <div className="w-fit mx-auto justify-center ">
           {post ? (
             <>
-              <Head>
-                <title>{post.title}</title>
-
-                <meta property="og:title" content={post.title} />
-                <meta property="og:description" content={post.subdesc} />
-                <meta property="og:image" content={post.image.url} />
-              </Head>
               <div className="section prose-h1:">
                 <small className="text-gray-800 block font-bold mb-4 text-center">
                   First Published At:{" "}
@@ -193,6 +195,16 @@ function PostDetail() {
   if (pageType === "mctekk") {
     return (
       <>
+        {post ? (
+          <Head>
+            <meta property="og:title" content={post.title} />
+            <meta property="og:description" content={post.subdesc} />
+            <meta property="og:image" content={post.image.url} />
+          </Head>
+        ) : (
+          ""
+        )}
+
         <Header
           menu={<McMenu></McMenu>}
           className="bg-black"
@@ -202,12 +214,6 @@ function PostDetail() {
         <div className="w-fit mx-auto justify-center ">
           {post ? (
             <>
-              <head>
-
-                <meta property="og:title" content={post.title} />
-                <meta property="og:description" content={post.subdesc} />
-                <meta property="og:image" content={post.image.url} />
-              </head>
               <div className="section">
                 <small className="text-mctekk-100 block font-semibold text-[16px] mb-4 text-center">
                   First Published At:{" "}
@@ -249,6 +255,15 @@ function PostDetail() {
   if (pageType === "gewaer") {
     return (
       <>
+        {post ? (
+          <Head>
+            <meta property="og:title" content={post.title} />
+            <meta property="og:description" content={post.subdesc} />
+            <meta property="og:image" content={post.image.url} />
+          </Head>
+        ) : (
+          ""
+        )}
         <Header
           menu={<GMenu />}
           className="bg-gewaer-100"
@@ -258,12 +273,6 @@ function PostDetail() {
         <div className="mx-auto justify-center  ">
           {post ? (
             <>
-              <head>
-
-                <meta property="og:title" content={post.title} />
-                <meta property="og:description" content={post.subdesc} />
-                <meta property="og:image" content={post.image.url} />
-              </head>
               <div className="section">
                 <small className="text-gewaer-100 block font-semibold text-[16px] mb-4 text-center">
                   First Published At:{" "}
