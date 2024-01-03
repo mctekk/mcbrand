@@ -349,12 +349,34 @@ function PostDetail() {
                   )}
                 </div>
                 <div
-                  className="xl:text-justify xl:w-7/12 mx-auto  prose lg:prose-xl prose-lg prose-blue  "
+                  className=" xl:w-full mx-auto  max-w-3xl prose  prose-lg prose-blue  "
                   id="main-content"
                 >
-                  <article key={post.id}>
-                    <StructuredText data={post.info} />
-                  </article>
+                  <div key={post.id}>
+                    <StructuredText
+                      data={post.info}
+                      customNodeRules={[
+                        renderNodeRule(isCode, ({ node, key }) => {
+                          return (
+                            <SyntaxHighlighter
+                              language={node.language || "unknown"}
+                              style={a11yDark}
+                              showLineNumbers={
+                                node.code.split(/\n/).length > 10
+                              }
+                              wrapLines={true}
+                              lineProps={(lineNumber: number) => ({
+                                style: { display: "block" },
+                                className: `line-${lineNumber}`,
+                              })}
+                            >
+                              {node.code}
+                            </SyntaxHighlighter>
+                          );
+                        }),
+                      ]}
+                    />
+                  </div>
                 </div>
               </div>
             </>
