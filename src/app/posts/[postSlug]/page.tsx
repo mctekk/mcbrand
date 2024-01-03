@@ -93,7 +93,6 @@ function PostDetail() {
                   __typename
 
                 }
-                code
                 image{url}
                 _status
                 _firstPublishedAt
