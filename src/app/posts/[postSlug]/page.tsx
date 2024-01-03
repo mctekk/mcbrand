@@ -8,17 +8,23 @@ import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import Header from "@/components/organism/header";
 import { Footer } from "@/components/organism/sections/footer";
 import { GMenu } from "@/components/molecules/gewaer-menu";
-import { StructuredText } from "react-datocms";
+import { StructuredText, renderNodeRule } from "react-datocms";
 import McMenu from "@/components/molecules/mc-menu";
 import Head from "next/head";
+import { isCode } from "datocms-structured-text-utils";
+import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+
 interface Post {
   id: string;
   title: string;
-  image: Imagen;
+  image?: Imagen;
   subdesc?: string;
   info: any;
   _status: string;
   _firstPublishedAt: string;
+  code?: string;
 }
 
 function PostDetail() {
@@ -84,7 +90,10 @@ function PostDetail() {
                   blocks
                   links
                   value
+                  __typename
+
                 }
+                code
                 image{url}
                 _status
                 _firstPublishedAt
@@ -144,7 +153,11 @@ function PostDetail() {
           <Head>
             <meta property="og:title" content={post.title} />
             <meta property="og:description" content={post.subdesc} />
-            <meta property="og:image" content={post.image.url} />
+            {post.image ? (
+              <meta property="og:image" content={post.image.url} />
+            ) : (
+              ""
+            )}
           </Head>
         ) : (
           ""
@@ -168,11 +181,15 @@ function PostDetail() {
                 </p>
 
                 <div className="mb-8 flex justify-center">
-                  <img
-                    alt="ss"
-                    src={post.image.url}
-                    className="object-cover rounded-lg shadow-lg w-7/12 "
-                  />
+                  {post.image ? (
+                    <img
+                      alt="ss"
+                      src={post.image.url}
+                      className="object-cover rounded-lg shadow-lg w-7/12 "
+                    />
+                  ) : (
+                    ""
+                  )}
                 </div>
                 <div
                   className="xl:text-justify xl:w-7/12 mx-auto  prose prose-lg prose-blue  "
@@ -199,7 +216,11 @@ function PostDetail() {
           <Head>
             <meta property="og:title" content={post.title} />
             <meta property="og:description" content={post.subdesc} />
-            <meta property="og:image" content={post.image.url} />
+            {post.image ? (
+              <meta property="og:image" content={post.image.url} />
+            ) : (
+              ""
+            )}
           </Head>
         ) : (
           ""
@@ -228,19 +249,45 @@ function PostDetail() {
                   </p>
                 </div>
                 <div className="mb-8 flex justify-center">
-                  <img
-                    alt="ss"
-                    src={post.image.url}
-                    className="object-cover rounded-lg shadow-lg w-3/6 "
-                  />
+                  {post.image ? (
+                    <img
+                      alt="ss"
+                      src={post.image.url}
+                      className="object-cover rounded-lg shadow-lg w-7/12 "
+                    />
+                  ) : (
+                    ""
+                  )}
                 </div>
                 <div
-                  className="xl:text-justify xl:w-1/2 mx-auto  prose prose-lg prose-blue  "
+                  className=" xl:w-full mx-auto  max-w-3xl prose  prose-lg prose-blue  "
                   id="main-content"
                 >
-                  <article key={post.id}>
-                    <StructuredText data={post.info} />
-                  </article>
+                  <div key={post.id}>
+                    <StructuredText
+                      data={post.info}
+                      customNodeRules={[
+                        renderNodeRule(isCode, ({ node, key }) => {
+                          return (
+                            <SyntaxHighlighter
+                              language={node.language || "unknown"}
+                              style={a11yDark}
+                              showLineNumbers={
+                                node.code.split(/\n/).length > 10
+                              }
+                              wrapLines={true}
+                              lineProps={(lineNumber: number) => ({
+                                style: { display: "block" },
+                                className: `line-${lineNumber}`,
+                              })}
+                            >
+                              {node.code}
+                            </SyntaxHighlighter>
+                          );
+                        }),
+                      ]}
+                    />
+                  </div>
                 </div>
               </div>
             </>
@@ -259,7 +306,11 @@ function PostDetail() {
           <Head>
             <meta property="og:title" content={post.title} />
             <meta property="og:description" content={post.subdesc} />
-            <meta property="og:image" content={post.image.url} />
+            {post.image ? (
+              <meta property="og:image" content={post.image.url} />
+            ) : (
+              ""
+            )}
           </Head>
         ) : (
           ""
@@ -287,19 +338,45 @@ function PostDetail() {
                   </p>
                 </div>
                 <div className="mb-8 flex justify-center">
-                  <img
-                    alt="ss"
-                    src={post.image.url}
-                    className="object-cover rounded-lg shadow-lg w-3/6 "
-                  />
+                  {post.image ? (
+                    <img
+                      alt="ss"
+                      src={post.image.url}
+                      className="object-cover rounded-lg shadow-lg w-7/12 "
+                    />
+                  ) : (
+                    ""
+                  )}
                 </div>
                 <div
-                  className="xl:text-justify xl:w-7/12 mx-auto  prose lg:prose-xl prose-lg prose-blue  "
+                  className=" xl:w-full mx-auto  max-w-3xl prose  prose-lg prose-blue  "
                   id="main-content"
                 >
-                  <article key={post.id}>
-                    <StructuredText data={post.info} />
-                  </article>
+                  <div key={post.id}>
+                    <StructuredText
+                      data={post.info}
+                      customNodeRules={[
+                        renderNodeRule(isCode, ({ node, key }) => {
+                          return (
+                            <SyntaxHighlighter
+                              language={node.language || "unknown"}
+                              style={a11yDark}
+                              showLineNumbers={
+                                node.code.split(/\n/).length > 10
+                              }
+                              wrapLines={true}
+                              lineProps={(lineNumber: number) => ({
+                                style: { display: "block" },
+                                className: `line-${lineNumber}`,
+                              })}
+                            >
+                              {node.code}
+                            </SyntaxHighlighter>
+                          );
+                        }),
+                      ]}
+                    />
+                  </div>
                 </div>
               </div>
             </>

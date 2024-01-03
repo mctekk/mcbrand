@@ -130,6 +130,11 @@
   "resolved" "https://registry.npmjs.org/@types/node/-/node-20.6.3.tgz"
   "version" "20.6.3"
 
+"@types/prismjs@^1.26.3":
+  "integrity" "sha512-A0D0aTXvjlqJ5ZILMz3rNfDBOx9hHxLZYv2by47Sm/pqW35zzjusrZTryatjN/Rf8Us2gZrJD+KeHbUSTux1Cw=="
+  "resolved" "https://registry.npmjs.org/@types/prismjs/-/prismjs-1.26.3.tgz"
+  "version" "1.26.3"
+
 "@types/prop-types@*":
   "integrity" "sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng=="
   "resolved" "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.11.tgz"
@@ -561,7 +566,17 @@
     "property-information" "^5.0.0"
     "space-separated-tokens" "^1.0.0"
 
-"highlight.js@^10.4.1", "highlight.js@~10.7.0":
+"highlight.js@^10.4.1":
+  "integrity" "sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A=="
+  "resolved" "https://registry.npmjs.org/highlight.js/-/highlight.js-10.7.3.tgz"
+  "version" "10.7.3"
+
+"highlight.js@^11.9.0":
+  "integrity" "sha512-fJ7cW7fQGCYAkgv4CPfwFHrfd/cLS4Hau96JuJ+ZTOWhjnhoeN1ub1tFmALm/+lW5z4WCAuAV9bm05AP0mS6Gw=="
+  "resolved" "https://registry.npmjs.org/highlight.js/-/highlight.js-11.9.0.tgz"
+  "version" "11.9.0"
+
+"highlight.js@~10.7.0":
   "integrity" "sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A=="
   "resolved" "https://registry.npmjs.org/highlight.js/-/highlight.js-10.7.3.tgz"
   "version" "10.7.3"
@@ -921,7 +936,7 @@
     "picocolors" "^1.0.0"
     "source-map-js" "^1.0.2"
 
-"prismjs@^1.27.0":
+"prismjs@^1.27.0", "prismjs@^1.29.0":
   "integrity" "sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q=="
   "resolved" "https://registry.npmjs.org/prismjs/-/prismjs-1.29.0.tgz"
   "version" "1.29.0"
