@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 
+
 const type = process.env.PAGE_TYPE || "";
 
 export default function RootLayout({

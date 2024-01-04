@@ -16,6 +16,7 @@ import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { NextSeo } from "next-seo";
+import { Metadata } from "next";
 
 interface Post {
   id: string;
@@ -27,7 +28,11 @@ interface Post {
   _firstPublishedAt: string;
   code?: string;
 }
+export const metadata: Metadata = {
+  title: process.env.PAGE_TITLE ?? process.env.PAGE_TYPE?.toUpperCase(),
+  description: "Prueba"
 
+};
 function PostDetail() {
   const [post, setPost] = useState<Post | null>(null);
   const pageType = process.env.NEXT_PUBLIC_PAGE_TYPE || "";
