@@ -1,397 +1,59 @@
-// pages/posts/[postId].tsx
-"use client";
-
-import React, { useEffect, useState } from "react";
+import React from "react";
+import PostClient from "./client";
+import { Metadata, ResolvingMetadata } from "next";
 import api from "@/model/api/dato-cms/data";
-import { Imagen } from "@/components/atoms/postCards";
-import { KanvasMenu } from "@/components/molecules/kanvas-menu";
-import Header from "@/components/organism/header";
-import { Footer } from "@/components/organism/sections/footer";
-import { GMenu } from "@/components/molecules/gewaer-menu";
-import { StructuredText, renderNodeRule } from "react-datocms";
-import McMenu from "@/components/molecules/mc-menu";
-import Head from "next/head";
-import { isCode } from "datocms-structured-text-utils";
-import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
-
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { NextSeo } from "next-seo";
-import { Metadata } from "next";
-
-interface Post {
-  id: string;
-  title: string;
-  image?: Imagen;
-  subdesc?: string;
-  info: any;
-  _status: string;
-  _firstPublishedAt: string;
-  code?: string;
-}
-export const metadata: Metadata = {
-  title: process.env.PAGE_TITLE ?? process.env.PAGE_TYPE?.toUpperCase(),
-  description: "Prueba"
-
+type Props = {
+  params: { postSlug: string };
+  searchParams?: { [key: string]: string | string[] | undefined };
 };
-function PostDetail() {
-  const [post, setPost] = useState<Post | null>(null);
-  const pageType = process.env.NEXT_PUBLIC_PAGE_TYPE || "";
 
-  useEffect(() => {
-    const fetchPostDetail = async () => {
-      let postSlug = window.location.pathname.split("/").pop();
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
 
-      let apiUrl, query;
+  const id = params.postSlug;
+  console.log(id)
+  const response = await api.post(
+    "https://graphql.datocms.com/",
+    { query: `            query {
+      mctekkPost(filter: { slug: { eq: "${id}" } }) {
+        id
+        title
+        subdesc
+        info{
+          blocks
+          links
+          value
+          __typename
 
-      switch (pageType) {
-        case "kanvas":
-          apiUrl = "https://graphql.datocms.com/";
-          query = `
-            query {
-              kanvasPost(filter: { slug: { eq: "${postSlug}" } }) {
-                id
-                title
-                subdesc
-                info{
-                  blocks
-                  links
-                  value
-                }
-                image{url}
-                _status
-                _firstPublishedAt
-              }
-            }
-          `;
-          break;
-        case "salesAssist":
-          apiUrl = "https://graphql.datocms.com/";
-          query = `
-            query {
-              salesPost(filter: { slug: { eq: "${postSlug}" } }) {
-                id
-                title
-                subdesc
-                info{
-                  blocks
-                  links
-                  value
-                }
-                image{url}
-                _status
-                _firstPublishedAt
-              }
-            }
-          `;
-          break;
-        case "mctekk":
-          apiUrl = "https://graphql.datocms.com/";
-          query = `
-            query {
-              mctekkPost(filter: { slug: { eq: "${postSlug}" } }) {
-                id
-                title
-                subdesc
-                info{
-                  blocks
-                  links
-                  value
-                  __typename
-
-                }
-                image{url}
-                _status
-                _firstPublishedAt
-              }
-            }
-          `;
-          break;
-        case "gewaer":
-          apiUrl = "https://graphql.datocms.com/";
-          query = `
-            query {
-              gewaerPost(filter: { slug: { eq: "${postSlug}" } }) {
-                id
-                title
-                subdesc
-                info{
-                  blocks
-                  links
-                  value
-                }
-                image{url}
-                _status
-                _firstPublishedAt
-              }
-            }
-          `;
-          break;
-        default:
-          console.log("PAGE_TYPE not recognized");
-          console.log(pageType);
-          return;
+        }
+        image{url}
+        _status
+        _firstPublishedAt
       }
+    }` },
+    {
+      headers: { Authorization: `2a23696ee4a5978719f9205c429acb` },
+      timeout: 5000,
+    })
+    console.log(response.data.data.mctekkPost.title)
+    const previousImages = response.data.data.mctekkPost.image.url
+    console.log(response.data.data.mctekkPost)
 
-      try {
-        const response = await api.post(
-          apiUrl,
-          { query: query },
-          {
-            headers: { Authorization: `2a23696ee4a5978719f9205c429acb` },
-            timeout: 5000,
-          }
-        );
-
-        setPost(response.data.data[`${pageType}Post`]);
-      } catch (error) {
-        console.error("Error fetching post details:", error);
-      }
-    };
-
-    fetchPostDetail();
-  }, [pageType]);
-
-  if (pageType === "kanvas") {
-    return (
-      <>
-        {post ? (
-          <NextSeo
-            title={post.title}
-            description={post.subdesc}
-            openGraph={{
-              title: post.title,
-              description: post.subdesc,
-            }}
-          />
-        ) : (
-          ""
-        )}
-        <Header
-          menu={<KanvasMenu />}
-          className="bg-sky-600"
-          logo="/images/kanvasL.svg"
-          iconColor="text-white"
-        />
-        <div className="w-fit mx-auto justify-center ">
-          {post ? (
-            <>
-              <div className="section prose-h1:">
-                <small className="text-gray-800 block font-bold mb-4 text-center">
-                  First Published At:{" "}
-                  {new Date(post._firstPublishedAt).toLocaleDateString()}
-                </small>
-                <p className=" text-[2rem] font-bold mb-4 text-center">
-                  {post.title}
-                </p>
-
-                <div className="mb-8 flex justify-center">
-                  {post.image ? (
-                    <img
-                      alt="ss"
-                      src={post.image.url}
-                      className="object-cover rounded-lg shadow-lg w-7/12 "
-                    />
-                  ) : (
-                    ""
-                  )}
-                </div>
-                <div
-                  className="xl:text-justify xl:w-7/12 mx-auto  prose prose-lg prose-blue  "
-                  id="main-content"
-                >
-                  <article key={post.id}>
-                    <StructuredText data={post.info} />
-                  </article>
-                </div>
-              </div>
-            </>
-          ) : (
-            <p className="p-96">Loading...</p>
-          )}
-        </div>
-        <Footer kanvas></Footer>
-      </>
-    );
-  }
-  if (pageType === "mctekk") {
-    return (
-      <>
-        {post ? (
-          <NextSeo
-            title={post.title}
-            description={post.subdesc}
-            openGraph={{
-              title: post.title,
-              description: post.subdesc,
-            }}
-          />
-        ) : (
-          ""
-        )}
-
-        <Header
-          menu={<McMenu></McMenu>}
-          className="bg-black"
-          logo="/images/McLogo.svg"
-          iconColor="text-white"
-        />
-        <div className="w-fit mx-auto justify-center ">
-          {post ? (
-            <>
-              <div className="section">
-                <small className="text-mctekk-100 block font-semibold text-[16px] mb-4 text-center">
-                  First Published At:{" "}
-                  {new Date(post._firstPublishedAt).toLocaleDateString()}
-                </small>
-                <div className="w-3/4 mx-auto ">
-                  <p className=" md:text-[2.9rem] text-[1.6rem] font-bold mb-4 text-center">
-                    {post.title}
-                  </p>
-                  <p className=" md:text-[1.5rem] text-[1]  mb-4 text-center">
-                    {post.subdesc}
-                  </p>
-                </div>
-                <div className="mb-8 flex justify-center">
-                  {post.image ? (
-                    <img
-                      alt="ss"
-                      src={post.image.url}
-                      className="object-cover rounded-lg shadow-lg w-7/12 "
-                    />
-                  ) : (
-                    ""
-                  )}
-                </div>
-                <div
-                  className=" xl:w-full mx-auto  max-w-3xl prose  prose-lg prose-blue  "
-                  id="main-content"
-                >
-                  <div key={post.id}>
-                    <StructuredText
-                      data={post.info}
-                      customNodeRules={[
-                        renderNodeRule(isCode, ({ node, key }) => {
-                          return (
-                            <SyntaxHighlighter
-                              language={node.language || "unknown"}
-                              style={a11yDark}
-                              showLineNumbers={
-                                node.code.split(/\n/).length > 10
-                              }
-                              wrapLines={true}
-                              lineProps={(lineNumber: number) => ({
-                                style: { display: "block" },
-                                className: `line-${lineNumber}`,
-                              })}
-                            >
-                              {node.code}
-                            </SyntaxHighlighter>
-                          );
-                        }),
-                      ]}
-                    />
-                  </div>
-                </div>
-              </div>
-            </>
-          ) : (
-            <p className="p-96">Loading...</p>
-          )}
-        </div>
-        <Footer mctekk></Footer>
-      </>
-    );
-  }
-  if (pageType === "gewaer") {
-    return (
-      <>
-        {post ? (
-          <NextSeo
-            title={post.title}
-            description={post.subdesc}
-            openGraph={{
-              title: post.title,
-              description: post.subdesc,
-            }}
-          />
-        ) : (
-          ""
-        )}
-        <Header
-          menu={<GMenu />}
-          className="bg-gewaer-100"
-          logo="/images/Gewaer.svg"
-          iconColor="text-white"
-        />
-        <div className="mx-auto justify-center  ">
-          {post ? (
-            <>
-              <div className="section">
-                <small className="text-gewaer-100 block font-semibold text-[16px] mb-4 text-center">
-                  First Published At:{" "}
-                  {new Date(post._firstPublishedAt).toLocaleDateString()}
-                </small>
-                <div className="w-3/4 mx-auto ">
-                  <p className=" md:text-[2.9rem] text-[1.6rem] font-bold mb-4 text-center">
-                    {post.title}
-                  </p>
-                  <p className=" md:text-[1.5rem] text-[1]  mb-4 text-center">
-                    {post.subdesc}
-                  </p>
-                </div>
-                <div className="mb-8 flex justify-center">
-                  {post.image ? (
-                    <img
-                      alt="ss"
-                      src={post.image.url}
-                      className="object-cover rounded-lg shadow-lg w-7/12 "
-                    />
-                  ) : (
-                    ""
-                  )}
-                </div>
-                <div
-                  className=" xl:w-full mx-auto  max-w-3xl prose  prose-lg prose-blue  "
-                  id="main-content"
-                >
-                  <div key={post.id}>
-                    <StructuredText
-                      data={post.info}
-                      customNodeRules={[
-                        renderNodeRule(isCode, ({ node, key }) => {
-                          return (
-                            <SyntaxHighlighter
-                              language={node.language || "unknown"}
-                              style={a11yDark}
-                              showLineNumbers={
-                                node.code.split(/\n/).length > 10
-                              }
-                              wrapLines={true}
-                              lineProps={(lineNumber: number) => ({
-                                style: { display: "block" },
-                                className: `line-${lineNumber}`,
-                              })}
-                            >
-                              {node.code}
-                            </SyntaxHighlighter>
-                          );
-                        }),
-                      ]}
-                    />
-                  </div>
-                </div>
-              </div>
-            </>
-          ) : (
-            <p className="p-96">Loading...</p>
-          )}
-        </div>
-        <Footer gewaer></Footer>
-      </>
-    );
-  }
-
-  return null;
+  return {
+    title: response.data.data.mctekkPost.title,
+    description:response.data.data.mctekkPost.subdesc,
+    openGraph: {
+      images: [previousImages],
+    },
+    
+  };
 }
-
-export default PostDetail;
+export default function Post({ params, searchParams }: Props) {
+  return (
+    <div>
+      <PostClient></PostClient>
+    </div>
+  );
+}
