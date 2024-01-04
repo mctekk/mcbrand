@@ -12,9 +12,10 @@ import { StructuredText, renderNodeRule } from "react-datocms";
 import McMenu from "@/components/molecules/mc-menu";
 import Head from "next/head";
 import { isCode } from "datocms-structured-text-utils";
-import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { NextSeo } from "next-seo";
 
 interface Post {
   id: string;
@@ -149,15 +150,14 @@ function PostDetail() {
     return (
       <>
         {post ? (
-          <Head>
-            <meta property="og:title" content={post.title} />
-            <meta property="og:description" content={post.subdesc} />
-            {post.image ? (
-              <meta property="og:image" content={post.image.url} />
-            ) : (
-              ""
-            )}
-          </Head>
+          <NextSeo
+            title={post.title}
+            description={post.subdesc}
+            openGraph={{
+              title: post.title,
+              description: post.subdesc,
+            }}
+          />
         ) : (
           ""
         )}
@@ -212,15 +212,14 @@ function PostDetail() {
     return (
       <>
         {post ? (
-          <Head>
-            <meta property="og:title" content={post.title} />
-            <meta property="og:description" content={post.subdesc} />
-            {post.image ? (
-              <meta property="og:image" content={post.image.url} />
-            ) : (
-              ""
-            )}
-          </Head>
+          <NextSeo
+            title={post.title}
+            description={post.subdesc}
+            openGraph={{
+              title: post.title,
+              description: post.subdesc,
+            }}
+          />
         ) : (
           ""
         )}
@@ -302,15 +301,14 @@ function PostDetail() {
     return (
       <>
         {post ? (
-          <Head>
-            <meta property="og:title" content={post.title} />
-            <meta property="og:description" content={post.subdesc} />
-            {post.image ? (
-              <meta property="og:image" content={post.image.url} />
-            ) : (
-              ""
-            )}
-          </Head>
+          <NextSeo
+            title={post.title}
+            description={post.subdesc}
+            openGraph={{
+              title: post.title,
+              description: post.subdesc,
+            }}
+          />
         ) : (
           ""
         )}
