@@ -75,11 +75,11 @@ export async function generateMetadata(
       break;
   }
 
-  const previousImages = response?.data.data.mctekkPost.image.url;
+  const previousImages = response?.data?.data?.pageTypePost?.image.url;
 
   return {
-    title: response?.data.data.mctekkPost.title,
-    description: response?.data.data.mctekkPost.subdesc,
+    title: response?.data?.data?.pageTypePost?.title,
+    description: response?.data?.data?.pageTypePost?.subdesc,
     openGraph: {
       images: [previousImages],
     },
