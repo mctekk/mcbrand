@@ -11,43 +11,78 @@ export async function generateMetadata(
   { params, searchParams }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-
   const id = params.postSlug;
-  console.log(id)
-  const response = await api.post(
-    "https://graphql.datocms.com/",
-    { query: `            query {
-      mctekkPost(filter: { slug: { eq: "${id}" } }) {
-        id
-        title
-        subdesc
-        info{
-          blocks
-          links
-          value
-          __typename
-
+  console.log(id);
+  const pageType = process.env.NEXT_PUBLIC_PAGE_TYPE || "";
+  let response;
+  switch (pageType) {
+    case "mctekk":
+      response = await api.post(
+        "https://graphql.datocms.com/",
+        {
+          query: `            query {
+        mctekkPost(filter: { slug: { eq: "${id}" } }) {
+          title
+          subdesc
+          image{url}
+    
         }
-        image{url}
-        _status
-        _firstPublishedAt
-      }
-    }` },
-    {
-      headers: { Authorization: `2a23696ee4a5978719f9205c429acb` },
-      timeout: 5000,
-    })
-    console.log(response.data.data.mctekkPost.title)
-    const previousImages = response.data.data.mctekkPost.image.url
-    console.log(response.data.data.mctekkPost)
+      }`,
+        },
+        {
+          headers: { Authorization: `2a23696ee4a5978719f9205c429acb` },
+          timeout: 5000,
+        }
+      );
+      break;
+    case "gewaer":
+      response = await api.post(
+        "https://graphql.datocms.com/",
+        {
+          query: `            query {
+          gewaerPost(filter: { slug: { eq: "${id}" } }) {
+            title
+            subdesc
+            image{url}
+      
+          }
+        }`,
+        },
+        {
+          headers: { Authorization: `2a23696ee4a5978719f9205c429acb` },
+          timeout: 5000,
+        }
+      );
+      break;
+    case "kanvas":
+      response = await api.post(
+        "https://graphql.datocms.com/",
+        {
+          query: `            query {
+          kanvasPost(filter: { slug: { eq: "${id}" } }) {
+            title
+            subdesc
+            image{url}
+      
+          }
+        }`,
+        },
+        {
+          headers: { Authorization: `2a23696ee4a5978719f9205c429acb` },
+          timeout: 5000,
+        }
+      );
+      break;
+  }
+
+  const previousImages = response?.data.data.mctekkPost.image.url;
 
   return {
-    title: response.data.data.mctekkPost.title,
-    description:response.data.data.mctekkPost.subdesc,
+    title: response?.data.data.mctekkPost.title,
+    description: response?.data.data.mctekkPost.subdesc,
     openGraph: {
       images: [previousImages],
     },
-    
   };
 }
 export default function Post({ params, searchParams }: Props) {
