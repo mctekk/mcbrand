@@ -34,6 +34,7 @@ const useGewaerPosts = () => {
               allGewaerPosts(
                 first: ${postPerPage}
                 skip: ${(gcurrentPage - 1) * postPerPage}
+                orderBy:_firstPublishedAt_DESC
               ) {
                 id
                 title

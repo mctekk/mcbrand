@@ -34,6 +34,7 @@ const useMctekkPosts = () => {
                 allMctekkPosts(
                   first: ${postPerPage}
                   skip: ${(mccurrentPage - 1) * postPerPage}
+                  orderBy:_firstPublishedAt_DESC
                 ) {
                   id
                   title
