@@ -34,6 +34,7 @@ const useKanvasPosts = () => {
                 allKanvasPosts(
                   first: ${postPerPage}
                   skip: ${(currentPage - 1) * postPerPage}
+                  orderBy:_firstPublishedAt_DESC
                 ) {
                   id
                   title
