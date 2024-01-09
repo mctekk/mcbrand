@@ -41,7 +41,23 @@ const gewaerData = [
   },
  
 ];
-
+const gewaerDataEs = [
+  {
+    url: "/images/actionsGewaer/Client-portal1.png",
+  },
+  {
+    url: "/images/actionsGewaer/Agent-portal1.png",
+  },
+  {
+    url: "/images/actionsGewaer/business-marketplaces1.png",
+  },
+  {
+    url: "/images/actionsGewaer/Contract-hub1.png",
+  },{
+    url: "/images/actionsGewaer/Contract-hub1.png",
+  },
+ 
+];
 const actionsData: Action[] = translateData.map(
   (action: any, index: number) => ({
     name: translate(`home.actions[${index}].name`),
@@ -67,4 +83,13 @@ const gewaerActionsData: Action[] = gewaerData.map(
   })
 );
 
-export { actionsData, kanvasActionsData, gewaerActionsData };
+const gewaerActionsDataEs: Action[] = gewaerData.map(
+  (action: any, index: number) => ({
+    name: translate(`home.gewaerActionsEs[${index}].name`),
+    title: translate(`home.gewaerActionsEs[${index}].title`),
+    desc: translate(`home.gewaerActionsEs[${index}].desc`),
+    url: gewaerDataEs[index].url,
+  })
+);
+
+export { actionsData, kanvasActionsData, gewaerActionsData,gewaerActionsDataEs };

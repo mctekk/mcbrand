@@ -16,6 +16,7 @@ import { WhySalesAssistSalesProcess } from "@/components/organism/sections/home/
 import {
   actionsData,
   gewaerActionsData,
+  gewaerActionsDataEs,
   kanvasActionsData,
 } from "@/model/api/image-data/data";
 import { industriesData } from "@/model/api/sales-data/data";
@@ -39,7 +40,7 @@ import { GaKanvas } from "@/components/atoms/analitiycs/kanvasGa";
 import GewaerForm from "@/components/organism/sections/home/gewaerContact";
 import { GaGewaer } from "@/components/atoms/analitiycs/gewaerGa";
 import { GaMc } from "@/components/atoms/analitiycs/mctekkGa";
-import { GLMenu } from "@/components/atoms/gewaerLeadMenu";
+import { GLMenu, GLMenuEs } from "@/components/atoms/gewaerLeadMenu";
 import { GaGewaerLaunch } from "@/components/atoms/analitiycs/gewaerGaLaunch";
 
 const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
@@ -49,7 +50,7 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
   kanvas: [],
   gewaer: [
     <Header
-      menu={<GLMenu />}
+      menu={<GLMenuEs />}
       className="bg-gewaer-100"
       logo="/images/Gewaer.svg"
       iconColor="text-white"
@@ -57,7 +58,7 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
     <GaGewaerLaunch />,
     <Hero
       className="bg-gewaer-100 "
-      messageDesc={"Agiliza pedidos: La creación y gestión de pedidos se vuelve rápida y eficiente. Los vendedores pueden ingresar pedidos fácilmente, seleccionando clientes existentes o añadiendo nuevos con todos los detalles necesarios.      "}
+      messageDesc={"Facilita a vendedores y choferes la gestión y administración de pedidos y datos de clientes de manera eficiente. Automatiza la validación de crédito y cobros y asigna pedidos para entrega, agilizando el flujo de trabajo y permitiendo el acceso en tiempo real, optimizando así el proceso y reduciendo la necesidad de intervención manual.      "}
       messageEnd={''}
       upperMessage={"Mejora la eficiencia "}
       lowerMessage={"de tus"}
@@ -65,25 +66,22 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
       colorDesc="text-white"
       colorFonts="text-white"
       colorWords="text-white"
-      lead
-      button
-      buttonColor="bg-white text-gewaer-100"
-      buttonInfo="Solicita un Demo "
-      buttonLink="/schedule"
+      nlMessage="Suscríbete para obtener noticias de producto"
+      gewaer
     ></Hero>,
     <CompletionTools
-      title={"Agiliza pedidos"}
-      desc={" La creación y gestión de pedidos se vuelve rápida y eficiente. Los vendedores pueden ingresar pedidos fácilmente, seleccionando clientes existentes o añadiendo nuevos con todos los detalles necesarios.      "}
+      title={"Automatiza tus procesos de pedidos"}
+      desc={"Gewaer optimiza la gestión de pedidos para tu equipo de ventas. Tus vendedores tendrán la capacidad de ingresar información de manera rápida y eficiente, además de poder monitorear en tiempo real. Esto mejora significativamente el flujo de aprobación y el seguimiento de los pedidos, entre otras funcionalidades. Todo diseñado para potenciar la eficiencia y efectividad de tu equipo comercial."}
       img="/images/gview.png"
       colorFonts="text-gewaer-200"
     />,
     <ImageChanger
-      data={gewaerActionsData}
+      data={gewaerActionsDataEs}
       buttonColor="bg-white text-violet-500"
       selected="text-white"
       className="bg-gewaer-100 text-white"
-      title={translate("changer.title")}
-      desc={translate("changer.desc")}
+      title={"Digitaliza tu negocio: deja las tareas manuales"}
+      desc={"Gewaer ofrece un conjunto de funcionalidades diseñadas para mejorar la eficiencia y optimizar las operaciones, incluyendo portales dedicados para vendedores que ofrecen experiencias personalizadas, gestión de pedidos, rastreo de pedidos, automatización de aprobaciones, seguimiento en tiempo real y más."}
       double={600}
       top="-mt-16 "
       margenImagen="ml-16"
