@@ -166,23 +166,23 @@
     ],
     "gewaerActionsEs": [
       {
-        "name": "Agiliza pedidos:",
+        "name": "Agiliza pedidos",
         "title": "Agiliza pedidos:",
         "desc": "La creación y gestión de pedidos se vuelve rápida y eficiente. Los vendedores pueden ingresar pedidos fácilmente, seleccionando clientes existentes o añadiendo nuevos con todos los detalles necesarios."
       },
       {
-        "name": "Automatización de procesos de aprobación:",
+        "name": "Automatización de procesos de aprobación",
         "title": "Automatización de procesos de aprobación:",
         "desc": "El flujo de aprobación automatizado a través de los departamentos asegura una gestión fluida y reduce el tiempo de espera desde la creación hasta la aprobación del pedido."
       },
       {
-        "name": "Asignación Inteligente de Pedidos: ",
+        "name": "Asignación Inteligente de Pedidos ",
         "title": "Asignación Inteligente de Pedidos:",
         "desc": "Los pedidos aprobados se asignan automáticamente a los conductores, optimizando la logística de entrega."
       },
       {
-        "name": "Información Actualizada en Tiempo Real:",
-        "title": "Información Actualizada en Tiempo Real:",
+        "name": "Información Actualizada en Tiempo Real",
+        "title": "Información Actualizada en Tiempo Real",
         "desc": "Tanto vendedores como conductores tienen acceso a la información actualizada de las entregas, lo que permite un manejo eficiente del tiempo y recursos."
       },
       {

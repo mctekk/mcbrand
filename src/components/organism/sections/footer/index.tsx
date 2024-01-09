@@ -13,6 +13,7 @@ interface FooterProps {
   mctekk?: boolean;
   kanvas?: boolean;
   gewaer?: boolean;
+  gewaerEs?: boolean;
   kind?: "dark" | "light";
 }
 
@@ -23,6 +24,7 @@ export function Footer({
   sales,
   kanvas,
   gewaer,
+  gewaerEs
 }: FooterProps) {
   const baseClasses = classNames(
     "md:py-12 duration-300 py-6 ",
@@ -31,6 +33,7 @@ export function Footer({
     { "text-white bg-black": mctekk },
     { "text-white bg-sky-700": kanvas },
     { "text-white bg-gewaer-100": gewaer },
+    { "text-white bg-gewaer-100": gewaerEs },
 
     className
   );
@@ -46,9 +49,11 @@ export function Footer({
               {mctekk && <img src="/images/McLogo.svg" />}
               {kanvas && <img src="/images/klogof.png" />}
               {gewaer && <img src="/images/Gewaer.svg" />}
+              {gewaerEs && <img src="/images/Gewaer.svg" />}
+
             </div>
             <h4 className="hidden md:block text-[0.75rem]">
-              <FooterRights kanvas={kanvas} mctekk={mctekk} gewaer={gewaer} />
+              <FooterRights kanvas={kanvas} mctekk={mctekk} gewaer={gewaer} gewaerEs={gewaerEs}  />
             </h4>
             {sales && (
               <FooterList
@@ -82,8 +87,17 @@ export function Footer({
                 kind={kind}
                 hideTitle
                 className="block md:hidden"
-                title={footerLinks.kanvas.title}
-                links={footerLinks.kanvas.links}
+                title={footerLinks.gewaer.title}
+                links={footerLinks.gewaer.links}
+              />
+            )}
+            {gewaerEs && (
+              <FooterList
+                kind={kind}
+                hideTitle
+                className="block md:hidden"
+                title={footerLinks.gewaerEs.title}
+                links={footerLinks.gewaerEs.links}
               />
             )}
           </div>
@@ -102,6 +116,11 @@ export function Footer({
           {gewaer && (
             <>
               <FooterLinks gewaer />
+            </>
+          )}
+           {gewaerEs && (
+            <>
+              <FooterLinks gewaerEs />
             </>
           )}
         </div>
@@ -126,7 +145,7 @@ export function Footer({
                 )
               )}
             </div>
-          ) : gewaer? <a href="http://mctekk.com/">Made With 💜 By mctekk </a>:(
+          ) : gewaer || gewaerEs? <a href="http://mctekk.com/">Made With 💜 By mctekk </a>:(
 
             <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
               {[
@@ -144,7 +163,7 @@ export function Footer({
           {/* social media */}
           <div className="md:w-1/2 h-full flex justify-end gap-2 md:gap-6 flex-col md:flex-row w-full md:pb-12">
             <h4 className="block md:hidden text-[0.75rem] text-gray-400">
-              <FooterRights kanvas={kanvas} gewaer={gewaer}  mctekk={mctekk} />
+              <FooterRights kanvas={kanvas} gewaer={gewaer}  mctekk={mctekk} gewaerEs={gewaerEs}/>
             </h4>
             {sales && <FooterSocials kind={kind} sales />}
             {mctekk && <FooterSocials kind={kind} />}

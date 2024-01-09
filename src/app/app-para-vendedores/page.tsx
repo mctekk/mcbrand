@@ -87,13 +87,13 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
       margenImagen="ml-16"
     />,
     <InfoSection
-      desc={translate("branding.desc")}
-      title={translate("branding.title")}
-      linkLetters={translate("branding.linkLetters")}
+      desc={"Gewaer ofrece una interfaz de usuario de marca blanca que puedes personalizar con tu propia marca: Esto incluye cambiar el logotipo, colores, fuentes y diseño sin ninguna marca predeterminada. También puedes añadir un dominio personalizado y personalizar cualquier correo electrónico y comunicación. Transforma el potencial de tu negocio con nuestro exclusivo programa para distribuidores. Te damos el poder de convertirte en un revendedor bajo tu propia marca. "}
+      title={"Marca Blanca"}
+      linkLetters={"Únete a nosotros y expande tu alcance en el mercado, proporcionando a tus clientes una experiencia fluida y personalizada, todo bajo tu propia etiqueta."}
       img="/images/stack.png"
       button={true}
       buttonColor="bg-gewaer-100 "
-      buttonTitle={translate("branding.buttonTitle")}
+      buttonTitle={"Solicita una prueba "}
       backColor="bg-violet-50"
       textColor="text-gewaer-200"
       buttonLink="/schedule"
@@ -101,11 +101,11 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
     ></InfoSection>,
     <Brands
       imageUrls={gewaerImagesBrand}
-      title={translate("brandSection.title")}
+      title={"Marcas que confian en nosotros "}
       titleColor="text-white"
       className="bg-gewaer-100"
     ></Brands>,
-    <Footer gewaer></Footer>,
+    <Footer  gewaerEs></Footer>,
   ],
 };
 export default function Page() {
