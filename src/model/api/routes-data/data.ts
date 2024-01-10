@@ -58,7 +58,7 @@ const gewaer = {
 const gewaerEs = {
   title: `Gewaer`,
   links: [
-    { path: "/#features", name: "Funcionalidades "},
+    { path: "/app-para-vendedores/#features", name: "Funcionalidades "},
 
   ],
 };
@@ -93,7 +93,7 @@ const GewaerCompanyEs = {
   title: `${"Empresa"}`,
   links: [
     {
-      path: "/schedule",
+      path: "/schedule-es",
       name: "Solicita una prueba",
     },
   ],
