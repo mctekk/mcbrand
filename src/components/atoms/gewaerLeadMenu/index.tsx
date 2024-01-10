@@ -7,7 +7,7 @@ const menuItems = [
     link: "/",
   },
   { text: "Features", link: "#features" },
-  { text: "Contact", link: "mailto:" },
+  { text: "Contact", link: "mailto:contacto@mctekk.com" },
 ];
 const externalLinks = [
   {
@@ -24,12 +24,12 @@ const menuItemsEs = [
     link: "/app-para-vendedores",
   },
   { text: "Funcionalidades", link: "#features" },
-  { text: "Contacto", link: "mailto:" },
+  { text: "Contacto", link: "mailto:contacto@mctekk.com" },
 ];
 const externalLinksEs = [
   {
     text: "Solicitar un demo ",
-    link: "/schedule",
+    link: "/schedule-es",
     isExternal: true,
     className: "lg:border  lg:text-gewaer-100   text-white lg:bg-white xl:ml-64 ",
   },

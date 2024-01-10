@@ -85,6 +85,7 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
       double={600}
       top="-mt-16 "
       margenImagen="ml-16"
+      center="w-4/5"
     />,
     <InfoSection
       desc={"Gewaer ofrece una interfaz de usuario de marca blanca que puedes personalizar con tu propia marca: Esto incluye cambiar el logotipo, colores, fuentes y diseño sin ninguna marca predeterminada. También puedes añadir un dominio personalizado y personalizar cualquier correo electrónico y comunicación. Transforma el potencial de tu negocio con nuestro exclusivo programa para distribuidores. Te damos el poder de convertirte en un revendedor bajo tu propia marca. "}
@@ -98,6 +99,7 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
       textColor="text-gewaer-200"
       buttonLink="/schedule"
       imgSize={450}
+    
     ></InfoSection>,
     <Brands
       imageUrls={gewaerImagesBrand}
