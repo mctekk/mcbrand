@@ -39,7 +39,6 @@ const gewaerData = [
   {
     url: "/images/actionsGewaer/Contract-hub1.png",
   },
- 
 ];
 const gewaerDataEs = [
   {
@@ -54,7 +53,6 @@ const gewaerDataEs = [
   {
     url: "/images/actionsGewaer/Delivered.jpg",
   },
- 
 ];
 const actionsData: Action[] = translateData.map(
   (action: any, index: number) => ({
@@ -90,4 +88,9 @@ const gewaerActionsDataEs: Action[] = gewaerData.map(
   })
 );
 
-export { actionsData, kanvasActionsData, gewaerActionsData,gewaerActionsDataEs };
+export {
+  actionsData,
+  kanvasActionsData,
+  gewaerActionsData,
+  gewaerActionsDataEs,
+};
