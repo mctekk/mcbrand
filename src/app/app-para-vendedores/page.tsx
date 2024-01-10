@@ -67,7 +67,10 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
       colorFonts="text-white"
       colorWords="text-white"
       nlMessage="Suscríbete para obtener noticias de producto"
-      gewaer
+      button
+      buttonColor="bg-white text-violet-500"
+      buttonInfo="Agenda un demo"
+      buttonLink="/schedule-es"
     ></Hero>,
     <CompletionTools
       title={"Automatiza tus procesos de pedidos"}
