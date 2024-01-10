@@ -94,7 +94,7 @@ export default function ListButtons({
             alt={data[imageIndex].desc}
             width={double}
             height={24}
-            className={`mb-10 ${margenImagen} `}
+            className={`mb-20 ${margenImagen} `}
           />
            <div className={`w-[80%] ${top}`}>
           <h4 className="font-semibold  ">{data[imageIndex].title}</h4>

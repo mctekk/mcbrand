@@ -72,7 +72,7 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
     <CompletionTools
       title={"Automatiza tus procesos de pedidos"}
       desc={"Gewaer optimiza la gestión de pedidos para tu equipo de ventas. Tus vendedores tendrán la capacidad de ingresar información de manera rápida y eficiente, además de poder monitorear en tiempo real. Esto mejora significativamente el flujo de aprobación y el seguimiento de los pedidos, entre otras funcionalidades. Todo diseñado para potenciar la eficiencia y efectividad de tu equipo comercial."}
-      img="/images/gview.png"
+      img="/images/Orders.jpg"
       colorFonts="text-gewaer-200"
     />,
     <ImageChanger
@@ -90,7 +90,7 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
       desc={"Gewaer ofrece una interfaz de usuario de marca blanca que puedes personalizar con tu propia marca: Esto incluye cambiar el logotipo, colores, fuentes y diseño sin ninguna marca predeterminada. También puedes añadir un dominio personalizado y personalizar cualquier correo electrónico y comunicación. Transforma el potencial de tu negocio con nuestro exclusivo programa para distribuidores. Te damos el poder de convertirte en un revendedor bajo tu propia marca. "}
       title={"Marca Blanca"}
       linkLetters={"Únete a nosotros y expande tu alcance en el mercado, proporcionando a tus clientes una experiencia fluida y personalizada, todo bajo tu propia etiqueta."}
-      img="/images/stack.png"
+      img="/images/Frame54.png"
       button={true}
       buttonColor="bg-gewaer-100 "
       buttonTitle={"Solicita una prueba "}
@@ -101,7 +101,7 @@ const PAGE_SECTIONS_LAUNCH: Record<string, ReactNode> = {
     ></InfoSection>,
     <Brands
       imageUrls={gewaerImagesBrand}
-      title={"Marcas que confian en nosotros "}
+      title={"Marcas que confían en nosotros "}
       titleColor="text-white"
       className="bg-gewaer-100"
     ></Brands>,

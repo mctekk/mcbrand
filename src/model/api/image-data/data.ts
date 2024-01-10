@@ -43,18 +43,16 @@ const gewaerData = [
 ];
 const gewaerDataEs = [
   {
-    url: "/images/actionsGewaer/Client-portal1.png",
+    url: "/images/actionsGewaer/New-Order.jpg",
   },
   {
-    url: "/images/actionsGewaer/Agent-portal1.png",
+    url: "/images/actionsGewaer/Aproved.jpg",
   },
   {
-    url: "/images/actionsGewaer/business-marketplaces1.png",
+    url: "/images/actionsGewaer/Order-Pending.jpg",
   },
   {
-    url: "/images/actionsGewaer/Contract-hub1.png",
-  },{
-    url: "/images/actionsGewaer/Contract-hub1.png",
+    url: "/images/actionsGewaer/Delivered.jpg",
   },
  
 ];

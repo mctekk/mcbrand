@@ -21,16 +21,15 @@ const externalLinks = [
 const menuItemsEs = [
   {
     text: "Inicio",
-    link: "/",
+    link: "/app-para-vendedores",
   },
   { text: "Funcionalidades", link: "#features" },
   { text: "Contacto", link: "mailto:" },
-  { text: "Blog", link: "/blog" },
 ];
 const externalLinksEs = [
   {
-    text: "Iniciar Sesión",
-    link: "https://dev.app.gewaer.io/login",
+    text: "Solicitar un demo ",
+    link: "/schedule",
     isExternal: true,
     className: "lg:border  lg:text-gewaer-100   text-white lg:bg-white xl:ml-64 ",
   },

@@ -90,7 +90,7 @@ const GewaerCompany = {
   ],
 };
 const GewaerCompanyEs = {
-  title: `${"Compañia"}`,
+  title: `${"Empresa"}`,
   links: [
     {
       path: "/schedule",
