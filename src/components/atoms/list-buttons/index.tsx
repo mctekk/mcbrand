@@ -79,7 +79,7 @@ export default function ListButtons({
               transition={{ duration: 1, ease: "linear", delay: index / 2 }}
               className={
                 index === imageIndex
-                  ? `${selected}   whitespace-nowrap outline outline-1  rounded-lg px-4 w-72 py-2  flex items-center justify-start text-left gap-2 transition-all duration-500 select-none  text-[1.20rem]`
+                  ? `${selected}    outline outline-1  rounded-lg px-4 w-72  py-2  flex items-center justify-start text-left gap-2 transition-all duration-500 select-none  text-[1.20rem] `
                   : ` ${buttonColor} text-[1.20rem] rounded-lg px-4 py-2 w-72 flex items-center justify-start  text-left gap-2 transition-all duration-500 select-none`
               }
             >
@@ -94,7 +94,7 @@ export default function ListButtons({
             alt={data[imageIndex].desc}
             width={double}
             height={24}
-            className={`mb-10 ${margenImagen} `}
+            className={`mb-20 ${margenImagen} `}
           />
            <div className={`w-[80%] ${top}`}>
           <h4 className="font-semibold  ">{data[imageIndex].title}</h4>

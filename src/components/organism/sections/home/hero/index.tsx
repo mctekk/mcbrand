@@ -28,6 +28,7 @@ interface Props {
   id?: string;
   lowerI?:string
   lead?:boolean
+  nlMessage?:string
 }
 
 export default function Hero({
@@ -49,7 +50,8 @@ export default function Hero({
   gewaer,
   id,
   lowerI,
-  lead
+  lead,
+  nlMessage
 }: Props) {
   return (
     <div
@@ -137,7 +139,7 @@ export default function Hero({
               <h4
                 className={`${colorDesc} md:text-[1.50rem] ml-5 md:ml-0 lg:ml-0 font-semibold`}
               >
-                Subscribe to get product updates:
+               {nlMessage}
               </h4>{" "}
               <div className="ml-5 md:ml-0">
                 {" "}

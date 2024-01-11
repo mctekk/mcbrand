@@ -7,7 +7,7 @@ const menuItems = [
     link: "/",
   },
   { text: "Features", link: "#features" },
-  { text: "Contact", link: "mailto:" },
+  { text: "Contact", link: "mailto:contacto@mctekk.com" },
 ];
 const externalLinks = [
   {
@@ -17,6 +17,25 @@ const externalLinks = [
     className: "lg:border  lg:text-gewaer-100   text-white lg:bg-white xl:ml-64 ",
   },
 ];
+
+const menuItemsEs = [
+  {
+    text: "Inicio",
+    link: "/app-para-vendedores",
+  },
+  { text: "Funcionalidades", link: "#features" },
+  { text: "Contacto", link: "mailto:contacto@mctekk.com" },
+];
+const externalLinksEs = [
+  {
+    text: "Solicitar un demo ",
+    link: "/schedule-es",
+    isExternal: true,
+    className: "lg:border  lg:text-gewaer-100   text-white lg:bg-white xl:ml-64 ",
+  },
+
+];
+
 
 export function GLMenu({}) {
   return (
@@ -31,6 +50,32 @@ export function GLMenu({}) {
       ))}
       <div className="lg:ml-80 lg:flex-row lg:flex flex-col lg:space-x-2">
         {externalLinks.map((item, index) => (
+          <MenuItem
+            key={index}
+            title={item.text}
+            link={item.link}
+            isExternal={item.isExternal}
+            className={item.className}
+            target="_blank"
+          />
+        ))}
+      </div>
+    </ul>
+  );
+}
+export function GLMenuEs({}) {
+  return (
+    <ul className="lg:flex ">
+      {menuItemsEs.map((item, index) => (
+        <MenuItem
+          key={index}
+          title={item.text}
+          link={item.link}
+          optionsColor="text-white hover:text-white"
+        />
+      ))}
+      <div className="lg:ml-80 lg:flex-row lg:flex flex-col lg:space-x-2">
+        {externalLinksEs.map((item, index) => (
           <MenuItem
             key={index}
             title={item.text}

@@ -91,7 +91,7 @@ export default function InfoSection({
               src={img}
               width={imgSize || 600}
               height={96}
-              className={`${space} mt-20 ${reverse?" xl:ml-24":""} `}
+              className={`${space} mt-12 ${reverse?" xl:ml-24":""} `}
             />
           </a>
         </div>
