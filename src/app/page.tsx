@@ -281,6 +281,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorFonts="text-white"
       colorWords="text-white"
       gewaer
+      nlMessage="Subscribe to get product updates:      "
     ></Hero>,
     <CompletionTools
       title={translate("GewaerTools.title")}

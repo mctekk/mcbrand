@@ -11,9 +11,10 @@ import { translate } from "@/locales";
 
 import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 
-import { GLMenu } from "@/components/atoms/gewaerLeadMenu";
+import { GLMenu, GLMenuEs } from "@/components/atoms/gewaerLeadMenu";
 import { GaGewaerLaunch } from "@/components/atoms/analitiycs/gewaerGaLaunch";
 import HubSpotMeetingsEmbed from "@/components/atoms/hubspotGewaer";
+import HubSpotMeetingsEmbedEs from "@/components/atoms/hubspotGewaerEs";
 
 const PAGE_SECTIONS_SCHEDULE: Record<string, ReactNode> = {
   salesassist: [
@@ -45,15 +46,13 @@ const PAGE_SECTIONS_SCHEDULE: Record<string, ReactNode> = {
   ],
   gewaer: [
     <Header
-      menu={<GLMenu />}
+      menu={<GLMenuEs />}
       className="bg-gewaer-100"
       logo="/images/Gewaer.svg"
       iconColor="text-white"
     />,
-
-    <GaGewaerLaunch />,
-    <HubSpotMeetingsEmbed />,
-    <Footer gewaer></Footer>,
+    <HubSpotMeetingsEmbedEs />,
+    <Footer gewaerEs></Footer>,
   ],
 };
 export default function Page() {

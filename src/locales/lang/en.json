@@ -164,7 +164,33 @@
         "desc": "Share products, follow users, create groups, messaging, comments, likes and more. All the building blocks you need to add a social to your app."
       }
     ],
-
+    "gewaerActionsEs": [
+      {
+        "name": "Agiliza pedidos",
+        "title": "Agiliza pedidos:",
+        "desc": "Facilita a vendedores y choferes la gestión y administración de pedidos y datos de clientes de manera eficiente. Automatiza la validación de crédito y cobros y asigna pedidos para entrega, agilizando el flujo de trabajo y permitiendo el acceso en tiempo real, optimizando así el proceso y reduciendo la necesidad de intervención manual."
+      },
+      {
+        "name": "Automatización de procesos de aprobación",
+        "title": "Automatización de procesos de aprobación:",
+        "desc": "El flujo de aprobación automatizado a través de los departamentos asegura una gestión fluida y reduce el tiempo de espera desde la creación hasta la aprobación del pedido."
+      },
+      {
+        "name": "Asignación Inteligente de Pedidos ",
+        "title": "Asignación Inteligente de Pedidos:",
+        "desc": "Los pedidos aprobados se asignan automáticamente a los conductores, optimizando la logística de entrega."
+      },
+      {
+        "name": "Información Actualizada en Tiempo Real",
+        "title": "Información Actualizada en Tiempo Real",
+        "desc": "Tanto vendedores como conductores tienen acceso a la información actualizada de las entregas, lo que permite un manejo eficiente del tiempo y recursos."
+      },
+      {
+        "name": "Seguimiento en Vivo:",
+        "title": "Seguimiento en Vivo:",
+        "desc": "Rastrea el estado de cada pedido en tiempo real. Con categorías como 'En Revisión', 'Aprobado', 'Despachado' y 'Facturado', siempre estarás al tanto del progreso."
+      }
+    ],
     "automated": {
       "title": "Complete Sales Faster with Automated Workflows",
       "desc": "Info-gathering tools are scattered and don’t play nice together, we’re here to fix that. Connect all your info-gathering tools and create perfect custom-made workflows. Automate your sales team's work so they can crush sales goals."

@@ -55,6 +55,13 @@ const gewaer = {
 
   ],
 };
+const gewaerEs = {
+  title: `Gewaer`,
+  links: [
+    { path: "/app-para-vendedores/#features", name: "Funcionalidades "},
+
+  ],
+};
 const mcCompany = {
   title: `${translate("routesTitles.title1")}`,
   links: [
@@ -82,7 +89,15 @@ const GewaerCompany = {
     },
   ],
 };
-
+const GewaerCompanyEs = {
+  title: `${"Empresa"}`,
+  links: [
+    {
+      path: "/schedule-es",
+      name: "Solicita una prueba",
+    },
+  ],
+};
 const contact = {
   title: `${translate("routesTitles.title2")}`,
   links: [
@@ -98,6 +113,12 @@ const kanvasContact = {
 };
 const GewaerContact = {
   title: `${translate("routesTitles.title2")}`,
+  links: [
+    { path: "mailto: contacto@mctekk.com", name: " contacto@mctekk.com    " },
+  ],
+};
+const GewaerContactEs = {
+  title: `${"Contacto"}`,
   links: [
     { path: "mailto: contacto@mctekk.com", name: " contacto@mctekk.com    " },
   ],
@@ -122,4 +143,5 @@ export const footerLinks = {
   contact,
   kanvas,
   kanvasContact,
+ GewaerCompanyEs,gewaerEs,GewaerContactEs 
 };

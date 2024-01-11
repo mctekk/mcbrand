@@ -5,8 +5,9 @@ interface Props{
   mctekk?:Boolean
   gewaer?:Boolean
   kanvas?:Boolean
+  gewaerEs?:Boolean
 }
-export default function FooterRights({mctekk,gewaer,kanvas}:Props) {
+export default function FooterRights({mctekk,gewaer,kanvas,gewaerEs}:Props) {
   if( kanvas){
     return (
       <>
@@ -14,7 +15,7 @@ export default function FooterRights({mctekk,gewaer,kanvas}:Props) {
       </>
     );
   }
-if(mctekk  || gewaer ){
+if(mctekk  || gewaer || gewaerEs){
   return (
     <>
       {"MCTEKK. All rights reserved."} {new Date().getFullYear()}
