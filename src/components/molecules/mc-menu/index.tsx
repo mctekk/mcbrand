@@ -13,9 +13,9 @@ const menuItems = [
 const externalLinks = [
   {
     text: translate("mcnavbar.section.GetStarted"),
-    link: "/#ContactForm",
+    link: "https://meetings.hubspot.com/jennifer-herasme",
     isExternal: true,
-    target:"_self",
+    target:"",
     className:
       "lg:bg-mctekk-100 hover:bg-black lg:text-white  lg:hover:border border-mctekk-100 lg:hover:text-mctekk-100 text-gray-400 hover:text-white xl:ml-80 lg:ml-40  ",
   },
