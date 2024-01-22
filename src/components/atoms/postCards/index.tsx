@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 
+
 export interface Imagen {
   url: string;
 }
@@ -18,7 +19,7 @@ export interface PostCardProps {
   };
 }
 
-const PostCard: React.FC<PostCardProps> = ({ post }) => {
+function PostCard({ post }: PostCardProps): JSX.Element {
   return (
     <Link href={`/posts/${encodeURIComponent(post.slug)}`}>
       <div className=" md:w-full lg:w-full xl:w-full  w-full p-4 shadow-2xl mb-14 ">
@@ -38,7 +39,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
             {post.subdesc && (
               <p className="text-[1rem] text-gray-500 mb-4">{post.subdesc}</p>
             )}
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-800 text-[18px]">
               {new Date(post._firstPublishedAt).toLocaleDateString()}
             </p>
           </div>

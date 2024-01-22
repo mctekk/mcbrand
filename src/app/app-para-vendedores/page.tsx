@@ -1,7 +1,7 @@
 import React from "react";
 import PageClient from "./client";
 import { Metadata, ResolvingMetadata } from "next";
-import api from "@/model/api/dato-cms/data";
+
 
 type Props = {
   params: { postSlug: string };
