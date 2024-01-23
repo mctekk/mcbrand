@@ -16,7 +16,7 @@ export default function JobForms({}: Props) {
         logo="/images/McLogo.svg"
         iconColor="text-white"
       />
-      <Formulario></Formulario>
+      <JobForms></JobForms>
       <Footer mctekk></Footer>
     </div>
   )
