@@ -11,7 +11,7 @@ interface FormState {
   coverLetter: string;
 }
 
-function FormJobs() {
+const JobsForm: React.FC = () => {
   const [formData, setFormData] = useState<FormState>({
     firstName: "",
     lastName: "",
@@ -37,7 +37,7 @@ function FormJobs() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-
+    // Configuración de Email.js
     const templateParams = {
       from_name: formData.firstName + " " + formData.lastName,
       from_email: formData.email,
@@ -46,7 +46,7 @@ function FormJobs() {
       cover_letter: formData.coverLetter,
     };
 
-
+    // Envío del formulario por correo electrónico
     emailjs
       .send(
         "service_zutthwt",
@@ -191,7 +191,7 @@ function FormJobs() {
             role="alert"
           >
             <p className="font-bold">¡Well done!</p>
-            <p>Thanks for sending your information. A representative will be in touch in case you're chosen for an interview.</p>
+            <p>Form sent.</p>
           </div>
         )}
         {submitError && (
@@ -216,4 +216,4 @@ function FormJobs() {
   );
 };
 
-export default FormJobs;
+export default JobsForm;
