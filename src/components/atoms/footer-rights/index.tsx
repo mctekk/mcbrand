@@ -1,31 +1,29 @@
 import { translate } from "@/locales";
 import React from "react";
 
-interface Props{
-  mctekk?:Boolean
-  gewaer?:Boolean
-  kanvas?:Boolean
-  gewaerEs?:Boolean
+interface Props {
+  mctekk?: boolean;
+  gewaer?: boolean;
+  kanvas?: boolean;
+  gewaerEs?: boolean;
 }
-export default function FooterRights({mctekk,gewaer,kanvas,gewaerEs}:Props) {
-  if( kanvas){
-    return (
-      <>
-        {"Kyanvasu INC. All rights reserved."} {new Date().getFullYear()}
-      </>
-    );
+
+export default function FooterRights({ mctekk, gewaer, kanvas, gewaerEs }: Props) {
+  let content;
+
+  switch (true) {
+    case kanvas:
+      content = <>{"Kyanvasu INC. All rights reserved."} {new Date().getFullYear()}</>;
+      break;
+
+    case mctekk || gewaer || gewaerEs:
+      content = <>{"MCTEKK. All rights reserved."} {new Date().getFullYear()}</>;
+      break;
+
+    default:
+      content = <>{translate("rights.info")} {new Date().getFullYear()}</>;
+      break;
   }
-if(mctekk  || gewaer || gewaerEs){
-  return (
-    <>
-      {"MCTEKK. All rights reserved."} {new Date().getFullYear()}
-    </>
-  );
-}else{
-  return (
-    <>
-      {translate("rights.info")} {new Date().getFullYear()}
-    </>
-  );
-}
+
+  return <>{content}</>;
 }
