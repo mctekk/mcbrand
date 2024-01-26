@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from "react";
 import PostCard, { Imagen } from "@/components/atoms/postCards";
 
-const cardContainerClass = "flex-col flex-wrap w-9/12 mx-auto justify-center mb-72";
+const cardContainerClass =
+  "flex-col flex-wrap w-9/12 mx-auto justify-center mb-72";
 const buttonContainerClass = "flex justify-center mt-4";
-const loadButtonClass = ` text-white px-4 py-2 m-2 rounded disabled:brightness-50 ${process.env.PAGE_TYPE === "mctekk" ? 'bg-mctekk-100' : ''} ${process.env.PAGE_TYPE === "gewaer" ? 'bg-gewaer-100' : ''}`;
+const isMctekkPage = process.env.PAGE_TYPE === "mctekk";
+const isGewaerPage = process.env.PAGE_TYPE === "gewaer";
 
+const loadButtonClass = `
+  text-white px-4 py-2 m-2 rounded disabled:brightness-50  ${isMctekkPage ? "bg-mctekk-100" : ""} ${isGewaerPage ? "bg-gewaer-100" : ""}
+`;
 
 type Props = {
-  title:string
+  title: string;
   posts: {
     id: string;
     title: string;
-    slug:string
+    slug: string;
     subdesc?: string;
     image: Imagen;
     _status: string;
@@ -22,7 +27,13 @@ type Props = {
   totalPages: number;
 };
 
-const BlogCards: React.FC<Props> = ({ posts, handleLoadMore, currentPage, totalPages,title }) => {
+function BlogCards({
+  posts,
+  handleLoadMore,
+  currentPage,
+  totalPages,
+  title,
+}: Props): JSX.Element {
   const [hasMorePosts, setHasMorePosts] = useState(true);
 
   useEffect(() => {
@@ -31,7 +42,9 @@ const BlogCards: React.FC<Props> = ({ posts, handleLoadMore, currentPage, totalP
 
   return (
     <div className="mx-auto section">
-      <h1 className="flex-col flex-wrap w-fit mx-auto justify-center ">{title}</h1>
+      <h1 className="flex-col flex-wrap w-fit mx-auto justify-center ">
+        {title}
+      </h1>
       <div className={cardContainerClass}>
         {posts.map((post) => (
           <div key={post.id} className="">

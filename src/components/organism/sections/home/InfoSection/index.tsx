@@ -47,7 +47,7 @@ export default function InfoSection({
   linkColor,
   isUpperLogo
 }: Props) {
-  reverse ? "" : (space = "2xl:mr-40");
+  reverse ? "" : (space = "2xl:mr-20");
   return (
     <section className={`${backColor} section  `} id={id}>
       <Section
@@ -91,7 +91,7 @@ export default function InfoSection({
               src={img}
               width={imgSize || 600}
               height={96}
-              className={`${space} mt-12 ${reverse?" xl:ml-24":""} `}
+              className={`${space} mt-12  ${reverse?" xl:ml-24":""} `}
             />
           </a>
         </div>
