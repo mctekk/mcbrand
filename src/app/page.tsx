@@ -123,7 +123,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <InfoSection
       desc={translate("secondSection.desc")}
       title={translate("secondSection.title")}
-      img="/images/fast.png"
+      img="/images/move.png"
       button={false}
       backColor="bg-white"
       buttonLink="/"
