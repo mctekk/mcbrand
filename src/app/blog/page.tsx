@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import useKanvasPosts from "@/model/interactions/use-kanvas";
-import PostCard from "@/components/atoms/postCards";
 import Header from "@/components/organism/header";
 import { KanvasMenu } from "@/components/molecules/kanvas-menu";
 import { Footer } from "@/components/organism/sections/footer";
