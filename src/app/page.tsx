@@ -127,7 +127,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button={false}
       backColor="bg-white"
       buttonLink="/"
-      imgSize={650}
+      imgSize={670}
+    
     ></InfoSection>,
     <InfoSection
       desc={translate("kanvasSection.desc")}
