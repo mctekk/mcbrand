@@ -39,6 +39,7 @@ import { GaKanvas } from "@/components/atoms/analitiycs/kanvasGa";
 import GewaerForm from "@/components/organism/sections/home/gewaerContact";
 import { GaGewaer } from "@/components/atoms/analitiycs/gewaerGa";
 import { GaMc } from "@/components/atoms/analitiycs/mctekkGa";
+import CenteredButtons from "@/components/molecules/forms-links";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -321,6 +322,9 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-gewaer-100"
     ></Brands>,
     <Footer gewaer></Footer>,
+  ],
+  forms: [
+    <CenteredButtons></CenteredButtons>
   ],
 };
 export default function Page() {
