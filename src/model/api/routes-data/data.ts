@@ -67,7 +67,7 @@ const mcCompany = {
   links: [
     { path: "/about-us", name: RouteNames.about },
     {
-      path: "https://mctekk.grovehr.com/careers/job?id=65117eed2487c21055883347",
+      path: "https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A944172&keywords=mctekk&origin=RICH_QUERY_SUGGESTION&position=0&searchId=824b78a7-90db-4f09-8769-5e6ebfa77da1&sid=Q1j&spellCorrectionEnabled=false",
       name: "Jobs",
     },
   ],

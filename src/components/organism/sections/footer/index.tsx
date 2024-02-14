@@ -24,7 +24,7 @@ export function Footer({
   sales,
   kanvas,
   gewaer,
-  gewaerEs
+  gewaerEs,
 }: FooterProps) {
   const baseClasses = classNames(
     "md:py-12 duration-300 py-6 ",
@@ -50,10 +50,14 @@ export function Footer({
               {kanvas && <img src="/images/klogof.png" />}
               {gewaer && <img src="/images/Gewaer.svg" />}
               {gewaerEs && <img src="/images/Gewaer.svg" />}
-
             </div>
             <h4 className="hidden md:block text-[0.75rem]">
-              <FooterRights kanvas={kanvas} mctekk={mctekk} gewaer={gewaer} gewaerEs={gewaerEs}  />
+              <FooterRights
+                kanvas={kanvas}
+                mctekk={mctekk}
+                gewaer={gewaer}
+                gewaerEs={gewaerEs}
+              />
             </h4>
             {sales && (
               <FooterList
@@ -118,7 +122,7 @@ export function Footer({
               <FooterLinks gewaer />
             </>
           )}
-           {gewaerEs && (
+          {gewaerEs && (
             <>
               <FooterLinks gewaerEs />
             </>
@@ -145,8 +149,9 @@ export function Footer({
                 )
               )}
             </div>
-          ) : gewaer || gewaerEs? <a href="http://mctekk.com/">Made With 💜 By mctekk </a>:(
-
+          ) : gewaer || gewaerEs ? (
+            <a href="http://mctekk.com/">Made With 💜 By mctekk </a>
+          ) : (
             <div className="md:w-1/2 h-full flex items-start md:gap-6 md:justify-start flex-col md:flex-row ">
               {[
                 { name: "Privacy Policy", path: "/privacy-policy" },
@@ -163,7 +168,12 @@ export function Footer({
           {/* social media */}
           <div className="md:w-1/2 h-full flex justify-end gap-2 md:gap-6 flex-col md:flex-row w-full md:pb-12">
             <h4 className="block md:hidden text-[0.75rem] text-gray-400">
-              <FooterRights kanvas={kanvas} gewaer={gewaer}  mctekk={mctekk} gewaerEs={gewaerEs}/>
+              <FooterRights
+                kanvas={kanvas}
+                gewaer={gewaer}
+                mctekk={mctekk}
+                gewaerEs={gewaerEs}
+              />
             </h4>
             {sales && <FooterSocials kind={kind} sales />}
             {mctekk && <FooterSocials kind={kind} />}
