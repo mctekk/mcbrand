@@ -43,6 +43,7 @@ import TwoPartComponent from "@/components/organism/sections/slider-text";
 import Content from "@/components/organism/sections/content";
 import { Ikanvas } from "@/components/organism/sections/interactive-kanvas";
 import CenteredContent from "@/components/organism/sections/center-content";
+import Clients from "@/components/organism/sections/kanvas-clients";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -270,6 +271,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       buttonText="Take a tour"
       sliderImages={["/images/Products.png", "/image2.jpg", "/image3.jpg"]}
     />,
+    <Clients title="Trusted by our beloved clients" imageUrls={kanvasImagesBrand} className="bg-gray-200"  ></Clients>,
     <InfoSection
       isCase
       button={false}

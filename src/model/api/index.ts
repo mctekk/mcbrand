@@ -8,13 +8,11 @@ const imagesBrand = [
 ];
 
 const kanvasImagesBrand = [
-  "/images/WLogo.svg",
-  "/images/brands/Memod.png",
-
-  "/images/brands/nzxt.png",
-
-  "/images/brands/copic.png",
-  "/images/brands/popularCar.svg",
+  "/images/kanvasClients/copic.svg",
+  "/images/kanvasClients/dac.svg",
+  "/images/kanvasClients/nzxt.svg",
+  "/images/kanvasClients/finance_agents.svg"
+ 
 ];
 const gewaerImagesBrand = [
   "/images/brands/financeAgents.svg",
