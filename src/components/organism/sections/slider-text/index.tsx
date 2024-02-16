@@ -19,7 +19,7 @@ function TwoPartComponent({ title, description, buttonText, sliderImages }: TwoP
         <div className="w-1/2 p-4 text-white">
           <h2 className="text-[36px] font-bold mb-4">{title}</h2>
           <p className="mb-4 text-[18px]">{description}</p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+          <button className="bg-blue-950  text-white font-bold py-2 px-4 rounded">
             {buttonText}
           </button>
         </div>
