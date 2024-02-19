@@ -3,34 +3,50 @@ import Image from "next/image";
 interface ImageListProps {
   title: string;
   imageUrls: string[];
-  titleColor:string
+  titleColor: string;
   slider?: boolean;
-  className?:string
+  className?: string;
 }
 
-function ImageList({ title, imageUrls, slider ,titleColor,className}: ImageListProps) {
+function ImageList({
+  title,
+  imageUrls,
+  slider,
+  titleColor,
+  className,
+}: ImageListProps) {
   if (slider) {
     return (
       <section className={`${className} section`}>
-  <div className={`slider-container container mx-auto lg:flex ${className} flex-col`}>
-    <p className={`text-[30px] font-semibold pt-10 mb-10 mx-auto items-center w-fit ${titleColor}`}>{title}</p>
-    <div className="kanvas-slider-inside">
-      <ul className="infinity-x-container ">
-        {imageUrls.map((imageUrl, index) => (
-          <li className="infinity-x" style={{ marginRight: '200px' }} key={index}>
-            <Image
-              src={imageUrl}
-              alt={`Image ${index}`}
-              className="mb-20"
-              width={150}
-              height={24}
-            />
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-</section>
+        <div
+          className={`slider-container container mx-auto lg:flex ${className} flex-col`}
+        >
+          <p
+            className={`text-[30px] font-semibold pt-10 mb-10 mx-auto items-center w-fit ${titleColor}`}
+          >
+            {title}
+          </p>
+          <div className="kanvas-slider-inside">
+            <ul className="infinity-x-container ">
+              {imageUrls.map((imageUrl, index) => (
+                <li
+                  className="infinity-x"
+                  style={{ marginRight: "200px" }}
+                  key={index}
+                >
+                  <Image
+                    src={imageUrl}
+                    alt={`Image ${index}`}
+                    className="mb-20"
+                    width={150}
+                    height={24}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
     );
   } else {
     return (
@@ -47,7 +63,6 @@ function ImageList({ title, imageUrls, slider ,titleColor,className}: ImageListP
               className="mb-20  "
               width={113}
               height={24}
-              
             />
           ))}
         </div>

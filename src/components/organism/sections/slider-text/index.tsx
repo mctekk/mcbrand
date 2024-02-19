@@ -15,15 +15,15 @@ function TwoPartComponent({ title, description, buttonText, sliderImages }: TwoP
 
   return (
     <div className='bg-sky-600'>
-      <div className="flex section xl:w-4/6 mx-auto ">
-        <div className="w-1/2 p-4 text-white">
+      <div className="flex flex-col xl:flex-row section justify-center mx-auto xl:w-8/12 ">
+        <div className="xl:w-1/2 p-4 text-white">
           <h2 className="text-[36px] font-bold mb-4">{title}</h2>
           <p className="mb-4 text-[18px]">{description}</p>
           <button className="bg-blue-950  text-white font-bold py-2 px-4 rounded">
             {buttonText}
           </button>
         </div>
-        <div className="w-1/2">
+        <div className="xl:w-1/2 m-9 xl:m-0">
           <Swiper
             ref={swiperRef}
             spaceBetween={3}

@@ -76,7 +76,7 @@ export function EmailForm  () {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-grow h-10 p-3  mr-1 w-96"
+              className="flex-grow h-10 p-3  mr-1 w-2/4"
               placeholder="Enter your email"
             />
 
