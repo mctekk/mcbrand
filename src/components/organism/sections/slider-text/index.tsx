@@ -22,9 +22,11 @@ function TwoPartComponent({ title, description, buttonText, sliderImages }: TwoP
         <div className="xl:w-1/2 p-4 text-white">
           <h2 className="text-[36px] font-bold mb-4">{title}</h2>
           <p className="mb-4 text-[18px]">{description}</p>
+          <a href='#Tour'>
           <button className="bg-blue-950  text-white font-bold py-2 px-4 rounded">
             {buttonText}
           </button>
+          </a>
         </div>
         <div className="xl:w-1/2 m-9 xl:m-0">
           <Swiper
