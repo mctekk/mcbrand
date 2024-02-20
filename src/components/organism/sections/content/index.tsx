@@ -1,4 +1,5 @@
 
+import { Section } from "@/components/atoms/section";
 import Image from "next/image";
 import React from "react";
 
@@ -22,8 +23,10 @@ function Content({
 
 
   return (
+    <section>
+      <Section>
     <div className="">
-      <div className="flex flex-col  lg:flex-row section xl:w-4/6 mx-auto ">
+      <div className="flex flex-col  lg:flex-row section xl:w-5/6 mx-auto ">
         <div className={`xl:w-1/2 p-4 ${top}`}>
           <h2 className="text-[36px] font-bold mb-4">{title}</h2>
           <p className="mb-4 text-[18px]">{description}</p>
@@ -39,6 +42,8 @@ function Content({
         </div>
       </div>
     </div>
+    </Section>
+    </section>
   );
 }
 

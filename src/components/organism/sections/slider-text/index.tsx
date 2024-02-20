@@ -2,6 +2,7 @@
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Section } from '@/components/atoms/section';
 
 interface TwoPartComponentProps {
   title: string;
@@ -14,8 +15,10 @@ function TwoPartComponent({ title, description, buttonText, sliderImages }: TwoP
   const swiperRef = useRef<any>(null);
 
   return (
+    <section className='bg-sky-600'>
+    <Section >
     <div className='bg-sky-600 mx-auto justify-center  '>
-      <div className="flex flex-col xl:flex-row section justify-center mx-auto xl:w-8/12 ">
+      <div className="flex flex-col xl:flex-row section justify-center mx-auto xl:w-10/12 ">
         <div className="xl:w-1/2 p-4 text-white">
           <h2 className="text-[36px] font-bold mb-4">{title}</h2>
           <p className="mb-4 text-[18px]">{description}</p>
@@ -40,6 +43,8 @@ function TwoPartComponent({ title, description, buttonText, sliderImages }: TwoP
         </div>
       </div>
     </div>
+    </Section>
+    </section>
   );
 }
 
