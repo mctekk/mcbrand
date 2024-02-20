@@ -18,7 +18,7 @@ const menuItems = [
 const externalLinks = [
   {
     text: <BsGithub></BsGithub>,
-    link: "https://github.com/bakaphp/kanvas-ecosystem-api",
+    link: "https://github.com/bakaphp",
     isExternal: true,
     className:
       "   xl:ml-64 text-white ",

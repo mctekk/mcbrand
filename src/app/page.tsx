@@ -195,77 +195,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       iconColor="text-white"
     />,
     <GaKanvas />,
-    // <Hero
-    //   className="bg-sky-600 "
-    //   buttonInfo={translate("kanvasHero.buttonInfo")}
-    //   buttonLink="https://meetings.hubspot.com/jennifer-herasme"
-    //   messageDesc={translate("kanvasHero.messageDesc")}
-    //   messageEnd={translate("kanvasHero.messageEnd")}
-    //   upperMessage={translate("kanvasHero.upperMessage")}
-    //   lowerMessage={translate("kanvasHero.lowerMessage")}
-    //   words={Array.from(translate("kanvasHero.words"))}
-    //   colorDesc="text-white"
-    //   colorFonts="text-white"
-    //   colorWords="text-white"
-    //   buttonColor="bg-white text-sky-700"
-    //   kanvas
-    //   id="Newsletter"
-    // ></Hero>,
-    // <CompletionTools
-    //   title={translate("kanvasTools.title")}
-    //   desc={translate("kanvasTools.desc")}
-    //   img="/images/HeroKanvas.png"
-    //   colorFonts="text-sky-600"
-    //   back="bg-white"
-    // />,
-    // <ImageChanger
-    //   data={kanvasActionsData}
-    //   buttonColor="bg-white text-sky-600"
-    //   selected="text-white"
-    //   className="bg-sky-700 text-white"
-    //   title="Our Headless Modules"
-    //   desc="Easy to use foundation for any client facing application. Our purpose is to provide you with the necessary tools to get things done swiftly and effortlessly in order to achieve your goals."
-    //   double={500}
-    // />,
-    // <Automated
-    //   desc={translate("kanvasAutomated.desc")}
-    //   img={"/images/kanvasBoard.png"}
-    //   title={translate("kanvasAutomated.title")}
-    //   descColor="text-sky-700"
-    //   titleColor="text-sky-700"
-    //   bg="bg-white"
-    // />,
-    // <InfoSection
-    //   desc={translate("kanvasGit.desc")}
-    //   title={translate("kanvasGit.title")}
-    //   img="/images/gt.png"
-    //   imgSize={400}
-    //   button={false}
-    //   backColor="bg-white"
-    //   textColor="text-sky-700"
-    //   buttonLink="/"
-    //   link="https://github.com/bakaphp/kanvas-ecosystem-api"
-    // ></InfoSection>,
-    // <InfoSection
-    //   desc={translate("kanvasPhoenix.desc")}
-    //   title={translate("kanvasPhoenix.title")}
-    //   img="/images/Gewaer.png"
-    //   button={true}
-    //   buttonColor="bg-sky-700 "
-    //   buttonTitle={translate("kanvasPhoenix.button")}
-    //   backColor="bg-white"
-    //   textColor="text-sky-700"
-    //   buttonLink="#Newsletter"
-    //   imgSize={580}
-    //   space="mt-4"
-    // ></InfoSection>,
-    // <Brands
-    //   imageUrls={kanvasImagesBrand}
-    //   title={translate("brandSection.title")}
-    //   slider
-    //   titleColor="text-white"
-    //   className="bg-sky-700"
-    // ></Brands>,
+   
     <TwoPartComponent
       title="Empower Your Agency with Seamless Control: "
       description=" Elevate Projects with Modular Building Blocks. Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board."
