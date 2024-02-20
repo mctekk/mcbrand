@@ -27,7 +27,7 @@ const gsocial = [
 ];
 const kanvasSocial = [
   {
-    url: "https://github.com/bakaphp/kanvas-ecosystem-api",
+    url: "https://github.com/bakaphp",
     icon: <BsGithub />,
   },
   { url: "https://www.linkedin.com/company/944172/admin/feed/posts/", icon: <BsLinkedin/> },

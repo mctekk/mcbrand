@@ -39,6 +39,12 @@ import { GaKanvas } from "@/components/atoms/analitiycs/kanvasGa";
 import GewaerForm from "@/components/organism/sections/home/gewaerContact";
 import { GaGewaer } from "@/components/atoms/analitiycs/gewaerGa";
 import { GaMc } from "@/components/atoms/analitiycs/mctekkGa";
+import TwoPartComponent from "@/components/organism/sections/slider-text";
+import Content from "@/components/organism/sections/content";
+import { Ikanvas } from "@/components/organism/sections/interactive-kanvas";
+import CenteredContent from "@/components/organism/sections/center-content";
+import Clients from "@/components/organism/sections/kanvas-clients";
+import ImagenStack from "@/components/organism/sections/imagen stack";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -128,7 +134,6 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       backColor="bg-white"
       buttonLink="/"
       imgSize={670}
-    
     ></InfoSection>,
     <InfoSection
       desc={translate("kanvasSection.desc")}
@@ -190,77 +195,65 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       iconColor="text-white"
     />,
     <GaKanvas />,
-    <Hero
-      className="bg-sky-600 "
-      buttonInfo={translate("kanvasHero.buttonInfo")}
-      buttonLink="https://meetings.hubspot.com/jennifer-herasme"
-      messageDesc={translate("kanvasHero.messageDesc")}
-      messageEnd={translate("kanvasHero.messageEnd")}
-      upperMessage={translate("kanvasHero.upperMessage")}
-      lowerMessage={translate("kanvasHero.lowerMessage")}
-      words={Array.from(translate("kanvasHero.words"))}
-      colorDesc="text-white"
-      colorFonts="text-white"
-      colorWords="text-white"
-      buttonColor="bg-white text-sky-700"
-      kanvas
-      id="Newsletter"
-    ></Hero>,
-    <CompletionTools
-      title={translate("kanvasTools.title")}
-      desc={translate("kanvasTools.desc")}
-      img="/images/HeroKanvas.png"
-      colorFonts="text-sky-600"
-      back="bg-white"
+   
+    <TwoPartComponent
+      title="Your Agency Modular Control Panel "
+      description="Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board."
+      buttonText="Take a tour"
+      sliderImages={["/images/Products.png", "/image2.jpg", "/image3.jpg"]}
     />,
-    <ImageChanger
-      data={kanvasActionsData}
-      buttonColor="bg-white text-sky-600"
-      selected="text-white"
-      className="bg-sky-700 text-white"
-      title="Our Headless Modules"
-      desc="Easy to use foundation for any client facing application. Our purpose is to provide you with the necessary tools to get things done swiftly and effortlessly in order to achieve your goals."
-      double={500}
-    />,
-    <Automated
-      desc={translate("kanvasAutomated.desc")}
-      img={"/images/kanvasBoard.png"}
-      title={translate("kanvasAutomated.title")}
-      descColor="text-sky-700"
-      titleColor="text-sky-700"
-      bg="bg-white"
-    />,
+    <Clients title="Trusted by our beloved clients" imageUrls={kanvasImagesBrand} className="bg-gray-200"  ></Clients>,
     <InfoSection
-      desc={translate("kanvasGit.desc")}
-      title={translate("kanvasGit.title")}
-      img="/images/gt.png"
-      imgSize={400}
+      isCase
       button={false}
-      backColor="bg-white"
-      textColor="text-sky-700"
-      buttonLink="/"
-      link="https://github.com/bakaphp/kanvas-ecosystem-api"
+      buttonLink=""
+      desc="Manage all your projects under a single roof with our intuitive control panel. Get real-time insights, make adjustments on the fly, and maintain full control over every module and template."
+      img="/images/kanvas/001.png"
+      title="Centralized Control Panel:"
     ></InfoSection>,
     <InfoSection
-      desc={translate("kanvasPhoenix.desc")}
-      title={translate("kanvasPhoenix.title")}
-      img="/images/Gewaer.png"
-      button={true}
-      buttonColor="bg-sky-700 "
-      buttonTitle={translate("kanvasPhoenix.button")}
-      backColor="bg-white"
-      textColor="text-sky-700"
-      buttonLink="#Newsletter"
-      imgSize={580}
-      space="mt-4"
+      reverse
+      button={false}
+      buttonLink=""
+      desc="Gain unparalleled flexibility with our Headless architecture, enabling custom front-end development while maintaining robust back-end functionalities."
+      img="/images/kanvas/002.png"
+      imgSize={500}
+      title="Headless:"
     ></InfoSection>,
-    <Brands
-      imageUrls={kanvasImagesBrand}
-      title={translate("brandSection.title")}
-      slider
+    <Content
+      description="Quickly integrate pre-designed modules for common functionalities like social interactions, CRM, and workflow automation, speeding up development time."
+      img="/images/kanvas/003.png"
+      title="Building Blocks:"
+      top="xl:mt-44"
+    ></Content>,
+    <InfoSection
+      reverse
+      button={false}
+      buttonLink=""
+      desc="Automate and connect tasks seamlessly across modules and systems, enhancing efficiency and allowing your team to focus on innovation."
+      img="/images/kanvas/004.png"
+      imgSize={420}
+      title="Action Engine:"
+    ></InfoSection>,
+    <Ikanvas
+      title="Take a tour"
+      desc="Find out how you can consolidate your data with this interactive tour."
+      bg="bg-sky-600"
+      descColor="text-white"
       titleColor="text-white"
-      className="bg-sky-700"
-    ></Brands>,
+    ></Ikanvas>,
+    <CenteredContent
+      title="How it works."
+      imageUrl="/images/ghi.svg"
+      text="Kanvas Niche is open-source, licensed under the MIT License, featuring a user-friendly admin panel built with React and a robust backend powered by Laravel. Opt for self-hosting to gain full control over your projects, customizing and scaling with complete freedom."
+    ></CenteredContent>,
+    <ImagenStack 
+    description="Discover our prebuilt frontend modules, ready for one-click integration with Kanvas, designed to seamlessly enhance your projects. "
+      title="Our Recipes"
+      img="/images/kanvas/r001.png"
+      top=""
+      subdesc="These customizable solutions, from marketplace functionalities and e-commerce bundles to social engagement and CRM, offer agencies a quick and efficient way to deploy feature-rich applications."
+     ></ImagenStack>,
     <Footer kanvas></Footer>,
   ],
   gewaer: [
