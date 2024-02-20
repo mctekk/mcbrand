@@ -78,13 +78,22 @@ export function Footer({
               />
             )}
             {kanvas && (
-              <FooterList
-                kind={kind}
-                hideTitle
-                className="block md:hidden"
-                title={footerLinks.kanvas.title}
-                links={footerLinks.kanvas.links}
-              />
+              <>
+                <FooterList
+                  kind={kind}
+                  hideTitle
+                  className="block md:hidden"
+                  title={footerLinks.kanvas.title}
+                  links={footerLinks.kanvas.links}
+                />
+                <FooterList
+                  kind={kind}
+                  title={footerLinks.kanvasContact.title}
+                  className=" md:hidden text-left  lg:text-right   mt-9 lg:mt-0 md:mt-0"
+                  links={footerLinks.kanvasContact.links}
+                  direction="text-left lg:text-right "
+                />
+              </>
             )}
             {gewaer && (
               <FooterList

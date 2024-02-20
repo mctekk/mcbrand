@@ -44,6 +44,7 @@ import Content from "@/components/organism/sections/content";
 import { Ikanvas } from "@/components/organism/sections/interactive-kanvas";
 import CenteredContent from "@/components/organism/sections/center-content";
 import Clients from "@/components/organism/sections/kanvas-clients";
+import ImagenStack from "@/components/organism/sections/imagen stack";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -266,8 +267,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     //   className="bg-sky-700"
     // ></Brands>,
     <TwoPartComponent
-      title="Empower Your Agency with Seamless Control: Elevate Projects with Modular Building Blocks."
-      description="Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board."
+      title="Empower Your Agency with Seamless Control: "
+      description=" Elevate Projects with Modular Building Blocks. Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board."
       buttonText="Take a tour"
       sliderImages={["/images/Products.png", "/image2.jpg", "/image3.jpg"]}
     />,
@@ -316,13 +317,13 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       imageUrl="/images/ghi.svg"
       text="Kanvas Niche is open-source, licensed under the MIT License, featuring a user-friendly admin panel built with React and a robust backend powered by Laravel. Opt for self-hosting to gain full control over your projects, customizing and scaling with complete freedom."
     ></CenteredContent>,
-    <Content
-      description="Discover our prebuilt frontend modules, ready for one-click integration with Kanvas, designed to seamlessly enhance your projects. "
+    <ImagenStack 
+    description="Discover our prebuilt frontend modules, ready for one-click integration with Kanvas, designed to seamlessly enhance your projects. "
       title="Our Recipes"
       img="/images/kanvas/r001.png"
       top=""
       subdesc="These customizable solutions, from marketplace functionalities and e-commerce bundles to social engagement and CRM, offer agencies a quick and efficient way to deploy feature-rich applications."
-    ></Content>,
+     ></ImagenStack>,
     <Footer kanvas></Footer>,
   ],
   gewaer: [

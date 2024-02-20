@@ -22,7 +22,7 @@ export function Ikanvas({
 }: Props) {
   const classes = classNames(`section ${bg}`);
   return (
-    <section className={classes}>
+    <section className={classes} id="Tour">
       <Section className="flex flex-col gap-6">
         <div className="flex flex-col gap-4 mx-auto     ">
           <h1
@@ -38,7 +38,7 @@ export function Ikanvas({
         <div className="relative w-full flex justify-center">
           <div className=" w-full ">
             <iframe
-              src="https://demo.arcade.software/s6u4nG3Kt3O5pP94oD4R?embed&show_copy_link=true"
+              src="https://demo.arcade.software/EdbIbP2XjmtLT1adLvZg?embed&show_copy_link=true"
               title="Presentation - Kanvas Prototype"
               loading="lazy"
               allowFullScreen
