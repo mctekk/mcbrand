@@ -11,7 +11,7 @@ const kanvasImagesBrand = [
   "/images/kanvasClients/copic.svg",
   "/images/kanvasClients/dac.svg",
   "/images/kanvasClients/nzxt.svg",
-  "/images/kanvasClients/finance_agents.svg"
+  "/images/kanvasClients/kation.svg"
  
 ];
 const gewaerImagesBrand = [
