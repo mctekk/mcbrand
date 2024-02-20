@@ -50,12 +50,23 @@ export default function RootLayout({
       : type == "salesassist"
       ? "/images/favicons/favicon.ico"
       : "/images/favicons/gewaerFav.svg";
+  const description =
+    type == "mctekk"
+      ? ""
+      : type == "kanvas"
+      ? "Elevate Projects with Modular Building Blocks. Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board."
+      : type == "gewaer"
+      ? ""
+      : type == "salesassist"
+      ? ""
+      : "";
 
   return (
     <html lang="en">
       <head>
         <link rel="shortcut icon" href={faviconPath} sizes="32x32" />
         <meta property="og:image" content={seoImage} />
+        <meta property="og:description" content={description} />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
