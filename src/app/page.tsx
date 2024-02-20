@@ -197,8 +197,8 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     <GaKanvas />,
    
     <TwoPartComponent
-      title="Empower Your Agency with Seamless Control: "
-      description=" Elevate Projects with Modular Building Blocks. Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board."
+      title="Your Agency Modular Control Panel "
+      description="Elevate Projects with Modular Building Blocks. Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board."
       buttonText="Take a tour"
       sliderImages={["/images/Products.png", "/image2.jpg", "/image3.jpg"]}
     />,

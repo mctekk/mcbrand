@@ -19,11 +19,13 @@ const CenteredContent: React.FC<CenteredContentProps> = ({
         <h1 className="text-[42px] font-bold mb-4">{title}</h1>
         <p className="text-[22px] mb-6 text-gray-600 ">{text}</p>
       </div>
+      <a href="https://github.com/bakaphp">
       <img
         src={imageUrl}
         alt="Imagen"
         className="w-[86px] h-[86px] rounded-full self-center"
       />
+      </a>
     </div>
   );
 };

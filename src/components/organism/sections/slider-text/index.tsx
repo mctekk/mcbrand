@@ -14,16 +14,14 @@ function TwoPartComponent({ title, description, buttonText, sliderImages }: TwoP
   const swiperRef = useRef<any>(null);
 
   return (
-    <div className='bg-sky-600'>
+    <div className='bg-sky-600 mx-auto justify-center  '>
       <div className="flex flex-col xl:flex-row section justify-center mx-auto xl:w-8/12 ">
         <div className="xl:w-1/2 p-4 text-white">
           <h2 className="text-[36px] font-bold mb-4">{title}</h2>
           <p className="mb-4 text-[18px]">{description}</p>
-          <a href='#Tour'>
-          <button className="bg-blue-950  text-white font-bold py-2 px-4 rounded" >
+          <button className="bg-blue-950  text-white font-bold py-2 px-4 rounded">
             {buttonText}
           </button>
-          </a>
         </div>
         <div className="xl:w-1/2 m-9 xl:m-0">
           <Swiper
