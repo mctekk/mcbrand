@@ -20,17 +20,17 @@ export default function FooterLinks({ kind, mctekk, sales, kanvas, gewaer, gewae
         <>
           <FooterList
             kind={kind}
-            className="hidden md:block text-right"
+            className="hidden md:block text-right md:text-left lg:text-right"
             title={footerLinks.kanvas.title}
             links={footerLinks.kanvas.links}
-            direction="text-right"
+            direction="text-right md:text-left lg:text-right"
           />
           <FooterList
             kind={kind}
             title={footerLinks.kanvasContact.title}
-            className="text-right"
+            className="hidden md:block text-left  md:text-right   mt-9 lg:mt-0 md:mt-0"
             links={footerLinks.kanvasContact.links}
-            direction="text-right"
+            direction="text-left md:text-right "
           />
         </>
       );

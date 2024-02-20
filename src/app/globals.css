@@ -80,6 +80,7 @@ body {
 .kanvas-slider-inside {
   @apply overflow-hidden relative ;
 }
+
 .slider-inside::after, .slider-inside::before {
   content: " ";
   @apply absolute z-10 w-[100px] h-full;
@@ -101,12 +102,12 @@ body {
 .kanvas-slider-inside::after{
   top: 0;
   right: 0;
-  background: linear-gradient(to left, rgba(3,105,161,255)0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to left, rgba(233, 233, 233, 0.829)0%, rgba(255,255,255,0) 100%);
 }
 .kanvas-slider-inside::before{
   top: 0;
   left: 0;
-  background: linear-gradient(to right, rgba(3,105,161,255)0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(233, 233, 233, 0.829)0%, rgba(255,255,255,0) 100%);
 }
 .d {
   @apply fill-[#ffffff]
