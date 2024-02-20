@@ -198,7 +198,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
    
     <TwoPartComponent
       title="Your Agency Modular Control Panel "
-      description="Elevate Projects with Modular Building Blocks. Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board."
+      description="Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board."
       buttonText="Take a tour"
       sliderImages={["/images/Products.png", "/image2.jpg", "/image3.jpg"]}
     />,

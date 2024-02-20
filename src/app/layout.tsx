@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: process.env.PAGE_TITLE ?? process.env.PAGE_TYPE?.toUpperCase(),
   description: (() => {
     switch (process.env.PAGE_TYPE) {
-      case "kanvas":
-        return "On Kanvas - Headless modules as building blocks for you application";
+      case "Kanvas - Your Agency Modular Control Panel      ":
+        return "Elevate Projects with Modular Building Blocks. Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board.";
       case "gewaer":
         return " Launch a platform for your business that allows your sales team to input new orders and potential leads. Gewaer will enable clients to view progress updates on their projects or to upload the necessary documents to finalize tasks.";
       case "mctekk":
