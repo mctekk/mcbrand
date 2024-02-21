@@ -200,7 +200,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       title="Your Agency Modular Control Panel "
       description="Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board."
       buttonText="Take a tour"
-      sliderImages={["/images/Products.png", "/image2.jpg", "/image3.jpg"]}
+      sliderImages={["/images/Products.png"]}
     />,
     <Clients title="Trusted by our beloved clients" imageUrls={kanvasImagesBrand} className="bg-gray-200"  ></Clients>,
     <InfoSection
