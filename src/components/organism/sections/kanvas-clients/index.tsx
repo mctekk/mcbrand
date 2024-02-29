@@ -30,7 +30,7 @@ function Clients({ title, imageUrls, className }: ImageListProps) {
           className={`slider-container container mx-auto lg:flex ${className} flex-col`}
         >
           <p
-            className={`text-[30px] font-semibold pt-10 mb-10 mx-auto items-center w-fit `}
+            className={`text-[30px] font-semibold pt-10 mb-10 mx-auto items-center w-fit ml-4 md:ml-0`}
           >
             {title}
           </p>

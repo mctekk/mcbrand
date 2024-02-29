@@ -36,20 +36,20 @@ export function Ikanvas({
         </div>
 
         <div className="relative w-full flex justify-center">
-          <div className=" w-full  justify-end xl:ml-72 md:ml-32">
+          <div className=" w-full  mx-auto   ">
             <iframe
               src="https://demo.arcade.software/EdbIbP2XjmtLT1adLvZg?embed&show_copy_link=true"
               title="Presentation - Kanvas Prototype"
               loading="lazy"
               allowFullScreen
               allow="clipboard-write"
-              className="w-9/12  md:h-[33rem]  h-[28rem]"
+              className="w-9/12  md:h-[36rem]  h-[29rem] mx-auto lg:h-[44rem] -mb-28 md:-mb-0"
             ></iframe>
             
           </div>
         
         </div>
-        <div className=" self-center text-center mt-20 ">
+        <div className=" self-center text-center lg:mt-20 ">
               {" "}
               <h4
                 className={` text-white md:text-[2.50rem] ml-5 md:ml-0 lg:ml-0 font-semibold`}
