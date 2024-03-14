@@ -128,13 +128,15 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       button
     ></Hero>,
     <InfoSection
-      desc={translate("secondSection.desc")}
-      title={translate("secondSection.title")}
-      img="/images/move.png"
-      button={false}
+      desc={translate("weGotSection.desc")}
+      title={translate("weGotSection.title")}
+      img="/images/Mctekk_Ecommerce.png"
+      button={true}
       backColor="bg-white"
-      buttonLink="/"
-      imgSize={670}
+      buttonLink="#ContactForm"
+      id="Services"
+      buttonColor="bg-mctekk-100"
+      buttonTitle={translate("weGotSection.buttonTitle")}
     ></InfoSection>,
     <InfoSection
       desc={translate("kanvasSection.desc")}
@@ -173,17 +175,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-black"
     />,
     <CardList sectionTitle="Our Cases"></CardList>,
-    <InfoSection
-      desc={translate("weGotSection.desc")}
-      title={translate("weGotSection.title")}
-      img="/images/Mctekk_Ecommerce.png"
-      button={true}
-      backColor="bg-white"
-      buttonLink="#ContactForm"
-      id="Services"
-      buttonColor="bg-mctekk-100"
-      buttonTitle={translate("weGotSection.buttonTitle")}
-    ></InfoSection>,
+    
     <SimpleForm id="ContactForm"></SimpleForm>,
     <Footer mctekk></Footer>,
   ],
