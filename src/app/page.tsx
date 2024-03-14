@@ -45,6 +45,7 @@ import { Ikanvas } from "@/components/organism/sections/interactive-kanvas";
 import CenteredContent from "@/components/organism/sections/center-content";
 import Clients from "@/components/organism/sections/kanvas-clients";
 import ImagenStack from "@/components/organism/sections/imagen stack";
+import CardList from "@/components/organism/sections/cases";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -171,16 +172,15 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       titleColor="text-white"
       className="bg-black"
     />,
+    <CardList sectionTitle="Our Cases"></CardList>,
     <InfoSection
       desc={translate("weGotSection.desc")}
       title={translate("weGotSection.title")}
-      img="/images/ser.jpg"
+      img="/images/Mctekk_Ecommerce.png"
       button={true}
       backColor="bg-white"
-      buttonLink="https://meetings.hubspot.com/jennifer-herasme"
+      buttonLink="#ContactForm"
       id="Services"
-      linkLetters={translate("weGotSection.linkLetters")}
-      linkColor=""
       buttonColor="bg-mctekk-100"
       buttonTitle={translate("weGotSection.buttonTitle")}
     ></InfoSection>,
