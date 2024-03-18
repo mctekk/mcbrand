@@ -35,7 +35,7 @@ const CardList: React.FC<Props> = ({ sectionTitle }) => {
       subtitle: "Memo'd is a note-sharing app where you can find inspirations and ideas shared by a community of creators",
       image: "/images/case/SA.png",
       tags: ["Tecnologia", "Desarrollo"],
-      link:"/posts/memod-s-case-study"
+      link:"/memod-case"
     },
   ];
 
