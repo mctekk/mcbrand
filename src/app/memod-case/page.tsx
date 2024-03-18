@@ -42,7 +42,6 @@ export default function Page({}: Props) {
       />{" "}
       <ImagenParrafoCentrado
         title="Challenges & Business Drivers"
-        imagenSrc="/images/case/NZD.PNG"
         texto="Pain point 1: With the proliferation of mobile internet, people are overwhelmed with information and have little time finding quality content -- users want curated high-impact insights in less time and space to be better"
       />
       <ImagenParrafoCentrado texto="Pain point 2: Oftentimes we forget what we’ve read, despite the feeling that we think we remember the information. We believe users will value a fun solution to retain and leverage powerful ideas and insights." />

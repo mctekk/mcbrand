@@ -21,14 +21,14 @@ const CardList: React.FC<Props> = ({ sectionTitle }) => {
       subtitle: "Our most recent engagement involved a comprehensive project with NZXT, aimed at enhancing their ecommerce presence and operational efficiency across multiple dimensions.       ",
       image: "/images/case/NZXT.png",
       tags: ["Informatica", "Programacion"],
-      link:"/posts/nzxt-case-study"
+      link:"/nzxt-case"
     },
     {
       title: "Too Corporation Case Study ",
       subtitle: "Our project with Too Corporation Americas and their collaboration with the brand Copic represented a focused initiative to enhance their online retail capabilities and customer engagement strategies.       ",
       image: "/images/case/Popular.png",
       tags: ["Tecnologia", "Desarrollo"],
-      link:"/posts/too-corporation-case-study"
+      link:"/too-case"
     },
     {
       title: "Memod’s Case Study",
