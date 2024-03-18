@@ -1,5 +1,6 @@
 import McMenu from "@/components/molecules/mc-menu";
 import Header from "@/components/organism/header";
+import GoalsList from "@/components/organism/sections/case-goals";
 import CardList from "@/components/organism/sections/cases";
 import CasesHero from "@/components/organism/sections/cases-hero";
 import ImagenParrafoCentrado from "@/components/organism/sections/cases-info";
@@ -31,8 +32,17 @@ export default function Page({}: Props) {
           { titulo: "Tags", descripcion: "Technology, Growth" },
         ]}
       ></Tags>
+       <GoalsList
+      title="Goals"
+        goals={[
+          { id: 1, description: "Create a system that allowed people to gain, store, retain and share knowledge" },
+          { id: 2, description: "Allow different creators to post quality content" },
+          { id: 3, description: "Allow people to have condensed versions of content that they could absorb easily" },
+        ]}
+      />{" "}
       <ImagenParrafoCentrado
         title="Challenges & Business Drivers"
+        imagenSrc="/images/case/NZD.PNG"
         texto="Pain point 1: With the proliferation of mobile internet, people are overwhelmed with information and have little time finding quality content -- users want curated high-impact insights in less time and space to be better"
       />
       <ImagenParrafoCentrado texto="Pain point 2: Oftentimes we forget what we’ve read, despite the feeling that we think we remember the information. We believe users will value a fun solution to retain and leverage powerful ideas and insights." />
@@ -42,6 +52,7 @@ export default function Page({}: Props) {
         title="Product Focus & Intended Outcomes"
       />
       <ImagenParrafoCentrado texto="AI Feature for Creators: Introduced an advanced AI feature that leverages machine learning algorithms to suggest content ideas, optimize posting times, and personalize content. This tool assists creators in maximizing their reach and engagement on the platform." />
+     
       <Footer mctekk></Footer>
     </>
   );

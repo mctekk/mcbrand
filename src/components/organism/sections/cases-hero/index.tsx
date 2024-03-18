@@ -6,7 +6,7 @@ interface Props {
   parrafo: string;
 }
 
-const CasesHero: React.FC<Props> = ({ titulo, parrafo }) => {
+function CasesHero({ titulo, parrafo }: Props){
   return (
     <div className="bg-black text-white py-32">
       <Section className=" ">

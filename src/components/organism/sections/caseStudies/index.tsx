@@ -8,7 +8,7 @@ interface CardProps {
   tags: string[];
 }
 
-const CardSe: React.FC<CardProps> = ({ title, image, tags, subtitle, link }) => {
+function CardSe({ title, image, tags, subtitle, link }: CardProps) {
   const getRandomColor = () => {
     const colors = ['#25A327', '#0000FF', '#E94B29'];
     return colors[Math.floor(Math.random() * colors.length)];
