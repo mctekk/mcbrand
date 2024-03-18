@@ -15,11 +15,11 @@ function CardSe({ title, image, tags, subtitle, link }: CardProps) {
   };
 
   return (
-    <div className="w-96 rounded overflow-hidden m-4 ">
+    <div className="w-96 rounded overflow-hidden m-12 ">
       <img className="h-96 object-cover ml-6" src={image} alt={title} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{title}</div>
-        <div className="font-bold text-gray-400 mb-2">{subtitle}</div>
+        <div className=" text-gray-400 mb-2">{subtitle}</div>
         <a href={link} target="_blank" rel="noopener noreferrer" className="w-96 rounded overflow-hidden m-4 cursor-pointer">
         <div className="font-bold mb-2">Read the case study</div>
         </a>

@@ -174,7 +174,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       titleColor="text-white"
       className="bg-black"
     />,
-    <CardList sectionTitle="Our Cases"></CardList>,
+    <CardList sectionTitle="Our Case Studies"></CardList>,
     
     <SimpleForm id="ContactForm"></SimpleForm>,
     <Footer mctekk></Footer>,
