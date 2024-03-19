@@ -21,8 +21,8 @@ function GoalsList({ goals,title }: GoalsListProps): JSX.Element {
 
   return (
     <div className="flex flex-col items-center justify-center max-w-3xl mx-auto ">
-      {title && <p className="text-left  text-[44px] font-semibold  mb-5">{title}</p>}
-      <ul className="list-disc pl-8 text-[26px]">{renderGoals()}</ul>
+      {title && <p className="text-left  text-[40px] font-semibold  mb-5">{title}</p>}
+      <ul className="list-disc pl-8 text-[24px]">{renderGoals()}</ul>
     </div>
   );
 }

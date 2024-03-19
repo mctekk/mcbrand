@@ -1,9 +1,8 @@
 import McMenu from "@/components/molecules/mc-menu";
 import Header from "@/components/organism/header";
 import GoalsList from "@/components/organism/sections/case-goals";
-import CardList from "@/components/organism/sections/cases";
 import CasesHero from "@/components/organism/sections/cases-hero";
-import ImagenParrafoCentrado from "@/components/organism/sections/cases-info";
+import CaseInfo from "@/components/organism/sections/cases-info";
 import Tags from "@/components/organism/sections/cases-tag";
 import { Footer } from "@/components/organism/sections/footer";
 import React from "react";
@@ -32,7 +31,7 @@ export default function Page({}: Props) {
           { titulo: "Tags", descripcion: "Technology, Growth" },
         ]}
       ></Tags>
-      <ImagenParrafoCentrado texto="Our project with Too Corporation Americas and their collaboration with the brand Copic represented a focused initiative to enhance their online retail capabilities and customer engagement strategies. " />
+      <CaseInfo imagenSrc="/images/case/NZXT/desktop1.png" texto="" />
       <GoalsList
         title="Project Objectives:"
         goals={[
@@ -58,6 +57,7 @@ export default function Page({}: Props) {
           },
         ]}
       />
+       <CaseInfo imagenSrc="/images/case/NZXT/desktop2.png" texto="" />
       <GoalsList
         title="Achievements:"
         goals={[
@@ -83,7 +83,7 @@ export default function Page({}: Props) {
           },
         ]}
       />
-      <ImagenParrafoCentrado
+      <CaseInfo
         texto="The collaboration with NZXT yielded significant positive outcomes, including operational efficiencies, enhanced customer experiences, and increased sales. The custom solutions and implementations have set a new standard for NZXT’s ecommerce capabilities, positioning them for sustained growth and success in the competitive tech and PC gaming market."
       />
       <Footer mctekk></Footer>

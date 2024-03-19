@@ -3,7 +3,7 @@ import Header from "@/components/organism/header";
 import GoalsList from "@/components/organism/sections/case-goals";
 import CardList from "@/components/organism/sections/cases";
 import CasesHero from "@/components/organism/sections/cases-hero";
-import ImagenParrafoCentrado from "@/components/organism/sections/cases-info";
+import CaseInfo from "@/components/organism/sections/cases-info";
 import Tags from "@/components/organism/sections/cases-tag";
 import { Footer } from "@/components/organism/sections/footer";
 import React from "react";
@@ -32,7 +32,7 @@ export default function Page({}: Props) {
           { titulo: "Tags", descripcion: "Technology, Growth" },
         ]}
       ></Tags>
-      <ImagenParrafoCentrado texto="Our project with Too Corporation Americas and their collaboration with the brand Copic represented a focused initiative to enhance their online retail capabilities and customer engagement strategies. " />
+      <CaseInfo imagenSrc="/images/case/too/desktop1.png" texto="Our project with Too Corporation Americas and their collaboration with the brand Copic represented a focused initiative to enhance their online retail capabilities and customer engagement strategies. " />
       <GoalsList
         title="Project Objectives:"
         goals={[
@@ -63,7 +63,7 @@ export default function Page({}: Props) {
           },
         ]}
       />
-      <ImagenParrafoCentrado title="Positive Results:" texto="The implementation of the headless ecommerce solution and loyalty program for Copic has led to remarkable outcomes in enhancing loyalty and their online presence. The headless architecture has streamlined Copic's online operations, offering customers a seamless and responsive online shopping experience. This has led to increased website traffic and higher conversion rates."/>
+      <CaseInfo imagenSrc="/images/case/too/desktop2.png" title="Positive Results:" texto="The implementation of the headless ecommerce solution and loyalty program for Copic has led to remarkable outcomes in enhancing loyalty and their online presence. The headless architecture has streamlined Copic's online operations, offering customers a seamless and responsive online shopping experience. This has led to increased website traffic and higher conversion rates."/>
       <Footer mctekk></Footer>
     </>
   );

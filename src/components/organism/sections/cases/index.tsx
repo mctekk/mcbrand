@@ -19,28 +19,28 @@ const CardList: React.FC<Props> = ({ sectionTitle }) => {
     {
       title: "NZXT Case Study ",
       subtitle: "Our most recent engagement involved a comprehensive project with NZXT, aimed at enhancing their ecommerce presence and operational efficiency across multiple dimensions.       ",
-      image: "/images/case/NZXT.png",
-      tags: ["Informatica", "Programacion"],
+      image: "/images/case/NZXTC.png",
+      tags: ["Tech", "Programing"],
       link:"/nzxt-case"
     },
     {
       title: "Too Corporation Case Study ",
       subtitle: "Our project with Too Corporation Americas and their collaboration with the brand Copic represented a focused initiative to enhance their online retail capabilities and customer engagement strategies.       ",
-      image: "/images/case/Popular.png",
-      tags: ["Tecnologia", "Desarrollo"],
+      image: "/images/case/copic.png",
+      tags: ["Tech", "Growth"],
       link:"/too-case"
     },
     {
       title: "Memod’s Case Study",
       subtitle: "Memo'd is a note-sharing app where you can find inspirations and ideas shared by a community of creators",
-      image: "/images/case/SA.png",
-      tags: ["Tecnologia", "Desarrollo"],
+      image: "/images/case/memod.png",
+      tags: ["Development", "Growth"],
       link:"/memod-case"
     },
   ];
 
   return (
-    <div className="section">
+    <div className="section bg-white">
       <Section >
       <p className="justify-center mx-auto w-fit mb-24 font-semibold text-[34px]">{sectionTitle}</p>
         <div className="flex flex-wrap justify-center mx-auto">
