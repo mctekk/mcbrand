@@ -26,7 +26,7 @@ const CardList: React.FC<Props> = ({ sectionTitle }) => {
     {
       title: "Too Corporation Case Study ",
       subtitle: "Our project with Too Corporation Americas and their collaboration with the brand Copic represented a focused initiative to enhance their online retail capabilities and customer engagement strategies.       ",
-      image: "/images/case/copic.png",
+      image: "/images/case/copic1.png",
       tags: ["Tech", "Growth"],
       link:"/too-case"
     },
