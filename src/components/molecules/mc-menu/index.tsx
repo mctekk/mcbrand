@@ -8,6 +8,9 @@ const menuItems = [
   {
     text: translate("mcnavbar.section.Blog"),
     link: "/blog",
+  }, {
+    text: "Case Study",
+    link: "#CardList",
   },
 ];
 const externalLinks = [
