@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsArrow90DegRight, BsArrowBarRight, BsArrowUpRight } from 'react-icons/bs';
 
 interface CardProps {
   title: string;
@@ -21,7 +22,7 @@ function CardSe({ title, image, tags, subtitle, link }: CardProps) {
         <div className="font-bold text-xl mb-2">{title}</div>
         <div className=" text-gray-400 mb-2">{subtitle}</div>
         <a href={link} target="_blank" rel="noopener noreferrer" className="w-96 rounded overflow-hidden m-4 cursor-pointer">
-        <div className="font-bold mb-2">Read the case study</div>
+        <div className="font-bold flex justify-between"><p>Read the case study</p> <div className='mt-1'><BsArrowUpRight/></div> </div>
         </a>
         <div className="flex flex-wrap">
           {tags.map((tag, index) => (
