@@ -10,7 +10,7 @@ const menuItems = [
     link: "/blog",
   }, {
     text: "Case Study",
-    link: "/case-study",
+    link: "#CardList",
   },
 ];
 const externalLinks = [

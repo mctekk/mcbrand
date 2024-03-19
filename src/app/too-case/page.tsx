@@ -21,8 +21,8 @@ export default function Page({}: Props) {
         iconColor="text-white"
       />
       <CasesHero
-        parrafo="Our project with Too Corporation Americas and their collaboration with the brand Copic represented a focused initiative to enhance their online retail capabilities and customer engagement strategies.  "
-        titulo="Too Corporation Case Study "
+        parrafo="Our project with Copic represented a focused initiative to enhance their online retail capabilities and customer engagement strategies. "
+        titulo="Too Corporation (Copic) Case Study  "
       ></CasesHero>
       <Tags
         datos={[

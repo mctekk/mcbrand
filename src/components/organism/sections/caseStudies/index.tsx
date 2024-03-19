@@ -21,7 +21,7 @@ function CardSe({ title, image, tags, subtitle, link }: CardProps) {
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{title}</div>
         <div className=" text-gray-400 mb-2">{subtitle}</div>
-        <a href={link} target="_blank" rel="noopener noreferrer" className="w-96 rounded overflow-hidden m-4 cursor-pointer">
+        <a href={link} rel="noopener noreferrer" className="w-96 rounded overflow-hidden m-4 cursor-pointer">
         <div className="font-bold flex justify-between"><p>Read the case study</p> <div className='mt-1'><BsArrowUpRight/></div> </div>
         </a>
         <div className="flex flex-wrap">

@@ -6,7 +6,7 @@ interface ImagenParrafoProps {
   title?:string
 }
 
-const CaseInfo: React.FC<ImagenParrafoProps> = ({ imagenSrc, texto,title }) => {
+function CaseInfo ({ imagenSrc, texto,title }: ImagenParrafoProps){
   return (
     <div className="flex flex-col items-center justify-center ">
       {imagenSrc && <img src={imagenSrc} alt="Imagen" className=" w-2/4"  />}

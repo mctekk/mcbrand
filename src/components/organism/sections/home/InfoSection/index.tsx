@@ -74,7 +74,7 @@ export default function InfoSection({
           <h4>{desc}</h4>
           <h4><a href={finalLink} target="_blank" className={linkColor}>{linkLetters}</a></h4>
           {button && (
-            <Link href={buttonLink} className="text-white">
+            <Link href={buttonLink} className="text-white w-fit">
               <button className={`px-5 p-2 mt-4 lg:px-3 ${buttonColor}`}>
                 {buttonTitle}
               </button>
