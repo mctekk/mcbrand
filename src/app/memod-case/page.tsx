@@ -30,7 +30,7 @@ export default function Page({}: Props) {
           { titulo: "Technology", descripcion: " Kanvas" },
           { titulo: "Service", descripcion: "Development, Growth" },
           { titulo: "Industry", descripcion: "Technology" },
-          { titulo: "Tags", descripcion: "Technology, Growth" },
+          { titulo: "Tags", descripcion: "Development, Growth, Community " },
         ]}
       ></Tags>
        <GoalsList

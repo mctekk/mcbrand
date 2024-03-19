@@ -28,7 +28,7 @@ export default function Page({}: Props) {
           { titulo: "Client", descripcion: " NZXT" },
           { titulo: "Service", descripcion: "Development, Growth" },
           { titulo: "Industry", descripcion: "Technology" },
-          { titulo: "Tags", descripcion: "Technology, Growth" },
+          { titulo: "Tags", descripcion: "Development, Growth, Ecommerce" },
         ]}
       ></Tags>
       <CaseInfo imagenSrc="/images/case/NZXT/desktop1.png" texto="" />

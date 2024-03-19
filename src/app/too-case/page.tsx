@@ -29,7 +29,7 @@ export default function Page({}: Props) {
           { titulo: "Client", descripcion: " Too Corporation" },
           { titulo: "Service", descripcion: "Development, Growth" },
           { titulo: "Industry", descripcion: "Technology" },
-          { titulo: "Tags", descripcion: "Technology, Growth" },
+          { titulo: "Tags", descripcion: "Development, Growth, Ecommerce"  },
         ]}
       ></Tags>
       <CaseInfo imagenSrc="/images/case/too/desktop1.png" texto="Our project with Too Corporation Americas and their collaboration with the brand Copic represented a focused initiative to enhance their online retail capabilities and customer engagement strategies. " />
