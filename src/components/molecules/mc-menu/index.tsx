@@ -9,7 +9,7 @@ const menuItems = [
     text: translate("mcnavbar.section.Blog"),
     link: "/blog",
   }, {
-    text: "Case Study",
+    text: "Case Studies",
     link: "#CardList",
   },
 ];
