@@ -114,19 +114,19 @@ const kanvasContact = {
 const GewaerContact = {
   title: `${translate("routesTitles.title2")}`,
   links: [
-    { path: "mailto: contacto@mctekk.com", name: " contacto@mctekk.com    " },
+    { path: "mailto: contact@mctekk.com", name: " contact@mctekk.com    " },
   ],
 };
 const GewaerContactEs = {
   title: `${"Contacto"}`,
   links: [
-    { path: "mailto: contacto@mctekk.com", name: " contacto@mctekk.com    " },
+    { path: "mailto: contact@mctekk.com", name: " contact@mctekk.com    " },
   ],
 };
 const mcContact = {
   title: `${translate("routesTitles.title2")}`,
   links: [
-    { path: "mailto: contacto@mctekk.com", name: " contacto@mctekk.com    " },
+    { path: "mailto: contact@mctekk.com", name: " contact@mctekk.com    " },
     
   ],
 };
