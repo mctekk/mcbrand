@@ -7,7 +7,7 @@ const menuItems = [
     link: "/",
   },
   { text: "Features", link: "#features" },
-  { text: "Contact", link: "mailto:contacto@mctekk.com" },
+  { text: "Contact", link: "mailto:contact@mctekk.com" },
 ];
 const externalLinks = [
   {
@@ -24,7 +24,7 @@ const menuItemsEs = [
     link: "/app-para-vendedores",
   },
   { text: "Funcionalidades", link: "#features" },
-  { text: "Contacto", link: "mailto:contacto@mctekk.com" },
+  { text: "Contacto", link: "mailto:contact@mctekk.com" },
 ];
 const externalLinksEs = [
   {

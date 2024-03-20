@@ -172,7 +172,7 @@ export const McPolicyData = {
       name: 'Contact Us',
       description: [
         'If you have any questions, concerns, or requests related to this Privacy Policy, please contact us at:',
-        'MCTEKK SRL - contacto@mctekk.com',
+        'MCTEKK SRL - contact@mctekk.com',
         'We take your privacy seriously and will make every effort to address your concerns and resolve any issues promptly.',
       ],
     },
