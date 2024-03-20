@@ -11,7 +11,7 @@ interface CardProps {
 
 function CardSe({ title, image, tags, subtitle, link }: CardProps) {
   const getRandomColor = () => {
-    const colors = ['#25A327', '#0000FF', '#E94B29'];
+    const colors = ['#026aa2', '#f9a61e', '#8a5a9b'];
     return colors[Math.floor(Math.random() * colors.length)];
   };
 
