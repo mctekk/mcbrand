@@ -12,10 +12,10 @@ function CasesHero({ titulo, parrafo }: Props){
       <Section className=" ">
         <div className="flex justify-center items-center ">
           <div className="w-1/2 text-left xl:ml-32">
-            <h1 className="text-[55px] font-bold">{titulo}</h1>
+            <h1 className="xl:text-[55px] text-[30px] font-bold">{titulo}</h1>
           </div>
           <div className="w-1/2 text-center">
-            <p className="text-lg">{parrafo}</p>
+            <p className="">{parrafo}</p>
           </div>
         </div>
       </Section>
