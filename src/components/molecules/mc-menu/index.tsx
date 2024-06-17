@@ -12,6 +12,10 @@ const menuItems = [
     text: "Our Work",
     link: "#CardList",
   },
+  {
+    text: "Jobs",
+    link: "/jobs-list",
+  },
 ];
 const externalLinks = [
   {
