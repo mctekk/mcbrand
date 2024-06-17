@@ -71,7 +71,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       iconColor="text-white"
     />,
     <GaGewaer />,
-<InfoSection
+    <InfoSection
       button
       buttonLink="/"
       desc="Sorry, the page you are looking for doesn't exist.Here are some helpful links:"
