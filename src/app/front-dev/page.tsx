@@ -1,3 +1,4 @@
+import ContactFormCv from "@/components/atoms/form-cv";
 import JobCard from "@/components/atoms/job-card";
 import McMenu from "@/components/molecules/mc-menu";
 import Header from "@/components/organism/header";
@@ -29,7 +30,7 @@ export default function Page({}: Props) {
       <Tags
       
         datos={[
-          { titulo: "Type:", descripcion: "Remote Contractor - Full Time", apply:true  },
+          { titulo: "Type:", descripcion: "Remote Contractor - Full Time" },
           { titulo: "Level ", descripcion: "Mid-Senior"   },
           { titulo: "Location", descripcion: "Dominican Republic"},
         ]}
@@ -256,7 +257,7 @@ export default function Page({}: Props) {
         texto="Interested candidates are invited to submit their resume, portfolio, and a cover letter explaining why they are a great fit for this role through this form:"
         title="How to Apply:"
       />
-   
+    <ContactFormCv></ContactFormCv>
       <Footer mctekk></Footer>
     </>
   );

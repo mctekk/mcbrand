@@ -1,7 +1,7 @@
-'use client'
-import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { storage } from '../../../../firebaseConfig';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+"use client";
+import React, { useState, ChangeEvent, FormEvent } from "react";
+import { storage } from "../../../../firebaseConfig";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 interface FormState {
   name: string;
@@ -15,19 +15,21 @@ interface FormState {
 
 const ContactFormCv: React.FC = () => {
   const [formState, setFormState] = useState<FormState>({
-    name: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    position: '',
+    name: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    position: "",
     resume: null,
-    coverLetter: '',
+    coverLetter: "",
   });
 
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState(false);
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFormState((prev) => ({
       ...prev,
@@ -59,57 +61,55 @@ const ContactFormCv: React.FC = () => {
           lastName: formState.lastName,
           email: formState.email,
           phone: formState.phone,
-          position: formState.position, 
+          position: formState.position,
           resumeUrl: fileUrl,
           coverLetter: formState.coverLetter,
         };
 
-        await fetch('https://script.google.com/macros/s/AKfycbwraggS3o68ShpC2vJVL0PGk0qQOFfgg6Jp5oelKPexpZbFLJDLPz6GF6IyQBpSFykc/exec', {
-          method: 'POST',
-          body: JSON.stringify(formData),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          mode: 'no-cors',
-        });
+        await fetch(
+          "https://script.google.com/macros/s/AKfycbwraggS3o68ShpC2vJVL0PGk0qQOFfgg6Jp5oelKPexpZbFLJDLPz6GF6IyQBpSFykc/exec",
+          {
+            method: "POST",
+            body: JSON.stringify(formData),
+            headers: {
+              "Content-Type": "application/json",
+            },
+            mode: "no-cors",
+          }
+        );
 
         setSubmitSuccess(true);
         setSubmitError(false);
         setFormState({
-          name: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          position: '',
+          name: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          position: "",
           resume: null,
-          coverLetter: '',
+          coverLetter: "",
         });
       } catch (error) {
-        console.error('Error:', error);
+        console.error("Error:", error);
         setSubmitSuccess(false);
         setSubmitError(true);
       }
     } else {
-      alert('Please select a resume to upload.');
+      alert("Please select a resume to upload.");
     }
   };
 
   return (
-    <div className="py-20">
-      <div className="max-w-2xl mx-auto mt-8">
-        <a
-          href="/jobs-list"
-          className="bg-mctekk-100 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-        >
-          Go back
-        </a>
-      </div>
+    <div className="pb-20">
       <form
         onSubmit={handleSubmit}
         className="max-w-2xl mx-auto mt-8 p-6 bg-white shadow-md rounded-md"
       >
         <div className="mb-4">
-          <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">
+          <label
+            htmlFor="name"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
             Name*:
           </label>
           <input
@@ -123,7 +123,10 @@ const ContactFormCv: React.FC = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="lastName" className="block text-gray-700 text-sm font-bold mb-2">
+          <label
+            htmlFor="lastName"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
             Last Name*:
           </label>
           <input
@@ -137,7 +140,10 @@ const ContactFormCv: React.FC = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
+          <label
+            htmlFor="email"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
             Email*:
           </label>
           <input
@@ -151,7 +157,10 @@ const ContactFormCv: React.FC = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="phone" className="block text-gray-700 text-sm font-bold mb-2">
+          <label
+            htmlFor="phone"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
             Phone (not required):
           </label>
           <input
@@ -164,21 +173,31 @@ const ContactFormCv: React.FC = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="position" className="block text-gray-700 text-sm font-bold mb-2">
+          <label
+            htmlFor="position"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
             Position Applied For*:
           </label>
-          <input
-            type="text"
+          <select
             id="position"
             name="position"
             value={formState.position}
             onChange={handleChange}
             className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
             required
-          />
+          >
+            <option value="">Select a position</option>
+            <option value="Frontend Developer">Frontend Developer</option>
+            <option value="Quality Assurance Specialist">Quality Assurance Specialist</option>
+            <option value="Backend Developer">Backend Developer </option>
+          </select>
         </div>
         <div className="mb-4">
-          <label htmlFor="resume" className="block text-gray-700 text-sm font-bold mb-2">
+          <label
+            htmlFor="resume"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
             Resume (PDF or DOC)*:
           </label>
           <input
@@ -192,7 +211,10 @@ const ContactFormCv: React.FC = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="coverLetter" className="block text-gray-700 text-sm font-bold mb-2">
+          <label
+            htmlFor="coverLetter"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
             Cover Letter (not required):
           </label>
           <textarea
