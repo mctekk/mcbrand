@@ -204,7 +204,7 @@ const ContactFormCv: React.FC = () => {
             type="file"
             id="resume"
             name="resume"
-            accept=".pdf, .doc, .docx"
+            accept=".pdf, .doc, .docx, .jpg, .png, .excel"
             onChange={handleFileChange}
             className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
             required
@@ -231,7 +231,7 @@ const ContactFormCv: React.FC = () => {
             role="alert"
           >
             <p className="font-bold">¡Well done!</p>
-            <p>Form sent.</p>
+            <p>Thanks for sending your request. You will be contacted in case we proceed with your application.</p>
           </div>
         )}
         {submitError && (
