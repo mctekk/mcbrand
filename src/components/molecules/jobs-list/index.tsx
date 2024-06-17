@@ -14,7 +14,7 @@ const JobList = () => {
         <ul className="space-y-4">
           {jobs.map((job) => (
             <li key={job.id} className="p-4 bg-gray-200 shadow rounded-lg hover:bg-gray-300 transition">
-              <a href={job.link} target="_blank" rel="noopener noreferrer" className="text-black hover:text-blue-800 font-semibold text-[20px]">
+              <a href={job.link}  rel="noopener noreferrer" className="text-black hover:text-blue-800 font-semibold text-[20px]">
                 {job.title}
               </a>
             </li>
