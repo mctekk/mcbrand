@@ -67,7 +67,7 @@ const ContactFormCv: React.FC = () => {
         };
 
         await fetch(
-          "https://script.google.com/macros/s/AKfycbwraggS3o68ShpC2vJVL0PGk0qQOFfgg6Jp5oelKPexpZbFLJDLPz6GF6IyQBpSFykc/exec",
+          "https://script.google.com/macros/s/AKfycbxVB0MvWhbzrZvKT0R42vlMnys_bwOMPXE6ksa_v3K7zGOQPzSulVyt7raUj4g_Wj8ahw/exec",
           {
             method: "POST",
             body: JSON.stringify(formData),
