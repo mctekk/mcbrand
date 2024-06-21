@@ -8,9 +8,11 @@ interface FormState {
   lastName: string;
   email: string;
   phone?: string;
-  position: string; // Nuevo campo
+  position: string;
   resume: File | null;
   coverLetter?: string;
+  salaryExpectation: number | ""; // Nuevo campo
+  pronouns: string; // Nuevo campo
 }
 
 const ContactFormCv: React.FC = () => {
@@ -22,6 +24,8 @@ const ContactFormCv: React.FC = () => {
     position: "",
     resume: null,
     coverLetter: "",
+    salaryExpectation: "",
+    pronouns: "",
   });
 
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -64,10 +68,12 @@ const ContactFormCv: React.FC = () => {
           position: formState.position,
           resumeUrl: fileUrl,
           coverLetter: formState.coverLetter,
+          salaryExpectation: formState.salaryExpectation,
+          pronouns: formState.pronouns,
         };
 
         await fetch(
-          "https://script.google.com/macros/s/AKfycbxVB0MvWhbzrZvKT0R42vlMnys_bwOMPXE6ksa_v3K7zGOQPzSulVyt7raUj4g_Wj8ahw/exec",
+          "https://script.google.com/macros/s/AKfycbw0s2CBH35BRyyHF-cGFd_hPNw6T1Qpn9OSPDDURivmx4LWKte0UZx22Q0_-eMf5Bejug/exec",
           {
             method: "POST",
             body: JSON.stringify(formData),
@@ -88,6 +94,8 @@ const ContactFormCv: React.FC = () => {
           position: "",
           resume: null,
           coverLetter: "",
+          salaryExpectation: "",
+          pronouns: "",
         });
       } catch (error) {
         console.error("Error:", error);
@@ -190,7 +198,46 @@ const ContactFormCv: React.FC = () => {
             <option value="">Select a position</option>
             <option value="Frontend Developer">Frontend Developer</option>
             <option value="Quality Assurance Specialist">Quality Assurance Specialist</option>
-            <option value="Backend Developer">Backend Developer </option>
+            <option value="Backend Developer">Backend Developer</option>
+          </select>
+        </div>
+        <div className="mb-4">
+          <label
+            htmlFor="salaryExpectation"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            Salary Expectation (USD)*:
+          </label>
+          <input
+            type="number"
+            id="salaryExpectation"
+            name="salaryExpectation"
+            value={formState.salaryExpectation}
+            onChange={handleChange}
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            htmlFor="pronouns"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            Pronouns*:
+          </label>
+          <select
+            id="pronouns"
+            name="pronouns"
+            value={formState.pronouns}
+            onChange={handleChange}
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+            required
+          >
+            <option value="">Select your pronouns</option>
+            <option value="He/Him">He/Him</option>
+            <option value="She/Her">She/Her</option>
+            <option value="They/Them">They/Them</option>
+            <option value="Other">Other</option>
           </select>
         </div>
         <div className="mb-4">
@@ -230,7 +277,7 @@ const ContactFormCv: React.FC = () => {
             className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4"
             role="alert"
           >
-            <p className="font-bold">¡Well done!</p>
+            <p className="font-bold">Well done!</p>
             <p>Thanks for sending your request. You will be contacted in case we proceed with your application.</p>
           </div>
         )}
@@ -239,13 +286,13 @@ const ContactFormCv: React.FC = () => {
             className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4"
             role="alert"
           >
-            <p className="font-bold">¡Error!</p>
-            <p>Error!!</p>
+            <p className="font-bold">Error!</p>
+            <p>There was an error processing your request. Please try again later.</p>
           </div>
         )}
         <button
           type="submit"
-          className="bg-mctekk-100 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline"
+          className="bg-mctekk-100 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline hover:bg-black"
         >
           Send
         </button>
