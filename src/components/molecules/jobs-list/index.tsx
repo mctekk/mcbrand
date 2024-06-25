@@ -1,7 +1,7 @@
 import React from 'react';
 
 const jobs = [
-  { id: 1, title: 'Front End Developer', link: '/front-dev', description: 'Develop stunning user interfaces' },
+  // { id: 1, title: 'Front End Developer', link: '/front-dev', description: 'Develop stunning user interfaces' },
   { id: 2, title: 'Quality Assurance Specialist', link: '/QA', description: 'Ensure the highest quality of our products' },
   { id: 3, title: 'Backend Developer', link: '/back-dev', description: 'Build robust server-side applications' },
 ];
