@@ -11,7 +11,7 @@ const JobList = () => {
     <div className="flex items-center justify-center my-36 bg-gray-100">
       <div className="w-full max-w-5xl p-8 rounded-xl">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Open Roles</h1>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2">
           {jobs.map((job) => (
             <div key={job.id} className="flex flex-col justify-between p-6 bg-white shadow-lg rounded-xl transform transition-all hover:scale-105 hover:shadow-2xl h-full">
               <div>
