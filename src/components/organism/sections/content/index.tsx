@@ -6,8 +6,8 @@ import React from "react";
 import "swiper/css";
 
 interface TwoPartComponentProps {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   img: string;
   top:string
   subdesc?:string
