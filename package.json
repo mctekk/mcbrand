@@ -21,11 +21,13 @@
     "datocms-structured-text-utils": "^2.0.4",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
+    "firebase": "^10.12.2",
     "framer-motion": "^10.16.4",
     "highlight.js": "^11.9.0",
     "i18n-js": "^4.3.2",
     "next": "13.5.2",
     "next-seo": "^6.4.0",
+    "node-fetch": "^3.3.2",
     "postcss": "^8.4.30",
     "prismjs": "^1.29.0",
     "react": "18.2.0",
@@ -46,5 +48,10 @@
     "@types/prismjs": "^1.26.3",
     "@types/react-syntax-highlighter": "^15.5.10",
     "@types/uuid": "^9.0.6"
-  }
+  },
+  "description": "Welcome to the documentation for the MCBrand project this project is the set of pages of the MCBrand starting with the SalesAssist page.\r This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

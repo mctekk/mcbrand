@@ -1,3 +1,4 @@
+import ContactFormCv from "@/components/atoms/form-cv";
 import JobsForm from "@/components/atoms/job-form";
 
 import McMenu from "@/components/molecules/mc-menu";
@@ -16,7 +17,7 @@ export default function JobForms({}: Props) {
         logo="/images/McLogo.svg"
         iconColor="text-white"
       />
-      <JobsForm></JobsForm>
+      <ContactFormCv></ContactFormCv>
       <Footer mctekk></Footer>
     </div>
   );
