@@ -1,14 +1,7 @@
 import React from "react";
 
 const jobs = [
-  {
-    id: 3,
-    title: "We’re Not Hiring Right Now, But Stay Tuned!",
-    link: "/back-dev",
-    description:
-      "Thank you for your interest in joining our team. Unfortunately, we don’t have any open positions at the moment. However, we’re always on the lookout for talented individuals who share our passion and values. Please check back soon or follow us on social media for updates on future job openings. We look forward to the possibility of working together in the future!",
-    nojob: true,
-  },
+  { id: 3, title: 'Backend Developer', link: '/back-dev', description: 'Build robust server-side applications',nojob: false, },
 ];
 
 const JobList = () => {
