@@ -197,7 +197,7 @@ const ContactFormCv: React.FC = () => {
           >
             <option value="">Select a position</option>
             {/* <option value="Frontend Developer">Frontend Developer</option> */}
-            <option value="Quality Assurance Specialist">Quality Assurance Specialist</option>
+            {/* <option value="Quality Assurance Specialist">Quality Assurance Specialist</option> */}
             <option value="Backend Developer">Backend Developer</option>
           </select>
         </div>
