@@ -27,7 +27,7 @@ export default function Page({}: Props) {
       />
       <CasesHero
         parrafo="We are seeking a skilled Backend Developer to join our team and contribute to the development of robust, scalable, and secure backend services. The ideal candidate will have experience in building and maintaining backend architectures, databases, and APIs. You will work closely with our frontend development team to ensure seamless integration and optimal performance of our applications."
-        titulo=" BackendEnd Developer"
+        titulo=" Backend Developer"
       ></CasesHero>
       <Tags
         datos={[
