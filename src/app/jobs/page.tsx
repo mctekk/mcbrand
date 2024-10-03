@@ -1,6 +1,4 @@
-import JobCard from "@/components/atoms/job-card";
-import Formulario from "@/components/atoms/job-form";
-import JobList from "@/components/molecules/jobs-list";
+import EmbedJobs from "@/components/molecules/jobs-embed";
 import McMenu from "@/components/molecules/mc-menu";
 import Header from "@/components/organism/header";
 import { Footer } from "@/components/organism/sections/footer";
@@ -12,13 +10,23 @@ export default function Page({}: Props) {
   return (
     <>
       {" "}
-      <Header
-        menu={<McMenu></McMenu>}
-        className="bg-black"
-        logo="/images/McLogo.svg"
-        iconColor="text-white"
-      /><JobList></JobList>
-      <Footer mctekk></Footer>
+      <div className="flex flex-col min-h-screen bg-white">
+        {/* Header */}
+        <Header
+          menu={<McMenu></McMenu>}
+          className="bg-black "
+          logo="/images/McLogo.svg"
+          iconColor="text-white"
+        />
+
+        {/* Main Content */}
+        <div className="flex-grow my-32">
+          <EmbedJobs />
+        </div>
+
+        {/* Footer */}
+        <Footer mctekk />
+      </div>
     </>
   );
 }
