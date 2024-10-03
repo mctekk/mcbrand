@@ -10,7 +10,7 @@ const menuItems = [
     link: "/blog",
   }, {
     text: "Our Work",
-    link: "#CardList",
+    link: "/#CardList",
   },
   {
     text: "Jobs",

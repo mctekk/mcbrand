@@ -22,9 +22,9 @@ export default function EmbedJobs({}: Props) {
   }, []);
 
   return (
-    <div className='my-44'>
+    <div className=''>
       <link rel="stylesheet" href="https://static.zohocdn.com/recruit/embed_careers_site/css/v1.1/embed_jobs.css" type="text/css"/>
-      <div className="embed_jobs_head embed_jobs_with_style_2">
+      <div className="embed_jobs_head embed_jobs_with_style_2 ">
         <div className="embed_jobs_head2">
           <div className="embed_jobs_head3">
             <div id="rec_job_listing_div"> </div>
