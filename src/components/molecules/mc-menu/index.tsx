@@ -14,7 +14,7 @@ const menuItems = [
   },
   {
     text: "Jobs",
-    link: "/jobs-list",
+    link: "/jobs",
   },
 ];
 const externalLinks = [
