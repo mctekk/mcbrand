@@ -25,7 +25,8 @@ export default function EmbedJobs({}: Props) {
     <div className=''>
       <link rel="stylesheet" href="https://static.zohocdn.com/recruit/embed_careers_site/css/v1.1/embed_jobs.css" type="text/css"/>
       <div className='text-center font-medium text-heading-xl'>Open Jobs</div>
-      <div className='text-center font-medium text-body-base'>We're always seeking talented individuals with a passion for excellence. If you're driven to succeed, we'd love to see you apply for our open positions!</div>
+      <div className='text-center font-semibold text-body-base font-sans'>We're always seeking talented individuals with a passion for excellence.</div>
+      <div className='text-center font-semibold text-body-base font-sans'>If you're driven to succeed, we'd love to see you apply for our open positions!</div>
       <div className="embed_jobs_head embed_jobs_with_style_2 ">
         <div className="embed_jobs_head2">
           <div className="embed_jobs_head3">
