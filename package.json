@@ -19,6 +19,7 @@
     "classnames": "^2.3.2",
     "datocms-structured-text-to-plain-text": "^2.0.4",
     "datocms-structured-text-utils": "^2.0.4",
+    "debug": "^4.4.0",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
     "firebase": "^10.12.2",
@@ -47,7 +48,8 @@
   "devDependencies": {
     "@types/prismjs": "^1.26.3",
     "@types/react-syntax-highlighter": "^15.5.10",
-    "@types/uuid": "^9.0.6"
+    "@types/uuid": "^9.0.6",
+    "supports-color": "^10.0.0"
   },
   "description": "Welcome to the documentation for the MCBrand project this project is the set of pages of the MCBrand starting with the SalesAssist page.\r This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "main": "next.config.js",

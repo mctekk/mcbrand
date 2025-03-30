@@ -1,5 +1,4 @@
 import { usePageBuilder } from "@/model/interactions/use-page-builder";
-
 import { ReactNode } from "react";
 
 import Header from "@/components/organism/header";
@@ -46,6 +45,7 @@ import CenteredContent from "@/components/organism/sections/center-content";
 import Clients from "@/components/organism/sections/kanvas-clients";
 import ImagenStack from "@/components/organism/sections/imagen stack";
 import CardList from "@/components/organism/sections/cases";
+import FormatBulletPoints from "@/components/atoms/FormatBulletPoints";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -187,66 +187,65 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       iconColor="text-white"
     />,
     <GaKanvas />,
+    <FormatBulletPoints />, // Client component that applies formatting
    
     <TwoPartComponent
-      title="Your Agency Modular Control Panel "
-      description="Quickly deploy and enhance your projects with unparalleled ease and efficiency. Our comprehensive control panel puts you in command, streamlining project management across the board."
+      title="Your operational engine for commerce"
+      description="Unify your systems. Extend your stack. Automate your ops — without rebuilding from scratch."
       buttonText="Take a tour"
       sliderImages={["/images/Products.png"]}
     />,
-    <Clients title="Trusted by our beloved clients" imageUrls={kanvasImagesBrand} className="bg-gray-200"  ></Clients>,
+    <Clients title="Trusted by our beloved clients" imageUrls={kanvasImagesBrand} className="bg-gray-200" />,
     <InfoSection
       isCase
       button={false}
       buttonLink=""
-      desc="Manage all your projects under a single roof with our intuitive control panel. Get real-time insights, make adjustments on the fly, and maintain full control over every module and template."
+      desc={`🛒 Marketplaces – product, vendor, and order management built in
+🚘 Dealer platforms – CRM, lead routing, and user role control
+🧩 Product bundlers – real-time inventory sync and advanced logic
+📦 Operational platforms – inventory, CRM, and internal workflows
+🏦 B2B commerce portals – multi-user pricing and approvals
+📱 B2C commerce apps – APIs ready for mobile or headless frontends`}
       img="/images/kanvas/001.png"
-      title="Centralized Control Panel:"
-    ></InfoSection>,
+      title="What You Can Build with Kanvas"
+    />,
     <InfoSection
       reverse
       button={false}
       buttonLink=""
-      desc="Gain unparalleled flexibility with our Headless architecture, enabling custom front-end development while maintaining robust back-end functionalities."
+      desc="Other tools are either rigid templates or raw infrastructure. Kanvas takes a middle-out approach — living between your frontend and your tools, orchestrating your data, workflows, and logic in one place."
       img="/images/kanvas/002.png"
       imgSize={500}
-      title="Headless:"
-    ></InfoSection>,
+      title="Why Kanvas Is Different"
+    />,
     <Content
-      description="Quickly integrate pre-designed modules for common functionalities like social interactions, CRM, and workflow automation, speeding up development time."
+      description={`✅ Module base: CRM, inventory, commerce, workflows
+✅ 20+ integrations: Shopify, NetSuite, Stripe, WooCommerce and more
+✅ Kanvas Agents: automation wired into your stack
+✅ Flexible APIs: build and extend without limits`}
       img="/images/kanvas/003.png"
       title="Building Blocks:"
       top="xl:mt-44"
-    ></Content>,
+    />,
     <InfoSection
       reverse
       button={false}
       buttonLink=""
-      desc="Automate and connect tasks seamlessly across modules and systems, enhancing efficiency and allowing your team to focus on innovation."
+      desc="Because Kanvas lives in the middle, AI Agents can access real data and take real action — not just observe. 🧠 Sync inventory, detect sales drops, trigger campaigns. With Kanvas, AI is operational — not just conversational."
       img="/images/kanvas/004.png"
       imgSize={420}
-      title="Action Engine:"
-    ></InfoSection>,
+      title="AI Ready, by Design:"
+    />,
     <Ikanvas
       title="Take a tour"
       desc="Find out how you can consolidate your data with this interactive tour."
       bg="bg-sky-600"
       descColor="text-white"
       titleColor="text-white"
-    ></Ikanvas>,
-    <CenteredContent
-      title="How it works."
-      imageUrl="/images/ghi.svg"
-      text="Kanvas Niche is open-source, licensed under the MIT License, featuring a user-friendly admin panel built with React and a robust backend powered by Laravel. Opt for self-hosting to gain full control over your projects, customizing and scaling with complete freedom."
-    ></CenteredContent>,
-    <ImagenStack 
-    description="Discover our prebuilt frontend modules, ready for one-click integration with Kanvas, designed to seamlessly enhance your projects. "
-      title="Our Recipes"
-      img="/images/kanvas/r001.png"
-      top=""
-      subdesc="These customizable solutions, from marketplace functionalities and e-commerce bundles to social engagement and CRM, offer agencies a quick and efficient way to deploy feature-rich applications."
-     ></ImagenStack>,
-    <Footer kanvas></Footer>,
+    />,
+    
+   
+    <Footer kanvas />,
   ],
   gewaer: [
     <Header
@@ -268,7 +267,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       colorWords="text-white"
       gewaer
       nlMessage="Subscribe to get product updates:      "
-    ></Hero>,
+    />,
     <CompletionTools
       title={translate("GewaerTools.title")}
       desc={translate("GewaerTools.desc")}
@@ -298,14 +297,14 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       textColor="text-gewaer-200"
       buttonLink="/schedule"
       imgSize={450}
-    ></InfoSection>,
+    />,
     <Brands
       imageUrls={gewaerImagesBrand}
       title={translate("brandSection.title")}
       titleColor="text-white"
       className="bg-gewaer-100"
-    ></Brands>,
-    <Footer gewaer></Footer>,
+    />,
+    <Footer gewaer />,
   ],
 };
 export default function Page() {
