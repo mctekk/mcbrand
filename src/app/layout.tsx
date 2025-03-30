@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: (() => {
     switch (process.env.PAGE_TYPE) {
       case "kanvas ":
-        return "Kanvas - Your Agency Modular Control Panel ";
+        return "Kanvas - Your operational engine for commerce ";
       case "gewaer":
         return " Launch a platform for your business that allows your sales team to input new orders and potential leads. Gewaer will enable clients to view progress updates on their projects or to upload the necessary documents to finalize tasks.";
       case "mctekk":
