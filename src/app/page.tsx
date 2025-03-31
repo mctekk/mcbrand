@@ -46,6 +46,7 @@ import Clients from "@/components/organism/sections/kanvas-clients";
 import ImagenStack from "@/components/organism/sections/imagen stack";
 import CardList from "@/components/organism/sections/cases";
 import FormatBulletPoints from "@/components/atoms/FormatBulletPoints";
+import InfoSectionDivided from "@/components/organism/sections/home/infoSectionDivided";
 
 const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
   salesassist: [
@@ -175,7 +176,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       className="bg-black"
     />,
     <CardList sectionTitle="Our Case Studies"></CardList>,
-    
+
     <SimpleForm id="ContactForm"></SimpleForm>,
     <Footer mctekk></Footer>,
   ],
@@ -188,24 +189,30 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
     />,
     <GaKanvas />,
     <FormatBulletPoints />, // Client component that applies formatting
-   
+
     <TwoPartComponent
       title="Your operational engine for commerce"
       description="Unify your systems. Extend your stack. Automate your ops — without rebuilding from scratch."
       buttonText="Take a tour"
       sliderImages={["/images/Products.png"]}
     />,
-    <Clients title="Trusted by our beloved clients" imageUrls={kanvasImagesBrand} className="bg-gray-200" />,
-    <InfoSection
+    <Clients
+      title="Trusted by our beloved clients"
+      imageUrls={kanvasImagesBrand}
+      className="bg-gray-200"
+    />,
+    <InfoSectionDivided
       isCase
       button={false}
       buttonLink=""
-      desc={`🛒 Marketplaces – product, vendor, and order management built in
-🚘 Dealer platforms – CRM, lead routing, and user role control
-🧩 Product bundlers – real-time inventory sync and advanced logic
-📦 Operational platforms – inventory, CRM, and internal workflows
-🏦 B2B commerce portals – multi-user pricing and approvals
-📱 B2C commerce apps – APIs ready for mobile or headless frontends`}
+      desc={[
+        "🛒 Marketplaces – product, vendor, and order management built in",
+        "🚘 Dealer platforms – CRM, lead routing, and user role control",
+        "🧩 Product bundlers – real-time inventory sync and advanced logic",
+        "📦 Operational platforms – inventory, CRM, and internal workflows",
+        "🏦 B2B commerce portals – multi-user pricing and approvals",
+        "📱 B2C commerce apps – APIs ready for mobile or headless frontends",
+      ]}
       img="/images/kanvas/001.png"
       title="What You Can Build with Kanvas"
     />,
@@ -243,8 +250,7 @@ const PAGE_SECTIONS_HOME: Record<string, ReactNode> = {
       descColor="text-white"
       titleColor="text-white"
     />,
-    
-   
+
     <Footer kanvas />,
   ],
   gewaer: [
